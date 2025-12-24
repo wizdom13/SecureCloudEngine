@@ -1251,7 +1251,7 @@ func TestNewDecrypter(t *testing.T) {
 	// bad magic
 	file0copy := make([]byte, len(file0))
 	copy(file0copy, file0)
-	for i := range fileMagic {
+for i := range fileMagicBytes {
 		file0copy[i] ^= 0x1
 		cd := newCloseDetector(bytes.NewBuffer(file0copy))
 		fh, err := c.newDecrypter(cd)

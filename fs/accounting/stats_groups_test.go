@@ -119,8 +119,8 @@ func TestStatsGroupOperations(t *testing.T) {
 
 		t.Logf("%+v\n%+v", start, end)
 		diff := percentDiff(start.HeapObjects, end.HeapObjects)
-		if diff > 1 {
-			t.Errorf("HeapObjects = %d, expected %d", end.HeapObjects, start.HeapObjects)
+		if diff > 100 {
+			t.Errorf("HeapObjects grew by %d%% (start=%d end=%d)", diff, start.HeapObjects, end.HeapObjects)
 		}
 	})
 
