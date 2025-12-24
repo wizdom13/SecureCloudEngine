@@ -74,7 +74,9 @@ var (
 type ContentEncryptionMode int
 
 const (
+	// ContentEncryptionSecretbox uses NaCl secretbox for content encryption.
 	ContentEncryptionSecretbox ContentEncryptionMode = iota
+	// ContentEncryptionXChaCha20Poly1305 uses XChaCha20-Poly1305 for content encryption.
 	ContentEncryptionXChaCha20Poly1305
 )
 
@@ -82,7 +84,9 @@ const (
 type NameCipherMode int
 
 const (
+	// NameCipherEME uses the ECB-Mix-ECB algorithm for name encryption.
 	NameCipherEME NameCipherMode = iota
+	// NameCipherXSalsa20 uses XSalsa20 for name encryption.
 	NameCipherXSalsa20
 )
 
