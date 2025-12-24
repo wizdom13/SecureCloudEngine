@@ -290,6 +290,9 @@ func TestConfigFileSave(t *testing.T) {
 			// On Windows the os.Chmod only affects the read-only attribute of files)
 			t.Skip("this is a Linux only test")
 		}
+		if os.Geteuid() == 0 {
+			t.Skip("skipping permission test when running as root")
+		}
 		configDir := filepath.Dir(configPath)
 		assert.NoError(t, os.Chmod(configDir, 0400)) // -r--------
 		defer func() {
@@ -304,6 +307,9 @@ func TestConfigFileSave(t *testing.T) {
 		if runtime.GOOS != "linux" {
 			// On Windows the os.Chmod only affects the read-only attribute of files)
 			t.Skip("this is a Linux only test")
+		}
+		if os.Geteuid() == 0 {
+			t.Skip("skipping permission test when running as root")
 		}
 		configDir := filepath.Dir(configPath)
 		assert.NoError(t, os.Chmod(configDir, 0544)) // -r-xr--r--
