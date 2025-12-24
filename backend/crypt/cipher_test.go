@@ -1251,13 +1251,17 @@ func TestNewDecrypter(t *testing.T) {
 	// bad magic
 	file0copy := make([]byte, len(file0))
 	copy(file0copy, file0)
-for i := range fileMagicBytes {
+	for i := range fileMagicBytes {
+		original := file0copy[i]
 		file0copy[i] ^= 0x1
+		if bytes.Equal(file0copy[:fileMagicSize], fileMagicV1Bytes) {
+			file0copy[i] ^= 0x2
+		}
 		cd := newCloseDetector(bytes.NewBuffer(file0copy))
 		fh, err := c.newDecrypter(cd)
 		assert.Nil(t, fh)
 		assert.EqualError(t, err, ErrorEncryptedBadMagic.Error())
-		file0copy[i] ^= 0x1
+		file0copy[i] = original
 		assert.Equal(t, 1, cd.closed)
 	}
 }
