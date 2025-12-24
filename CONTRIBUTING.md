@@ -210,6 +210,13 @@ you can run the same tests as get run in the CI which can be very helpful.
 
 You can run them with `make check` or with `golangci-lint run ./...`.
 
+To validate the linter configuration without needing network access you can
+use the vendored schema with:
+
+```console
+golangci-lint config verify --schema ./golangci-schema-v2.7.json
+```
+
 Using these tests ensures that the rclone codebase all uses the same coding
 standards. These tests also check for easy mistakes to make (like forgetting
 to check an error return).
