@@ -5,7 +5,9 @@ import (
 	"context"
 	"crypto/aes"
 	gocipher "crypto/cipher"
+	"crypto/hmac"
 	"crypto/rand"
+	"crypto/sha256"
 	"encoding/base32"
 	"encoding/base64"
 	"errors"
@@ -24,6 +26,7 @@ import (
 	"github.com/rclone/rclone/lib/readers"
 	"github.com/rclone/rclone/lib/version"
 	"github.com/rfjakob/eme"
+	"golang.org/x/crypto/chacha20poly1305"
 	"golang.org/x/crypto/nacl/secretbox"
 	"golang.org/x/crypto/scrypt"
 )
@@ -31,8 +34,9 @@ import (
 // Constants
 const (
 	nameCipherBlockSize = aes.BlockSize
-	fileMagic           = "RCLONE\x00\x00"
-	fileMagicSize       = len(fileMagic)
+	fileMagicV0         = "RCLONE\x00\x00"
+	fileMagicV1         = "RCLONE\x00\x01"
+	fileMagicSize       = len(fileMagicV0)
 	fileNonceSize       = 24
 	fileHeaderSize      = fileMagicSize + fileNonceSize
 	blockHeaderSize     = secretbox.Overhead
@@ -62,7 +66,24 @@ var (
 
 // Global variables
 var (
-	fileMagicBytes = []byte(fileMagic)
+	fileMagicBytes   = []byte(fileMagicV0)
+	fileMagicV1Bytes = []byte(fileMagicV1)
+)
+
+// ContentEncryptionMode selects the algorithm used for data blocks
+type ContentEncryptionMode int
+
+const (
+	ContentEncryptionSecretbox ContentEncryptionMode = iota
+	ContentEncryptionXChaCha20Poly1305
+)
+
+// NameCipherMode selects the algorithm for name encryption
+type NameCipherMode int
+
+const (
+	NameCipherEME NameCipherMode = iota
+	NameCipherXSalsa20
 )
 
 // ReadSeekCloser is the interface of the read handles
@@ -115,6 +136,34 @@ func (mode NameEncryptionMode) String() (out string) {
 		out = fmt.Sprintf("Unknown mode #%d", mode)
 	}
 	return out
+}
+
+// NewContentEncryptionMode turns a string into a ContentEncryptionMode
+func NewContentEncryptionMode(s string) (mode ContentEncryptionMode, err error) {
+	s = strings.ToLower(s)
+	switch s {
+	case "secretbox", "":
+		mode = ContentEncryptionSecretbox
+	case "xchacha20poly1305":
+		mode = ContentEncryptionXChaCha20Poly1305
+	default:
+		err = fmt.Errorf("unknown content encryption mode %q", s)
+	}
+	return mode, err
+}
+
+// NewNameCipherMode turns a string into a NameCipherMode
+func NewNameCipherMode(s string) (mode NameCipherMode, err error) {
+	s = strings.ToLower(s)
+	switch s {
+	case "eme", "":
+		mode = NameCipherEME
+	case "xsalsa20poly1305":
+		mode = NameCipherXSalsa20
+	default:
+		err = fmt.Errorf("unknown name cipher mode %q", s)
+	}
+	return mode, err
 }
 
 // fileNameEncoding are the encoding methods dealing with encrypted file names
@@ -172,9 +221,12 @@ func NewNameEncoding(s string) (enc fileNameEncoding, err error) {
 type Cipher struct {
 	dataKey         [32]byte                  // Key for secretbox
 	nameKey         [32]byte                  // 16,24 or 32 bytes
+	nameNonceKey    [32]byte                  // used for deterministic nonce derivation
 	nameTweak       [nameCipherBlockSize]byte // used to tweak the name crypto
 	block           gocipher.Block
 	mode            NameEncryptionMode
+	nameCipherMode  NameCipherMode
+	contentMode     ContentEncryptionMode
 	fileNameEnc     fileNameEncoding
 	buffers         sync.Pool // encrypt/decrypt buffers
 	cryptoRand      io.Reader // read crypto random numbers from here
@@ -184,13 +236,15 @@ type Cipher struct {
 }
 
 // newCipher initialises the cipher.  If salt is "" then it uses a built in salt val
-func newCipher(mode NameEncryptionMode, password, salt string, dirNameEncrypt bool, enc fileNameEncoding) (*Cipher, error) {
+func newCipher(mode NameEncryptionMode, password, salt string, dirNameEncrypt bool, enc fileNameEncoding, nameMode NameCipherMode, contentMode ContentEncryptionMode) (*Cipher, error) {
 	c := &Cipher{
 		mode:            mode,
 		fileNameEnc:     enc,
 		cryptoRand:      rand.Reader,
 		dirNameEncrypt:  dirNameEncrypt,
 		encryptedSuffix: ".bin",
+		nameCipherMode:  nameMode,
+		contentMode:     contentMode,
 	}
 	c.buffers.New = func() any {
 		return new([blockSize]byte)
@@ -229,7 +283,11 @@ func (c *Cipher) setPassBadBlocks(passBadBlocks bool) {
 // Note that empty password makes all 0x00 keys which is used in the
 // tests.
 func (c *Cipher) Key(password, salt string) (err error) {
-	const keySize = len(c.dataKey) + len(c.nameKey) + len(c.nameTweak)
+	keySize := len(c.dataKey) + len(c.nameKey) + len(c.nameTweak)
+	useNonceKey := c.nameCipherMode == NameCipherXSalsa20
+	if useNonceKey {
+		keySize += len(c.nameNonceKey)
+	}
 	var saltBytes = defaultSalt
 	if salt != "" {
 		saltBytes = []byte(salt)
@@ -245,7 +303,16 @@ func (c *Cipher) Key(password, salt string) (err error) {
 	}
 	copy(c.dataKey[:], key)
 	copy(c.nameKey[:], key[len(c.dataKey):])
-	copy(c.nameTweak[:], key[len(c.dataKey)+len(c.nameKey):])
+	offset := len(c.dataKey) + len(c.nameKey)
+	if useNonceKey {
+		copy(c.nameNonceKey[:], key[offset:])
+		offset += len(c.nameNonceKey)
+	} else {
+		for i := range c.nameNonceKey {
+			c.nameNonceKey[i] = 0
+		}
+	}
+	copy(c.nameTweak[:], key[offset:])
 	// Key the name cipher
 	c.block, err = aes.NewCipher(c.nameKey[:])
 	return err
@@ -259,6 +326,16 @@ func (c *Cipher) getBlock() *[blockSize]byte {
 // putBlock returns a block to the pool of size blockSize
 func (c *Cipher) putBlock(buf *[blockSize]byte) {
 	c.buffers.Put(buf)
+}
+
+// deriveNameNonce deterministically derives a nonce from the padded plaintext
+func (c *Cipher) deriveNameNonce(padded []byte) nonce {
+	mac := hmac.New(sha256.New, c.nameNonceKey[:])
+	mac.Write(padded)
+	sum := mac.Sum(nil)
+	var out nonce
+	copy(out[:], sum[:fileNonceSize])
+	return out
 }
 
 // encryptSegment encrypts a path segment
@@ -280,6 +357,15 @@ func (c *Cipher) encryptSegment(plaintext string) string {
 		return ""
 	}
 	paddedPlaintext := pkcs7.Pad(nameCipherBlockSize, []byte(plaintext))
+	if c.nameCipherMode == NameCipherXSalsa20 {
+		nonce := c.deriveNameNonce(paddedPlaintext)
+		ciphertext := secretbox.Seal(nil, paddedPlaintext, nonce.pointer(), &c.nameKey)
+		segment := make([]byte, 1+fileNonceSize+len(ciphertext))
+		segment[0] = 1
+		copy(segment[1:], nonce[:])
+		copy(segment[1+fileNonceSize:], ciphertext)
+		return c.fileNameEnc.EncodeToString(segment)
+	}
 	ciphertext := eme.Transform(c.block, c.nameTweak[:], paddedPlaintext, eme.DirectionEncrypt)
 	return c.fileNameEnc.EncodeToString(ciphertext)
 }
@@ -292,6 +378,19 @@ func (c *Cipher) decryptSegment(ciphertext string) (string, error) {
 	rawCiphertext, err := c.fileNameEnc.DecodeString(ciphertext)
 	if err != nil {
 		return "", err
+	}
+	if len(rawCiphertext) > fileNonceSize+1 && rawCiphertext[0] == 1 {
+		nonce := nonce{}
+		nonce.fromBuf(rawCiphertext[1 : 1+fileNonceSize])
+		plain, ok := secretbox.Open(nil, rawCiphertext[1+fileNonceSize:], nonce.pointer(), &c.nameKey)
+		if !ok {
+			return "", ErrorEncryptedBadBlock
+		}
+		plain, err = pkcs7.Unpad(nameCipherBlockSize, plain)
+		if err != nil {
+			return "", err
+		}
+		return string(plain), nil
 	}
 	if len(rawCiphertext)%nameCipherBlockSize != 0 {
 		return "", ErrorNotAMultipleOfBlocksize
@@ -709,7 +808,11 @@ func (c *Cipher) newEncrypter(in io.Reader, nonce *nonce) (*encrypter, error) {
 		}
 	}
 	// Copy magic into buffer
-	copy((*fh.buf)[:], fileMagicBytes)
+	if c.contentMode == ContentEncryptionXChaCha20Poly1305 {
+		copy((*fh.buf)[:], fileMagicV1Bytes)
+	} else {
+		copy((*fh.buf)[:], fileMagicBytes)
+	}
 	// Copy nonce into buffer
 	copy((*fh.buf)[fileMagicSize:], fh.nonce[:])
 	return fh, nil
@@ -734,9 +837,20 @@ func (fh *encrypter) Read(p []byte) (n int, err error) {
 		// possibly err != nil here, but we will process the
 		// data and the next call to ReadFill will return 0, err
 		// Encrypt the block using the nonce
-		secretbox.Seal((*fh.buf)[:0], readBuf[:n], fh.nonce.pointer(), &fh.c.dataKey)
-		fh.bufIndex = 0
-		fh.bufSize = blockHeaderSize + n
+		switch fh.c.contentMode {
+		case ContentEncryptionXChaCha20Poly1305:
+			aead, err := chacha20poly1305.NewX(fh.c.dataKey[:])
+			if err != nil {
+				return fh.finish(err)
+			}
+			sealed := aead.Seal((*fh.buf)[:0], fh.nonce[:], readBuf[:n], nil)
+			fh.bufIndex = 0
+			fh.bufSize = len(sealed)
+		default:
+			secretbox.Seal((*fh.buf)[:0], readBuf[:n], fh.nonce.pointer(), &fh.c.dataKey)
+			fh.bufIndex = 0
+			fh.bufSize = blockHeaderSize + n
+		}
 		fh.nonce.increment()
 	}
 	n = copy(p, (*fh.buf)[fh.bufIndex:fh.bufSize])
@@ -779,6 +893,7 @@ type decrypter struct {
 	rc           io.ReadCloser
 	nonce        nonce
 	initialNonce nonce
+	contentMode  ContentEncryptionMode
 	c            *Cipher
 	buf          *[blockSize]byte
 	readBuf      *[blockSize]byte
@@ -808,7 +923,11 @@ func (c *Cipher) newDecrypter(rc io.ReadCloser) (*decrypter, error) {
 		return nil, fh.finishAndClose(err)
 	}
 	// check the magic
-	if !bytes.Equal(readBuf[:fileMagicSize], fileMagicBytes) {
+	if bytes.Equal(readBuf[:fileMagicSize], fileMagicBytes) {
+		fh.contentMode = ContentEncryptionSecretbox
+	} else if bytes.Equal(readBuf[:fileMagicSize], fileMagicV1Bytes) {
+		fh.contentMode = ContentEncryptionXChaCha20Poly1305
+	} else {
 		return nil, fh.finishAndClose(ErrorEncryptedBadMagic)
 	}
 	// retrieve the nonce
@@ -877,22 +996,46 @@ func (fh *decrypter) fillBuffer() (err error) {
 		return ErrorEncryptedFileBadHeader
 	}
 	// Decrypt the block using the nonce
-	_, ok := secretbox.Open((*fh.buf)[:0], (*readBuf)[:n], fh.nonce.pointer(), &fh.c.dataKey)
-	if !ok {
-		if err != nil && err != io.EOF {
-			return err // return pending error as it is likely more accurate
+	switch fh.contentMode {
+	case ContentEncryptionXChaCha20Poly1305:
+		aead, aerr := chacha20poly1305.NewX(fh.c.dataKey[:])
+		if aerr != nil {
+			return aerr
 		}
-		if !fh.c.passBadBlocks {
-			return ErrorEncryptedBadBlock
+		plain, oerr := aead.Open((*fh.buf)[:0], fh.nonce[:], (*readBuf)[:n], nil)
+		if oerr != nil {
+			if err != nil && err != io.EOF {
+				return err
+			}
+			if !fh.c.passBadBlocks {
+				return ErrorEncryptedBadBlock
+			}
+			fs.Errorf(nil, "crypt: ignoring: %v", ErrorEncryptedBadBlock)
+			for i := range (*fh.buf)[:n] {
+				fh.buf[i] = 0
+			}
+			fh.bufSize = n - blockHeaderSize
+		} else {
+			fh.bufSize = len(plain)
 		}
-		fs.Errorf(nil, "crypt: ignoring: %v", ErrorEncryptedBadBlock)
-		// Zero out the bad block and continue
-		for i := range (*fh.buf)[:n] {
-			fh.buf[i] = 0
+	case ContentEncryptionSecretbox:
+		_, ok := secretbox.Open((*fh.buf)[:0], (*readBuf)[:n], fh.nonce.pointer(), &fh.c.dataKey)
+		if !ok {
+			if err != nil && err != io.EOF {
+				return err // return pending error as it is likely more accurate
+			}
+			if !fh.c.passBadBlocks {
+				return ErrorEncryptedBadBlock
+			}
+			fs.Errorf(nil, "crypt: ignoring: %v", ErrorEncryptedBadBlock)
+			// Zero out the bad block and continue
+			for i := range (*fh.buf)[:n] {
+				fh.buf[i] = 0
+			}
 		}
+		fh.bufSize = n - blockHeaderSize
 	}
 	fh.bufIndex = 0
-	fh.bufSize = n - blockHeaderSize
 	fh.nonce.increment()
 	return nil
 }

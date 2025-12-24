@@ -53,6 +53,30 @@ func init() {
 				},
 			},
 		}, {
+			Name:     "name_cipher",
+			Help:     "Algorithm used for name encryption when filename_encryption=standard.",
+			Default:  "eme",
+			Advanced: true,
+			Examples: []fs.OptionExample{{
+				Value: "eme",
+				Help:  "Use AES-EME (legacy).",
+			}, {
+				Value: "xsalsa20poly1305",
+				Help:  "Use deterministic XSalsa20-Poly1305 with stored nonce.",
+			}},
+		}, {
+			Name:     "content_encryption",
+			Help:     "Algorithm used for file data blocks.",
+			Default:  "secretbox",
+			Advanced: true,
+			Examples: []fs.OptionExample{{
+				Value: "secretbox",
+				Help:  "Use XSalsa20-Poly1305 secretbox (legacy).",
+			}, {
+				Value: "xchacha20poly1305",
+				Help:  "Use XChaCha20-Poly1305 AEAD (versioned format).",
+			}},
+		}, {
 			Name: "directory_name_encryption",
 			Help: `Option to either encrypt directory names or leave them intact.
 
@@ -200,10 +224,20 @@ func newCipherForConfig(opt *Options) (*Cipher, error) {
 	if err != nil {
 		return nil, err
 	}
-	cipher, err := newCipher(mode, password, salt, opt.DirectoryNameEncryption, enc)
+	nameCipherMode, err := NewNameCipherMode(opt.NameCipher)
+	if err != nil {
+		return nil, err
+	}
+	contentMode, err := NewContentEncryptionMode(opt.ContentEncryption)
+	if err != nil {
+		return nil, err
+	}
+	cipher, err := newCipher(mode, password, salt, opt.DirectoryNameEncryption, enc, nameCipherMode, contentMode)
 	if err != nil {
 		return nil, fmt.Errorf("failed to make cipher: %w", err)
 	}
+	cipher.nameCipherMode = nameCipherMode
+	cipher.contentMode = contentMode
 	cipher.setEncryptedSuffix(opt.Suffix)
 	cipher.setPassBadBlocks(opt.PassBadBlocks)
 	return cipher, nil
@@ -304,6 +338,8 @@ func NewFs(ctx context.Context, name, rpath string, m configmap.Mapper) (fs.Fs, 
 type Options struct {
 	Remote                  string `config:"remote"`
 	FilenameEncryption      string `config:"filename_encryption"`
+	NameCipher              string `config:"name_cipher"`
+	ContentEncryption       string `config:"content_encryption"`
 	DirectoryNameEncryption bool   `config:"directory_name_encryption"`
 	NoDataEncryption        bool   `config:"no_data_encryption"`
 	Password                string `config:"password"`
