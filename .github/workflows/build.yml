@@ -178,11 +178,12 @@ jobs:
           make racequicktest
         if: matrix.racequicktest
 
+      # FIXED: Added python3 to fix Permission Denied error
       - name: Run librclone tests
         run: |
           make -C librclone/ctest test
           make -C librclone/ctest clean
-          librclone/python/test_rclone.py
+          python3 librclone/python/test_rclone.py
         if: matrix.librclonetest
 
       - name: Compile all architectures test
@@ -191,7 +192,6 @@ jobs:
           make compile_all
         if: matrix.compile_all
 
-      # ADDED: Upload artifacts for user download
       - name: Upload Binaries (Artifacts)
         uses: actions/upload-artifact@v4
         with:
@@ -393,7 +393,6 @@ jobs:
       - name: x64 build
         run: go build -v -tags android -trimpath -ldflags '-s -X github.com/rclone/rclone/fs.Version='${VERSION} -o build/rclone-android-${RCLONE_NDK_VERSION}-x64 .
 
-      # ADDED: Upload Android builds for user download
       - name: Upload Android Builds (Artifacts)
         uses: actions/upload-artifact@v4
         with:
