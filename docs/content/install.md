@@ -300,8 +300,8 @@ Docker container from the rclone image.
   data files reside on the host with a non-root UID:GID, you need to pass these
   on the container start command line.
 
-- If you want to access the RC interface (either via the API or the Web UI), it is
-  required to set the `--rc-addr` to `:5572` in order to connect to it from
+- If you want to access the RC interface (either via the API or the Web UI), it
+  is required to set the `--rc-addr` to `:5572` in order to connect to it from
   outside the container. An explanation about why this is necessary can be found
   in an old
   [pythonspeed.com](https://web.archive.org/web/20200808071950/https://pythonspeed.com/articles/docker-connection-refused/)
@@ -686,8 +686,8 @@ service on error, one have to explicit enable this in the configuration file
 
 To always run rclone in background, relevant for mount commands etc,
 you can use systemd to set up rclone as a system or user service. Running as a
-system service ensures that it is run at startup even if the user it is running as
-has no active session. Running rclone as a user service ensures that it only
+system service ensures that it is run at startup even if the user it is running
+as has no active session. Running rclone as a user service ensures that it only
 starts after the configured user has logged into the system.
 
 #### Run periodically from cron

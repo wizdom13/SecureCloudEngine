@@ -3444,7 +3444,7 @@ string. For example
 |`RCLONE_EXCLUDE="*.jpg"`|`--exclude "*.jpg"`|
 |`RCLONE_EXCLUDE="*.jpg,*.png"`|`--exclude "*.jpg"` `--exclude "*.png"`|
 |`RCLONE_EXCLUDE='"*.jpg","*.png"'`|`--exclude "*.jpg"` `--exclude "*.png"`|
-| `RCLONE_EXCLUDE='"/directory with comma , in it /**"'` | `--exclude "/directory with comma , in it /**" |
+|`RCLONE_EXCLUDE='"/directory with comma , in it /**"'`|`--exclude "/directory with comma , in it /**"`|
 
 If `stringArray` options are defined as environment variables **and**
 options on the command line then all the values will be used.
