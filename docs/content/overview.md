@@ -14,6 +14,8 @@ show through.
 
 Here is an overview of the major features of each cloud storage system.
 
+<!-- markdownlint-disable MD060 -->
+
 | Name                         | Hash              | ModTime | Case Insensitive | Duplicate Files | MIME Type | Metadata |
 | ---------------------------- |:-----------------:|:-------:|:----------------:|:---------------:|:---------:|:--------:|
 | 1Fichier                     | Whirlpool         | -       | No               | Yes             | R         | -        |
@@ -70,6 +72,8 @@ Here is an overview of the major features of each cloud storage system.
 | Yandex Disk                  | MD5               | R/W     | No               | No              | R         | -        |
 | Zoho WorkDrive               | -                 | -       | No               | No              | -         | -        |
 | The local filesystem         | All               | DR/W    | Depends          | No              | -         | DRWU     |
+
+<!-- markdownlint-enable MD060 -->
 
 ¹ Dropbox supports [its own custom
 hash](https://www.dropbox.com/developers/reference/content-hash).
@@ -135,13 +139,13 @@ size by default, though can be configured to check the file hash
 (with the `--checksum` flag). Ideally it should also be possible to
 change the timestamp of an existing file without having to re-upload it.
 
-| Key | Explanation |
-|-----|-------------|
-| `-` | ModTimes not supported - times likely the upload time |
-| `R` | ModTimes supported on files but can't be changed without re-upload |
-| `R/W` | Read and Write ModTimes fully supported on files |
-| `DR` | ModTimes supported on files and directories but can't be changed without re-upload |
-| `DR/W` | Read and Write ModTimes fully supported on files and directories |
+|Key|Explanation|
+|---|-----------|
+|`-`|ModTimes not supported - times likely the upload time|
+|`R`|ModTimes supported on files but can't be changed without re-upload|
+|`R/W`|Read and Write ModTimes fully supported on files|
+|`DR`|ModTimes supported on files and directories but can't be changed without re-upload|
+|`DR/W`|Read and Write ModTimes fully supported on files and directories|
 
 Storage systems with a `-` in the ModTime column, means the
 modification read on objects is not the modification time of the

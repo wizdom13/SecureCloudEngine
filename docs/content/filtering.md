@@ -202,28 +202,18 @@ them into regular expressions.
 
 ## Filter pattern examples {#examples}
 
-| Description | Pattern | Matches | Does not match |
-| ----------- |-------- | ------- | -------------- |
-| Wildcard    | `*.jpg` | `/file.jpg`     | `/file.png`    |
-|             |         | `/dir/file.jpg` | `/dir/file.png` |
-| Rooted      | `/*.jpg` | `/file.jpg`    | `/file.png`    |
-|             |          | `/file2.jpg`    | `/dir/file.jpg` |
-| Alternates  | `*.{jpg,png}` | `/file.jpg`     | `/file.gif`    |
-|             |         | `/dir/file.png` | `/dir/file.gif` |
-| Path Wildcard | `dir/**` | `/dir/anyfile`     | `file.png`    |
-|             |          | `/subdir/dir/subsubdir/anyfile` | `/subdir/file.png` |
-| Any Char    | `*.t?t` | `/file.txt`     | `/file.qxt`    |
-|             |         | `/dir/file.tzt` | `/dir/file.png` |
-| Range       | `*.[a-z]` | `/file.a`     | `/file.0`    |
-|             |         | `/dir/file.b` | `/dir/file.1` |
-| Escape      | `*.\?\?\?` | `/file.???`     | `/file.abc`    |
-|             |         | `/dir/file.???` | `/dir/file.def` |
-| Class       | `*.\d\d\d` | `/file.012`     | `/file.abc`    |
-|             |         | `/dir/file.345` | `/dir/file.def` |
-| Regexp      | `*.{{jpe?g}}` | `/file.jpeg`     | `/file.png`    |
-|             |         | `/dir/file.jpg` | `/dir/file.jpeeg` |
-| Rooted Regexp | `/{{.*\.jpe?g}}` | `/file.jpeg`  | `/file.png`    |
-|             |                  | `/file.jpg`   | `/dir/file.jpg` |
+|Description|Pattern|Matches|Does not match|
+|-----------|-------|-------|--------------|
+|Wildcard|`*.jpg`|`/file.jpg`<br>`/dir/file.jpg`|`/file.png`<br>`/dir/file.png`|
+|Rooted|`/*.jpg`|`/file.jpg`<br>`/file2.jpg`|`/file.png`<br>`/dir/file.jpg`|
+|Alternates|`*.{jpg,png}`|`/file.jpg`<br>`/dir/file.png`|`/file.gif`<br>`/dir/file.gif`|
+|Path Wildcard|`dir/**`|`/dir/anyfile`<br>`/subdir/dir/subsubdir/anyfile`|`file.png`<br>`/subdir/file.png`|
+|Any Char|`*.t?t`|`/file.txt`<br>`/dir/file.tzt`|`/file.qxt`<br>`/dir/file.png`|
+|Range|`*.[a-z]`|`/file.a`<br>`/dir/file.b`|`/file.0`<br>`/dir/file.1`|
+|Escape|`*.\?\?\?`|`/file.???`<br>`/dir/file.???`|`/file.abc`<br>`/dir/file.def`|
+|Class|`*.\d\d\d`|`/file.012`<br>`/dir/file.345`|`/file.abc`<br>`/dir/file.def`|
+|Regexp|`*.{{jpe?g}}`|`/file.jpeg`<br>`/dir/file.jpg`|`/file.png`<br>`/dir/file.jpeeg`|
+|Rooted Regexp|`/{{.*\.jpe?g}}`|`/file.jpeg`<br>`/file.jpg`|`/file.png`<br>`/dir/file.jpg`|
 
 ## How filter rules are applied to files {#how-filter-rules-work}
 

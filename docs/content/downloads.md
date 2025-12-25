@@ -15,13 +15,13 @@ image](https://securebuild.com/images/rclone) through our partner
 
 ## Release {{% version %}} OS requirements {#osrequirements}
 
-| OS | Minimum Version |
-|:-------:|:-------:|
-| Linux | Kernel 3.2 |
-| macOS | 12 (Monterey) |
-| Windows | 10, Server 2016 |
-| FreeBSD | 12.2 |
-| OpenBSD | 6.9 |
+|OS|Minimum Version|
+|:---:|:-------------:|
+|Linux|Kernel 3.2|
+|macOS|12 (Monterey)|
+|Windows|10, Server 2016|
+|FreeBSD|12.2|
+|OpenBSD|6.9|
 
 These requirements come from the Go version that rclone is compiled with and are
 simplified from [minimum requirements](https://go.dev/wiki/MinimumRequirements)
@@ -30,16 +30,16 @@ in the Go Wiki.
 
 ## Release {{% version %}} {#release}
 
-| Arch-OS | Windows | macOS | Linux | .deb | .rpm | FreeBSD | NetBSD | OpenBSD | Plan9 | Solaris |
-|:-------:|:-------:|:-----:|:-----:|:----:|:----:|:-------:|:------:|:-------:|:-----:|:-------:|
-| Intel/AMD - 64 Bit | {{< download windows amd64 >}} | {{< download osx amd64 >}} | {{< download linux amd64 >}} | {{< download linux amd64 deb >}} | {{< download linux amd64 rpm >}} | {{< download freebsd amd64 >}} | {{< download netbsd amd64 >}} | {{< download openbsd amd64 >}} | {{< download plan9 amd64 >}} | {{< download solaris amd64 >}} |
-| Intel/AMD - 32 Bit | {{< download windows 386 >}} | - | {{< download linux 386 >}} | {{< download linux 386 deb >}} | {{< download linux 386 rpm >}} | {{< download freebsd 386 >}} | {{< download netbsd 386 >}} | {{< download openbsd 386 >}} | {{< download plan9 386 >}} | - |
-| ARMv5 - 32 Bit NOHF | - | - | {{< download linux arm >}} | {{< download linux arm deb >}} | {{< download linux arm rpm >}} | {{< download freebsd arm >}} | {{< download netbsd arm >}} | - | - | - |
-| ARMv6 - 32 Bit | - | - | {{< download linux arm-v6 >}} | {{< download linux arm-v6 deb >}} | {{< download linux arm-v6 rpm >}} | {{< download freebsd arm-v6 >}} | {{< download netbsd arm-v6 >}} | - | - | - |
-| ARMv7 - 32 Bit | - | - | {{< download linux arm-v7 >}} | {{< download linux arm-v7 deb >}} | {{< download linux arm-v7 rpm >}} | {{< download freebsd arm-v7 >}} | {{< download netbsd arm-v7 >}} | - | - | - |
-| ARM - 64 Bit | {{< download windows arm64 >}} | {{< download osx arm64 >}} | {{< download linux arm64 >}} | {{< download linux arm64 deb >}} | {{< download linux arm64 rpm >}} | - | - | - | - | - |
-| MIPS - Big Endian | - | - | {{< download linux mips >}} | {{< download linux mips deb >}} | {{< download linux mips rpm >}} | - | - | - | - | - |
-| MIPS - Little Endian | - | - | {{< download linux mipsle >}} | {{< download linux mipsle deb >}} | {{< download linux mipsle rpm >}} | - | - | - | - | - |
+|Arch-OS|Windows|macOS|Linux|.deb|.rpm|FreeBSD|NetBSD|OpenBSD|Plan9|Solaris|
+|:-----:|:-----:|:---:|:---:|:--:|:--:|:-----:|:----:|:-----:|:---:|:-----:|
+|Intel/AMD - 64 Bit|{{< download windows amd64 >}}|{{< download osx amd64 >}}|{{< download linux amd64 >}}|{{< download linux amd64 deb >}}|{{< download linux amd64 rpm >}}|{{< download freebsd amd64 >}}|{{< download netbsd amd64 >}}|{{< download openbsd amd64 >}}|{{< download plan9 amd64 >}}|{{< download solaris amd64 >}}|
+|Intel/AMD - 32 Bit|{{< download windows 386 >}}|-|{{< download linux 386 >}}|{{< download linux 386 deb >}}|{{< download linux 386 rpm >}}|{{< download freebsd 386 >}}|{{< download netbsd 386 >}}|{{< download openbsd 386 >}}|{{< download plan9 386 >}}|-|
+|ARMv5 - 32 Bit NOHF|-|-|{{< download linux arm >}}|{{< download linux arm deb >}}|{{< download linux arm rpm >}}|{{< download freebsd arm >}}|{{< download netbsd arm >}}|-|-|-|
+|ARMv6 - 32 Bit|-|-|{{< download linux arm-v6 >}}|{{< download linux arm-v6 deb >}}|{{< download linux arm-v6 rpm >}}|{{< download freebsd arm-v6 >}}|{{< download netbsd arm-v6 >}}|-|-|-|
+|ARMv7 - 32 Bit|-|-|{{< download linux arm-v7 >}}|{{< download linux arm-v7 deb >}}|{{< download linux arm-v7 rpm >}}|{{< download freebsd arm-v7 >}}|{{< download netbsd arm-v7 >}}|-|-|-|
+|ARM - 64 Bit|{{< download windows arm64 >}}|{{< download osx arm64 >}}|{{< download linux arm64 >}}|{{< download linux arm64 deb >}}|{{< download linux arm64 rpm >}}|-|-|-|-|-|
+|MIPS - Big Endian|-|-|{{< download linux mips >}}|{{< download linux mips deb >}}|{{< download linux mips rpm >}}|-|-|-|-|-|
+|MIPS - Little Endian|-|-|{{< download linux mipsle >}}|{{< download linux mipsle deb >}}|{{< download linux mipsle rpm >}}|-|-|-|-|-|
 
 <!-- markdownlint-disable-next-line no-bare-urls line-length -->
 You can also find a [mirror of the downloads on GitHub](https://github.com/rclone/rclone/releases/tag/{{< version >}}).
