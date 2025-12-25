@@ -288,49 +288,49 @@ Each cloud storage backend can use a different set of characters,
 which will be specified in the documentation for each backend.
 
 | Character | Value | Replacement |
-| --------- |:-----:|:-----------:|
-| NUL       | 0x00  | ␀           |
-| SOH       | 0x01  | ␁           |
-| STX       | 0x02  | ␂           |
-| ETX       | 0x03  | ␃           |
-| EOT       | 0x04  | ␄           |
-| ENQ       | 0x05  | ␅           |
-| ACK       | 0x06  | ␆           |
-| BEL       | 0x07  | ␇           |
-| BS        | 0x08  | ␈           |
-| HT        | 0x09  | ␉           |
-| LF        | 0x0A  | ␊           |
-| VT        | 0x0B  | ␋           |
-| FF        | 0x0C  | ␌           |
-| CR        | 0x0D  | ␍           |
-| SO        | 0x0E  | ␎           |
-| SI        | 0x0F  | ␏           |
-| DLE       | 0x10  | ␐           |
-| DC1       | 0x11  | ␑           |
-| DC2       | 0x12  | ␒           |
-| DC3       | 0x13  | ␓           |
-| DC4       | 0x14  | ␔           |
-| NAK       | 0x15  | ␕           |
-| SYN       | 0x16  | ␖           |
-| ETB       | 0x17  | ␗           |
-| CAN       | 0x18  | ␘           |
-| EM        | 0x19  | ␙           |
-| SUB       | 0x1A  | ␚           |
-| ESC       | 0x1B  | ␛           |
-| FS        | 0x1C  | ␜           |
-| GS        | 0x1D  | ␝           |
-| RS        | 0x1E  | ␞           |
-| US        | 0x1F  | ␟           |
-| /         | 0x2F  | ／           |
-| DEL       | 0x7F  | ␡           |
+| --------- | :---: | :---------: |
+| NUL | 0x00 | ␀ |
+| SOH | 0x01 | ␁ |
+| STX | 0x02 | ␂ |
+| ETX | 0x03 | ␃ |
+| EOT | 0x04 | ␄ |
+| ENQ | 0x05 | ␅ |
+| ACK | 0x06 | ␆ |
+| BEL | 0x07 | ␇ |
+| BS | 0x08 | ␈ |
+| HT | 0x09 | ␉ |
+| LF | 0x0A | ␊ |
+| VT | 0x0B | ␋ |
+| FF | 0x0C | ␌ |
+| CR | 0x0D | ␍ |
+| SO | 0x0E | ␎ |
+| SI | 0x0F | ␏ |
+| DLE | 0x10 | ␐ |
+| DC1 | 0x11 | ␑ |
+| DC2 | 0x12 | ␒ |
+| DC3 | 0x13 | ␓ |
+| DC4 | 0x14 | ␔ |
+| NAK | 0x15 | ␕ |
+| SYN | 0x16 | ␖ |
+| ETB | 0x17 | ␗ |
+| CAN | 0x18 | ␘ |
+| EM | 0x19 | ␙ |
+| SUB | 0x1A | ␚ |
+| ESC | 0x1B | ␛ |
+| FS | 0x1C | ␜ |
+| GS | 0x1D | ␝ |
+| RS | 0x1E | ␞ |
+| US | 0x1F | ␟ |
+| / | 0x2F | ／ |
+| DEL | 0x7F | ␡ |
 
 The default encoding will also encode these file names as they are
 problematic with many cloud storage systems.
 
 | File name | Replacement |
-| --------- |:-----------:|
-| .         | ．          |
-| ..        | ．．         |
+| --------- | :-----------: |
+| . | ． |
+| .. | ．． |
 
 #### Invalid UTF-8 bytes {#invalid-utf8}
 
@@ -370,8 +370,8 @@ list of all possible values by passing an invalid value to this
 flag, e.g. `--local-encoding "help"`. The command `rclone help flags encoding`
 will show you the defaults for the backends.
 
-| Encoding  | Characters | Encoded as |
-| --------- | ---------- | ---------- |
+| Encoding | Characters | Encoded as |
+| -------- | ---------- | ---------- |
 | Asterisk | `*` | `＊` |
 | BackQuote | `` ` `` | `｀` |
 | BackSlash | `\` | `＼` |
@@ -496,12 +496,12 @@ that backend) and/or user metadata (general purpose metadata).
 The levels of metadata support are
 
 | Key | Explanation |
-|-----|-------------|
-| `R` | Read only System Metadata on files only|
-| `RW` | Read and write System Metadata on files only|
-| `RWU` | Read and write System Metadata and read and write User Metadata on files only|
+| --- | ----------- |
+| `R` | Read only System Metadata on files only |
+| `RW` | Read and write System Metadata on files only |
+| `RWU` | Read and write System Metadata and read and write User Metadata on files only |
 | `DR` | Read only System Metadata on files and directories |
-| `DRW` | Read and write System Metadata on files and directories|
+| `DRW` | Read and write System Metadata on files and directories |
 | `DRWU` | Read and write System Metadata and read and write User Metadata on files and directories |
 
 See [the metadata docs](/docs/#metadata) for more info.
@@ -511,6 +511,7 @@ See [the metadata docs](/docs/#metadata) for more info.
 All rclone remotes support a base command set. Other features depend
 upon backend-specific capabilities.
 
+<!-- markdownlint-disable MD060 -->
 | Name                         | Purge | Copy | Move | DirMove | CleanUp | ListR | StreamUpload | MultithreadUpload | LinkSharing  | About | EmptyDir |
 | ---------------------------- |:-----:|:----:|:----:|:-------:|:-------:|:-----:|:------------:|:------------------|:------------:|:-----:|:--------:|
 | 1Fichier                     | No    | Yes  | Yes  | No      | No      | No    | No           | No                | Yes          | No    | Yes      |
@@ -566,6 +567,7 @@ upon backend-specific capabilities.
 | Zoho WorkDrive               | Yes   | Yes  | Yes  | Yes     | No      | No    | No           | No                | No           | Yes   | Yes      |
 | The local filesystem         | No    | No   | Yes  | Yes     | No      | No    | Yes          | Yes               | No           | Yes   | Yes      |
 
+<!-- markdownlint-enable MD060 -->
 ¹ Note Swift implements this in order to delete directory markers but
 it doesn't actually have a quicker way of deleting files other than
 deleting them individually.

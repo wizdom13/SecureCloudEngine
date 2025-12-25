@@ -202,6 +202,7 @@ them into regular expressions.
 
 ## Filter pattern examples {#examples}
 
+<!-- markdownlint-disable MD033 -->
 |Description|Pattern|Matches|Does not match|
 |-----------|-------|-------|--------------|
 |Wildcard|`*.jpg`|`/file.jpg`<br>`/dir/file.jpg`|`/file.png`<br>`/dir/file.png`|
@@ -214,6 +215,7 @@ them into regular expressions.
 |Class|`*.\d\d\d`|`/file.012`<br>`/dir/file.345`|`/file.abc`<br>`/dir/file.def`|
 |Regexp|`*.{{jpe?g}}`|`/file.jpeg`<br>`/dir/file.jpg`|`/file.png`<br>`/dir/file.jpeeg`|
 |Rooted Regexp|`/{{.*\.jpe?g}}`|`/file.jpeg`<br>`/file.jpg`|`/file.png`<br>`/dir/file.jpg`|
+<!-- markdownlint-enable MD033 -->
 
 ## How filter rules are applied to files {#how-filter-rules-work}
 
