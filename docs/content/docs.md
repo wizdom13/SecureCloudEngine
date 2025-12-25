@@ -751,21 +751,21 @@ object also.
 Here is a table of standard system metadata which, if appropriate, a
 backend may implement.
 
-| key                 | description | example |
-|---------------------|-------------|---------|
-| mode                | File type and mode: octal, unix style | 0100664 |
-| uid                 | User ID of owner: decimal number | 500 |
-| gid                 | Group ID of owner: decimal number | 500 |
-| rdev                | Device ID (if special file)  => hexadecimal | 0 |
-| atime               | Time of last access:  RFC 3339 | 2006-01-02T15:04:05.999999999Z07:00 |
-| mtime               | Time of last modification:  RFC 3339 | 2006-01-02T15:04:05.999999999Z07:00 |
-| btime               | Time of file creation (birth):  RFC 3339 | 2006-01-02T15:04:05.999999999Z07:00 |
-| utime               | Time of file upload:  RFC 3339 | 2006-01-02T15:04:05.999999999Z07:00 |
-| cache-control       | Cache-Control header | no-cache |
-| content-disposition | Content-Disposition header | inline |
-| content-encoding    | Content-Encoding header | gzip |
-| content-language    | Content-Language header | en-US |
-| content-type        | Content-Type header | text/plain |
+|key|description|example|
+|---|-----------|-------|
+|mode|File type and mode: octal, unix style|0100664|
+|uid|User ID of owner: decimal number|500|
+|gid|Group ID of owner: decimal number|500|
+|rdev|Device ID (if special file) => hexadecimal|0|
+|atime|Time of last access: RFC 3339|2006-01-02T15:04:05.999999999Z07:00|
+|mtime|Time of last modification: RFC 3339|2006-01-02T15:04:05.999999999Z07:00|
+|btime|Time of file creation (birth): RFC 3339|2006-01-02T15:04:05.999999999Z07:00|
+|utime|Time of file upload: RFC 3339|2006-01-02T15:04:05.999999999Z07:00|
+|cache-control|Cache-Control header|no-cache|
+|content-disposition|Content-Disposition header|inline|
+|content-encoding|Content-Encoding header|gzip|
+|content-language|Content-Language header|en-US|
+|content-type|Content-Type header|text/plain|
 
 The metadata keys `mtime` and `content-type` will take precedence if
 supplied in the metadata over reading the `Content-Type` or
@@ -1189,9 +1189,11 @@ in the following location:
 The `~` symbol in paths above represent the home directory of the current user
 on any OS, and the value is defined as following:
 
-- On Windows: `%HOME%` if defined, else `%USERPROFILE%`, or else `%HOMEDRIVE%\%HOMEPATH%`.
-- On Unix: `$HOME` if defined, else by looking up current user in OS-specific user
-  database (e.g. passwd file), or else use the result from shell command `cd && pwd`.
+- On Windows: `%HOME%` if defined, else `%USERPROFILE%`, or else
+  `%HOMEDRIVE%\\%HOMEPATH%`.
+- On Unix: `$HOME` if defined, else by looking up current user in
+  OS-specific user database (e.g. passwd file), or else use the result from
+  shell command `cd && pwd`.
 
 If you run `rclone config file` you will see where the default location is for
 you. Running `rclone config touch` will ensure a configuration file exists,
@@ -3437,11 +3439,11 @@ defined once. In order to allow a simple mechanism for adding one or
 many items, the input is treated as a [CSV encoded](https://godoc.org/encoding/csv)
 string. For example
 
-| Environment variable | Equivalent options |
-|----------------------|--------------------|
-| `RCLONE_EXCLUDE="*.jpg"` | `--exclude "*.jpg"` |
-| `RCLONE_EXCLUDE="*.jpg,*.png"` | `--exclude "*.jpg"` `--exclude "*.png"` |
-| `RCLONE_EXCLUDE='"*.jpg","*.png"'` | `--exclude "*.jpg"` `--exclude "*.png"` |
+|Environment variable|Equivalent options|
+|--------------------|------------------|
+|`RCLONE_EXCLUDE="*.jpg"`|`--exclude "*.jpg"`|
+|`RCLONE_EXCLUDE="*.jpg,*.png"`|`--exclude "*.jpg"` `--exclude "*.png"`|
+|`RCLONE_EXCLUDE='"*.jpg","*.png"'`|`--exclude "*.jpg"` `--exclude "*.png"`|
 | `RCLONE_EXCLUDE='"/directory with comma , in it /**"'` | `--exclude "/directory with comma , in it /**" |
 
 If `stringArray` options are defined as environment variables **and**
