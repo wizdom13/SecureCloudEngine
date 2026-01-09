@@ -48,16 +48,10 @@ LDFLAGS=--ldflags "-s -X github.com/rclone/rclone/fs.Version=$(TAG)"
 .PHONY: rclone test_all vars version
 
 rclone:
-ifeq ($(GO_OS),windows)
-	go run bin/resource_windows.go -version $(TAG) -syso resource_windows_`go env GOARCH`.syso
-endif
-	go build -v $(LDFLAGS) $(BUILDTAGS) $(BUILD_ARGS)
-ifeq ($(GO_OS),windows)
-	rm resource_windows_`go env GOARCH`.syso
-endif
+	go build -v $(LDFLAGS) $(BUILDTAGS) $(BUILD_ARGS) -o sce ./cmd/sce
 	mkdir -p `go env GOPATH`/bin/
-	cp -av rclone`go env GOEXE` `go env GOPATH`/bin/rclone`go env GOEXE`.new
-	mv -v `go env GOPATH`/bin/rclone`go env GOEXE`.new `go env GOPATH`/bin/rclone`go env GOEXE`
+	cp -av sce`go env GOEXE` `go env GOPATH`/bin/sce`go env GOEXE`.new
+	mv -v `go env GOPATH`/bin/sce`go env GOEXE`.new `go env GOPATH`/bin/sce`go env GOEXE`
 
 test_all:
 	go install $(LDFLAGS) $(BUILDTAGS) $(BUILD_ARGS) github.com/rclone/rclone/fstest/test_all
@@ -161,13 +155,13 @@ rcdocs: rclone
 
 install: rclone
 	install -d ${DESTDIR}/usr/bin
-	install ${GOPATH}/bin/rclone ${DESTDIR}/usr/bin
+	install ${GOPATH}/bin/sce ${DESTDIR}/usr/bin
 
 clean:
 	go clean ./...
 	find . -name \*~ | xargs -r rm -f
 	rm -rf build docs/public
-	rm -f rclone fs/operations/operations.test fs/sync/sync.test fs/test_all.log test.log
+	rm -f sce fs/operations/operations.test fs/sync/sync.test fs/test_all.log test.log
 
 website:
 	rm -rf docs/public

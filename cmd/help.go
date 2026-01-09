@@ -22,11 +22,11 @@ import (
 	"golang.org/x/text/language"
 )
 
-// Root is the main rclone command
+// Root is the main SecureCloudEngine command
 var Root = &cobra.Command{
-	Use:   "rclone",
-	Short: "Show help for rclone commands, flags and backends.",
-	Long: `Rclone syncs files to and from cloud storage providers as well as
+	Use:   "sce",
+	Short: "Show help for SecureCloudEngine commands, flags and backends.",
+	Long: `SecureCloudEngine syncs files to and from cloud storage providers as well as
 mounting them, listing them in lots of different ways.
 
 See the home page (https://rclone.org/) for installation, usage,
@@ -64,7 +64,7 @@ var (
 // Show the flags
 var helpFlags = &cobra.Command{
 	Use:   "flags [<filter>]",
-	Short: "Show the global flags for rclone",
+	Short: "Show the global flags for SecureCloudEngine",
 	Run: func(command *cobra.Command, args []string) {
 		command.Flags()
 		if GeneratingDocs {
@@ -150,7 +150,7 @@ func setupRootCommand(rootCmd *cobra.Command) {
 	cobra.AddTemplateFunc("showLocalFlags", func(cmd *cobra.Command) bool {
 		// Don't show local flags (which are the global ones on the root) on "rclone" and
 		// "rclone help" (which shows the global help)
-		return cmd.CalledAs() != "rclone" && cmd.CalledAs() != ""
+		return cmd.CalledAs() != "sce" && cmd.CalledAs() != ""
 	})
 	cobra.AddTemplateFunc("flagGroups", func(cmd *cobra.Command) []*flags.Group {
 		// Add the backend flags and check all flags
@@ -223,9 +223,9 @@ Flags:
 Additional help topics:{{range .Commands}}{{if .IsAdditionalHelpTopicCommand}}
   {{rpad .CommandPath .CommandPathPadding}} {{.Short}}{{end}}{{end}}{{end}}
 
-Use "rclone [command] --help" for more information about a command.
-Use "rclone help flags" for to see the global flags.
-Use "rclone help backends" for a list of supported services.
+Use "sce [command] --help" for more information about a command.
+Use "sce help flags" for to see the global flags.
+Use "sce help backends" for a list of supported services.
 `
 
 var filterFlagsSingleGroupTemplate = `{{range flagGroups .}}{{if .Flags.HasFlags}}{{.Flags.FlagUsages | trimTrailingWhitespaces}}
@@ -262,12 +262,12 @@ split into groups.
 
 // show all the backends
 func showBackends() {
-	fmt.Printf("All rclone backends:\n\n")
+	fmt.Printf("All SecureCloudEngine backends:\n\n")
 	for _, backend := range fs.Registry {
 		fmt.Printf("  %-12s %s\n", backend.Prefix, backend.Description)
 	}
 	fmt.Printf("\nTo see more info about a particular backend use:\n")
-	fmt.Printf("  rclone help backend <name>\n")
+	fmt.Printf("  sce help backend <name>\n")
 }
 
 func quoteString(v any) string {
@@ -317,7 +317,7 @@ func showBackend(name string) {
 			fmt.Printf("#### --%s%s\n\n", opt.FlagName(backend.Prefix), shortOpt)
 			fmt.Printf("%s\n\n", opt.Help)
 			if opt.IsPassword {
-				fmt.Printf("**NB** Input to this must be obscured - see [rclone obscure](/commands/rclone_obscure/).\n\n")
+				fmt.Printf("**NB** Input to this must be obscured - see [sce obscure](/commands/rclone_obscure/).\n\n")
 			}
 			fmt.Printf("Properties:\n\n")
 			fmt.Printf("- Config:      %s\n", opt.Name)
