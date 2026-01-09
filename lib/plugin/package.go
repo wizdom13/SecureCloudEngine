@@ -2,12 +2,12 @@
 // using https://golang.org/pkg/plugin/ on Linux and macOS.
 //
 // If the $RCLONE_PLUGIN_PATH is present, any Go plugins in that dir
-// named like librcloneplugin_NAME.so will be loaded.
+// named like rcloneplugin_NAME.so will be loaded.
 //
 // To create a plugin, write the backend package like it was in-tree
 // but set the package name to "main". Then, build the plugin with
 //
-//	go build -buildmode=plugin -o librcloneplugin_NAME.so
+//	go build -buildmode=plugin -o rcloneplugin_NAME.so
 //
 // where NAME equals the plugin's fs.RegInfo.Name.
 package plugin

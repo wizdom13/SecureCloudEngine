@@ -947,7 +947,7 @@ for upload:download, e.g.`10M:1M`.
 Entries can be separated by spaces or semicolons.
 
 **Note:** Semicolons can be used as separators instead of spaces to avoid
-parsing issues in environments like Docker.
+parsing issues in some environments.
 
 An example of a typical timetable to avoid link saturation during daytime
 working hours could be:

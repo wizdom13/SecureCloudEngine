@@ -104,26 +104,9 @@ rclone sync --interactive remote:directory /home/local/directory
 
 ### Setting up your own HDFS instance for testing
 
-You may start with a [manual setup](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html)
-or use the docker image from the tests:
+You may start with a [manual setup](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html).
 
-If you want to build the docker image
-
-```console
-git clone https://github.com/rclone/rclone.git
-cd rclone/fstest/testserver/images/test-hdfs
-docker build --rm -t rclone/test-hdfs .
-```
-
-Or you can just use the latest one pushed
-
-```console
-docker run --rm --name "rclone-hdfs" -p 127.0.0.1:9866:9866 -p 127.0.0.1:8020:8020 --hostname "rclone-hdfs" rclone/test-hdfs
-```
-
-**NB** it need few seconds to startup.
-
-For this docker image the remote needs to be configured like this:
+For a local test instance the remote can be configured like this:
 
 ```ini
 [remote]
@@ -132,8 +115,6 @@ namenode = 127.0.0.1:8020
 username = root
 ```
 
-You can stop this image with `docker kill rclone-hdfs` (**NB** it does not use
-volumes, so all data uploaded will be lost.)
 
 ### Modification times
 
@@ -200,8 +181,8 @@ Here are the Advanced options specific to hdfs (Hadoop distributed file system).
 Kerberos service principal name for the namenode.
 
 Enables KERBEROS authentication. Specifies the Service Principal Name
-(SERVICE/FQDN) for the namenode. E.g. \"hdfs/namenode.hadoop.docker\"
-for namenode running as service 'hdfs' with FQDN 'namenode.hadoop.docker'.
+(SERVICE/FQDN) for the namenode. E.g. "hdfs/namenode.hadoop.local"
+for namenode running as service 'hdfs' with FQDN 'namenode.hadoop.local'.
 
 Properties:
 

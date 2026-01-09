@@ -176,7 +176,11 @@ func Start(remote string) (fn func(), err error) {
 		configDir, err = findConfig()
 	})
 	if err != nil {
-		return nil, err
+		fs.Logf(name, "Test server helpers not available: %v", err)
+		return stopNothing, nil
+	}
+	if configDir == "" {
+		return stopNothing, nil
 	}
 
 	// If remote has no start command then do nothing

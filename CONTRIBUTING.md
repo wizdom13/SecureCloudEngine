@@ -338,7 +338,6 @@ with modules beneath.
   - mockdir - mocks an fs.Directory
   - mockobject - mocks an fs.Object
   - test_all - Runs integration tests for everything
-- graphics - the images used in the website, etc.
 - lib - libraries used by the backend
   - atexit - register functions to run when rclone exits
   - dircache - directory ID to name caching
@@ -346,7 +345,6 @@ with modules beneath.
   - pacer - retries with backoff and paces operations
   - readers - a selection of useful io.Readers
   - rest - a thin abstraction over net/http for REST
-- librclone - in memory interface to rclone's API for embedding rclone
 - vfs - Virtual FileSystem layer for implementing rclone mount and similar
 
 ## Writing Documentation
@@ -672,10 +670,10 @@ upstream or don't want to maintain a fork of rclone.
 ### Usage
 
 - Naming
-  - Plugins names must have the pattern `librcloneplugin_KIND_NAME.so`.
+  - Plugins names must have the pattern `rcloneplugin_KIND_NAME.so`.
   - `KIND` should be one of `backend`, `command` or `bundle`.
   - Example: A plugin with backend support for PiFS would be called
-    `librcloneplugin_backend_pifs.so`.
+    `rcloneplugin_backend_pifs.so`.
 - Loading
   - Supported on macOS & Linux as of now. ([Go issue for Windows support](https://github.com/golang/go/issues/19282))
   - Supported on rclone v1.50 or greater.

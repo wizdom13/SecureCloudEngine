@@ -36,8 +36,8 @@ func init() {
 			Help: `Kerberos service principal name for the namenode.
 
 Enables KERBEROS authentication. Specifies the Service Principal Name
-(SERVICE/FQDN) for the namenode. E.g. \"hdfs/namenode.hadoop.docker\"
-for namenode running as service 'hdfs' with FQDN 'namenode.hadoop.docker'.`,
+(SERVICE/FQDN) for the namenode. E.g. "hdfs/namenode.hadoop.local"
+for namenode running as service 'hdfs' with FQDN 'namenode.hadoop.local'.`,
 			Advanced:  true,
 			Sensitive: true,
 		}, {

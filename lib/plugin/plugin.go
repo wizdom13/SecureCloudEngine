@@ -24,7 +24,7 @@ func init() {
 	for _, file := range listing {
 		// Match name
 		fileName := file.Name()
-		if !strings.HasPrefix(fileName, "librcloneplugin_") {
+		if !strings.HasPrefix(fileName, "rcloneplugin_") {
 			continue
 		}
 		if !strings.HasSuffix(fileName, ".so") {
