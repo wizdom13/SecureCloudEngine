@@ -24,7 +24,6 @@ docs = [
     "rc.md",
     "overview.md",
     "flags.md",
-    "docker.md",
     "bisync.md",
     "release_signing.md",
 

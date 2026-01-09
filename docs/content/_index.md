@@ -7,9 +7,6 @@ notoc: true
 
 # Rclone syncs your files to cloud storage
 
-<!-- markdownlint-disable-next-line line-length -->
-{{< img width="50%" src="/img/logo_on_light__horizontal_color.svg" alt="rclone logo" style="float:right; padding: 5px;" >}}
-
 - [About rclone](#about)
 - [What can rclone do for you?](#what)
 - [What features does rclone have?](#features)

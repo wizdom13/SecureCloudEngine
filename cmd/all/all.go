@@ -58,7 +58,6 @@ import (
 	_ "github.com/rclone/rclone/cmd/selfupdate"
 	_ "github.com/rclone/rclone/cmd/serve"
 	_ "github.com/rclone/rclone/cmd/serve/dlna"
-	_ "github.com/rclone/rclone/cmd/serve/docker"
 	_ "github.com/rclone/rclone/cmd/serve/ftp"
 	_ "github.com/rclone/rclone/cmd/serve/http"
 	_ "github.com/rclone/rclone/cmd/serve/nfs"

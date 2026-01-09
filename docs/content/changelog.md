@@ -153,7 +153,6 @@ description: "Rclone Changelog"
 - Bug Fixes
   - build
     - update Go to 1.25.3
-    - Update Docker image Alpine version to fix CVE-2025-9230
   - bisync: Fix race when CaptureOutput is used concurrently (Nick Craig-Wood)
   - doc fixes (albertony, dougal, iTrooz, Matt LaPaglia, Nick Craig-Wood)
   - index: Add missing providers (dougal)
@@ -362,7 +361,6 @@ description: "Rclone Changelog"
   - backend: Skip hash calculation when the hashType is None (Oleksiy Stashok)
   - build
     - Update to go1.24 and make go1.22 the minimum required version (Nick Craig-Wood)
-    - Disable docker builds on PRs & add missing dockerfile changes (Anagh Kumar Baranwal)
     - Modernize Go usage (Nick Craig-Wood)
     - Update all dependencies (Nick Craig-Wood)
   - cmd/authorize: Show required arguments in help text (simwai)
@@ -371,7 +369,6 @@ description: "Rclone Changelog"
     - Tweak parsing of "rcloneremotename" config (Dan McArdle)
     - Permit remotes with options (Dan McArdle)
     - Reject unknown layout modes in INITREMOTE (Dan McArdle)
-  - docker image: Add label org.opencontainers.image.source for release notes in Renovate dependency updates (Robin Schneider)
   - doc fixes (albertony, Andrew Kreimer, Ben Boeckel, Christoph Berger, Danny Garside, Dimitri Papadopoulos, eccoisle, Ed Craig-Wood, Fernando Fernández, jack, Jeff Geerling, Jugal Kishore, kingston125, luzpaz, Markus Gerstel, Matt Ickstadt, Michael Kebe, Nick Craig-Wood, PrathameshLakawade, Ser-Bul, simonmcnair, Tim White, Zachary Vorhies)
   - filter:
     - Add `--hash-filter` to deterministically select a subset of files (Nick Craig-Wood)
@@ -478,7 +475,6 @@ description: "Rclone Changelog"
     - Update golang.org/x/net from 0.36.0 to 0.38.0 to fix CVE-2025-22870 (dependabot[bot])
     - Update golang.org/x/net to 0.36.0. to fix CVE-2025-22869 (dependabot[bot])
     - Stop building with go < go1.23 as security updates forbade it (Nick Craig-Wood)
-    - Fix docker plugin build (Anagh Kumar Baranwal)
   - cmd: Fix crash if rclone is invoked without any arguments (Janne Hellsten)
   - config: Read configuration passwords from stdin even when terminated with EOF (Samantha Bowen)
   - doc fixes (Andrew Kreimer, Danny Garside, eccoisle, Ed Craig-Wood, emyarod, jack, Jugal Kishore, Markus Gerstel, Michael Kebe, Nick Craig-Wood, simonmcnair, simwai, Zachary Vorhies)
@@ -519,7 +515,6 @@ description: "Rclone Changelog"
   - serve s3: Fix list objects encoding-type (Nick Craig-Wood)
   - fs: Fix confusing "didn't find section in config file" error (Nick Craig-Wood)
   - doc fixes (Christoph Berger, Dimitri Papadopoulos, Matt Ickstadt, Nick Craig-Wood, Tim White, Zachary Vorhies)
-  - build: Added parallel docker builds and caching for go build in the container (Anagh Kumar Baranwal)
 - VFS
   - Fix the cache failing to upload symlinks when `--links` was specified (Nick Craig-Wood)
   - Fix race detected by race detector (Nick Craig-Wood)
@@ -559,7 +554,6 @@ description: "Rclone Changelog"
     - Update all dependencies (Nick Craig-Wood)
     - Replace Windows-specific `NewLazyDLL` with `NewLazySystemDLL` (albertony)
   - cmd: Change exit code from 1 to 2 for syntax and usage errors (albertony)
-  - docker serve: make sure all mount and VFS options are parsed (Nick Craig-Wood)
   - doc fixes (albertony, Alexandre Hamez, Anthony Metzidis, buengese, Dan McArdle, David Seifert, Francesco Frassinelli, Michael R. Davis, Nick Craig-Wood, Pawel Palucha, Randy Bush, remygrandin, Sam Harrison, shenpengfeng, tgfisher, Thomas ten Cate, ToM, Tony Metzidis, vintagefuture, Yxxx)
   - fs: Make `--links` flag global and add new `--local-links` and `--vfs-links` flags (Nick Craig-Wood)
   - http servers: Disable automatic authentication skipping for unix sockets in http servers (Moises Lima)
@@ -580,7 +574,6 @@ description: "Rclone Changelog"
     - Fix debug printing when debug wasn't set (Nick Craig-Wood)
     - Fix race stopping/starting the stats counter (Nick Craig-Wood)
   - rc/job: Use mutex for adding listeners thread safety (hayden.pan)
-  - serve docker: Fix incorrect GID assignment (TAKEI Yuya)
   - serve nfs: Fix missing inode numbers which was messing up `ls -laR` (Nick Craig-Wood)
   - serve s3: Fix `Last-Modified` timestamp (Nick Craig-Wood)
   - serve sftp: Fix loading of authorized keys file with comment on last line (albertony)
@@ -703,13 +696,11 @@ description: "Rclone Changelog"
 [See commits](https://github.com/rclone/rclone/compare/v1.68.0...v1.68.1)
 
 - Bug Fixes
-  - build: Fix docker release build (ttionya)
   - doc fixes (Nick Craig-Wood, Pawel Palucha)
   - fs
     - Fix `--dump filters` not always appearing (Nick Craig-Wood)
     - Fix setting `stringArray` config values from environment variables (Nick Craig-Wood)
   - rc: Fix default value of `--metrics-addr` (Nick Craig-Wood)
-  - serve docker: Add missing `vfs-read-chunk-streams` option in docker volume driver (Divyam)
 - Onedrive
   - Fix spurious "Couldn't decode error response: EOF" DEBUG (Nick Craig-Wood)
 - Pikpak
@@ -1182,7 +1173,6 @@ instead of of `--size-only`, when `check` is not available.
   - build
     - Bump golang.org/x/crypto to fix ssh terrapin CVE-2023-48795 (dependabot)
     - Update to go1.21.5 to fix Windows path problems (Nick Craig-Wood)
-    - Fix docker build on arm/v6 (Nick Craig-Wood)
   - install.sh: fix harmless error message on install (Nick Craig-Wood)
   - accounting: fix stats to show server side transfers (Nick Craig-Wood)
   - doc fixes (albertony, ben-ba, Eli Orzitzer, emyarod, keongalvin, rarspace01)
@@ -1332,7 +1322,6 @@ instead of of `--size-only`, when `check` is not available.
 
 - Bug Fixes
   - selfupdate: Fix "invalid hashsum signature" error (Nick Craig-Wood)
-  - build: Fix docker build running out of space (Nick Craig-Wood)
 
 ## v1.64.1 - 2023-10-17
 
@@ -1549,7 +1538,6 @@ instead of of `--size-only`, when `check` is not available.
 - New Features
   - build
     - Modernise linters in use and fixup all affected code (albertony)
-    - Push docker beta to GHCR (GitHub container registry) (Richard Tweed)
   - cat: Add `--separator` option to cat command (Loren Gordon)
   - config
     - Do not remove/overwrite other files during config file save (albertony)
@@ -1560,7 +1548,6 @@ instead of of `--size-only`, when `check` is not available.
     - Add `size` to JSON logs when moving or copying an object (Nick Craig-Wood)
     - Allow boolean features to be enabled with `--disable !Feature` (Nick Craig-Wood)
   - genautocomplete: Rename to `completion` with alias to the old name (Nick Craig-Wood)
-  - librclone: Added example on using `librclone` with Go (alankrit)
   - lsjson: Make `--stat` more efficient (Nick Craig-Wood)
   - operations
     - Implement `--multi-thread-write-buffer-size` for speed improvements on downloads (Paulo Schreiner)
@@ -1702,7 +1689,6 @@ instead of of `--size-only`, when `check` is not available.
 [See commits](https://github.com/rclone/rclone/compare/v1.62.1...v1.62.2)
 
 - Bug Fixes
-  - docker volume plugin: Add missing fuse3 dependency (Nick Craig-Wood)
   - docs: Fix size documentation (asdffdsazqqq)
 - FTP
   - Fix 426 errors on downloads with vsftpd (Lesmiscore)
@@ -1712,7 +1698,6 @@ instead of of `--size-only`, when `check` is not available.
 [See commits](https://github.com/rclone/rclone/compare/v1.62.0...v1.62.1)
 
 - Bug Fixes
-  - docker: Add missing fuse3 dependency (cycneuramus)
   - build: Update release docs to be more careful with the tag (Nick Craig-Wood)
   - build: Set Github release to draft while uploading binaries (Nick Craig-Wood)
 
@@ -1749,7 +1734,6 @@ instead of of `--size-only`, when `check` is not available.
       - install.sh: fix ARMv6 download
       - version: Report ARM version
   - deletefile: Return error code 4 if file does not exist (Nick Craig-Wood)
-  - docker: Fix volume plugin does not remount volume on docker restart (logopk)
   - fs: Fix race conditions in `--max-delete` and `--max-delete-size` (Nick Craig-Wood)
   - lib/oauthutil: Handle fatal errors better (Alex Chen)
   - mount2: Fix `--allow-non-empty` (Nick Craig-Wood)
@@ -1851,7 +1835,6 @@ instead of of `--size-only`, when `check` is not available.
 - New Features
   - build: Add vulnerability testing using govulncheck (albertony)
   - cmd: Enable `SIGINFO` (Ctrl-T) handler on FreeBSD, NetBSD, OpenBSD and Dragonfly BSD (x3-apptech)
-  - config: Add [config/setpath](/rc/#config-setpath) for setting config path via rc/librclone (Nick Craig-Wood)
   - dedupe
     - Count Checks in the stats while scanning for duplicates (Nick Craig-Wood)
     - Make dedupe obey the filters (Nick Craig-Wood)
@@ -1986,7 +1969,6 @@ instead of of `--size-only`, when `check` is not available.
     - Install.sh: fix arm-v7 download (Ole Frost)
   - fs: Warn the user when using an existing remote name without a colon (Nick Craig-Wood)
   - httplib: Add `--xxx-min-tls-version` option to select minimum TLS version for HTTP servers (Robert Newson)
-  - librclone: Add PHP bindings and test program (Jordi Gonzalez Muñoz)
   - operations
     - Add `--server-side-across-configs` global flag for any backend (Nick Craig-Wood)
     - Optimise `--copy-dest` and `--compare-dest` (Nick Craig-Wood)
@@ -2123,7 +2105,6 @@ instead of of `--size-only`, when `check` is not available.
     - Update to go1.18 and make go1.16 the minimum required version (Nick Craig-Wood)
     - Update android go build to 1.18.x and NDK to 23.1.7779620 (Nick Craig-Wood)
     - All windows binaries now no longer CGO (Nick Craig-Wood)
-    - Add `linux/arm/v6` to docker images (Nick Craig-Wood)
     - A huge number of fixes found with [staticcheck](https://staticcheck.io/) (albertony)
     - Configurable version suffix independent of version number (albertony)
   - check: Implement `--no-traverse` and `--no-unicode-normalization` (Nick Craig-Wood)
@@ -2319,7 +2300,6 @@ instead of of `--size-only`, when `check` is not available.
   - filter: Add [`{{ regexp }}` syntax](/filtering/#regexp) to pattern matches (Nick Craig-Wood)
   - fshttp: Add prometheus metrics for HTTP status code (Michał Matczuk)
   - hashsum: Support creating hash from data received on stdin (albertony)
-  - librclone
     - Allow empty string or null input instead of empty json object (albertony)
     - Add support for mount commands (albertony)
   - operations: Add server-side moves to stats (Ole Frost)
@@ -2464,7 +2444,6 @@ instead of of `--size-only`, when `check` is not available.
   - lib/file: Improve error message when attempting to create dir on nonexistent drive on windows (albertony)
   - lib/http: Factor password hash salt into options with default (Nolan Woods)
   - lib/kv: Add key-value database api (Ivan Andreev)
-  - librclone
     - Add `RcloneFreeString` function (albertony)
     - Free strings in python example (albertony)
   - log: Optionally print pid in logs (Ivan Andreev)
@@ -2474,9 +2453,6 @@ instead of of `--size-only`, when `check` is not available.
   - serve sftp
     - Generate an ECDSA server key as well as RSA (Nick Craig-Wood)
     - Generate an Ed25519 server key as well as ECDSA and RSA (albertony)
-  - serve docker
-    - Allow to customize proxy settings of docker plugin (Ivan Andreev)
-    - Build docker plugin for multiple platforms (Thomas Stachl)
   - size: Include human-readable count (albertony)
   - touch: Add support for touching files in directory, with recursive option, filtering and `--dry-run`/`-i` (albertony)
   - tree: Option to print human-readable sizes removed in favor of global option (albertony)
@@ -2486,7 +2462,6 @@ instead of of `--size-only`, when `check` is not available.
     - Fix handling of SSL credentials (Nolan Woods)
   - serve ftp: Ensure modtime is passed as UTC always to fix timezone oddities (Nick Craig-Wood)
   - serve sftp: Fix generation of server keys on windows (albertony)
-  - serve docker: Fix octal umask (Ivan Andreev)
 - Mount
   - Enable rclone to be run as mount helper direct from the fstab (Ivan Andreev)
   - Use procfs to validate mount on linux (Ivan Andreev)
@@ -2611,8 +2586,6 @@ instead of of `--size-only`, when `check` is not available.
 - New backends
   - [Uptobox](/uptobox/) (buengese)
 - New commands
-  - [serve docker](/commands/rclone_serve_docker/) (Antoine GIRARD) (Ivan Andreev)
-    - and accompanying [docker volume plugin](/docker/)
   - [checksum](/commands/rclone_checksum/) to check files against a file of checksums (Ivan Andreev)
     - this is also available as `rclone md5sum -C` etc
   - [config touch](/commands/rclone_config_touch/): ensure config exists at configured location (albertony)
@@ -2624,7 +2597,6 @@ instead of of `--size-only`, when `check` is not available.
   - rework config system so it can be used non-interactively via cli and rc API.
     - See docs in [config create](/commands/rclone_config_create/)
     - This is a very big change to all the backends so may cause breakages - please file bugs!
-  - librclone - export the rclone RC as a C library (lewisxy) (Nick Craig-Wood)
     - Link a C-API rclone shared object into your project
     - Use the RC as an in memory interface
     - Python example supplied
@@ -2674,7 +2646,6 @@ instead of of `--size-only`, when `check` is not available.
   - operations: Don't update timestamps of files in `--compare-dest` (Nick Gaya)
   - selfupdate: fix archive name on macos (Ivan Andreev)
 - Mount
-  - Refactor before adding serve docker (Antoine GIRARD)
 - VFS
   - Add cache reset for `--vfs-cache-max-size` handling at cache poll interval (Leo Luan)
   - Fix modtime changing when reading file into cache (Nick Craig-Wood)
@@ -2815,7 +2786,6 @@ instead of of `--size-only`, when `check` is not available.
     - Use `GO386=softfloat` instead of deprecated `GO386=387` for 386 builds (Nick Craig-Wood)
     - Disable IOS builds for the time being (Nick Craig-Wood)
     - Androids builds made with up to date NDK (x0b)
-    - Add an rclone user to the Docker image but don't use it by default (cynthia kwok)
   - dedupe: Make largest directory primary to minimize data moved (Saksham Khanna)
   - config
     - Wrap config library in an interface (Fionera)
@@ -3191,9 +3161,7 @@ instead of of `--size-only`, when `check` is not available.
   - accounting: Fix data race in Transferred() (Maciej Zimnoch)
   - build
     - Stop tagged releases making a current beta (Nick Craig-Wood)
-    - Upgrade docker buildx action (Matteo Pietro Dazzi)
     - Add -buildmode to cross-compile.go (Nick Craig-Wood)
-    - Fix docker build by upgrading ilteoood/docker_buildx (Nick Craig-Wood)
     - Revert GitHub actions brew fix since this is now fixed (Nick Craig-Wood)
     - Fix brew install --cask syntax for macOS build (Nick Craig-Wood)
     - Update nfpm syntax to fix build of .deb/.rpm packages (Nick Craig-Wood)
@@ -3534,8 +3502,6 @@ instead of of `--size-only`, when `check` is not available.
 
 - Bug Fixes
   - build
-    - Fix docker release build action (Nick Craig-Wood)
-    - Fix custom timezone in Docker image (NoLooseEnds)
   - check: Fix misleading message which printed errors instead of differences (Nick Craig-Wood)
   - errors: Add WSAECONNREFUSED and more to the list of retriable Windows errors (Nick Craig-Wood)
   - rcd: Fix incorrect prometheus metrics (Gary Kim)
@@ -3563,10 +3529,6 @@ instead of of `--size-only`, when `check` is not available.
   - lib/file: Fix SetSparse on Windows 7 which fixes downloads of files > 250MB (Nick Craig-Wood)
   - build
     - Update go.mod to go1.14 to enable -mod=vendor build (Nick Craig-Wood)
-    - Remove quicktest from Dockerfile (Nick Craig-Wood)
-    - Build Docker images with GitHub actions (Matteo Pietro Dazzi)
-    - Update Docker build workflows (Nick Craig-Wood)
-    - Set user_allow_other in /etc/fuse.conf in the Docker image (Nick Craig-Wood)
     - Fix xgo build after go1.14 go.mod update (Nick Craig-Wood)
   - docs
     - Add link to source and modified time to footer of every page (Nick Craig-Wood)
@@ -3624,7 +3586,6 @@ all the docs and Edward Barker for helping re-write the front page.
   - build
     - Update to use go1.14 for the build (Nick Craig-Wood)
     - Add `-trimpath` to release build for reproduceable builds (Nick Craig-Wood)
-    - Remove GOOS and GOARCH from Dockerfile (Brandon Philips)
   - config
     - Fsync the config file after writing to save more reliably (Nick Craig-Wood)
     - Add `--obscure` and `--no-obscure` flags to `config create`/`update` (Nick Craig-Wood)
@@ -4014,13 +3975,10 @@ all the docs and Edward Barker for helping re-write the front page.
     - Build rclone with GitHub actions (Nick Craig-Wood)
     - Convert python scripts to python3 (Nick Craig-Wood)
     - Swap Azure/go-ansiterm for mattn/go-colorable (Nick Craig-Wood)
-    - Dockerfile fixes (Matei David)
     - Add [plugin support](https://github.com/rclone/rclone/blob/master/CONTRIBUTING.md#writing-a-plugin) for backends and commands (Richard Patel)
   - config
     - Use alternating Red/Green in config to make more obvious (Nick Craig-Wood)
   - contrib
-    - Add sample DLNA server Docker Compose manifest. (pataquets)
-    - Add sample WebDAV server Docker Compose manifest. (pataquets)
   - copyurl
     - Add `--auto-filename` flag for using file name from URL in destination path (Denis)
   - serve dlna:
@@ -4132,7 +4090,6 @@ all the docs and Edward Barker for helping re-write the front page.
 ## v1.49.2 - 2019-09-08
 
 - New Features
-  - build: Add Docker workflow support (Alfonso Montero)
 - Bug Fixes
   - accounting: Fix locking in Transfer to avoid deadlock with `--progress` (Nick Craig-Wood)
   - docs: Fix template argument for mktemp in install.sh (Cnly)

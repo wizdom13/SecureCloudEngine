@@ -4,9 +4,14 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"image"
+	"image/color"
+	"image/jpeg"
 	"io"
 	"net/http"
+	"os"
 	"path"
+	"path/filepath"
 	"testing"
 	"time"
 
@@ -27,6 +32,26 @@ const (
 	fileNameUpload = "rclone-test-image2.jpg"
 )
 
+func writeTestImage(t *testing.T, dir, name string) string {
+	t.Helper()
+	filePath := filepath.Join(dir, name)
+	file, err := os.Create(filePath)
+	require.NoError(t, err)
+	defer func() {
+		require.NoError(t, file.Close())
+	}()
+
+	img := image.NewRGBA(image.Rect(0, 0, 200, 200))
+	for y := 0; y < 200; y++ {
+		for x := 0; x < 200; x++ {
+			img.SetRGBA(x, y, color.RGBA{R: 0x12, G: 0x34, B: 0x56, A: 0xff})
+		}
+	}
+
+	require.NoError(t, jpeg.Encode(file, img, &jpeg.Options{Quality: 90}))
+	return filePath
+}
+
 func TestIntegration(t *testing.T) {
 	ctx := context.Background()
 	fstest.Initialise()
@@ -41,8 +66,12 @@ func TestIntegration(t *testing.T) {
 	}
 	require.NoError(t, err)
 
+	tempDir := t.TempDir()
+	writeTestImage(t, tempDir, fileNameAlbum)
+	writeTestImage(t, tempDir, fileNameUpload)
+
 	// Create local Fs pointing at testfiles
-	localFs, err := fs.NewFs(ctx, "testfiles")
+	localFs, err := fs.NewFs(ctx, tempDir)
 	require.NoError(t, err)
 
 	t.Run("CreateAlbum", func(t *testing.T) {

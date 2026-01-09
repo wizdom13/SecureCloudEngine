@@ -10,8 +10,8 @@
 // run by "go generate" or "go run", but it will not make sense if this
 // program's source is moved out from the source tree.
 //
-// Can be used for rclone.exe (default), and other binaries such as
-// librclone.dll (must be specified with flag -binary).
+// Can be used for rclone.exe (default), and other Windows binaries
+// (must be specified with flag -binary).
 //
 
 //go:generate go run resource_windows.go
@@ -41,10 +41,10 @@ func main() {
 	}
 
 	// Define flags
-	binary := flag.String("binary", "rclone.exe", `The name of the binary to generate resource for, e.g. "rclone.exe" or "librclone.dll"`)
+	binary := flag.String("binary", "rclone.exe", `The name of the binary to generate resource for, e.g. "rclone.exe"`)
 	arch := flag.String("arch", runtime.GOARCH, `Architecture of resource file, or the target GOARCH, "386", "amd64", "arm", or "arm64"`)
 	version := flag.String("version", fs.Version, "Version number or tag name")
-	icon := flag.String("icon", path.Join(projectDir, "graphics/logo/ico/logo_symbol_color.ico"), "Path to icon file to embed in an .exe binary")
+	icon := flag.String("icon", "", "Path to icon file to embed in an .exe binary (optional)")
 	dir := flag.String("dir", projectDir, "Path to output directory where to write the resulting system object file (.syso), with a default name according to -arch (resource_windows_<arch>.syso), only considered if not -syso is specified")
 	syso := flag.String("syso", "", "Path to output resource system object file (.syso) to be created/overwritten, ignores -dir")
 

@@ -31,9 +31,8 @@ However, if you want to access Sia daemon running on another node, for example
 due to memory constraints or because you want to share single daemon between
 several rclone and Sia-UI instances, you'll need to make a few more provisions:
 
-- Ensure you have *Sia daemon* installed directly or in
-  a [docker container](https://github.com/SiaFoundation/siad/pkgs/container/siad)
-  because Sia-UI does not support this mode natively.
+- Ensure you have the *Sia daemon* installed directly because Sia-UI does not
+  support this mode natively.
 - Run it on externally accessible port, for example provide `--api-addr :9980`
   and `--disable-api-security` arguments on the daemon command line.
 - Enforce API password for the `siad` daemon via environment variable
