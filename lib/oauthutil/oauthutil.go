@@ -74,7 +74,7 @@ Error: {{ .Name }}<br>
 {{ if .Code }}Code: {{ .Code }}<br>{{ end }}
 {{ if .HelpURL }}Look here for help: <a href="{{ .HelpURL }}">{{ .HelpURL }}</a><br>{{ end }}
 {{ else }}
-All done. Please go back to rclone.
+All done. Please go back to SecureCloud.
 {{ end }}
 </pre>
 </body>
@@ -175,7 +175,7 @@ type oldToken struct {
 func GetToken(name string, m configmap.Mapper) (*oauth2.Token, error) {
 	tokenString, ok := m.Get(config.ConfigToken)
 	if !ok || tokenString == "" {
-		return nil, fmt.Errorf("empty token found - please run \"rclone config reconnect %s:\"", name)
+		return nil, fmt.Errorf("empty token found - please run \"sce config reconnect %s:\"", name)
 	}
 	token := new(oauth2.Token)
 	err := json.Unmarshal([]byte(tokenString), token)
@@ -281,7 +281,7 @@ func maybeWrapOAuthError(err error, remoteName string) (newErr error) {
 			fs.Debugf(remoteName, "got fatal oauth error: %v", rErr)
 			var resp retrieveErrResponse
 			if err = json.Unmarshal(rErr.Body, &resp); err != nil {
-				newErr = fmt.Errorf("(can't decode error info) - try refreshing token with \"rclone config reconnect %s:\"", remoteName)
+				newErr = fmt.Errorf("(can't decode error info) - try refreshing token with \"sce config reconnect %s:\"", remoteName)
 				return
 			}
 			var suggestion string
@@ -291,7 +291,7 @@ func maybeWrapOAuthError(err error, remoteName string) (newErr error) {
 			case "invalid_grant":
 				fallthrough
 			default:
-				suggestion = fmt.Sprintf("maybe token expired? - try refreshing with \"rclone config reconnect %s:\"", remoteName)
+				suggestion = fmt.Sprintf("maybe token expired? - try refreshing with \"sce config reconnect %s:\"", remoteName)
 			}
 			newErr = fmt.Errorf("%s: %s", resp.Error, suggestion)
 		}
@@ -330,7 +330,7 @@ func (ts *TokenSource) Token() (*oauth2.Token, error) {
 				changed = true
 			} else if !ts.config.ClientCredentialFlow && ts.token.RefreshToken == "" {
 				return nil, fserrors.FatalError(
-					fmt.Errorf("token expired and there's no refresh token - manually refresh with \"rclone config reconnect %s:\"", ts.name),
+					fmt.Errorf("token expired and there's no refresh token - manually refresh with \"sce config reconnect %s:\"", ts.name),
 				)
 			}
 		}
@@ -640,7 +640,7 @@ func ConfigOAuth(ctx context.Context, name string, m configmap.Mapper, ri *fs.Re
 			// If using client credential flow, skip straight to getting the token since we don't need a browser
 			return fs.ConfigGoto(newState("*oauth-do"))
 		}
-		return fs.ConfigConfirm(newState("*oauth-islocal"), true, "config_is_local", "Use web browser to automatically authenticate rclone with remote?\n * Say Y if the machine running rclone has a web browser you can use\n * Say N if running rclone on a (remote) machine without web browser access\nIf not sure try Y. If Y failed, try N.\n")
+		return fs.ConfigConfirm(newState("*oauth-islocal"), true, "config_is_local", "Use web browser to automatically authenticate SecureCloudEngine with remote?\n * Say Y if the machine running SecureCloudEngine has a web browser you can use\n * Say N if running SecureCloudEngine on a (remote) machine without web browser access\nIf not sure try Y. If Y failed, try N.\n")
 	case "*oauth-islocal":
 		if in.Result == "true" {
 			return fs.ConfigGoto(newState("*oauth-do"))
@@ -659,7 +659,7 @@ func ConfigOAuth(ctx context.Context, name string, m configmap.Mapper, ri *fs.Re
 			return fs.ConfigInput(newState("*oauth-do"), "config_verification_code", fmt.Sprintf("Verification code\n\nGo to this URL, authenticate then paste the code here.\n\n%s\n", authURL))
 		}
 		var out strings.Builder
-		fmt.Fprintf(&out, `For this to work, you will need rclone available on a machine that has
+		fmt.Fprintf(&out, `For this to work, you will need SecureCloudEngine available on a machine that has
 a web browser available.
 
 For more help and alternate methods see: https://rclone.org/remote_setup/
@@ -699,7 +699,7 @@ version recommended):
 			err = json.Unmarshal([]byte(code), &token)
 		}
 		if err != nil {
-			return fs.ConfigError(newState("*oauth-authorize"), fmt.Sprintf("Couldn't decode response - try again (make sure you are using a matching version of rclone on both sides: %v\n", err))
+			return fs.ConfigError(newState("*oauth-authorize"), fmt.Sprintf("Couldn't decode response - try again (make sure you are using a matching version of SecureCloudEngine on both sides: %v\n", err))
 		}
 		// Save the config updates
 		if newFormat {
@@ -869,7 +869,7 @@ func configSetup(ctx context.Context, id, name string, m configmap.Mapper, oauth
 	} else {
 		fs.Logf(nil, "Please go to the following link: %s\n", authURL)
 	}
-	fs.Logf(nil, "Log in and authorize rclone for access\n")
+	fs.Logf(nil, "Log in and authorize SecureCloudEngine for access\n")
 
 	// Read the code via the webserver
 	fs.Logf(nil, "Waiting for code...\n")
