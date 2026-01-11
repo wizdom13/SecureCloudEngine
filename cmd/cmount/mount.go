@@ -8,9 +8,9 @@ package cmount
 import (
 	"errors"
 	"fmt"
-	"strings"
 	"os"
 	"runtime"
+	"strings"
 	"time"
 
 	"github.com/rclone/rclone/cmd/mountlib"

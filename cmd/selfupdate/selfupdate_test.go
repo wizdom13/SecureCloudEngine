@@ -50,6 +50,9 @@ func TestInstallOnLinux(t *testing.T) {
 	if runtime.GOOS != "linux" {
 		t.Skip("this is a Linux only test")
 	}
+	if os.Geteuid() == 0 {
+		t.Skip("skipping selfupdate test when running as root")
+	}
 
 	// Prepare for test
 	ctx := context.Background()

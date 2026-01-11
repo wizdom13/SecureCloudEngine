@@ -105,35 +105,7 @@ rclone sync --interactive remote:directory /home/local/directory
 ### Setting up your own HDFS instance for testing
 
 You may start with a [manual setup](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html)
-or use the docker image from the tests:
-
-If you want to build the docker image
-
-```console
-git clone https://github.com/rclone/rclone.git
-cd rclone/fstest/testserver/images/test-hdfs
-docker build --rm -t rclone/test-hdfs .
-```
-
-Or you can just use the latest one pushed
-
-```console
-docker run --rm --name "rclone-hdfs" -p 127.0.0.1:9866:9866 -p 127.0.0.1:8020:8020 --hostname "rclone-hdfs" rclone/test-hdfs
-```
-
-**NB** it need few seconds to startup.
-
-For this docker image the remote needs to be configured like this:
-
-```ini
-[remote]
-type = hdfs
-namenode = 127.0.0.1:8020
-username = root
-```
-
-You can stop this image with `docker kill rclone-hdfs` (**NB** it does not use
-volumes, so all data uploaded will be lost.)
+to stand up a test instance.
 
 ### Modification times
 

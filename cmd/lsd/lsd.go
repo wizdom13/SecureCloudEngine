@@ -44,9 +44,9 @@ Or
 
 ` + "```console" + `
 $ rclone lsd drive:test
-          -1 2016-10-17 17:41:53        -1 1000files
-          -1 2017-01-03 14:40:54        -1 2500files
-          -1 2017-07-08 14:39:28        -1 4000files
+           - 2016-10-17 17:41:53         - 1000files
+           - 2017-01-03 14:40:54         - 2500files
+           - 2017-07-08 14:39:28         - 4000files
 ` + "```" + `
 
 If you just want the directory names use ` + "`rclone lsf --dirs-only`" + `.

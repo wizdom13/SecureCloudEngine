@@ -6,6 +6,7 @@ import (
 	"context"
 	"errors"
 	"io"
+	"os"
 	"testing"
 
 	"github.com/ncw/swift/v2"
@@ -22,6 +23,9 @@ import (
 
 // TestIntegration runs integration tests against the remote
 func TestIntegration(t *testing.T) {
+	if _, err := os.Stat("fstest/testserver/init.d/docker.bash"); err != nil {
+		t.Skip("skipping Swift integration tests that require docker-based test servers")
+	}
 	fstests.Run(t, &fstests.Opt{
 		RemoteName: "TestSwiftAIO:",
 		NilObject:  (*Object)(nil),

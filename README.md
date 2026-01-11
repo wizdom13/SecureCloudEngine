@@ -1,8 +1,3 @@
-<!-- markdownlint-disable-next-line first-line-heading no-inline-html -->
-[<img src="https://rclone.org/img/logo_on_light__horizontal_color.svg" width="50%" alt="rclone logo">](https://rclone.org/#gh-light-mode-only)
-<!-- markdownlint-disable-next-line no-inline-html -->
-[<img src="https://rclone.org/img/logo_on_dark__horizontal_color.svg" width="50%" alt="rclone logo">](https://rclone.org/#gh-dark-mode-only)
-
 [Website](https://rclone.org) |
 [Documentation](https://rclone.org/docs/) |
 [Download](https://rclone.org/downloads/) |
@@ -14,8 +9,6 @@
 [![Build Status](https://github.com/rclone/rclone/workflows/build/badge.svg)](https://github.com/rclone/rclone/actions?query=workflow%3Abuild)
 [![Go Report Card](https://goreportcard.com/badge/github.com/rclone/rclone)](https://goreportcard.com/report/github.com/rclone/rclone)
 [![GoDoc](https://godoc.org/github.com/rclone/rclone?status.svg)](https://godoc.org/github.com/rclone/rclone)
-[![Docker Pulls](https://img.shields.io/docker/pulls/rclone/rclone)](https://hub.docker.com/r/rclone/rclone)
-
 # Rclone
 
 Rclone *("rsync for cloud storage")* is a command-line program to sync files and

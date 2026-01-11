@@ -203,6 +203,10 @@ func skipE2eTestIfNecessary(t *testing.T) {
 		t.Skipf("GOOS %q is not supported.", runtime.GOOS)
 	}
 
+	if _, err := exec.LookPath("rclone"); err != nil {
+		t.Skipf("Skipping because rclone was not found: %s", err)
+	}
+
 	if err := checkRcloneBinaryVersion(t); err != nil {
 		t.Skipf("Skipping due to rclone version: %s", err)
 	}

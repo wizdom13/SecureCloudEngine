@@ -3,8 +3,10 @@
 package logger_test
 
 import (
+	"net"
 	"path/filepath"
 	"testing"
+	"time"
 
 	"github.com/rclone/rclone/fs/logger"
 	"github.com/rogpeppe/go-internal/testscript"
@@ -22,6 +24,11 @@ func TestMain(m *testing.M) {
 
 func TestLogger(t *testing.T) {
 	// Usage: https://bitfieldconsulting.com/golang/cli-testing
+	conn, err := net.DialTimeout("tcp", "github.com:443", 2*time.Second)
+	if err != nil {
+		t.Skip("skipping logger tests; network access to github.com is unavailable")
+	}
+	_ = conn.Close()
 
 	testscript.Run(t, testscript.Params{
 		Dir: "testdata/script",

@@ -10,24 +10,19 @@ aliases:
 
 Thank you to our sponsors:
 
-<!-- markdownlint-capture -->
-<!-- markdownlint-disable line-length no-bare-urls -->
-
-{{< sponsor src="/img/logos/rabata/txt_1_300x114.png" width="300" height="200" title="Visit our sponsor Rabata.io" link="https://rabata.io/?utm_source=banner&utm_medium=rclone&utm_content=general">}}
-{{< sponsor src="/img/logos/idrive_e2.svg" width="300" height="200" title="Visit our sponsor IDrive e2" link="https://www.idrive.com/e2/?refer=rclone">}}
-{{< sponsor src="/img/logos/filescom-enterprise-grade-workflows.png" width="300" height="200" title="Start Your Free Trial Today" link="https://files.com/?utm_source=rclone&utm_medium=referral&utm_campaign=banner&utm_term=rclone">}}
-{{< sponsor src="/img/logos/mega-s4.svg" width="300" height="200" title="MEGA S4: New S3 compatible object storage. High scale. Low cost. Free egress." link="https://mega.io/objectstorage?utm_source=rclone&utm_medium=referral&utm_campaign=rclone-mega-s4&mct=rclonepromo">}}
-{{< sponsor src="/img/logos/sia.svg" width="200" height="200" title="Visit our sponsor sia" link="https://sia.tech">}}
-{{< sponsor src="/img/logos/route4me.svg" width="400" height="200" title="Visit our sponsor Route4Me" link="https://route4me.com/">}}
-{{< sponsor src="/img/logos/rcloneview-banner.svg" width="300" height="200" title="Visit our sponsor RcloneView" link="https://rcloneview.com/">}}
-{{< sponsor src="/img/logos/rcloneui.svg" width="300" height="200" title="Visit our sponsor RcloneUI" link="https://github.com/rclone-ui/rclone-ui">}}
-{{< sponsor src="/img/logos/shade.svg" width="300" height="200" title="Visit our sponsor Shade" link="https://shade.inc">}}
-{{< sponsor src="/img/logos/filelu-rclone.svg" width="300" height="200" title="Visit our sponsor FileLu" link="https://filelu.com/">}}
-{{< sponsor src="/img/logos/torbox.png" width="200" height="200" title="Visit our sponsor TORBOX" link="https://www.torbox.app/">}}
-{{< sponsor src="/img/logos/spectra-logic.svg" width="300" height="200" title="Visit our sponsor Spectra Logic" link="https://spectralogic.com/">}}
-{{< sponsor src="/img/logos/servercore.svg" width="300" height="200" title="Visit our sponsor servercore" link="https://servercore.com/services/object-storage/?utm_source=rclone.org&utm_medium=referral&utm_campaign=cloud-s3_rclone_231025_paid">}}
-
-<!-- markdownlint-restore -->
+- [Rabata.io](https://rabata.io/?utm_source=banner&utm_medium=rclone&utm_content=general)
+- [IDrive e2](https://www.idrive.com/e2/?refer=rclone)
+- [Files.com](https://files.com/?utm_source=rclone&utm_medium=referral&utm_campaign=banner&utm_term=rclone)
+- [MEGA S4](https://mega.io/objectstorage?utm_source=rclone&utm_medium=referral&utm_campaign=rclone-mega-s4&mct=rclonepromo)
+- [Sia](https://sia.tech)
+- [Route4Me](https://route4me.com/)
+- [RcloneView](https://rcloneview.com/)
+- [rclone UI](https://github.com/rclone-ui/rclone-ui)
+- [Shade](https://shade.inc)
+- [FileLu](https://filelu.com/)
+- [TORBOX](https://www.torbox.app/)
+- [Spectra Logic](https://spectralogic.com/)
+- [Servercore](https://servercore.com/services/object-storage/?utm_source=rclone.org&utm_medium=referral&utm_campaign=cloud-s3_rclone_231025_paid)
 
 Rclone is a free open-source project with thousands of contributions
 from volunteers all round the world and I would like to thank all of

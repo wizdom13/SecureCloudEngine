@@ -34,6 +34,9 @@ func TestWriteFileHandleReadonly(t *testing.T) {
 	if runtime.GOOS == "windows" {
 		t.Skipf("Skipping test on %s", runtime.GOOS)
 	}
+	if os.Geteuid() == 0 {
+		t.Skip("Skipping readonly permission test when running as root")
+	}
 	if *fstest.RemoteName != "" {
 		t.Skip("Skipping test on non local remote")
 	}

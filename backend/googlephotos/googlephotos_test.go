@@ -4,8 +4,13 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"image"
+	"image/color"
+	"image/draw"
+	"image/jpeg"
 	"io"
 	"net/http"
+	"os"
 	"path"
 	"testing"
 	"time"
@@ -27,6 +32,25 @@ const (
 	fileNameUpload = "rclone-test-image2.jpg"
 )
 
+func writeTestJPEG(t *testing.T, dir, name string, fill color.Color) string {
+	t.Helper()
+
+	img := image.NewRGBA(image.Rect(0, 0, 128, 128))
+	draw.Draw(img, img.Bounds(), &image.Uniform{C: fill}, image.Point{}, draw.Src)
+
+	filePath := path.Join(dir, name)
+	file, err := os.Create(filePath)
+	require.NoError(t, err)
+	defer func() {
+		require.NoError(t, file.Close())
+	}()
+
+	err = jpeg.Encode(file, img, &jpeg.Options{Quality: 80})
+	require.NoError(t, err)
+
+	return filePath
+}
+
 func TestIntegration(t *testing.T) {
 	ctx := context.Background()
 	fstest.Initialise()
@@ -41,8 +65,12 @@ func TestIntegration(t *testing.T) {
 	}
 	require.NoError(t, err)
 
-	// Create local Fs pointing at testfiles
-	localFs, err := fs.NewFs(ctx, "testfiles")
+	tempDir := t.TempDir()
+	writeTestJPEG(t, tempDir, fileNameAlbum, color.RGBA{R: 180, G: 10, B: 10, A: 255})
+	writeTestJPEG(t, tempDir, fileNameUpload, color.RGBA{R: 10, G: 180, B: 10, A: 255})
+
+	// Create local Fs pointing at generated test files
+	localFs, err := fs.NewFs(ctx, tempDir)
 	require.NoError(t, err)
 
 	t.Run("CreateAlbum", func(t *testing.T) {

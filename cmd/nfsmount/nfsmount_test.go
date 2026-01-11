@@ -8,6 +8,8 @@ import (
 	"os"
 	"os/exec"
 	"runtime"
+	"strconv"
+	"strings"
 	"testing"
 
 	"github.com/rclone/rclone/cmd/serve/nfs"
@@ -25,7 +27,32 @@ func commandOK(name string, arg ...string) bool {
 	return err == nil
 }
 
+func hasCapSysAdmin() bool {
+	data, err := os.ReadFile("/proc/self/status")
+	if err != nil {
+		return false
+	}
+	for _, line := range strings.Split(string(data), "\n") {
+		if strings.HasPrefix(line, "CapEff:") {
+			fields := strings.Fields(line)
+			if len(fields) < 2 {
+				return false
+			}
+			value, err := strconv.ParseUint(fields[1], 16, 64)
+			if err != nil {
+				return false
+			}
+			const capSysAdmin = 1 << 21
+			return value&capSysAdmin != 0
+		}
+	}
+	return false
+}
+
 func TestMount(t *testing.T) {
+	if runtime.GOOS == "linux" && !hasCapSysAdmin() {
+		t.Skip("missing CAP_SYS_ADMIN capability for mount tests")
+	}
 	if runtime.GOOS != "darwin" {
 		if !commandOK("sudo", "-n", "mount", "--help") {
 			t.Skip("Can't run sudo mount without a password")

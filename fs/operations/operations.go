@@ -856,6 +856,26 @@ func CountStringField(count int64, humanReadable bool, rawWidth int) string {
 	return fmt.Sprintf("%[2]*[1]s", str, rawWidth)
 }
 
+func dirSizeStringField(size int64, humanReadable bool, rawWidth int) string {
+	if size < 0 {
+		if humanReadable {
+			return fmt.Sprintf("%9s", "-")
+		}
+		return fmt.Sprintf("%[2]*[1]s", "-", rawWidth)
+	}
+	return SizeStringField(size, humanReadable, rawWidth)
+}
+
+func dirCountStringField(count int64, humanReadable bool, rawWidth int) string {
+	if count < 0 {
+		if humanReadable {
+			return fmt.Sprintf("%8s", "-")
+		}
+		return fmt.Sprintf("%[2]*[1]s", "-", rawWidth)
+	}
+	return CountStringField(count, humanReadable, rawWidth)
+}
+
 // List the Fs to the supplied writer
 //
 // Shows size and path - obeys includes and excludes.
@@ -1042,7 +1062,9 @@ func ListDir(ctx context.Context, f fs.Fs, w io.Writer) error {
 	return walk.ListR(ctx, f, "", false, ConfigMaxDepth(ctx, false), walk.ListDirs, func(entries fs.DirEntries) error {
 		entries.ForDir(func(dir fs.Directory) {
 			if dir != nil {
-				SyncFprintf(w, "%s %13s %s %s\n", SizeStringField(dir.Size(), ci.HumanReadable, 12), dir.ModTime(ctx).Local().Format("2006-01-02 15:04:05"), CountStringField(dir.Items(), ci.HumanReadable, 9), dir.Remote())
+				sizeField := dirSizeStringField(dir.Size(), ci.HumanReadable, 12)
+				countField := dirCountStringField(dir.Items(), ci.HumanReadable, 9)
+				SyncFprintf(w, "%s %13s %s %s\n", sizeField, dir.ModTime(ctx).Local().Format("2006-01-02 15:04:05"), countField, dir.Remote())
 			}
 		})
 		return nil
