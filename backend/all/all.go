@@ -10,6 +10,7 @@ import (
 	_ "github.com/rclone/rclone/backend/b2"
 	_ "github.com/rclone/rclone/backend/box"
 	_ "github.com/rclone/rclone/backend/cache"
+	_ "github.com/rclone/rclone/backend/cachev2"
 	_ "github.com/rclone/rclone/backend/chunker"
 	_ "github.com/rclone/rclone/backend/cloudinary"
 	_ "github.com/rclone/rclone/backend/combine"

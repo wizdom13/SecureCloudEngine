@@ -15,14 +15,54 @@ and its data for long running tasks like `rclone mount`.
 The cache backend code is working but it currently doesn't
 have a maintainer so there are [outstanding bugs](https://github.com/rclone/rclone/issues?q=is%3Aopen+is%3Aissue+label%3Abug+label%3A%22Remote%3A+Cache%22) which aren't getting fixed.
 
-The cache backend is due to be phased out in favour of the VFS caching
-layer eventually which is more tightly integrated into rclone.
+The cache backend is deprecated and will be phased out in favour of:
+
+- **`cachev2`**: a drop-in replacement backend with updated configuration keys.
+- **VFS caching**: the preferred cache for mount/serve workflows, using
+  `--vfs-cache-mode` and related flags.
 
 Until this happens we recommend only using the cache backend if you
 find you can't work without it. There are many docs online describing
 the use of the cache backend to minimize API hits and by-and-large
 these are out of date and the cache backend isn't needed in those
 scenarios any more.
+
+## Migration guide
+
+### Option mapping (`cache` -> `cachev2`)
+
+Use the `cachev2` backend and rename options as follows:
+
+| Cache (legacy) | Cachev2 |
+| --- | --- |
+| `chunk_size` | `data_chunk_size` |
+| `chunk_total_size` | `data_cache_max_size` |
+| `chunk_clean_interval` | `data_cache_clean_interval` |
+| `chunk_path` | `data_cache_path` |
+| `chunk_no_memory` | `data_chunk_no_memory` |
+| `db_path` | `metadata_db_path` |
+| `db_purge` | `metadata_db_purge` |
+| `db_wait_time` | `metadata_db_wait_time` |
+| `info_age` | `metadata_cache_age` |
+| `read_retries` | `data_read_retries` |
+| `rps` | `source_rps` |
+| `tmp_upload_path` | `temp_upload_path` |
+| `tmp_wait_time` | `temp_wait_time` |
+| `workers` | `data_workers` |
+| `writes` | `data_writes` |
+
+The `remote` and `plex_*` options are unchanged.
+
+### VFS-first replacement
+
+For mount/serve scenarios, switch to VFS caching instead of the cache backend:
+
+- `--vfs-cache-mode` (use `full` for read/write caching)
+- `--vfs-cache-max-size` (replacement for chunk total size)
+- `--vfs-cache-max-age` and `--vfs-cache-poll-interval`
+- `--vfs-write-back` (replacement for temp upload waiting)
+
+See the [VFS documentation](/vfs/) for complete guidance.
 
 ## Configuration
 
