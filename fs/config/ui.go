@@ -663,7 +663,7 @@ func ShowConfigLocation() {
 		fmt.Println("Configuration is in memory only")
 	} else {
 		if _, err := os.Stat(configPath); os.IsNotExist(err) {
-			fmt.Println("Configuration file doesn't exist, but rclone will use this path:")
+			fmt.Println("Configuration file doesn't exist, but sce will use this path:")
 		} else {
 			fmt.Println("Configuration file is stored at:")
 		}
@@ -772,7 +772,7 @@ func checkPassword(password string) (string, error) {
 	trimmedPassword := strings.TrimSpace(password)
 	// Warn user if password has leading+trailing whitespace
 	if len(password) != len(trimmedPassword) {
-		_, _ = fmt.Fprintln(os.Stderr, "Your password contains leading/trailing whitespace - in previous versions of rclone this was stripped")
+		_, _ = fmt.Fprintln(os.Stderr, "Your password contains leading/trailing whitespace - in previous versions of sce this was stripped")
 	}
 	// Normalize to reduce weird variations.
 	password = norm.NFKC.String(password)

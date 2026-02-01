@@ -71,7 +71,7 @@ var OptionsInfo = fs.Options{{
 		}
 		return 0
 	}(),
-	Help:   "Time limit for rclone to respond to kernel (not supported on Windows)",
+	Help:   "Time limit for sce to respond to kernel (not supported on Windows)",
 	Groups: "Mount",
 }, {
 	Name:    "default_permissions",
@@ -106,7 +106,7 @@ var OptionsInfo = fs.Options{{
 }, {
 	Name:    "write_back_cache",
 	Default: false,
-	Help:    "Makes kernel buffer writes before sending them to rclone (without this, writethrough caching is used) (not supported on Windows)",
+	Help:    "Makes kernel buffer writes before sending them to sce (without this, writethrough caching is used) (not supported on Windows)",
 	Groups:  "Mount",
 }, {
 	Name:    "devname",
@@ -396,7 +396,7 @@ func (m *MountPoint) Wait() error {
 			if err := m.Unmount(); err != nil {
 				fs.Errorf(m.MountPoint, "Failed to unmount: %v", err)
 			} else {
-				fs.Logf(m.MountPoint, "Unmounted rclone mount")
+				fs.Logf(m.MountPoint, "Unmounted sce mount")
 			}
 		})
 	}

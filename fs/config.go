@@ -360,7 +360,7 @@ var ConfigOptionsInfo = Options{{
 }, {
 	Name:    "max_duration",
 	Default: time.Duration(0),
-	Help:    "Maximum duration rclone will transfer data for",
+	Help:    "Maximum duration sce will transfer data for",
 	Groups:  "Copy",
 }, {
 	Name:    "cutoff_mode",

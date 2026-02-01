@@ -213,8 +213,8 @@ func newServer(ctx context.Context, f fs.Fs, opt *Options, vfsOpt *vfscommon.Opt
 	}
 
 	ftpopt := &ftp.Options{
-		Name:           "Rclone FTP Server",
-		WelcomeMessage: "Welcome to Rclone " + fs.Version + " FTP Server",
+		Name:           "SecureCloudEngine FTP Server",
+		WelcomeMessage: "Welcome to SecureCloudEngine " + fs.Version + " FTP Server",
 		Driver:         d,
 		Hostname:       host,
 		Port:           portNum,
