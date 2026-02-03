@@ -44,7 +44,6 @@ func main() {
 	binary := flag.String("binary", "rclone.exe", `The name of the binary to generate resource for, e.g. "rclone.exe" or "librclone.dll"`)
 	arch := flag.String("arch", runtime.GOARCH, `Architecture of resource file, or the target GOARCH, "386", "amd64", "arm", or "arm64"`)
 	version := flag.String("version", fs.Version, "Version number or tag name")
-	icon := flag.String("icon", path.Join(projectDir, "graphics/logo/ico/logo_symbol_color.ico"), "Path to icon file to embed in an .exe binary")
 	dir := flag.String("dir", projectDir, "Path to output directory where to write the resulting system object file (.syso), with a default name according to -arch (resource_windows_<arch>.syso), only considered if not -syso is specified")
 	syso := flag.String("syso", "", "Path to output resource system object file (.syso) to be created/overwritten, ignores -dir")
 
@@ -102,11 +101,6 @@ func main() {
 	vi.StringFileInfo.LegalCopyright = "The Rclone Authors"
 	vi.StringFileInfo.FileVersion = stringVersion
 	vi.StringFileInfo.ProductVersion = stringVersion
-
-	// Icon (only relevant for .exe, not .dll)
-	if *icon != "" && strings.EqualFold(binaryExt, ".exe") {
-		vi.IconPath = *icon
-	}
 
 	// Build native structures from the configuration data
 	vi.Build()

@@ -78,7 +78,6 @@ Use "rclone help backends" for a list of supported services.
 # Rclone syncs your files to cloud storage
 
 <!-- markdownlint-disable-next-line line-length -->
-<img width="50%" src="https://rclone.org/img/logo_on_light__horizontal_color.svg" alt="rclone logo" style="float:right; padding: 5px;" >
 
 - [About rclone](#about)
 - [What can rclone do for you?](#what)
