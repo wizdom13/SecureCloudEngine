@@ -904,27 +904,13 @@ keep default number but customize the suffix). This can be done from the
 build command, by adding to the <code>-ldflags</code> argument value as
 shown below.</p>
 <pre class="console"><code>go build -trimpath -ldflags &quot;-s -X github.com/rclone/rclone/fs.Version=v9.9.9-test&quot; -tags cmount</code></pre>
-<p>On Windows, the official executables also have the version
-information, as well as a file icon, embedded as binary resources. To
-get that with your own build you need to run the following command
-<strong>before</strong> the build command. It generates a Windows
-resource system object file, with extension .syso, e.g.
-<code>resource_windows_amd64.syso</code>, that will be automatically
-picked up by future build commands.</p>
-<pre class="console"><code>go run bin/resource_windows.go</code></pre>
-<p>The above command will generate a resource file containing version
-information based on the fs.Version variable in source at the time you
-run the command, which means if the value of this variable changes you
-need to re-run the command for it to be reflected in the version
-information. Also, if you override this version variable in the build
-command as described above, you need to do that also when generating the
-resource file, or else it will still use the value from the source.</p>
-<pre class="console"><code>go run bin/resource_windows.go -version v9.9.9-test</code></pre>
+<p>On Windows, the executables built from this fork do not embed version
+information or icons as binary resources. No resource generation step is
+required or supported.</p>
 <p>Instead of executing the <code>go build</code> command directly, you
 can run it via the Makefile. The default target changes the version
-suffix from "-DEV" to "-beta" followed by additional commit details,
-embeds version information binary resources on Windows, and copies the
-resulting rclone executable into your GOPATH bin folder
+suffix from "-DEV" to "-beta" followed by additional commit details, and
+copies the resulting rclone executable into your GOPATH bin folder
 (<code>$(go env GOPATH)/bin</code>, which corresponds to
 <code>~/go/bin/rclone</code> by default).</p>
 <pre class="console"><code>make</code></pre>

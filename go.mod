@@ -47,7 +47,6 @@ require (
 	github.com/henrybear327/go-proton-api v1.0.0
 	github.com/jcmturner/gokrb5/v8 v8.4.4
 	github.com/jlaffaye/ftp v0.2.1-0.20240918233326-1b970516f5d3
-	github.com/josephspurrier/goversioninfo v1.5.0
 	github.com/jzelinskie/whirlpool v0.0.0-20201016144138-0675e54bb004
 	github.com/klauspost/compress v1.18.1
 	github.com/koofr/go-httpclient v0.0.0-20240520111329-e20f8f203988
@@ -116,7 +115,6 @@ require (
 	github.com/ProtonMail/gopenpgp/v2 v2.9.0 // indirect
 	github.com/PuerkitoBio/goquery v1.10.3 // indirect
 	github.com/STARRY-S/zip v0.2.3 // indirect
-	github.com/akavel/rsrc v0.10.2 // indirect
 	github.com/anacrolix/generics v0.1.0 // indirect
 	github.com/anchore/go-lzo v0.1.0 // indirect
 	github.com/andybalholm/brotli v1.2.0 // indirect
