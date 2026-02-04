@@ -348,9 +348,11 @@ var warnDeprecated sync.Once
 
 // NewFs constructs an Fs from the path, container:path
 func NewFs(ctx context.Context, name, rootPath string, m configmap.Mapper) (fs.Fs, error) {
-	warnDeprecated.Do(func() {
-		fs.Logf(nil, "WARNING: Cache backend is deprecated and may be removed in future. Please use VFS instead.")
-	})
+	if name == "cache" {
+		warnDeprecated.Do(func() {
+			fs.Logf(nil, "WARNING: Cache backend is deprecated and may be removed in future. Use cachev2 or VFS caching instead.")
+		})
+	}
 
 	// Parse config into Options struct
 	opt := new(Options)
