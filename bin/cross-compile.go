@@ -217,6 +217,31 @@ func runOut(command ...string) string {
 	return strings.TrimSpace(string(out))
 }
 
+// Generate Windows resource system object file (.syso), which can be picked
+// up by the following go build for embedding version information and icon
+// resources into the executable.
+func generateResourceWindows(version, arch string) func() {
+	sysoPath := fmt.Sprintf("../resource_windows_%s.syso", arch) // Use explicit destination filename, even though it should be same as default, so that we are sure we have the correct reference to it
+	if err := os.Remove(sysoPath); !os.IsNotExist(err) {
+		// Note: This one we choose to treat as fatal, to avoid any risk of picking up an old .syso file without noticing.
+		log.Fatalf("Failed to remove existing Windows %s resource system object file %s: %v", arch, sysoPath, err)
+	}
+	args := []string{"go", "run", "../bin/resource_windows.go", "-arch", arch, "-version", version, "-syso", sysoPath}
+	if err := runEnv(args, nil); err != nil {
+		log.Printf("Warning: Couldn't generate Windows %s resource system object file, binaries will not have version information or icon embedded", arch)
+		return nil
+	}
+	if _, err := os.Stat(sysoPath); err != nil {
+		log.Printf("Warning: Couldn't find generated Windows %s resource system object file, binaries will not have version information or icon embedded", arch)
+		return nil
+	}
+	return func() {
+		if err := os.Remove(sysoPath); err != nil && !os.IsNotExist(err) {
+			log.Printf("Warning: Couldn't remove generated Windows %s resource system object file %s: %v. Please remove it manually.", arch, sysoPath, err)
+		}
+	}
+}
+
 // build the binary in dir returning success or failure
 func compileArch(version, goos, goarch, dir string) bool {
 	log.Printf("Compiling %s/%s into %s", goos, goarch, dir)
@@ -224,6 +249,9 @@ func compileArch(version, goos, goarch, dir string) bool {
 	output := filepath.Join(dir, "rclone")
 	if goos == "windows" {
 		output += ".exe"
+		if cleanupFn := generateResourceWindows(version, goarchBase); cleanupFn != nil {
+			defer cleanupFn()
+		}
 	}
 	err := os.MkdirAll(dir, 0777)
 	if err != nil {

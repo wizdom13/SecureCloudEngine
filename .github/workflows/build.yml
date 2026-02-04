@@ -147,10 +147,6 @@ jobs:
           printf "\n\nSystem environment:\n\n"
           env
 
-      - name: Remove Windows resource artifacts
-        run: |
-          find . -name '*.syso' -type f -print -delete
-
       - name: Build rclone
         run: |
           make

@@ -754,14 +754,33 @@ argument value as shown below.
 go build -trimpath -ldflags "-s -X github.com/rclone/rclone/fs.Version=v9.9.9-test" -tags cmount
 ```
 
-On Windows, the executables built from this fork do not embed version
-information or icons as binary resources. No resource generation step is
-required or supported.
+On Windows, the official executables also have the version information,
+as well as a file icon, embedded as binary resources. To get that with your
+own build you need to run the following command **before** the build command.
+It generates a Windows resource system object file, with extension .syso, e.g.
+`resource_windows_amd64.syso`, that will be automatically picked up by
+future build commands.
+
+```console
+go run bin/resource_windows.go
+```
+
+The above command will generate a resource file containing version information
+based on the fs.Version variable in source at the time you run the command,
+which means if the value of this variable changes you need to re-run the
+command for it to be reflected in the version information. Also, if you
+override this version variable in the build command as described above, you
+need to do that also when generating the resource file, or else it will still
+use the value from the source.
+
+```console
+go run bin/resource_windows.go -version v9.9.9-test
+```
 
 Instead of executing the `go build` command directly, you can run it via the
 Makefile. The default target changes the version suffix from "-DEV" to "-beta"
-followed by additional commit details, and copies the resulting rclone executable
-into your GOPATH bin folder
+followed by additional commit details, embeds version information binary resources
+on Windows, and copies the resulting rclone executable into your GOPATH bin folder
 (`$(go env GOPATH)/bin`, which corresponds to `~/go/bin/rclone` by default).
 
 ```console
@@ -74431,3 +74450,4 @@ confidential
 Please don't email requests for help to this address - those are
 better directed to the forum unless you'd like to sign up for business
 support.
+
