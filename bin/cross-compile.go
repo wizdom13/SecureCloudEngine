@@ -220,13 +220,13 @@ func runOut(command ...string) string {
 // Generate Windows resource system object file (.syso), which can be picked
 // up by the following go build for embedding version information and icon
 // resources into the executable.
-func generateResourceWindows(version, arch string) func() {
+func generateResourceWindows(version, arch, binary string) func() {
 	sysoPath := fmt.Sprintf("../resource_windows_%s.syso", arch) // Use explicit destination filename, even though it should be same as default, so that we are sure we have the correct reference to it
 	if err := os.Remove(sysoPath); !os.IsNotExist(err) {
 		// Note: This one we choose to treat as fatal, to avoid any risk of picking up an old .syso file without noticing.
 		log.Fatalf("Failed to remove existing Windows %s resource system object file %s: %v", arch, sysoPath, err)
 	}
-	args := []string{"go", "run", "../bin/resource_windows.go", "-arch", arch, "-version", version, "-syso", sysoPath}
+	args := []string{"go", "run", "../bin/resource_windows.go", "-arch", arch, "-version", version, "-syso", sysoPath, "-binary", binary}
 	if err := runEnv(args, nil); err != nil {
 		log.Printf("Warning: Couldn't generate Windows %s resource system object file, binaries will not have version information or icon embedded", arch)
 		return nil
@@ -246,10 +246,10 @@ func generateResourceWindows(version, arch string) func() {
 func compileArch(version, goos, goarch, dir string) bool {
 	log.Printf("Compiling %s/%s into %s", goos, goarch, dir)
 	goarchBase := stripVersion(goarch)
-	output := filepath.Join(dir, "rclone")
+	output := filepath.Join(dir, "sce")
 	if goos == "windows" {
 		output += ".exe"
-		if cleanupFn := generateResourceWindows(version, goarchBase); cleanupFn != nil {
+		if cleanupFn := generateResourceWindows(version, goarchBase, "sce.exe"); cleanupFn != nil {
 			defer cleanupFn()
 		}
 	}
@@ -375,7 +375,7 @@ func compile(version string) {
 		if goos == "darwin" {
 			userGoos = "osx"
 		}
-		dir := filepath.Join("rclone-" + version + "-" + userGoos + "-" + goarch)
+		dir := filepath.Join("sce-" + version + "-" + userGoos + "-" + goarch)
 		run <- func() {
 			if !compileArch(version, goos, goarch, dir) {
 				failuresMu.Lock()
@@ -407,7 +407,7 @@ func main() {
 		run("mkdir", "build")
 	}
 	chdir("build")
-	err := os.WriteFile("version.txt", []byte(fmt.Sprintf("rclone %s\n", version)), 0666)
+	err := os.WriteFile("version.txt", []byte(fmt.Sprintf("sce %s\n", version)), 0666)
 	if err != nil {
 		log.Fatalf("Couldn't write version.txt: %v", err)
 	}
