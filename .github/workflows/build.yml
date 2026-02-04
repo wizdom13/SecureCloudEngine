@@ -394,7 +394,6 @@ jobs:
           RCLONE_CONFIG_PASS: ${{ secrets.RCLONE_CONFIG_PASS }}
         if: env.RCLONE_CONFIG_PASS != '' && github.head_ref == '' && github.repository == 'wizdom13/SecureCloudEngine'
 
-  # Indent 'package' by 2 spaces to align with 'android' and 'build'
   package:
     needs: build
     runs-on: ubuntu-latest
@@ -414,21 +413,22 @@ jobs:
 
       - name: Organize structure
         run: |
-          mkdir -p sce-package/sce
+          # Create the folder that will be the root of your ZIP
+          mkdir -p final-output/sce
+          
           for dir in tmp-artifacts/sce-binaries-*; do
             job_name=$(basename "$dir" | sed 's/sce-binaries-//')
-            mkdir -p "sce-package/sce/$job_name"
-            cp -v "$dir"/sce* "sce-package/sce/$job_name/" 2>/dev/null || true
+            mkdir -p "final-output/sce/$job_name"
+            
+            # Copy binaries into the subfolders
+            cp -v "$dir"/sce* "final-output/sce/$job_name/" 2>/dev/null || true
           done
 
-      - name: Create Zip
-        run: |
-          cd sce-package
-          zip -r ../sce-binaries-all.zip sce/
-
-      - name: Upload Final Zip
+      - name: Upload Final Artifact
         uses: actions/upload-artifact@v6
         with:
-          name: final-packaged-binaries
-          path: sce-binaries-all.zip
+          name: sce-binaries-all
+          # Pointing to the folder 'sce' inside 'final-output'
+          # GitHub will zip this folder, so the zip contains 'sce/...'
+          path: final-output/sce
           if-no-files-found: error
