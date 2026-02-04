@@ -392,15 +392,13 @@ jobs:
           make ci_upload
         env:
           RCLONE_CONFIG_PASS: ${{ secrets.RCLONE_CONFIG_PASS }}
-        # Upload artifacts if not a PR && not a fork
         if: env.RCLONE_CONFIG_PASS != '' && github.head_ref == '' && github.repository == 'wizdom13/SecureCloudEngine'
 
-package:
-    # Ensure this only runs if the build matrix succeeds
+  # Indent 'package' by 2 spaces to align with 'android' and 'build'
+  package:
     needs: build
     runs-on: ubuntu-latest
     name: "Package All Binaries"
-    # Added the same safety check as your other jobs
     if: inputs.manual || (github.repository == 'wizdom13/SecureCloudEngine' && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name))
     
     steps:
@@ -416,16 +414,10 @@ package:
 
       - name: Organize structure
         run: |
-          # Create the main container folder
           mkdir -p sce-package/sce
-          
-          # Iterate through the downloaded artifact folders
           for dir in tmp-artifacts/sce-binaries-*; do
-            # Extract job_name (linux, windows, etc.)
             job_name=$(basename "$dir" | sed 's/sce-binaries-//')
             mkdir -p "sce-package/sce/$job_name"
-            
-            # Copy binaries (sce and sce.exe) -v for better logging
             cp -v "$dir"/sce* "sce-package/sce/$job_name/" 2>/dev/null || true
           done
 
@@ -439,5 +431,4 @@ package:
         with:
           name: final-packaged-binaries
           path: sce-binaries-all.zip
-          # Set to error so you know immediately if the packaging failed
           if-no-files-found: error
