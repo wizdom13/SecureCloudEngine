@@ -45,19 +45,20 @@ LINTTAGS=--build-tags "$(GOTAGS)"
 endif
 LDFLAGS=--ldflags "-s -X github.com/rclone/rclone/fs.Version=$(TAG)"
 
-.PHONY: rclone test_all vars version
+.PHONY: sce test_all vars version
 
-rclone:
+sce:
 ifeq ($(GO_OS),windows)
 	go run bin/resource_windows.go -version $(TAG) -syso resource_windows_`go env GOARCH`.syso
 endif
-	go build -v $(LDFLAGS) $(BUILDTAGS) $(BUILD_ARGS)
+	# Added -o sce to the build command to specify output name
+	go build -v $(LDFLAGS) $(BUILDTAGS) $(BUILD_ARGS) -o sce`go env GOEXE`
 ifeq ($(GO_OS),windows)
 	rm resource_windows_`go env GOARCH`.syso
 endif
 	mkdir -p `go env GOPATH`/bin/
-	cp -av rclone`go env GOEXE` `go env GOPATH`/bin/rclone`go env GOEXE`.new
-	mv -v `go env GOPATH`/bin/rclone`go env GOEXE`.new `go env GOPATH`/bin/rclone`go env GOEXE`
+	cp -av sce`go env GOEXE` `go env GOPATH`/bin/sce`go env GOEXE`.new
+	mv -v `go env GOPATH`/bin/sce`go env GOEXE`.new `go env GOPATH`/bin/sce`go env GOEXE`
 
 test_all:
 	go install $(LDFLAGS) $(BUILDTAGS) $(BUILD_ARGS) github.com/rclone/rclone/fstest/test_all
@@ -82,7 +83,7 @@ version:
 	@echo '$(TAG)'
 
 # Full suite of integration tests
-test:	rclone test_all
+test:	sce test_all
 	-test_all 2>&1 | tee test_all.log
 	@echo "Written logs in test_all.log"
 
@@ -159,15 +160,15 @@ backenddocs: rclone bin/make_backend_docs.py
 rcdocs: rclone
 	bin/make_rc_docs.sh
 
-install: rclone
+install: sce
 	install -d ${DESTDIR}/usr/bin
-	install ${GOPATH}/bin/rclone ${DESTDIR}/usr/bin
+	install ${GOPATH}/bin/sce ${DESTDIR}/usr/bi
 
 clean:
 	go clean ./...
-	find . -name \*~ | xargs -r rm -f
+	find . [cite_start]-name \*~ | xargs -r rm -f [cite: 11]
 	rm -rf build docs/public
-	rm -f rclone fs/operations/operations.test fs/sync/sync.test fs/test_all.log test.log
+	rm -f sce fs/operations/operations.test fs/sync/sync.test fs/test_all.log test.log
 
 website:
 	rm -rf docs/public
@@ -277,7 +278,7 @@ startstable:
 	git commit -m "Start $(NEXT_PATCH_VERSION)-DEV development" fs/versiontag.go VERSION docs/layouts/partials/version.html
 
 winzip:
-	zip -9 rclone-$(TAG).zip rclone.exe
+	zip -9 sce-$(TAG).zip sce.exe
 
 # docker volume plugin
 PLUGIN_USER ?= rclone
