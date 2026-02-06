@@ -31,6 +31,9 @@ ifdef RELEASE_TAG
 endif
 GO_VERSION := $(shell go version)
 GO_OS := $(shell go env GOOS)
+GO_HOST_OS := $(shell go env GOHOSTOS)
+GO_HOST_ARCH := $(shell go env GOHOSTARCH)
+TARGET_GOARCH := $(if $(GOARCH),$(GOARCH),$(shell go env GOARCH))
 ifdef BETA_SUBDIR
 	BETA_SUBDIR := /$(BETA_SUBDIR)
 endif
@@ -49,12 +52,12 @@ LDFLAGS=--ldflags "-s -X github.com/rclone/rclone/fs.Version=$(TAG)"
 
 sce:
 ifeq ($(GO_OS),windows)
-	go run bin/resource_windows.go -version $(TAG) -syso resource_windows_`go env GOARCH`.syso
+	GOOS=$(GO_HOST_OS) GOARCH=$(GO_HOST_ARCH) go run bin/resource_windows.go -version $(TAG) -arch $(TARGET_GOARCH) -syso resource_windows_$(TARGET_GOARCH).syso
 endif
 	# Added -o sce to the build command to specify output name
 	go build -v $(LDFLAGS) $(BUILDTAGS) $(BUILD_ARGS) -o sce`go env GOEXE`
 ifeq ($(GO_OS),windows)
-	rm resource_windows_`go env GOARCH`.syso
+	rm resource_windows_$(TARGET_GOARCH).syso
 endif
 	mkdir -p `go env GOPATH`/bin/
 	cp -av sce`go env GOEXE` `go env GOPATH`/bin/sce`go env GOEXE`.new
