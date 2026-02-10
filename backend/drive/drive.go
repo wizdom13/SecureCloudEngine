@@ -57,7 +57,7 @@ import (
 // Constants
 const (
 	rcloneClientID              = "817921450710-frt3t9toe9ls8i8e9m93tk6pjfn1ej96.apps.googleusercontent.com"
-	rcloneEncryptedClientSecret = "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"
+	rcloneEncryptedClientSecret = "ae79-G_03dIiVG-z-YyhA2F3eksNBqQsFdFMdZnLBP-l4s7XO6zJBYGn-7Ky3e-0hPZ7"
 	driveFolderType             = "application/vnd.google-apps.folder"
 	shortcutMimeType            = "application/vnd.google-apps.shortcut"
 	shortcutMimeTypeDangling    = "application/vnd.google-apps.shortcut.dangling" // synthetic mime type for internal use
