@@ -41,7 +41,7 @@ func main() {
 	}
 
 	// Define flags
-	binary := flag.String("binary", "rclone.exe", `The name of the binary to generate resource for, e.g. "rclone.exe" or "librclone.dll"`)
+	binary := flag.String("binary", "sce.exe", `The name of the binary to generate resource for, e.g. "sce.exe" or "libsce.dll"`)
 	arch := flag.String("arch", runtime.GOARCH, `Architecture of resource file, or the target GOARCH, "386", "amd64", "arm", or "arm64"`)
 	version := flag.String("version", fs.Version, "Version number or tag name")
 	dir := flag.String("dir", projectDir, "Path to output directory where to write the resulting system object file (.syso), with a default name according to -arch (resource_windows_<arch>.syso), only considered if not -syso is specified")
@@ -93,12 +93,12 @@ func main() {
 	vi.FixedFileInfo.ProductVersion.Build = 0
 
 	// StringFileInfo
-	vi.StringFileInfo.CompanyName = "https://rclone.org"
-	vi.StringFileInfo.ProductName = "Rclone"
-	vi.StringFileInfo.FileDescription = "Rclone"
+	vi.StringFileInfo.CompanyName = "https://securecloudenginecenter.com"
+	vi.StringFileInfo.ProductName = "SecureCloudEngine"
+	vi.StringFileInfo.FileDescription = "SecureCloudEngine"
 	vi.StringFileInfo.InternalName = (*binary)[:len(*binary)-len(binaryExt)]
 	vi.StringFileInfo.OriginalFilename = *binary
-	vi.StringFileInfo.LegalCopyright = "The Rclone Authors"
+	vi.StringFileInfo.LegalCopyright = "The SecureCloudEngine Authors"
 	vi.StringFileInfo.FileVersion = stringVersion
 	vi.StringFileInfo.ProductVersion = stringVersion
 

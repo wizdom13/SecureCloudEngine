@@ -74,7 +74,7 @@ Error: {{ .Name }}<br>
 {{ if .Code }}Code: {{ .Code }}<br>{{ end }}
 {{ if .HelpURL }}Look here for help: <a href="{{ .HelpURL }}">{{ .HelpURL }}</a><br>{{ end }}
 {{ else }}
-All done. Please go back to rclone.
+All done. Please go back to SecureCloud.
 {{ end }}
 </pre>
 </body>
