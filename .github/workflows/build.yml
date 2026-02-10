@@ -28,7 +28,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        job_name: ['linux', 'linux_386', 'mac_amd64', 'mac_arm64', 'windows', 'windows_arm64']
+        job_name: ['linux', 'linux_386', 'linux_arm64', 'mac_amd64', 'mac_arm64', 'windows', 'windows_arm64']
 
         include:
           - job_name: linux
@@ -48,6 +48,15 @@ jobs:
             goarch: 386
             gotags: cmount
             quicktest: true
+
+          - job_name: linux_arm64
+            os: ubuntu-24.04-arm
+            go: '>=1.25.0-rc.1'
+            goarch: arm64
+            gotags: cmount
+            build_flags: '-include "^linux/"'
+            quicktest: true
+            deploy: false
 
           - job_name: mac_amd64
             os: macos-latest
@@ -117,7 +126,7 @@ jobs:
           sudo chown root:$USER /etc/fuse.conf
           sudo apt-get update
           sudo apt-get install -y fuse3 libfuse-dev rpm pkg-config git-annex git-annex-remote-rclone nfs-common
-        if: matrix.os == 'ubuntu-latest'
+          if: startsWith(matrix.os, 'ubuntu')
 
       - name: Install Libraries on macOS
         run: |
