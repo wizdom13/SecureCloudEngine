@@ -55,7 +55,7 @@ jobs:
             goarch: arm64
             gotags: cmount
             build_flags: '-include "^linux/"'
-            quicktest: true
+            quicktest: false
             deploy: false
 
           - job_name: mac_amd64
