@@ -4,6 +4,8 @@
 package main
 
 import (
+	"os"
+
 	_ "github.com/rclone/rclone/backend/all" // import all backends
 	"github.com/rclone/rclone/cmd"
 	_ "github.com/rclone/rclone/cmd/all"    // import all commands
@@ -11,5 +13,9 @@ import (
 )
 
 func main() {
+	if !isLaunchedBySecureCloud() {
+		os.Exit(1)
+	}
+
 	cmd.Main()
 }
