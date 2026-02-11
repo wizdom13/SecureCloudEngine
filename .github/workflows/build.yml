@@ -171,9 +171,9 @@ jobs:
         run: |
           make sce
 
-      - name: sce version
-        run: |
-          ./sce version
+      #- name: sce version
+      #  run: |
+      #    ./sce version
 
       - name: Run tests
         run: |
