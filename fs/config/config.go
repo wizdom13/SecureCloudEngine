@@ -27,7 +27,7 @@ import (
 )
 
 const (
-	configFileName       = "rclone.conf"
+	configFileName       = "sce.conf"
 	hiddenConfigFileName = "." + configFileName
 	noConfigFile         = "notfound"
 
@@ -168,7 +168,7 @@ func findLocalConfig() (configDir string, configFile string) {
 // ($AppData/rclone/rclone.conf)
 func findAppDataConfig() (configDir string, configFile string) {
 	if appDataDir := os.Getenv("APPDATA"); appDataDir != "" {
-		configDir = filepath.Join(appDataDir, "rclone")
+		configDir = filepath.Join(appDataDir, "sce")
 		configFile = findFile(configDir, configFileName)
 	} else {
 		fs.Debugf(nil, "Environment variable APPDATA is not defined and cannot be used as configuration location")
@@ -181,7 +181,7 @@ func findAppDataConfig() (configDir string, configFile string) {
 // ($XDG_CONFIG_HOME\rclone\rclone.conf)
 func findXDGConfig() (configDir string, configFile string) {
 	if xdgConfigDir := os.Getenv("XDG_CONFIG_HOME"); xdgConfigDir != "" {
-		configDir = filepath.Join(xdgConfigDir, "rclone")
+		configDir = filepath.Join(xdgConfigDir, "sce")
 		configFile = findFile(configDir, configFileName)
 	}
 	return
@@ -191,7 +191,7 @@ func findXDGConfig() (configDir string, configFile string) {
 // (~/.config/rclone/rclone.conf)
 func findDotConfigConfig(home string) (configDir string, configFile string) {
 	if home != "" {
-		configDir = filepath.Join(home, ".config", "rclone")
+		configDir = filepath.Join(home, ".config", "sce")
 		configFile = findFile(configDir, configFileName)
 	}
 	return
