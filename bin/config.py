@@ -37,7 +37,7 @@ def rpc(args, command, params):
         }
         if args.user:
             kwargs["auth"] = (args.user, args.password)
-        r = requests.post('http://localhost:5572/'+command, **kwargs)
+        r = requests.post('http://localhost:5613/'+command, **kwargs)
         if r.status_code != 200:
             raise ValueError(f"RC command failed: Error {r.status_code}: {r.text}")
         return r.json()

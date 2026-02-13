@@ -334,7 +334,7 @@ rate, pass rate < 0. (For n>1 the details of sampling may change.)
 
 Once this is set you can look use this to profile the mutex contention:
 
-    go tool pprof http://localhost:5572/debug/pprof/mutex
+    go tool pprof http://localhost:5613/debug/pprof/mutex
 
 Parameters:
 
@@ -373,7 +373,7 @@ off profiling entirely, pass rate <= 0.
 
 After calling this you can use this to see the blocking profile:
 
-    go tool pprof http://localhost:5572/debug/pprof/block
+    go tool pprof http://localhost:5613/debug/pprof/block
 
 Parameters:
 

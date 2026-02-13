@@ -95,7 +95,7 @@ var OptionsInfo = fs.Options{{
 	AddPrefix(libhttp.ConfigInfo, "metrics", "Metrics").
 	AddPrefix(libhttp.AuthConfigInfo, "metrics", "Metrics").
 	AddPrefix(libhttp.TemplateConfigInfo, "metrics", "Metrics").
-	SetDefault("rc_addr", []string{"localhost:5572"})
+	SetDefault("rc_addr", []string{"localhost:5613"})
 
 func init() {
 	fs.RegisterGlobalOptions(fs.OptionsInfo{Name: "rc", Opt: &Opt, Options: OptionsInfo})

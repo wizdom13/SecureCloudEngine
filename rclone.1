@@ -847,7 +847,7 @@ If your config and data files reside on the host with a non-root
 UID:GID, you need to pass these on the container start command line.
 .IP \[bu] 2
 If you want to access the RC interface (either via the API or the Web
-UI), it is required to set the \f[V]--rc-addr\f[R] to \f[V]:5572\f[R] in
+UI), it is required to set the \f[V]--rc-addr\f[R] to \f[V]:5613\f[R] in
 order to connect to it from outside the container.
 An explanation about why this is necessary can be found in an old
 pythonspeed.com (https://web.archive.org/web/20200808071950/https://pythonspeed.com/articles/docker-connection-refused/)
@@ -856,7 +856,7 @@ article.
 .IP \[bu] 2
 NOTE: Users running this container with the docker network set to
 \f[V]host\f[R] should probably set it to listen to localhost only, with
-\f[V]127.0.0.1:5572\f[R] as the value for \f[V]--rc-addr\f[R]
+\f[V]127.0.0.1:5613\f[R] as the value for \f[V]--rc-addr\f[R]
 .RE
 .IP \[bu] 2
 It is possible to use \f[V]rclone mount\f[R] inside a userspace Docker
@@ -11072,7 +11072,7 @@ rclone rc commands parameter [flags]
   -o, --opt stringArray      Option in the form name=value or name placed in the \[dq]opt\[dq] array
       --pass string          Password to use to connect to rclone remote control
       --unix-socket string   Path to a unix domain socket to dial to, instead of opening a TCP connection directly
-      --url string           URL to connect to rclone remote control (default \[dq]http://localhost:5572/\[dq])
+      --url string           URL to connect to rclone remote control (default \[dq]http://localhost:5613/\[dq])
       --user string          Username to use to rclone remote control
 \f[R]
 .fi
@@ -11467,7 +11467,7 @@ Flags to control the Remote Control API
 .nf
 \f[C]
       --rc                                 Enable the remote control server
-      --rc-addr stringArray                IPaddress:Port or :Port to bind server to (default localhost:5572)
+      --rc-addr stringArray                IPaddress:Port or :Port to bind server to (default localhost:5613)
       --rc-allow-origin string             Origin which cross-domain request (CORS) can be executed from
       --rc-baseurl string                  Prefix for URLs - leave blank for root
       --rc-cert string                     TLS PEM key (concatenation of certificate and CA certificate)
@@ -25009,7 +25009,7 @@ serve the GUI:
 2019/08/25 11:40:14 NOTICE: A new release for gui is present at https://github.com/rclone/rclone-webui-react/releases/download/v0.0.6/currentbuild.zip
 2019/08/25 11:40:14 NOTICE: Downloading webgui binary. Please wait. [Size: 3813937, Path :  /home/USER/.cache/rclone/webgui/v0.0.6.zip]
 2019/08/25 11:40:16 NOTICE: Unzipping
-2019/08/25 11:40:16 NOTICE: Serving remote control on http://127.0.0.1:5572/
+2019/08/25 11:40:16 NOTICE: Serving remote control on http://127.0.0.1:5613/
 \f[R]
 .fi
 .PP
@@ -25137,7 +25137,7 @@ Flag to start the http server listen on remote requests.
 .SS --rc-addr=IP
 .PP
 IPaddress:Port or :Port to bind server to.
-(default \[dq]localhost:5572\[dq]).
+(default \[dq]localhost:5613\[dq]).
 .SS --rc-cert=KEY
 .PP
 SSL PEM key (concatenation of certificate and CA certificate).
@@ -25177,11 +25177,11 @@ Timeout for server writing data (default 1h0m0s).
 .PP
 Enable the serving of remote objects via the HTTP interface.
 This means objects will be accessible at
-\f[V]http://127.0.0.1:5572/\f[R] by default, so you can browse to
-\f[V]http://127.0.0.1:5572/\f[R] or \f[V]http://127.0.0.1:5572/*\f[R] to
+\f[V]http://127.0.0.1:5613/\f[R] by default, so you can browse to
+\f[V]http://127.0.0.1:5613/\f[R] or \f[V]http://127.0.0.1:5613/*\f[R] to
 see a listing of the remotes.
 Objects may be requested from remotes using this syntax
-\f[V]http://127.0.0.1:5572/[remote:path]/path/to/object\f[R]
+\f[V]http://127.0.0.1:5613/[remote:path]/path/to/object\f[R]
 .PP
 Default Off.
 .SS --rc-serve-no-modtime
@@ -25294,7 +25294,7 @@ $ rclone rc rc/noop param1=one param2=two
 .fi
 .PP
 If the remote is running on a different URL than the default
-\f[V]http://localhost:5572/\f[R], use the \f[V]--url\f[R] option to
+\f[V]http://localhost:5613/\f[R], use the \f[V]--url\f[R] option to
 specify it:
 .IP
 .nf
@@ -26569,7 +26569,7 @@ After calling this you can use this to see the blocking profile:
 .IP
 .nf
 \f[C]
-go tool pprof http://localhost:5572/debug/pprof/block
+go tool pprof http://localhost:5613/debug/pprof/block
 \f[R]
 .fi
 .PP
@@ -26610,7 +26610,7 @@ Once this is set you can look use this to profile the mutex contention:
 .IP
 .nf
 \f[C]
-go tool pprof http://localhost:5572/debug/pprof/mutex
+go tool pprof http://localhost:5613/debug/pprof/mutex
 \f[R]
 .fi
 .PP
@@ -28306,7 +28306,7 @@ The response to a preflight OPTIONS request will echo the requested
 .IP
 .nf
 \f[C]
-curl -X POST \[aq]http://localhost:5572/rc/noop?potato=1&sausage=2\[aq]
+curl -X POST \[aq]http://localhost:5613/rc/noop?potato=1&sausage=2\[aq]
 \f[R]
 .fi
 .PP
@@ -28325,7 +28325,7 @@ Here is what an error response looks like:
 .IP
 .nf
 \f[C]
-curl -X POST \[aq]http://localhost:5572/rc/error?potato=1&sausage=2\[aq]
+curl -X POST \[aq]http://localhost:5613/rc/error?potato=1&sausage=2\[aq]
 \f[R]
 .fi
 .IP
@@ -28346,7 +28346,7 @@ Note that curl doesn\[aq]t return errors to the shell unless you use the
 .IP
 .nf
 \f[C]
-$ curl -f -X POST \[aq]http://localhost:5572/rc/error?potato=1&sausage=2\[aq]
+$ curl -f -X POST \[aq]http://localhost:5613/rc/error?potato=1&sausage=2\[aq]
 curl: (22) The requested URL returned error: 400 Bad Request
 $ echo $?
 22
@@ -28356,7 +28356,7 @@ $ echo $?
 .IP
 .nf
 \f[C]
-curl --data \[dq]potato=1\[dq] --data \[dq]sausage=2\[dq] http://localhost:5572/rc/noop
+curl --data \[dq]potato=1\[dq] --data \[dq]sausage=2\[dq] http://localhost:5613/rc/noop
 \f[R]
 .fi
 .PP
@@ -28376,7 +28376,7 @@ parameters taking precedence.
 .IP
 .nf
 \f[C]
-curl --data \[dq]potato=1\[dq] --data \[dq]sausage=2\[dq] \[dq]http://localhost:5572/rc/noop?rutabaga=3&sausage=4\[dq]
+curl --data \[dq]potato=1\[dq] --data \[dq]sausage=2\[dq] \[dq]http://localhost:5613/rc/noop?rutabaga=3&sausage=4\[dq]
 \f[R]
 .fi
 .PP
@@ -28395,7 +28395,7 @@ Response
 .IP
 .nf
 \f[C]
-curl -H \[dq]Content-Type: application/json\[dq] -X POST -d \[aq]{\[dq]potato\[dq]:2,\[dq]sausage\[dq]:1}\[aq] http://localhost:5572/rc/noop
+curl -H \[dq]Content-Type: application/json\[dq] -X POST -d \[aq]{\[dq]potato\[dq]:2,\[dq]sausage\[dq]:1}\[aq] http://localhost:5613/rc/noop
 \f[R]
 .fi
 .PP
@@ -28415,7 +28415,7 @@ The JSON blob takes precedence.
 .IP
 .nf
 \f[C]
-curl -H \[dq]Content-Type: application/json\[dq] -X POST -d \[aq]{\[dq]potato\[dq]:2,\[dq]sausage\[dq]:1}\[aq] \[aq]http://localhost:5572/rc/noop?rutabaga=3&potato=4\[aq]
+curl -H \[dq]Content-Type: application/json\[dq] -X POST -d \[aq]{\[dq]potato\[dq]:2,\[dq]sausage\[dq]:1}\[aq] \[aq]http://localhost:5613/rc/noop?rutabaga=3&potato=4\[aq]
 \f[R]
 .fi
 .IP
@@ -28440,7 +28440,7 @@ To profile rclone\[aq]s memory use you can run:
 .IP
 .nf
 \f[C]
-go tool pprof -web http://localhost:5572/debug/pprof/heap
+go tool pprof -web http://localhost:5613/debug/pprof/heap
 \f[R]
 .fi
 .PP
@@ -28451,7 +28451,7 @@ You can also use the \f[V]-text\f[R] flag to produce a textual summary
 .IP
 .nf
 \f[C]
-$ go tool pprof -text http://localhost:5572/debug/pprof/heap
+$ go tool pprof -text http://localhost:5613/debug/pprof/heap
 Showing nodes accounting for 1537.03kB, 100% of 1537.03kB total
       flat  flat%   sum%        cum   cum%
  1024.03kB 66.62% 66.62%  1024.03kB 66.62%  github.com/rclone/rclone/vendor/golang.org/x/net/http2/hpack.addDecoderNode
@@ -28477,29 +28477,29 @@ See all active go routines using
 .IP
 .nf
 \f[C]
-curl http://localhost:5572/debug/pprof/goroutine?debug=1
+curl http://localhost:5613/debug/pprof/goroutine?debug=1
 \f[R]
 .fi
 .PP
-Or go to <http://localhost:5572/debug/pprof/goroutine?debug=1> in your
+Or go to <http://localhost:5613/debug/pprof/goroutine?debug=1> in your
 browser.
 .SS Other profiles to look at
 .PP
 You can see a summary of profiles available at
-<http://localhost:5572/debug/pprof/>
+<http://localhost:5613/debug/pprof/>
 .PP
 Here is how to use some of them:
 .IP \[bu] 2
-Memory: \f[V]go tool pprof http://localhost:5572/debug/pprof/heap\f[R]
+Memory: \f[V]go tool pprof http://localhost:5613/debug/pprof/heap\f[R]
 .IP \[bu] 2
 Go routines:
-\f[V]curl http://localhost:5572/debug/pprof/goroutine?debug=1\f[R]
+\f[V]curl http://localhost:5613/debug/pprof/goroutine?debug=1\f[R]
 .IP \[bu] 2
 30-second CPU profile:
-\f[V]go tool pprof http://localhost:5572/debug/pprof/profile\f[R]
+\f[V]go tool pprof http://localhost:5613/debug/pprof/profile\f[R]
 .IP \[bu] 2
 5-second execution trace:
-\f[V]wget http://localhost:5572/debug/pprof/trace?seconds=5\f[R]
+\f[V]wget http://localhost:5613/debug/pprof/trace?seconds=5\f[R]
 .IP \[bu] 2
 Goroutine blocking profile
 .RS 2
@@ -28507,7 +28507,7 @@ Goroutine blocking profile
 Enable first with:
 \f[V]rclone rc debug/set-block-profile-rate rate=1\f[R] (docs)
 .IP \[bu] 2
-\f[V]go tool pprof http://localhost:5572/debug/pprof/block\f[R]
+\f[V]go tool pprof http://localhost:5613/debug/pprof/block\f[R]
 .RE
 .IP \[bu] 2
 Contended mutexes:
@@ -28516,7 +28516,7 @@ Contended mutexes:
 Enable first with:
 \f[V]rclone rc debug/set-mutex-profile-fraction rate=1\f[R] (docs)
 .IP \[bu] 2
-\f[V]go tool pprof http://localhost:5572/debug/pprof/mutex\f[R]
+\f[V]go tool pprof http://localhost:5613/debug/pprof/mutex\f[R]
 .RE
 .PP
 See the net/http/pprof docs (https://golang.org/pkg/net/http/pprof/) for
@@ -30033,7 +30033,7 @@ Flags to control the Remote Control API.
 .nf
 \f[C]
       --rc                                 Enable the remote control server
-      --rc-addr stringArray                IPaddress:Port or :Port to bind server to (default localhost:5572)
+      --rc-addr stringArray                IPaddress:Port or :Port to bind server to (default localhost:5613)
       --rc-allow-origin string             Origin which cross-domain request (CORS) can be executed from
       --rc-baseurl string                  Prefix for URLs - leave blank for root
       --rc-cert string                     TLS PEM key (concatenation of certificate and CA certificate)

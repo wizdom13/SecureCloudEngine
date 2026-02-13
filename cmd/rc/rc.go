@@ -24,7 +24,7 @@ import (
 
 var (
 	noOutput   = false
-	url        = "http://localhost:5572/"
+	url        = "http://localhost:5613/"
 	unixSocket = ""
 	jsonInput  = ""
 	authUser   = ""
