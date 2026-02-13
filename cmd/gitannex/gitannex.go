@@ -112,8 +112,6 @@ type server struct {
 	reader *bufio.Reader
 	writer io.Writer
 
-	// When true, the server prints a transcript of messages sent and received
-	// to stderr.
 	verbose bool
 
 	extensionInfo                bool
