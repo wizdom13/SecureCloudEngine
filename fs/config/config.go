@@ -254,7 +254,7 @@ func makeConfigPath() string {
 	// variable, since then we skip actually trying to create the default
 	// and report any errors related to it (we can't use pflag for this because
 	// it isn't initialised yet so we search the command line manually).
-	_, configSupplied := os.LookupEnv("RCLONE_CONFIG")
+	_, configSupplied := os.LookupEnv("SCE_CONFIG")
 	if !configSupplied {
 		for _, item := range os.Args {
 			if item == "--config" || strings.HasPrefix(item, "--config=") {
@@ -359,9 +359,9 @@ var ErrorConfigFileNotFound = errors.New("config file not found")
 // LoadedData ensures the config file storage is loaded and returns it
 func LoadedData() Storage {
 	if !dataLoaded {
-		// Set RCLONE_CONFIG_DIR for backend config and subprocesses
+		// Set SCE_CONFIG_DIR for backend config and subprocesses
 		// If empty configPath (in-memory only) the value will be "."
-		_ = os.Setenv("RCLONE_CONFIG_DIR", filepath.Dir(configPath))
+		_ = os.Setenv("SCE_CONFIG_DIR", filepath.Dir(configPath))
 		// Load configuration from file (or initialize sensible default if no file or error)
 		if err := data.Load(); err == nil {
 			fs.Debugf(nil, "Using config file from %q", configPath)
@@ -454,7 +454,7 @@ type Remote struct {
 	Description string `json:"description"`
 }
 
-var remoteEnvRe = regexp.MustCompile(`^RCLONE_CONFIG_(.+?)_TYPE=(.+)$`)
+var remoteEnvRe = regexp.MustCompile(`^SCE_CONFIG_(.+?)_TYPE=(.+)$`)
 
 // GetRemotes returns the list of remotes defined in environment and config file.
 //

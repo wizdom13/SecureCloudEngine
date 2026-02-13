@@ -114,7 +114,7 @@ def test_server(remote):
     # Configure the server with environment variables
     env_keys = []
     for key, value in out.items():
-        env_key = f"RCLONE_CONFIG_{remote_name.upper()}_{key.upper()}"
+        env_key = f"SCE_CONFIG_{remote_name.upper()}_{key.upper()}"
         env_keys.append(env_key)
         os.environ[env_key] = value
     for key,var in os.environ.items():

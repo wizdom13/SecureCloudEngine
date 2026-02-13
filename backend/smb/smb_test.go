@@ -39,7 +39,7 @@ func TestIntegration3(t *testing.T) {
 	krb5Dir := t.TempDir()
 	t.Setenv("KRB5_CONFIG", filepath.Join(krb5Dir, "krb5.conf"))
 	ccache := filepath.Join(krb5Dir, "ccache")
-	t.Setenv("RCLONE_TEST_CUSTOM_CCACHE_LOCATION", ccache)
+	t.Setenv("SCE_TEST_CUSTOM_CCACHE_LOCATION", ccache)
 
 	name := "TestSMBKerberosCcache"
 

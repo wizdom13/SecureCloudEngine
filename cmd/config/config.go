@@ -558,7 +558,7 @@ config using the old password and then again to read the new
 password to re-encrypt the config.
 
 When |--password-command| is called to change the password then the
-environment variable |RCLONE_PASSWORD_CHANGE=1| will be set. So if
+environment variable |SCE_PASSWORD_CHANGE=1| will be set. So if
 changing passwords programmatically you can use the environment
 variable to distinguish which password you must supply.
 

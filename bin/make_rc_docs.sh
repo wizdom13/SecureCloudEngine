@@ -6,8 +6,8 @@ set -e
 go install
 mkdir -p /tmp/rclone/cache_test
 mkdir -p /tmp/rclone/rc_mount
-export RCLONE_CONFIG_RCDOCS_TYPE=cache
-export RCLONE_CONFIG_RCDOCS_REMOTE=/tmp/rclone/cache_test
+export SCE_CONFIG_RCDOCS_TYPE=cache
+export SCE_CONFIG_RCDOCS_REMOTE=/tmp/rclone/cache_test
 rclone -q --rc mount rcdocs: /tmp/rclone/rc_mount &
 sleep 0.5
 rclone rc > /tmp/rclone/z.md

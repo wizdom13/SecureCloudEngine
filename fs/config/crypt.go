@@ -32,9 +32,9 @@ var (
 	// is obscured with obscure.Obscure and saved to a temp file
 	// when it is calculated from the password. The path of that
 	// temp file is then written to the environment variable
-	// `_RCLONE_CONFIG_KEY_FILE`. If `_RCLONE_CONFIG_KEY_FILE` is
+	// `_SCE_CONFIG_KEY_FILE`. If `_SCE_CONFIG_KEY_FILE` is
 	// present, password prompt is skipped and
-	// `RCLONE_CONFIG_PASS` ignored. For security reasons, the
+	// `SCE_CONFIG_PASS` ignored. For security reasons, the
 	// temp file is deleted once the configKey is successfully
 	// loaded. This can be used to pass the configKey to a child
 	// process.
@@ -71,10 +71,10 @@ func Decrypt(b io.ReadSeeker) (io.Reader, error) {
 			continue
 		}
 		// First non-empty or non-comment must be ENCRYPT_V0
-		if l == "RCLONE_ENCRYPT_V0:" {
+		if l == "SCE_ENCRYPT_V0:" {
 			break
 		}
-		if strings.HasPrefix(l, "RCLONE_ENCRYPT_V") {
+		if strings.HasPrefix(l, "SCE_ENCRYPT_V") {
 			return nil, errors.New("unsupported configuration encryption - update rclone for support")
 		}
 		// Restore non-seekable plain-text stream to its original state
@@ -101,15 +101,15 @@ func Decrypt(b io.ReadSeeker) (io.Reader, error) {
 		} else {
 			usingPasswordCommand = false
 
-			envPassword := os.Getenv("RCLONE_CONFIG_PASS")
+			envPassword := os.Getenv("SCE_CONFIG_PASS")
 
 			if envPassword != "" {
 				usingEnvPassword = true
 				err := SetConfigPassword(envPassword)
 				if err != nil {
-					fs.Errorf(nil, "Using RCLONE_CONFIG_PASS returned: %v", err)
+					fs.Errorf(nil, "Using SCE_CONFIG_PASS returned: %v", err)
 				} else {
-					fs.Debugf(nil, "Using RCLONE_CONFIG_PASS password.")
+					fs.Debugf(nil, "Using SCE_CONFIG_PASS password.")
 				}
 			} else {
 				usingEnvPassword = false
@@ -129,7 +129,7 @@ func Decrypt(b io.ReadSeeker) (io.Reader, error) {
 
 	var out []byte
 	for {
-		if envKeyFile := os.Getenv("_RCLONE_CONFIG_KEY_FILE"); len(envKeyFile) > 0 {
+		if envKeyFile := os.Getenv("_SCE_CONFIG_KEY_FILE"); len(envKeyFile) > 0 {
 			fs.Debugf(nil, "attempting to obtain configKey from temp file %s", envKeyFile)
 			obscuredKey, err := os.ReadFile(envKeyFile)
 			if err != nil {
@@ -144,16 +144,16 @@ func Decrypt(b io.ReadSeeker) (io.Reader, error) {
 				return nil, fmt.Errorf("unable to delete temp file with configKey: %w", errRemove)
 			}
 			configKey = []byte(obscure.MustReveal(string(obscuredKey)))
-			fs.Debugf(nil, "using _RCLONE_CONFIG_KEY_FILE for configKey")
+			fs.Debugf(nil, "using _SCE_CONFIG_KEY_FILE for configKey")
 		} else if len(configKey) == 0 {
 			if usingPasswordCommand {
 				return nil, errors.New("using --password-command derived password, unable to decrypt configuration")
 			}
 			if usingEnvPassword {
-				return nil, errors.New("using RCLONE_CONFIG_PASS env password, unable to decrypt configuration")
+				return nil, errors.New("using SCE_CONFIG_PASS env password, unable to decrypt configuration")
 			}
 			if !ci.AskPassword {
-				return nil, errors.New("unable to decrypt configuration and not allowed to ask for password - set RCLONE_CONFIG_PASS to your configuration password")
+				return nil, errors.New("unable to decrypt configuration and not allowed to ask for password - set SCE_CONFIG_PASS to your configuration password")
 			}
 			getConfigPassword("Enter configuration password:")
 		}
@@ -221,7 +221,7 @@ func Encrypt(src io.Reader, dst io.Writer) error {
 
 	_, _ = fmt.Fprintln(dst, "# Encrypted rclone configuration File")
 	_, _ = fmt.Fprintln(dst, "")
-	_, _ = fmt.Fprintln(dst, "RCLONE_ENCRYPT_V0:")
+	_, _ = fmt.Fprintln(dst, "SCE_ENCRYPT_V0:")
 
 	// Generate new nonce and write it to the start of the ciphertext
 	var nonce [24]byte
@@ -303,13 +303,13 @@ func SetConfigPassword(password string) error {
 			return fmt.Errorf("error closing temp file with configKey: %w", err)
 		}
 		fs.Debugf(nil, "saving configKey to temp file")
-		err = os.Setenv("_RCLONE_CONFIG_KEY_FILE", tempFile.Name())
+		err = os.Setenv("_SCE_CONFIG_KEY_FILE", tempFile.Name())
 		if err != nil {
 			errRemove := os.Remove(tempFile.Name())
 			if errRemove != nil {
-				return fmt.Errorf("unable to set environment variable _RCLONE_CONFIG_KEY_FILE and unable to delete the temp file: %w", err)
+				return fmt.Errorf("unable to set environment variable _SCE_CONFIG_KEY_FILE and unable to delete the temp file: %w", err)
 			}
-			return fmt.Errorf("unable to set environment variable _RCLONE_CONFIG_KEY_FILE: %w", err)
+			return fmt.Errorf("unable to set environment variable _SCE_CONFIG_KEY_FILE: %w", err)
 		}
 	}
 	return nil
@@ -326,10 +326,10 @@ func ClearConfigPassword() {
 //
 // This will use --password-command if configured to read the password.
 func changeConfigPassword() {
-	// Set RCLONE_PASSWORD_CHANGE to "1" when calling the --password-command tool
-	_ = os.Setenv("RCLONE_PASSWORD_CHANGE", "1")
+	// Set SCE_PASSWORD_CHANGE to "1" when calling the --password-command tool
+	_ = os.Setenv("SCE_PASSWORD_CHANGE", "1")
 	defer func() {
-		_ = os.Unsetenv("RCLONE_PASSWORD_CHANGE")
+		_ = os.Unsetenv("SCE_PASSWORD_CHANGE")
 	}()
 	pass, err := GetPasswordCommand(context.Background())
 	if err != nil {

@@ -34,8 +34,8 @@ import (
 // Constants
 const (
 	nameCipherBlockSize = aes.BlockSize
-	fileMagicV0         = "RCLONE\x00\x00"
-	fileMagicV1         = "RCLONE\x00\x01"
+	fileMagicV0         = "SCE\x00\x00"
+	fileMagicV1         = "SCE\x00\x01"
 	fileMagicSize       = len(fileMagicV0)
 	fileNonceSize       = 24
 	fileHeaderSize      = fileMagicSize + fileNonceSize

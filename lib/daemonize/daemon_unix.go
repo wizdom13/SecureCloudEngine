@@ -93,7 +93,7 @@ func argsToEnv(origArgs, origEnv []string) (args, env []string) {
 			val = "true"
 		}
 
-		name := "RCLONE_" + strings.ToUpper(strings.ReplaceAll(key, "-", "_"))
+		name := "SCE_" + strings.ToUpper(strings.ReplaceAll(key, "-", "_"))
 
 		pref := name + "="
 		line := name + "=" + val

@@ -66,7 +66,7 @@ type Options struct {
 // Default values
 const (
 	DefaultMaxDelete     int    = 50
-	DefaultCheckFilename string = "RCLONE_TEST"
+	DefaultCheckFilename string = "SCE_TEST"
 )
 
 // DefaultWorkdir is default working directory

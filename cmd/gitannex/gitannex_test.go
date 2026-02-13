@@ -713,7 +713,7 @@ var fstestTestCases = []testCase{
 	{
 		label: "HandlesPrepareWithRemoteContainingOptions",
 		testProtocolFunc: func(t *testing.T, h *testState) {
-			const envVar = "RCLONE_CONFIG_fake_remote_TYPE"
+			const envVar = "SCE_CONFIG_fake_remote_TYPE"
 			require.NoError(t, os.Setenv(envVar, "memory"))
 			t.Cleanup(func() { require.NoError(t, os.Unsetenv(envVar)) })
 

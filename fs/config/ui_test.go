@@ -33,8 +33,8 @@ func testConfigFile(t *testing.T, options []fs.Option, configFileName string) fu
 	ctx := context.Background()
 	ci := fs.GetConfig(ctx)
 	config.ClearConfigPassword()
-	_ = os.Unsetenv("_RCLONE_CONFIG_KEY_FILE")
-	_ = os.Unsetenv("RCLONE_CONFIG_PASS")
+	_ = os.Unsetenv("_SCE_CONFIG_KEY_FILE")
+	_ = os.Unsetenv("SCE_CONFIG_PASS")
 	// create temp config file
 	tempFile, err := os.CreateTemp("", configFileName)
 	assert.NoError(t, err)
@@ -78,8 +78,8 @@ func testConfigFile(t *testing.T, options []fs.Option, configFileName string) fu
 		*ci = oldConfig
 		config.SetData(oldConfigFile)
 
-		_ = os.Unsetenv("_RCLONE_CONFIG_KEY_FILE")
-		_ = os.Unsetenv("RCLONE_CONFIG_PASS")
+		_ = os.Unsetenv("_SCE_CONFIG_KEY_FILE")
+		_ = os.Unsetenv("SCE_CONFIG_PASS")
 	}
 }
 

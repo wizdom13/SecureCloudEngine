@@ -77,7 +77,7 @@ import (
 )
 
 func main() {
-	v := os.Getenv("RCLONE_PASSWORD_CHANGE")
+	v := os.Getenv("SCE_PASSWORD_CHANGE")
 	if v == "" {
 		log.Fatal("Env var not found")
 	} else if v != "1" {

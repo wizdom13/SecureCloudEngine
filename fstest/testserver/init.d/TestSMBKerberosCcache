@@ -3,17 +3,17 @@
 set -e
 
 # Set default location for Kerberos config and ccache. Can be overridden by the caller
-# using environment variables RCLONE_TEST_CUSTOM_CCACHE_LOCATION and KRB5_CONFIG.
+# using environment variables SCE_TEST_CUSTOM_CCACHE_LOCATION and KRB5_CONFIG.
 export TEMP_DIR=/tmp/rclone_krb5_ccache
 mkdir -p "${TEMP_DIR}"
 export KRB5_CONFIG=${KRB5_CONFIG:-${TEMP_DIR}/krb5.conf}
-export RCLONE_TEST_CUSTOM_CCACHE_LOCATION=${RCLONE_TEST_CUSTOM_CCACHE_LOCATION:-${TEMP_DIR}/ccache}
+export SCE_TEST_CUSTOM_CCACHE_LOCATION=${SCE_TEST_CUSTOM_CCACHE_LOCATION:-${TEMP_DIR}/ccache}
 
 IMAGE=rclone/test-smb-kerberos-ccache
 NAME=smb-kerberos-ccache
 USER=rclone
-DOMAIN=RCLONE
-REALM=RCLONE.LOCAL
+DOMAIN=SCE
+REALM=SCE.LOCAL
 SMB_PORT=28637
 KRB5_PORT=28638
 
@@ -71,14 +71,14 @@ EOF
 
     docker cp "${KRB5_CONFIG}" ${NAME}:/etc/krb5.conf
     docker exec ${NAME} samba-tool user get-kerberos-ticket rclone --output-krb5-ccache=/tmp/ccache
-    docker cp ${NAME}:/tmp/ccache "${RCLONE_TEST_CUSTOM_CCACHE_LOCATION}"
+    docker cp ${NAME}:/tmp/ccache "${SCE_TEST_CUSTOM_CCACHE_LOCATION}"
     sed -i -e "s/localhost/localhost:${KRB5_PORT}/" "${KRB5_CONFIG}"
 
     echo type=smb
     echo host=localhost
     echo port=$SMB_PORT
     echo use_kerberos=true
-    echo kerberos_ccache=${RCLONE_TEST_CUSTOM_CCACHE_LOCATION}
+    echo kerberos_ccache=${SCE_TEST_CUSTOM_CCACHE_LOCATION}
     echo _connect=127.0.0.1:${SMB_PORT}
 }
 

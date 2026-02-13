@@ -19,7 +19,7 @@ import (
 
 // TestMain is initially called by go test to initiate the testing.
 // TestMain is also called during the tests to start rclone main in a fresh context (using exec.Command).
-// The context is determined by setting/finding the environment variable RCLONE_TEST_MAIN
+// The context is determined by setting/finding the environment variable SCE_TEST_MAIN
 func TestMain(m *testing.M) {
 	_, found := os.LookupEnv(rcloneTestMain)
 	if !found {
@@ -39,7 +39,7 @@ func TestMain(m *testing.M) {
 	}
 }
 
-const rcloneTestMain = "RCLONE_TEST_MAIN"
+const rcloneTestMain = "SCE_TEST_MAIN"
 
 // rcloneExecMain calls rclone with the given environment and arguments.
 // The environment variables are in a single string separated by ;
@@ -61,7 +61,7 @@ func rcloneExecMain(env string, args ...string) (string, error) {
 
 // rcloneEnv calls rclone with the given environment and arguments.
 // The environment variables are in a single string separated by ;
-// The test config file is automatically configured in RCLONE_CONFIG.
+// The test config file is automatically configured in SCE_CONFIG.
 // The terminal output is returned as a string.
 func rcloneEnv(env string, args ...string) (string, error) {
 	envConfig := env
@@ -69,25 +69,25 @@ func rcloneEnv(env string, args ...string) (string, error) {
 		if envConfig != "" {
 			envConfig += ";"
 		}
-		envConfig += "RCLONE_CONFIG=" + testConfig
+		envConfig += "SCE_CONFIG=" + testConfig
 	}
 	return rcloneExecMain(envConfig, args...)
 }
 
 // rclone calls rclone with the given arguments, E.g. "version","--help".
-// The test config file is automatically configured in RCLONE_CONFIG.
+// The test config file is automatically configured in SCE_CONFIG.
 // The terminal output is returned as a string.
 func rclone(args ...string) (string, error) {
 	return rcloneEnv("", args...)
 }
 
-// getEnvInitial returns the os environment variables cleaned for RCLONE_ vars (except RCLONE_TEST_MAIN).
+// getEnvInitial returns the os environment variables cleaned for SCE_ vars (except SCE_TEST_MAIN).
 func getEnvInitial() []string {
 	if envInitial == nil {
 		// Set initial environment variables
 		osEnv := os.Environ()
 		for i := range osEnv {
-			if !strings.HasPrefix(osEnv[i], "RCLONE_") || strings.HasPrefix(osEnv[i], rcloneTestMain) {
+			if !strings.HasPrefix(osEnv[i], "SCE_") || strings.HasPrefix(osEnv[i], rcloneTestMain) {
 				envInitial = append(envInitial, osEnv[i])
 			}
 		}
@@ -179,7 +179,7 @@ func TestCmdTest(t *testing.T) {
 	}
 
 	// Test effect of environment variable
-	env := "RCLONE_LOG_LEVEL=DEBUG"
+	env := "SCE_LOG_LEVEL=DEBUG"
 	out, err = rcloneEnv(env, "version")
 	if assert.NoError(t, err) {
 		assert.Contains(t, out, "rclone v")
@@ -187,7 +187,7 @@ func TestCmdTest(t *testing.T) {
 	}
 
 	// Test effect of multiple environment variables, including one with ,
-	env = "RCLONE_LOG_LEVEL=DEBUG;RCLONE_LOG_FORMAT=date,shortfile;RCLONE_STATS=173ms"
+	env = "SCE_LOG_LEVEL=DEBUG;SCE_LOG_FORMAT=date,shortfile;SCE_STATS=173ms"
 	out, err = rcloneEnv(env, "version")
 	if assert.NoError(t, err) {
 		assert.Contains(t, out, "rclone v")

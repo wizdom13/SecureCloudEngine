@@ -380,7 +380,7 @@ func Run(t *testing.T, opt *Opt) {
 		unwrappableFsMethods = []string{"Command"} // these Fs methods don't need to be wrapped ever
 	)
 
-	if strings.HasSuffix(os.Getenv("RCLONE_CONFIG"), "/notfound") && *fstest.RemoteName == "" && !opt.QuickTestOK {
+	if strings.HasSuffix(os.Getenv("SCE_CONFIG"), "/notfound") && *fstest.RemoteName == "" && !opt.QuickTestOK {
 		t.Skip("quicktest only")
 	}
 

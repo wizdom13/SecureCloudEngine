@@ -10,7 +10,7 @@ import (
 
 // We use a special environment variable to let the child process know its role.
 const (
-	DaemonMarkVar   = "_RCLONE_DAEMON_"
+	DaemonMarkVar   = "_SCE_DAEMON_"
 	DaemonMarkChild = "_rclone_daemon_"
 )
 

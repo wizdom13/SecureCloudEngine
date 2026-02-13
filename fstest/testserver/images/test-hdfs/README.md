@@ -35,9 +35,9 @@ test can be run against kerberos-enabled hdfs
 1. configure local krb5.conf
     ```
     [libdefaults]
-        default_realm = KERBEROS.RCLONE
+        default_realm = KERBEROS.SCE
     [realms]
-        KERBEROS.RCLONE = {
+        KERBEROS.SCE = {
             kdc = localhost
         }
     ```

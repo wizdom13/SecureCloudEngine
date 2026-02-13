@@ -12,10 +12,10 @@ RUN mkdir -p /data/config /data/cache /mnt \
  && echo "user_allow_other" >> /etc/fuse.conf \
  && rclone version
 
-ENV RCLONE_CONFIG=/data/config/rclone.conf
-ENV RCLONE_CACHE_DIR=/data/cache
-ENV RCLONE_BASE_DIR=/mnt
-ENV RCLONE_VERBOSE=0
+ENV SCE_CONFIG=/data/config/rclone.conf
+ENV SCE_CACHE_DIR=/data/cache
+ENV SCE_BASE_DIR=/mnt
+ENV SCE_VERBOSE=0
 
 ENV HTTP_PROXY=
 ENV HTTPS_PROXY=

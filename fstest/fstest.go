@@ -57,12 +57,12 @@ func Initialise() {
 	ci := fs.GetConfig(ctx)
 	// Never ask for passwords, fail instead.
 	// If your local config is encrypted set environment variable
-	// "RCLONE_CONFIG_PASS=hunter2" (or your password)
+	// "SCE_CONFIG_PASS=hunter2" (or your password)
 	ci.AskPassword = false
 	// Override the config file from the environment - we don't
 	// parse the flags any more so this doesn't happen
 	// automatically
-	if envConfig := os.Getenv("RCLONE_CONFIG"); envConfig != "" {
+	if envConfig := os.Getenv("SCE_CONFIG"); envConfig != "" {
 		_ = config.SetConfigPath(envConfig)
 	}
 	if *RemoteName == "local" {

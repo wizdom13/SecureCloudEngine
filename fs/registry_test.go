@@ -197,17 +197,17 @@ func TestOptionFlagName(t *testing.T) {
 }
 
 func TestOptionEnvVarName(t *testing.T) {
-	assert.Equal(t, "RCLONE_LOCAL_NOUNC", nouncOption.EnvVarName("local"))
-	assert.Equal(t, "RCLONE_LOCAL_COPY_LINKS", copyLinksOption.EnvVarName("local"))
-	assert.Equal(t, "RCLONE_LOCAL_CASE_INSENSITIVE", caseInsensitiveOption.EnvVarName("local"))
+	assert.Equal(t, "SCE_LOCAL_NOUNC", nouncOption.EnvVarName("local"))
+	assert.Equal(t, "SCE_LOCAL_COPY_LINKS", copyLinksOption.EnvVarName("local"))
+	assert.Equal(t, "SCE_LOCAL_CASE_INSENSITIVE", caseInsensitiveOption.EnvVarName("local"))
 }
 
 func TestOptionGetters(t *testing.T) {
 	// Set up env vars
 	envVars := [][2]string{
-		{"RCLONE_CONFIG_LOCAL_POTATO_PIE", "yes"},
-		{"RCLONE_COPY_LINKS", "TRUE"},
-		{"RCLONE_LOCAL_NOUNC", "NOUNC"},
+		{"SCE_CONFIG_LOCAL_POTATO_PIE", "yes"},
+		{"SCE_COPY_LINKS", "TRUE"},
+		{"SCE_LOCAL_NOUNC", "NOUNC"},
 	}
 	for _, ev := range envVars {
 		assert.NoError(t, os.Setenv(ev[0], ev[1]))
@@ -231,10 +231,10 @@ func TestOptionGetters(t *testing.T) {
 
 	// set up getters
 
-	// A configmap.Getter to read from the environment RCLONE_CONFIG_backend_option_name
+	// A configmap.Getter to read from the environment SCE_CONFIG_backend_option_name
 	configEnvVarsGetter := configEnvVars("local")
 
-	// A configmap.Getter to read from the environment RCLONE_option_name
+	// A configmap.Getter to read from the environment SCE_option_name
 	optionEnvVarsGetter := optionEnvVars{"local", testOptions}
 
 	// A configmap.Getter to read either the default value or the set

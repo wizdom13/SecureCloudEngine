@@ -153,7 +153,7 @@ import (
 )
 
 func main() {
-	if _, found := os.LookupEnv("RCLONE_PASSWORD_CHANGE"); found {
+	if _, found := os.LookupEnv("SCE_PASSWORD_CHANGE"); found {
 		fmt.Println("Env var set")
 	} else {
 		fmt.Println("OK")

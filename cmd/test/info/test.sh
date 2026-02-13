@@ -37,7 +37,7 @@ for remote; do
   case $remote in
     Local)
       l=Local$(uname)
-      export RCLONE_CONFIG_${l:u}_TYPE=local
+      export SCE_CONFIG_${l:u}_TYPE=local
       dir=$l:infotest;;
     TestGCS)
       dir=$remote:$GCS_BUCKET/infotest;;

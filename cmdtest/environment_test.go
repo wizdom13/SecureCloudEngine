@@ -37,7 +37,7 @@ func TestEnvironmentVariables(t *testing.T) {
 	}
 
 	// Test of flag.Value
-	env = "RCLONE_MAX_DEPTH=2"
+	env = "SCE_MAX_DEPTH=2"
 	out, err = rcloneEnv(env, "lsl", testFolder)
 	if assert.NoError(t, err) {
 		assert.Contains(t, out, "file1.txt")     // depth 2
@@ -45,7 +45,7 @@ func TestEnvironmentVariables(t *testing.T) {
 	}
 
 	// Test of flag.Changed (tests #5341 Issue1)
-	env = "RCLONE_LOG_LEVEL=DEBUG"
+	env = "SCE_LOG_LEVEL=DEBUG"
 	out, err = rcloneEnv(env, "version", "--quiet")
 	if assert.Error(t, err) {
 		assert.Contains(t, out, " DEBUG ")
@@ -54,14 +54,14 @@ func TestEnvironmentVariables(t *testing.T) {
 	}
 
 	// Test of flag.DefValue
-	env = "RCLONE_STATS=173ms"
+	env = "SCE_STATS=173ms"
 	out, err = rcloneEnv(env, "help", "flags")
 	if assert.NoError(t, err) {
 		assert.Contains(t, out, "(default 173ms)")
 	}
 
 	// Test of command line flags overriding environment flags
-	env = "RCLONE_MAX_DEPTH=2"
+	env = "SCE_MAX_DEPTH=2"
 	out, err = rcloneEnv(env, "lsl", testFolder, "--max-depth", "3")
 	if assert.NoError(t, err) {
 		assert.Contains(t, out, "fileA1.txt")     // depth 3
@@ -69,18 +69,18 @@ func TestEnvironmentVariables(t *testing.T) {
 	}
 
 	// Test of debug logging while initialising flags from environment (tests #5341 Enhance1)
-	env = "RCLONE_STATS=173ms"
+	env = "SCE_STATS=173ms"
 	out, err = rcloneEnv(env, "version", "-vv")
 	if assert.NoError(t, err) {
 		assert.Contains(t, out, " DEBUG : ")
 		assert.Contains(t, out, "--stats")
 		assert.Contains(t, out, "173ms")
-		assert.Contains(t, out, "RCLONE_STATS=")
+		assert.Contains(t, out, "SCE_STATS=")
 	}
 
 	// Backend flags and remote name
 	// - The listremotes command includes names from environment variables,
-	//   the part between "RCLONE_CONFIG_" and "_TYPE", converted to lowercase.
+	//   the part between "SCE_CONFIG_" and "_TYPE", converted to lowercase.
 	// - When using a remote created from env, e.g. with lsd command,
 	//   the name is case insensitive in contrast to remotes in config file
 	//   (fs.ConfigToEnv converts to uppercase before checking environment).
@@ -90,7 +90,7 @@ func TestEnvironmentVariables(t *testing.T) {
 	//   were replaced with '_' before lookup.
 	// ===================================
 
-	env = "RCLONE_CONFIG_MY-LOCAL_TYPE=local"
+	env = "SCE_CONFIG_MY-LOCAL_TYPE=local"
 	out, err = rcloneEnv(env, "listremotes")
 	if assert.NoError(t, err) {
 		assert.Contains(t, out, "my-local:")
@@ -114,7 +114,7 @@ func TestEnvironmentVariables(t *testing.T) {
 		assert.Contains(t, out, "Failed to create file system")
 	}
 
-	env = "RCLONE_CONFIG_MY_LOCAL_TYPE=local"
+	env = "SCE_CONFIG_MY_LOCAL_TYPE=local"
 	out, err = rcloneEnv(env, "listremotes")
 	if assert.NoError(t, err) {
 		assert.Contains(t, out, "my_local:")
@@ -158,7 +158,7 @@ func TestEnvironmentVariables(t *testing.T) {
 	}
 
 	// Verify symlink warning when skip_links=false on all levels
-	env = "RCLONE_SKIP_LINKS=false;RCLONE_LOCAL_SKIP_LINKS=false;RCLONE_CONFIG_MYLOCAL_SKIP_LINKS=false"
+	env = "SCE_SKIP_LINKS=false;SCE_LOCAL_SKIP_LINKS=false;SCE_CONFIG_MYLOCAL_SKIP_LINKS=false"
 	out, err = rcloneEnv(env, "lsd", "myLocal,skip_links=false:"+testdataPath, "--skip-links=false")
 	//t.Logf("\n" + out)
 	if assert.NoError(t, err) {
@@ -167,7 +167,7 @@ func TestEnvironmentVariables(t *testing.T) {
 	}
 
 	// Test precedence of connection strings
-	env = "RCLONE_SKIP_LINKS=false;RCLONE_LOCAL_SKIP_LINKS=false;RCLONE_CONFIG_MYLOCAL_SKIP_LINKS=false"
+	env = "SCE_SKIP_LINKS=false;SCE_LOCAL_SKIP_LINKS=false;SCE_CONFIG_MYLOCAL_SKIP_LINKS=false"
 	out, err = rcloneEnv(env, "lsd", "myLocal,skip_links:"+testdataPath, "--skip-links=false")
 	if assert.NoError(t, err) {
 		assert.NotContains(t, out, "symlinkA")
@@ -175,7 +175,7 @@ func TestEnvironmentVariables(t *testing.T) {
 	}
 
 	// Test precedence of command line flags
-	env = "RCLONE_SKIP_LINKS=false;RCLONE_LOCAL_SKIP_LINKS=false;RCLONE_CONFIG_MYLOCAL_SKIP_LINKS=false"
+	env = "SCE_SKIP_LINKS=false;SCE_LOCAL_SKIP_LINKS=false;SCE_CONFIG_MYLOCAL_SKIP_LINKS=false"
 	out, err = rcloneEnv(env, "lsd", "myLocal:"+testdataPath, "--skip-links")
 	if assert.NoError(t, err) {
 		assert.NotContains(t, out, "symlinkA")
@@ -183,7 +183,7 @@ func TestEnvironmentVariables(t *testing.T) {
 	}
 
 	// Test precedence of remote specific environment variables (tests #5341 Issue2)
-	env = "RCLONE_SKIP_LINKS=false;RCLONE_LOCAL_SKIP_LINKS=false;RCLONE_CONFIG_MYLOCAL_SKIP_LINKS=true"
+	env = "SCE_SKIP_LINKS=false;SCE_LOCAL_SKIP_LINKS=false;SCE_CONFIG_MYLOCAL_SKIP_LINKS=true"
 	out, err = rcloneEnv(env, "lsd", "myLocal:"+testdataPath)
 	if assert.NoError(t, err) {
 		assert.NotContains(t, out, "symlinkA")
@@ -191,7 +191,7 @@ func TestEnvironmentVariables(t *testing.T) {
 	}
 
 	// Test precedence of backend specific environment variables (tests #5341 Issue3)
-	env = "RCLONE_SKIP_LINKS=false;RCLONE_LOCAL_SKIP_LINKS=true"
+	env = "SCE_SKIP_LINKS=false;SCE_LOCAL_SKIP_LINKS=true"
 	out, err = rcloneEnv(env, "lsd", "myLocal:"+testdataPath)
 	if assert.NoError(t, err) {
 		assert.NotContains(t, out, "symlinkA")
@@ -199,7 +199,7 @@ func TestEnvironmentVariables(t *testing.T) {
 	}
 
 	// Test precedence of backend generic environment variables
-	env = "RCLONE_SKIP_LINKS=true"
+	env = "SCE_SKIP_LINKS=true"
 	out, err = rcloneEnv(env, "lsd", "myLocal:"+testdataPath)
 	if assert.NoError(t, err) {
 		assert.NotContains(t, out, "symlinkA")
@@ -241,7 +241,7 @@ func TestEnvironmentVariables(t *testing.T) {
 	// Display of backend defaults (tests #4659)
 	//------------------------------------------
 
-	env = "RCLONE_DRIVE_CHUNK_SIZE=111M"
+	env = "SCE_DRIVE_CHUNK_SIZE=111M"
 	out, err = rcloneEnv(env, "help", "flags")
 	if assert.NoError(t, err) {
 		assert.Regexp(t, "--drive-chunk-size[^\\(]+\\(default 111M\\)", out)
@@ -268,7 +268,7 @@ func TestEnvironmentVariables(t *testing.T) {
 
 	// Test backend generic flags
 	// having effect on the underlying local remote
-	env = "RCLONE_SKIP_LINKS=true"
+	env = "SCE_SKIP_LINKS=true"
 	out, err = rcloneEnv(env, "lsd", "myAlias:")
 	if assert.NoError(t, err) {
 		assert.NotContains(t, out, "symlinkA")
@@ -277,7 +277,7 @@ func TestEnvironmentVariables(t *testing.T) {
 
 	// Test backend specific flags
 	// having effect on the underlying local remote
-	env = "RCLONE_LOCAL_SKIP_LINKS=true"
+	env = "SCE_LOCAL_SKIP_LINKS=true"
 	out, err = rcloneEnv(env, "lsd", "myAlias:")
 	if assert.NoError(t, err) {
 		assert.NotContains(t, out, "symlinkA")
@@ -286,14 +286,14 @@ func TestEnvironmentVariables(t *testing.T) {
 
 	// Test remote specific flags
 	// having no effect unless supported by the immediate remote (alias)
-	env = "RCLONE_CONFIG_MYALIAS_SKIP_LINKS=true"
+	env = "SCE_CONFIG_MYALIAS_SKIP_LINKS=true"
 	out, err = rcloneEnv(env, "lsd", "myAlias:")
 	if assert.NoError(t, err) {
 		assert.Contains(t, out, "NOTICE: symlinkA:")
 		assert.Contains(t, out, "folderA")
 	}
 
-	env = "RCLONE_CONFIG_MYALIAS_REMOTE=" + "myLocal:" + testdataPath + "/folderA"
+	env = "SCE_CONFIG_MYALIAS_REMOTE=" + "myLocal:" + testdataPath + "/folderA"
 	out, err = rcloneEnv(env, "lsl", "myAlias:")
 	if assert.NoError(t, err) {
 		assert.Contains(t, out, "fileA1.txt")
@@ -334,13 +334,13 @@ func TestEnvironmentVariables(t *testing.T) {
 			assert.Contains(t, out, `"}`)
 		}
 	}
-	env = "RCLONE_USE_JSON_LOG=1;RCLONE_LOG_LEVEL=DEBUG"
+	env = "SCE_USE_JSON_LOG=1;SCE_LOG_LEVEL=DEBUG"
 	out, err = rcloneEnv(env, "version")
 	jsonLogOK()
-	env = "RCLONE_USE_JSON_LOG=1"
+	env = "SCE_USE_JSON_LOG=1"
 	out, err = rcloneEnv(env, "version", "-vv")
 	jsonLogOK()
-	env = "RCLONE_LOG_LEVEL=DEBUG"
+	env = "SCE_LOG_LEVEL=DEBUG"
 	out, err = rcloneEnv(env, "version", "--use-json-log")
 	jsonLogOK()
 	env = ""
@@ -365,22 +365,22 @@ func TestEnvironmentVariables(t *testing.T) {
 	require.NoError(t, err)
 	assert.Equal(t, []string{"gif", "tif"}, parseFileFilters(out))
 
-	env = `RCLONE_EXCLUDE=*.jpg`
+	env = `SCE_EXCLUDE=*.jpg`
 	out, err = rcloneEnv(env, "version", "-vv", "--dump", "filters", "--exclude", "*.gif")
 	require.NoError(t, err)
 	assert.Equal(t, []string{"jpg", "gif"}, parseFileFilters(out))
 
-	env = `RCLONE_EXCLUDE=*.jpg,*.png`
+	env = `SCE_EXCLUDE=*.jpg,*.png`
 	out, err = rcloneEnv(env, "version", "-vv", "--dump", "filters", "--exclude", "*.gif", "--exclude", "*.tif")
 	require.NoError(t, err)
 	assert.Equal(t, []string{"jpg", "png", "gif", "tif"}, parseFileFilters(out))
 
-	env = `RCLONE_EXCLUDE="*.jpg","*.png"`
+	env = `SCE_EXCLUDE="*.jpg","*.png"`
 	out, err = rcloneEnv(env, "version", "-vv", "--dump", "filters")
 	require.NoError(t, err)
 	assert.Equal(t, []string{"jpg", "png"}, parseFileFilters(out))
 
-	env = `RCLONE_EXCLUDE="*.,,,","*.png"`
+	env = `SCE_EXCLUDE="*.,,,","*.png"`
 	out, err = rcloneEnv(env, "version", "-vv", "--dump", "filters")
 	require.NoError(t, err)
 	assert.Equal(t, []string{",,,", "png"}, parseFileFilters(out))

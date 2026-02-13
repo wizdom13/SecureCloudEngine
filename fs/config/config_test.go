@@ -22,7 +22,7 @@ func TestConfigLoad(t *testing.T) {
 	}()
 	config.ClearConfigPassword()
 	sections := config.Data().GetSectionList()
-	var expect = []string{"RCLONE_ENCRYPT_V0", "nounc", "unc"}
+	var expect = []string{"SCE_ENCRYPT_V0", "nounc", "unc"}
 	assert.Equal(t, expect, sections)
 
 	keys := config.Data().GetKeyList("nounc")

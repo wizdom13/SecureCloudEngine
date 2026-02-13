@@ -107,7 +107,7 @@ type e2eTestingContext struct {
 //
 //	.
 //	|-- bin
-//	|   `-- git-annex-remote-rclone-builtin -> ${PATH_TO_RCLONE_BINARY}
+//	|   `-- git-annex-remote-rclone-builtin -> ${PATH_TO_SCE_BINARY}
 //	|-- ephemeralRepo
 //	`-- user
 //		`-- .config

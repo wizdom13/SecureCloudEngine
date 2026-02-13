@@ -46,11 +46,11 @@ func TestMount(t *testing.T) {
 			}
 			require.NoError(t, err)
 			// Configure rclone via environment var since the mount gets run in a subprocess
-			_ = os.Setenv("RCLONE_NFS_CACHE_DIR", nfs.Opt.HandleCacheDir)
-			_ = os.Setenv("RCLONE_NFS_CACHE_TYPE", cacheType)
+			_ = os.Setenv("SCE_NFS_CACHE_DIR", nfs.Opt.HandleCacheDir)
+			_ = os.Setenv("SCE_NFS_CACHE_TYPE", cacheType)
 			t.Cleanup(func() {
-				_ = os.Unsetenv("RCLONE_NFS_CACHE_DIR")
-				_ = os.Unsetenv("RCLONE_NFS_CACHE_TYPE")
+				_ = os.Unsetenv("SCE_NFS_CACHE_DIR")
+				_ = os.Unsetenv("SCE_NFS_CACHE_TYPE")
 			})
 			vfstest.RunTests(t, false, vfscommon.CacheModeWrites, false, mount)
 		})

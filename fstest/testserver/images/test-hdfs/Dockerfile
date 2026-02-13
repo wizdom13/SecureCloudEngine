@@ -38,7 +38,7 @@ ADD yarn-site.xml    /etc/hadoop/yarn-site.xml
 
 ADD krb5.conf        /etc/
 ADD kdc.conf         /etc/krb5kdc/
-RUN echo '*/admin@KERBEROS.RCLONE *' > /etc/krb5kdc/kadm5.acl
+RUN echo '*/admin@KERBEROS.SCE *' > /etc/krb5kdc/kadm5.acl
 
 ADD run.sh /run.sh
 RUN chmod a+x /run.sh

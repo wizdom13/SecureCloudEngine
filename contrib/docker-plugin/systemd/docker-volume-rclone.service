@@ -11,9 +11,9 @@ ExecStart=/usr/bin/rclone serve docker
 ExecStartPre=/bin/mkdir -p /var/lib/docker-volumes/rclone
 ExecStartPre=/bin/mkdir -p /var/lib/docker-plugins/rclone/config
 ExecStartPre=/bin/mkdir -p /var/lib/docker-plugins/rclone/cache
-Environment=RCLONE_CONFIG=/var/lib/docker-plugins/rclone/config/rclone.conf
-Environment=RCLONE_CACHE_DIR=/var/lib/docker-plugins/rclone/cache
-Environment=RCLONE_VERBOSE=1
+Environment=SCE_CONFIG=/var/lib/docker-plugins/rclone/config/rclone.conf
+Environment=SCE_CACHE_DIR=/var/lib/docker-plugins/rclone/cache
+Environment=SCE_VERBOSE=1
 
 [Install]
 WantedBy=multi-user.target

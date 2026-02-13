@@ -27,20 +27,20 @@
     },
     "env": [
         {
-            "name": "RCLONE_VERBOSE",
+            "name": "SCE_VERBOSE",
             "value": "0",
             "settable": ["value"]
         },
         {
-            "name": "RCLONE_CONFIG",
+            "name": "SCE_CONFIG",
             "value": "/data/config/rclone.conf"
         },
         {
-            "name": "RCLONE_CACHE_DIR",
+            "name": "SCE_CACHE_DIR",
             "value": "/data/cache"
         },
         {
-            "name": "RCLONE_BASE_DIR",
+            "name": "SCE_BASE_DIR",
             "value": "/mnt"
         },
         {

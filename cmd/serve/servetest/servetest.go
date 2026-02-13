@@ -86,7 +86,7 @@ func run(t *testing.T, name string, start StartFn, useProxy bool) {
 
 	// Configure the backend with environment variables
 	cmd.Env = os.Environ()
-	prefix := "RCLONE_CONFIG_" + strings.ToUpper(remoteName[:len(remoteName)-1]) + "_"
+	prefix := "SCE_CONFIG_" + strings.ToUpper(remoteName[:len(remoteName)-1]) + "_"
 	for k, v := range config {
 		cmd.Env = append(cmd.Env, prefix+strings.ToUpper(k)+"="+v)
 	}

@@ -76,9 +76,9 @@ func TestRc(t *testing.T) {
 	})
 
 	t.Run("ListRemotes", func(t *testing.T) {
-		assert.NoError(t, os.Setenv("RCLONE_CONFIG_MY-LOCAL_TYPE", "local"))
+		assert.NoError(t, os.Setenv("SCE_CONFIG_MY-LOCAL_TYPE", "local"))
 		defer func() {
-			assert.NoError(t, os.Unsetenv("RCLONE_CONFIG_MY-LOCAL_TYPE"))
+			assert.NoError(t, os.Unsetenv("SCE_CONFIG_MY-LOCAL_TYPE"))
 		}()
 		call := rc.Calls.Get("config/listremotes")
 		assert.NotNil(t, call)

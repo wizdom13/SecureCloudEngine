@@ -7,7 +7,7 @@ if [ $KERBEROS = "true" ]; then
     ADMIN_PASSWORD="kerberos"
     USER_PASSWORD="user"
 
-    echo -e "$ADMIN_PASSWORD\n$ADMIN_PASSWORD" | kdb5_util -r "KERBEROS.RCLONE" create -s
+    echo -e "$ADMIN_PASSWORD\n$ADMIN_PASSWORD" | kdb5_util -r "KERBEROS.SCE" create -s
     echo -e "$ADMIN_PASSWORD\n$ADMIN_PASSWORD" | kadmin.local -q "addprinc hadoop/admin"
     echo -e "$USER_PASSWORD\n$USER_PASSWORD"   | kadmin.local -q "addprinc user"
     kadmin.local -q 'addprinc -randkey hdfs/localhost'

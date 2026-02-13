@@ -62,7 +62,7 @@ func run(name, command string) (out []byte, err error) {
 
 // envKey returns the environment variable name to set name, key
 func envKey(name, key string) string {
-	return fmt.Sprintf("RCLONE_CONFIG_%s_%s", strings.ToUpper(name), strings.ToUpper(key))
+	return fmt.Sprintf("SCE_CONFIG_%s_%s", strings.ToUpper(name), strings.ToUpper(key))
 }
 
 // match a line of config var=value

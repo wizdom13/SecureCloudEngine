@@ -5,8 +5,8 @@ set -e
 IMAGE=rclone/test-smb-kerberos
 NAME=smb-kerberos
 USER=rclone
-DOMAIN=RCLONE
-REALM=RCLONE.LOCAL
+DOMAIN=SCE
+REALM=SCE.LOCAL
 SMB_PORT=28633
 KRB5_PORT=28634
 

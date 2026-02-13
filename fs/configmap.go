@@ -8,7 +8,7 @@ import (
 	"github.com/rclone/rclone/fs/config/configmap"
 )
 
-// A configmap.Getter to read from the environment RCLONE_CONFIG_backend_option_name
+// A configmap.Getter to read from the environment SCE_CONFIG_backend_option_name
 type configEnvVars string
 
 // Get a config item from the environment variables if possible
@@ -21,7 +21,7 @@ func (configName configEnvVars) Get(key string) (value string, ok bool) {
 	return value, ok
 }
 
-// A configmap.Getter to read from the environment RCLONE_option_name
+// A configmap.Getter to read from the environment SCE_option_name
 type optionEnvVars struct {
 	prefix  string
 	options Options

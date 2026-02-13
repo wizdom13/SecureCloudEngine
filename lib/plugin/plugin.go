@@ -11,7 +11,7 @@ import (
 )
 
 func init() {
-	dir := os.Getenv("RCLONE_PLUGIN_PATH")
+	dir := os.Getenv("SCE_PLUGIN_PATH")
 	if dir == "" {
 		return
 	}
