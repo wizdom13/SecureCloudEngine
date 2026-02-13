@@ -131,35 +131,6 @@ update:
 tidy:
 	go mod tidy
 
-doc:	rclone.1 MANUAL.html MANUAL.txt rcdocs commanddocs
-
-rclone.1:	MANUAL.md
-	pandoc -s --from markdown-smart --to man MANUAL.md -o rclone.1
-
-MANUAL.md:	bin/make_manual.py docs/content/*.md commanddocs backenddocs rcdocs
-	./bin/make_manual.py
-
-MANUAL.html:	MANUAL.md
-	pandoc -s --from markdown-smart --to html MANUAL.md -o MANUAL.html
-
-MANUAL.txt:	MANUAL.md
-	pandoc -s --from markdown-smart --to plain MANUAL.md -o MANUAL.txt
-
-commanddocs: rclone
-	go generate ./lib/transform
-	-@rmdir -p '$$HOME/.config/rclone'
-	XDG_CACHE_HOME="" XDG_CONFIG_HOME="" HOME="\$$HOME" USER="\$$USER" rclone gendocs --config=/notfound docs/content/
-	@[ ! -e '$$HOME' ] || (echo 'Error: created unwanted directory named $$HOME' && exit 1)
-	go run bin/make_bisync_docs.go ./docs/content/
-
-backenddocs: rclone bin/make_backend_docs.py
-	-@rmdir -p '$$HOME/.config/rclone'
-	XDG_CACHE_HOME="" XDG_CONFIG_HOME="" HOME="\$$HOME" USER="\$$USER" ./bin/make_backend_docs.py
-	@[ ! -e '$$HOME' ] || (echo 'Error: created unwanted directory named $$HOME' && exit 1)
-
-rcdocs: rclone
-	bin/make_rc_docs.sh
-
 install: sce
 	install -d ${DESTDIR}/usr/bin
 	install ${GOPATH}/bin/sce ${DESTDIR}/usr/bi
