@@ -670,7 +670,7 @@ Normally rclone will work around a bug in Google Drive when using
 parents)" returns nothing sometimes. See #3114, #4289 and
 https://issuetracker.google.com/issues/149522397
 
-Rclone detects this by finding no items in more than one directory
+SecureCloudEngine detects this by finding no items in more than one directory
 when listing and retries them as lists of individual directories.
 
 This means that if you have a lot of empty directories rclone will end

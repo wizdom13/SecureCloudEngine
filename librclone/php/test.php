@@ -9,7 +9,7 @@ const REMOTE    = 'gdrive:/';
 const FOLDER    = "rcloneTest";
 const FILE      = "testFile.txt";
 
-$rc = new Rclone( __DIR__ . '/librclone.so' );
+$rc = new SecureCloudEngine( __DIR__ . '/librclone.so' );
 
 $response = $rc->rpc( "config/listremotes", "{}" );
 print_r( $response );

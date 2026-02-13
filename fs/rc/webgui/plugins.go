@@ -37,11 +37,11 @@ type PackageJSON struct {
 	Bugs struct {
 		URL string `json:"url"`
 	} `json:"bugs"`
-	Rclone RcloneConfig `json:"rclone"`
+	SecureCloudEngine SecureCloudEngineConfig `json:"rclone"`
 }
 
-// RcloneConfig represents the rclone specific config
-type RcloneConfig struct {
+// SecureCloudEngineConfig represents the rclone specific config
+type SecureCloudEngineConfig struct {
 	HandlesType      []string `json:"handlesType"`
 	PluginType       string   `json:"pluginType"`
 	RedirectReferrer bool     `json:"redirectReferrer"`
@@ -49,7 +49,7 @@ type RcloneConfig struct {
 }
 
 func (r *PackageJSON) isTesting() bool {
-	return r.Rclone.Test
+	return r.SecureCloudEngine.Test
 }
 
 var (
@@ -254,7 +254,7 @@ func ServePluginOK(w http.ResponseWriter, r *http.Request, pluginsMatchResult []
 	if err != nil {
 		return false
 	}
-	if !testPlugin.Rclone.Test {
+	if !testPlugin.SecureCloudEngine.Test {
 		return false
 	}
 	origin, _ := url.Parse(fmt.Sprintf("%s/%s", testPlugin.TestURL, pluginsMatchResult[3]))
@@ -287,7 +287,7 @@ func ServePluginWithReferrerOK(w http.ResponseWriter, r *http.Request, path stri
 			if err != nil {
 				return false
 			}
-			if currentPlugin.Rclone.RedirectReferrer {
+			if currentPlugin.SecureCloudEngine.RedirectReferrer {
 				path = fmt.Sprintf("/plugins/%s/%s/%s", referrerPluginMatch[1], referrerPluginMatch[2], path)
 
 				http.Redirect(w, r, path, http.StatusMovedPermanently)

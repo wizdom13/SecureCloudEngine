@@ -326,9 +326,9 @@ func (h *testState) requireWriteLine(line string) {
 // Preconfigure the handle. This enables the calling test to skip the PREPARE
 // handshake.
 func (h *testState) preconfigureServer() {
-	h.server.configRcloneRemoteName = h.remoteName
+	h.server.configSecureCloudEngineRemoteName = h.remoteName
 	h.server.configPrefix = h.remotePrefix
-	h.server.configRcloneLayout = string(layoutModeNodir)
+	h.server.configSecureCloudEngineLayout = string(layoutModeNodir)
 	h.server.configsDone = true
 }
 
@@ -494,7 +494,7 @@ var fstestTestCases = []testCase{
 			h.requireWriteLine("VALUE frankencase")
 			h.requireReadLineExact("PREPARE-SUCCESS")
 
-			require.Equal(t, h.server.configRcloneRemoteName, h.remoteName)
+			require.Equal(t, h.server.configSecureCloudEngineRemoteName, h.remoteName)
 			require.Equal(t, h.server.configPrefix, h.remotePrefix)
 			require.True(t, h.server.configsDone)
 
@@ -519,7 +519,7 @@ var fstestTestCases = []testCase{
 			h.requireWriteLine("VALUE nonexistentLayoutMode")
 			h.requireReadLineExact("PREPARE-SUCCESS")
 
-			require.Equal(t, h.server.configRcloneRemoteName, h.remoteName)
+			require.Equal(t, h.server.configSecureCloudEngineRemoteName, h.remoteName)
 			require.Equal(t, h.server.configPrefix, h.remotePrefix)
 			require.True(t, h.server.configsDone)
 
@@ -548,7 +548,7 @@ var fstestTestCases = []testCase{
 			h.requireWriteLine("VALUE frankencase")
 			h.requireReadLineExact("PREPARE-SUCCESS")
 
-			require.Equal(t, h.server.configRcloneRemoteName, "thisRemoteDoesNotExist")
+			require.Equal(t, h.server.configSecureCloudEngineRemoteName, "thisRemoteDoesNotExist")
 			require.Equal(t, h.server.configPrefix, h.remotePrefix)
 			require.True(t, h.server.configsDone)
 
@@ -577,7 +577,7 @@ var fstestTestCases = []testCase{
 			h.requireWriteLine("VALUE frankencase")
 			h.requireReadLineExact("PREPARE-SUCCESS")
 
-			require.Equal(t, h.server.configRcloneRemoteName, h.remotePrefix)
+			require.Equal(t, h.server.configSecureCloudEngineRemoteName, h.remotePrefix)
 			require.Equal(t, h.server.configPrefix, "/foo")
 			require.True(t, h.server.configsDone)
 
@@ -605,7 +605,7 @@ var fstestTestCases = []testCase{
 			h.requireWriteLine("VALUE frankencase")
 			h.requireReadLineExact("PREPARE-SUCCESS")
 
-			require.Equal(t, ":nonexistentBackend:", h.server.configRcloneRemoteName)
+			require.Equal(t, ":nonexistentBackend:", h.server.configSecureCloudEngineRemoteName)
 			require.Equal(t, "/foo", h.server.configPrefix)
 			require.True(t, h.server.configsDone)
 
@@ -629,7 +629,7 @@ var fstestTestCases = []testCase{
 			h.requireWriteLine("VALUE frankencase")
 			h.requireReadLineExact("PREPARE-SUCCESS")
 
-			require.Equal(t, ":local:", h.server.configRcloneRemoteName)
+			require.Equal(t, ":local:", h.server.configSecureCloudEngineRemoteName)
 			require.Equal(t, "/foo", h.server.configPrefix)
 			require.True(t, h.server.configsDone)
 
@@ -652,7 +652,7 @@ var fstestTestCases = []testCase{
 			h.requireWriteLine("VALUE frankencase")
 			h.requireReadLineExact("PREPARE-SUCCESS")
 
-			require.Equal(t, ":local", h.server.configRcloneRemoteName)
+			require.Equal(t, ":local", h.server.configSecureCloudEngineRemoteName)
 			require.Equal(t, "/foo", h.server.configPrefix)
 			require.True(t, h.server.configsDone)
 
@@ -676,7 +676,7 @@ var fstestTestCases = []testCase{
 			h.requireWriteLine("VALUE frankencase")
 			h.requireReadLineExact("PREPARE-SUCCESS")
 
-			require.Equal(t, ":local,description=banana:", h.server.configRcloneRemoteName)
+			require.Equal(t, ":local,description=banana:", h.server.configSecureCloudEngineRemoteName)
 			require.Equal(t, "/foo", h.server.configPrefix)
 			require.True(t, h.server.configsDone)
 
@@ -699,7 +699,7 @@ var fstestTestCases = []testCase{
 			h.requireWriteLine("VALUE frankencase")
 			h.requireReadLineExact("PREPARE-SUCCESS")
 
-			require.Equal(t, ":local,description=banana:/bad/path", h.server.configRcloneRemoteName)
+			require.Equal(t, ":local,description=banana:/bad/path", h.server.configSecureCloudEngineRemoteName)
 			require.Equal(t, "/foo", h.server.configPrefix)
 			require.True(t, h.server.configsDone)
 
@@ -727,7 +727,7 @@ var fstestTestCases = []testCase{
 			h.requireWriteLine("VALUE frankencase")
 			h.requireReadLineExact("PREPARE-SUCCESS")
 
-			require.Equal(t, "fake_remote,banana=yes:", h.server.configRcloneRemoteName)
+			require.Equal(t, "fake_remote,banana=yes:", h.server.configSecureCloudEngineRemoteName)
 			require.Equal(t, "/foo", h.server.configPrefix)
 			require.True(t, h.server.configsDone)
 
@@ -759,7 +759,7 @@ var fstestTestCases = []testCase{
 			h.requireWriteLine("VALUE frankencase")
 			h.requireReadLineExact("PREPARE-SUCCESS")
 
-			require.Equal(t, h.server.configRcloneRemoteName, h.remoteName)
+			require.Equal(t, h.server.configSecureCloudEngineRemoteName, h.remoteName)
 			require.Equal(t, h.server.configPrefix, h.remotePrefix)
 			require.True(t, h.server.configsDone)
 
@@ -793,7 +793,7 @@ var fstestTestCases = []testCase{
 
 			h.requireReadLineExact("PREPARE-SUCCESS")
 
-			require.Equal(t, h.server.configRcloneRemoteName, remoteNameWithSpaces)
+			require.Equal(t, h.server.configSecureCloudEngineRemoteName, remoteNameWithSpaces)
 			require.Equal(t, h.server.configPrefix, prefixWithWhitespace)
 			require.True(t, h.server.configsDone)
 

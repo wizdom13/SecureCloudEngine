@@ -54,7 +54,7 @@ accept in the HTTP header.
 ` + "`--{{ .Prefix }}baseurl`" + ` controls the URL prefix that rclone serves from.  By default
 rclone will serve from the root.  If you used ` + "`--{{ .Prefix }}baseurl \"/rclone\"`" + ` then
 rclone would serve from a URL starting with "/rclone/".  This is
-useful if you wish to proxy rclone serve.  Rclone automatically
+useful if you wish to proxy rclone serve.  SecureCloudEngine automatically
 inserts leading and trailing "/" on ` + "`--{{ .Prefix }}baseurl`" + `, so ` + "`--{{ .Prefix }}baseurl \"rclone\"`" + `,
 ` + "`--{{ .Prefix }}baseurl \"/rclone\"` and `--{{ .Prefix }}baseurl \"/rclone/\"`" + ` are all treated
 identically.

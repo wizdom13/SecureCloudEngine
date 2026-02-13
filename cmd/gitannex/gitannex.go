@@ -121,10 +121,10 @@ type server struct {
 	extensionGetGitRemoteName    bool
 	extensionUnavailableResponse bool
 
-	configsDone            bool
-	configPrefix           string
-	configRcloneRemoteName string
-	configRcloneLayout     string
+	configsDone                       bool
+	configPrefix                      string
+	configSecureCloudEngineRemoteName string
+	configSecureCloudEngineLayout     string
 }
 
 func (s *server) sendMsg(msg string) {
@@ -242,13 +242,13 @@ func (s *server) handleInitRemote() error {
 		return fmt.Errorf("failed to get configs: %w", err)
 	}
 
-	if err := validateRemoteName(s.configRcloneRemoteName); err != nil {
+	if err := validateRemoteName(s.configSecureCloudEngineRemoteName); err != nil {
 		s.sendMsg(fmt.Sprintf("INITREMOTE-FAILURE %s", err))
 		return fmt.Errorf("failed to init remote: %w", err)
 	}
 
-	if mode := parseLayoutMode(s.configRcloneLayout); mode == layoutModeUnknown {
-		err := fmt.Errorf("unknown layout mode: %s", s.configRcloneLayout)
+	if mode := parseLayoutMode(s.configSecureCloudEngineLayout); mode == layoutModeUnknown {
+		err := fmt.Errorf("unknown layout mode: %s", s.configSecureCloudEngineLayout)
 		s.sendMsg(fmt.Sprintf("INITREMOTE-FAILURE %s", err))
 		return fmt.Errorf("failed to init remote: %w", err)
 	}
@@ -260,11 +260,11 @@ func (s *server) handleInitRemote() error {
 func (s *server) mustSetConfigValue(id configID, value string) {
 	switch id {
 	case configRemoteName:
-		s.configRcloneRemoteName = value
+		s.configSecureCloudEngineRemoteName = value
 	case configPrefix:
 		s.configPrefix = value
 	case configLayout:
-		s.configRcloneLayout = value
+		s.configSecureCloudEngineLayout = value
 	default:
 		panic(fmt.Errorf("unhandled configId: %v", id))
 	}
@@ -350,13 +350,13 @@ func (s *server) handleTransfer(message *messageParser) error {
 		return fmt.Errorf("error getting configs: %w", err)
 	}
 
-	layout := parseLayoutMode(s.configRcloneLayout)
+	layout := parseLayoutMode(s.configSecureCloudEngineLayout)
 	if layout == layoutModeUnknown {
 		s.sendMsg(fmt.Sprintf("TRANSFER-FAILURE %s", argKey))
-		return fmt.Errorf("error parsing layout mode: %q", s.configRcloneLayout)
+		return fmt.Errorf("error parsing layout mode: %q", s.configSecureCloudEngineLayout)
 	}
 
-	remoteFsString, err := buildFsString(s.queryDirhash, layout, argKey, s.configRcloneRemoteName, s.configPrefix)
+	remoteFsString, err := buildFsString(s.queryDirhash, layout, argKey, s.configSecureCloudEngineRemoteName, s.configPrefix)
 	if err != nil {
 		s.sendMsg(fmt.Sprintf("TRANSFER-FAILURE %s", argKey))
 		return fmt.Errorf("error building fs string: %w", err)
@@ -419,13 +419,13 @@ func (s *server) handleCheckPresent(message *messageParser) error {
 		return fmt.Errorf("error getting configs: %s", err)
 	}
 
-	layout := parseLayoutMode(s.configRcloneLayout)
+	layout := parseLayoutMode(s.configSecureCloudEngineLayout)
 	if layout == layoutModeUnknown {
 		s.sendMsg(fmt.Sprintf("CHECKPRESENT-FAILURE %s", argKey))
-		return fmt.Errorf("error parsing layout mode: %q", s.configRcloneLayout)
+		return fmt.Errorf("error parsing layout mode: %q", s.configSecureCloudEngineLayout)
 	}
 
-	remoteFsString, err := buildFsString(s.queryDirhash, layout, argKey, s.configRcloneRemoteName, s.configPrefix)
+	remoteFsString, err := buildFsString(s.queryDirhash, layout, argKey, s.configSecureCloudEngineRemoteName, s.configPrefix)
 	if err != nil {
 		s.sendMsg(fmt.Sprintf("CHECKPRESENT-FAILURE %s", argKey))
 		return fmt.Errorf("error building fs string: %w", err)
@@ -477,13 +477,13 @@ func (s *server) handleRemove(message *messageParser) error {
 		return errors.New("failed to parse key for REMOVE")
 	}
 
-	layout := parseLayoutMode(s.configRcloneLayout)
+	layout := parseLayoutMode(s.configSecureCloudEngineLayout)
 	if layout == layoutModeUnknown {
 		s.sendMsg(fmt.Sprintf("REMOVE-FAILURE %s", argKey))
-		return fmt.Errorf("error parsing layout mode: %q", s.configRcloneLayout)
+		return fmt.Errorf("error parsing layout mode: %q", s.configSecureCloudEngineLayout)
 	}
 
-	remoteFsString, err := buildFsString(s.queryDirhash, layout, argKey, s.configRcloneRemoteName, s.configPrefix)
+	remoteFsString, err := buildFsString(s.queryDirhash, layout, argKey, s.configSecureCloudEngineRemoteName, s.configPrefix)
 	if err != nil {
 		s.sendMsg(fmt.Sprintf("REMOVE-FAILURE %s", argKey))
 		return fmt.Errorf("error building fs string: %w", err)

@@ -300,8 +300,8 @@ func rcGetPluginsForType(_ context.Context, in rc.Params) (out rc.Params, err er
 	if pluginType == "" || pluginType == "FileHandler" {
 
 		loadedPluginsResult = filterPlugins(loadedPlugins, func(packageJSON *PackageJSON) bool {
-			for i := range packageJSON.Rclone.HandlesType {
-				if packageJSON.Rclone.HandlesType[i] == handlesType && !packageJSON.Rclone.Test {
+			for i := range packageJSON.SecureCloudEngine.HandlesType {
+				if packageJSON.SecureCloudEngine.HandlesType[i] == handlesType && !packageJSON.SecureCloudEngine.Test {
 					return true
 				}
 			}
@@ -309,8 +309,8 @@ func rcGetPluginsForType(_ context.Context, in rc.Params) (out rc.Params, err er
 		})
 
 		loadedTestPluginsResult = filterPlugins(loadedPlugins, func(packageJSON *PackageJSON) bool {
-			for i := range packageJSON.Rclone.HandlesType {
-				if packageJSON.Rclone.HandlesType[i] == handlesType && packageJSON.Rclone.Test {
+			for i := range packageJSON.SecureCloudEngine.HandlesType {
+				if packageJSON.SecureCloudEngine.HandlesType[i] == handlesType && packageJSON.SecureCloudEngine.Test {
 					return true
 				}
 			}
@@ -318,11 +318,11 @@ func rcGetPluginsForType(_ context.Context, in rc.Params) (out rc.Params, err er
 		})
 	} else {
 		loadedPluginsResult = filterPlugins(loadedPlugins, func(packageJSON *PackageJSON) bool {
-			return packageJSON.Rclone.PluginType == pluginType && !packageJSON.isTesting()
+			return packageJSON.SecureCloudEngine.PluginType == pluginType && !packageJSON.isTesting()
 		})
 
 		loadedTestPluginsResult = filterPlugins(loadedPlugins, func(packageJSON *PackageJSON) bool {
-			return packageJSON.Rclone.PluginType == pluginType && packageJSON.isTesting()
+			return packageJSON.SecureCloudEngine.PluginType == pluginType && packageJSON.isTesting()
 		})
 	}
 

@@ -162,7 +162,7 @@ jobs:
           printf "Go version: $(go version)\n"
           printf "\n\nGo environment:\n\n"
           go env
-          printf "\n\nRclone environment:\n\n"
+          printf "\n\nSecureCloudEngine environment:\n\n"
           make vars
           printf "\n\nSystem environment:\n\n"
           env

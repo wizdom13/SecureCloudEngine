@@ -126,10 +126,10 @@ func init() {
 			Default: "user",
 			Examples: []fs.OptionExample{{
 				Value: "user",
-				Help:  "Rclone should act on behalf of a user.",
+				Help:  "SecureCloudEngine should act on behalf of a user.",
 			}, {
 				Value: "enterprise",
-				Help:  "Rclone should act on behalf of a service account.",
+				Help:  "SecureCloudEngine should act on behalf of a service account.",
 			}},
 		}, {
 			Name:     "upload_cutoff",

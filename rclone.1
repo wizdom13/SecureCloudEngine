@@ -90,7 +90,7 @@ Use \[dq]rclone help flags\[dq] for to see the global flags.
 Use \[dq]rclone help backends\[dq] for a list of supported services.
 \f[R]
 .fi
-.SH Rclone syncs your files to cloud storage
+.SH SecureCloudEngine syncs your files to cloud storage
 .PP
 .IP \[bu] 2
 About rclone
@@ -108,16 +108,16 @@ Install (https://rclone.org/install/)
 Donate. (https://rclone.org/donate/)
 .SS About rclone
 .PP
-Rclone is a command-line program to manage files on cloud storage.
+SecureCloudEngine is a command-line program to manage files on cloud storage.
 It is a feature-rich alternative to cloud vendors\[aq] web storage
 interfaces.
 Over 70 cloud storage products support rclone including S3 object
 stores, business & consumer file storage services, as well as standard
 transfer protocols.
 .PP
-Rclone has powerful cloud equivalents to the unix commands rsync, cp,
+SecureCloudEngine has powerful cloud equivalents to the unix commands rsync, cp,
 mv, mount, ls, ncdu, tree, rm, and cat.
-Rclone\[aq]s familiar syntax includes shell pipeline support, and
+SecureCloudEngine\[aq]s familiar syntax includes shell pipeline support, and
 \f[V]--dry-run\f[R] protection.
 It is used at the command line, in scripts or via its API.
 .PP
@@ -125,7 +125,7 @@ Users call rclone \f[I]\[dq]The Swiss army knife of cloud
 storage\[dq]\f[R], and \f[I]\[dq]Technology indistinguishable from
 magic\[dq]\f[R].
 .PP
-Rclone really looks after your data.
+SecureCloudEngine really looks after your data.
 It preserves timestamps and verifies checksums at all times.
 Transfers over limited bandwidth; intermittent connections, or subject
 to quota can be restarted, from the last good file transferred.
@@ -142,7 +142,7 @@ chunking (https://rclone.org/chunker/),
 hashing (https://rclone.org/hasher/) and
 joining (https://rclone.org/union/).
 .PP
-Rclone mounts (https://rclone.org/commands/rclone_mount/) any local,
+SecureCloudEngine mounts (https://rclone.org/commands/rclone_mount/) any local,
 cloud or virtual filesystem as a disk on Windows, macOS, linux and
 FreeBSD, and also serves these over
 SFTP (https://rclone.org/commands/rclone_serve_sftp/),
@@ -151,7 +151,7 @@ WebDAV (https://rclone.org/commands/rclone_serve_webdav/),
 FTP (https://rclone.org/commands/rclone_serve_ftp/) and
 DLNA (https://rclone.org/commands/rclone_serve_dlna/).
 .PP
-Rclone is mature, open-source software originally inspired by rsync and
+SecureCloudEngine is mature, open-source software originally inspired by rsync and
 written in Go (https://golang.org).
 The friendly support community is familiar with varied use cases.
 Official Ubuntu, Debian, Fedora, Brew and Chocolatey repos.
@@ -159,14 +159,14 @@ include rclone.
 For the latest version downloading from
 rclone.org (https://rclone.org/downloads/) is recommended.
 .PP
-Rclone is widely used on Linux, Windows and Mac.
+SecureCloudEngine is widely used on Linux, Windows and Mac.
 Third-party developers create innovative backup, restore, GUI and
 business process solutions using the rclone command line or API.
 .PP
-Rclone does the heavy lifting of communicating with cloud storage.
+SecureCloudEngine does the heavy lifting of communicating with cloud storage.
 .SS What can rclone do for you?
 .PP
-Rclone helps you:
+SecureCloudEngine helps you:
 .IP \[bu] 2
 Backup (and encrypt) files to cloud storage
 .IP \[bu] 2
@@ -401,7 +401,7 @@ RackCorp Object Storage
 .IP \[bu] 2
 Rackspace Cloud Files
 .IP \[bu] 2
-Rclone Serve S3
+SecureCloudEngine Serve S3
 .IP \[bu] 2
 rsync.net
 .IP \[bu] 2
@@ -478,12 +478,12 @@ Home page (https://rclone.org/)
 GitHub project page for source and bug
 tracker (https://github.com/rclone/rclone)
 .IP \[bu] 2
-Rclone Forum (https://forum.rclone.org)
+SecureCloudEngine Forum (https://forum.rclone.org)
 .IP \[bu] 2
 Downloads (https://rclone.org/downloads/)
 .SH Install
 .PP
-Rclone is a Go program and comes as a single binary file.
+SecureCloudEngine is a Go program and comes as a single binary file.
 .SS Quickstart
 .IP \[bu] 2
 Download (https://rclone.org/downloads/) the relevant binary.
@@ -696,7 +696,7 @@ ARM - 64
 Bit (https://downloads.rclone.org/rclone-current-windows-arm64.zip)
 .PP
 Open this file in the Explorer and extract \f[V]rclone.exe\f[R].
-Rclone is a portable executable so you can place it wherever is
+SecureCloudEngine is a portable executable so you can place it wherever is
 convenient.
 .PP
 Open a CMD window (or powershell) and run the binary.
@@ -724,7 +724,7 @@ To install rclone
 .IP
 .nf
 \f[C]
-winget install Rclone.Rclone
+winget install SecureCloudEngine.SecureCloudEngine
 \f[R]
 .fi
 .PP
@@ -732,7 +732,7 @@ To uninstall rclone
 .IP
 .nf
 \f[C]
-winget uninstall Rclone.Rclone --force
+winget uninstall SecureCloudEngine.SecureCloudEngine --force
 \f[R]
 .fi
 .SS Chocolatey package manager
@@ -802,7 +802,7 @@ rclone (https://hub.docker.com/r/rclone/rclone).
 \f[B]Note:\f[R] We also now offer a paid version of rclone with
 enterprise-grade security and zero CVEs through our partner
 SecureBuild (https://securebuild.com/blog/introducing-securebuild).
-If you are interested, check out their website and the Rclone
+If you are interested, check out their website and the SecureCloudEngine
 SecureBuild Image (https://securebuild.com/images/rclone).
 .PP
 These images are built as part of the release process based on a minimal
@@ -1181,7 +1181,7 @@ Scheduler
 Run at system startup using Windows service
 .SS Running in background
 .PP
-Rclone is a console application, so if not starting from an existing
+SecureCloudEngine is a console application, so if not starting from an existing
 Command Prompt, e.g.
 when starting rclone.exe from a shortcut, it will open a Command Prompt
 window.
@@ -1192,7 +1192,7 @@ by adding option \f[V]--no-console\f[R] (it may still flash briefly when
 the program starts).
 Since rclone normally writes information and any error messages to the
 console, you must redirect this to a file to be able to see it.
-Rclone has a built-in option \f[V]--log-file\f[R] for that.
+SecureCloudEngine has a built-in option \f[V]--log-file\f[R] for that.
 .PP
 Example command to run a sync in background:
 .IP
@@ -1273,7 +1273,7 @@ account):
 .IP
 .nf
 \f[C]
-New-Service -Name Rclone -BinaryPathName \[aq]c:\[rs]rclone\[rs]rclone.exe mount remote:/files X: --config c:\[rs]rclone\[rs]config\[rs]rclone.conf --log-file c:\[rs]rclone\[rs]logs\[rs]mount.txt\[aq]
+New-Service -Name SecureCloudEngine -BinaryPathName \[aq]c:\[rs]rclone\[rs]rclone.exe mount remote:/files X: --config c:\[rs]rclone\[rs]config\[rs]rclone.conf --log-file c:\[rs]rclone\[rs]logs\[rs]mount.txt\[aq]
 \f[R]
 .fi
 .PP
@@ -1285,7 +1285,7 @@ services\[dq].
 This has the additional advantage that it also implements a network
 provider that integrates into Windows standard methods for managing
 network drives.
-This is currently not officially supported by Rclone, but with WinFsp
+This is currently not officially supported by SecureCloudEngine, but with WinFsp
 version 2019.3 B2 / v1.5B2 or later it should be possible through path
 rewriting as described in
 #3340 (https://github.com/rclone/rclone/issues/3340).
@@ -1329,7 +1329,7 @@ To run a periodic command, such as a copy/sync, you can set up a cron
 job.
 .SH Usage
 .PP
-Rclone is a command line program to manage files on cloud storage.
+SecureCloudEngine is a command line program to manage files on cloud storage.
 After download (https://rclone.org/downloads/) and install, continue
 here to learn how to use it: Initial configuration, what the basic
 syntax looks like, describes the various subcommands, the various
@@ -1493,7 +1493,7 @@ Zoho WorkDrive (https://rclone.org/zoho/)
 The local filesystem (https://rclone.org/local/)
 .SS Basic syntax
 .PP
-Rclone syncs a directory tree from one storage system to another.
+SecureCloudEngine syncs a directory tree from one storage system to another.
 .PP
 Its syntax is like this
 .IP
@@ -1715,7 +1715,7 @@ rclone copy --max-age 24h --no-traverse /path/to/src remote:
 \f[R]
 .fi
 .PP
-Rclone will sync the modification times of files and directories if the
+SecureCloudEngine will sync the modification times of files and directories if the
 backend supports it.
 If metadata syncing is required then use the \f[V]--metadata\f[R] flag.
 .PP
@@ -1968,7 +1968,7 @@ However, you may exclude the destination from the sync with a filter
 rule or by putting an exclude-if-present file inside the destination
 directory and sync to a destination that is inside the source directory.
 .PP
-Rclone will sync the modification times of files and directories if the
+SecureCloudEngine will sync the modification times of files and directories if the
 backend supports it.
 If metadata syncing is required then use the \f[V]--metadata\f[R] flag.
 .PP
@@ -2204,7 +2204,7 @@ Move files from source to dest.
 .SS Synopsis
 .PP
 Moves the contents of the source directory to the destination directory.
-Rclone will error if the source and destination overlap and the remote
+SecureCloudEngine will error if the source and destination overlap and the remote
 does not support a server-side directory move operation.
 .PP
 To move single files, use the
@@ -2228,7 +2228,7 @@ controlling whether rclone lists the destination directory or not.
 Supplying this option when moving a small number of files into a large
 destination can speed transfers up greatly.
 .PP
-Rclone will sync the modification times of files and directories if the
+SecureCloudEngine will sync the modification times of files and directories if the
 backend supports it.
 If metadata syncing is required then use the \f[V]--metadata\f[R] flag.
 .PP
@@ -3394,7 +3394,7 @@ Recurses by default, use \f[V]--max-depth 1\f[R] to stop the recursion.
 Some backends do not always provide file sizes, see for example Google
 Photos (https://rclone.org/googlephotos/#size) and Google
 Docs (https://rclone.org/drive/#limitations-of-google-docs).
-Rclone will then show a notice in the log indicating how many such files
+SecureCloudEngine will then show a notice in the log indicating how many such files
 were encountered, and count them in as empty files in the output of the
 size command.
 .IP
@@ -4403,7 +4403,7 @@ Make sure you have read and understood the entire
 manual (https://rclone.org/bisync) (especially the
 Limitations (https://rclone.org/bisync/#limitations) section) before
 using, or data loss can result.
-Questions can be asked in the Rclone Forum (https://forum.rclone.org/).
+Questions can be asked in the SecureCloudEngine Forum (https://forum.rclone.org/).
 .PP
 See full bisync description (https://rclone.org/bisync/) for details.
 .IP
@@ -7161,7 +7161,7 @@ commands, flags and backends.
 Speaks with git-annex over stdin/stdout.
 .SS Synopsis
 .PP
-Rclone\[aq]s \f[V]gitannex\f[R] subcommand enables
+SecureCloudEngine\[aq]s \f[V]gitannex\f[R] subcommand enables
 git-annex (https://git-annex.branchable.com/) to store and retrieve
 content from an rclone remote.
 It is meant to be run by git-annex, not directly by users.
@@ -7224,7 +7224,7 @@ Check parameter synonyms with \f[V]--whatelse\f[R] as shown above.
 .PP
 The following example creates a new git-annex remote named
 \[dq]MyRemote\[dq] that will use the rclone remote named
-\[dq]SomeRcloneRemote\[dq].
+\[dq]SomeSecureCloudEngineRemote\[dq].
 That rclone remote must be one configured in your rclone.conf file,
 which can be located with \f[V]rclone config file\f[R].
 .IP
@@ -7234,7 +7234,7 @@ git annex initremote MyRemote         \[rs]
     type=external                     \[rs]
     externaltype=rclone-builtin       \[rs]
     encryption=none                   \[rs]
-    rcloneremotename=SomeRcloneRemote \[rs]
+    rcloneremotename=SomeSecureCloudEngineRemote \[rs]
     rcloneprefix=git-annex-content    \[rs]
     rclonelayout=nodir
 \f[R]
@@ -7974,8 +7974,8 @@ commands, flags and backends.
 Mount the remote as file system on a mountpoint.
 .SS Synopsis
 .PP
-Rclone mount allows Linux, FreeBSD, macOS and Windows to mount any of
-Rclone\[aq]s cloud storage systems as a file system with FUSE.
+SecureCloudEngine mount allows Linux, FreeBSD, macOS and Windows to mount any of
+SecureCloudEngine\[aq]s cloud storage systems as a file system with FUSE.
 .PP
 First set up your remote using \f[V]rclone config\f[R].
 Check it works with \f[V]rclone ls\f[R] etc.
@@ -8486,7 +8486,7 @@ Since mounting requires the \f[V]fusermount\f[R] or
 \f[V]/bin:/usr/bin\f[R] in this scenario.
 Please ensure that \f[V]fusermount\f[R]/\f[V]fusermount3\f[R] is present
 on this PATH.
-.SS Rclone as Unix mount helper
+.SS SecureCloudEngine as Unix mount helper
 .PP
 The core Unix program \f[V]/bin/mount\f[R] normally takes the
 \f[V]-t FSTYPE\f[R] argument then runs the \f[V]/sbin/mount.FSTYPE\f[R]
@@ -8552,7 +8552,7 @@ or use classic Automountd.
 Remember to provide explicit \f[V]config=...,cache-dir=...\f[R] as a
 workaround for mount units being run without \f[V]HOME\f[R].
 .PP
-Rclone in the mount helper mode will split \f[V]-o\f[R] argument(s) by
+SecureCloudEngine in the mount helper mode will split \f[V]-o\f[R] argument(s) by
 comma, replace \f[V]_\f[R] by \f[V]-\f[R] and prepend \f[V]--\f[R] to
 get the command-line flags.
 Options containing commas or spaces can be wrapped in single or double
@@ -8807,7 +8807,7 @@ required.
 .PP
 \f[B]IMPORTANT\f[R] not all file systems support sparse files.
 In particular FAT/exFAT do not.
-Rclone will perform very badly if the cache directory is on a filesystem
+SecureCloudEngine will perform very badly if the cache directory is on a filesystem
 which doesn\[aq]t support sparse files and it will log an ERROR message
 if one is detected.
 .SS Fingerprinting
@@ -8867,7 +8867,7 @@ The chunking behaves differently depending on the
 \f[V]--vfs-read-chunk-streams\f[R] parameter.
 .SS \f[V]--vfs-read-chunk-streams\f[R] == 0
 .PP
-Rclone will start reading a chunk of size
+SecureCloudEngine will start reading a chunk of size
 \f[V]--vfs-read-chunk-size\f[R], and then double the size for each read.
 When \f[V]--vfs-read-chunk-size-limit\f[R] is specified, and greater
 than \f[V]--vfs-read-chunk-size\f[R], the chunk size for each open file
@@ -8888,7 +8888,7 @@ disables chunked reading.
 The chunks will not be buffered in memory.
 .SS \f[V]--vfs-read-chunk-streams\f[R] > 0
 .PP
-Rclone reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
+SecureCloudEngine reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
 \f[V]--vfs-read-chunk-size\f[R] concurrently.
 The size for each read will stay constant.
 .PP
@@ -9628,8 +9628,8 @@ commands, flags and backends.
 Mount the remote as file system on a mountpoint.
 .SS Synopsis
 .PP
-Rclone nfsmount allows Linux, FreeBSD, macOS and Windows to mount any of
-Rclone\[aq]s cloud storage systems as a file system with FUSE.
+SecureCloudEngine nfsmount allows Linux, FreeBSD, macOS and Windows to mount any of
+SecureCloudEngine\[aq]s cloud storage systems as a file system with FUSE.
 .PP
 First set up your remote using \f[V]rclone config\f[R].
 Check it works with \f[V]rclone ls\f[R] etc.
@@ -10141,7 +10141,7 @@ Since mounting requires the \f[V]fusermount\f[R] or
 \f[V]/bin:/usr/bin\f[R] in this scenario.
 Please ensure that \f[V]fusermount\f[R]/\f[V]fusermount3\f[R] is present
 on this PATH.
-.SS Rclone as Unix mount helper
+.SS SecureCloudEngine as Unix mount helper
 .PP
 The core Unix program \f[V]/bin/mount\f[R] normally takes the
 \f[V]-t FSTYPE\f[R] argument then runs the \f[V]/sbin/mount.FSTYPE\f[R]
@@ -10207,7 +10207,7 @@ or use classic Automountd.
 Remember to provide explicit \f[V]config=...,cache-dir=...\f[R] as a
 workaround for mount units being run without \f[V]HOME\f[R].
 .PP
-Rclone in the mount helper mode will split \f[V]-o\f[R] argument(s) by
+SecureCloudEngine in the mount helper mode will split \f[V]-o\f[R] argument(s) by
 comma, replace \f[V]_\f[R] by \f[V]-\f[R] and prepend \f[V]--\f[R] to
 get the command-line flags.
 Options containing commas or spaces can be wrapped in single or double
@@ -10462,7 +10462,7 @@ required.
 .PP
 \f[B]IMPORTANT\f[R] not all file systems support sparse files.
 In particular FAT/exFAT do not.
-Rclone will perform very badly if the cache directory is on a filesystem
+SecureCloudEngine will perform very badly if the cache directory is on a filesystem
 which doesn\[aq]t support sparse files and it will log an ERROR message
 if one is detected.
 .SS Fingerprinting
@@ -10522,7 +10522,7 @@ The chunking behaves differently depending on the
 \f[V]--vfs-read-chunk-streams\f[R] parameter.
 .SS \f[V]--vfs-read-chunk-streams\f[R] == 0
 .PP
-Rclone will start reading a chunk of size
+SecureCloudEngine will start reading a chunk of size
 \f[V]--vfs-read-chunk-size\f[R], and then double the size for each read.
 When \f[V]--vfs-read-chunk-size-limit\f[R] is specified, and greater
 than \f[V]--vfs-read-chunk-size\f[R], the chunk size for each open file
@@ -10543,7 +10543,7 @@ disables chunked reading.
 The chunks will not be buffered in memory.
 .SS \f[V]--vfs-read-chunk-streams\f[R] > 0
 .PP
-Rclone reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
+SecureCloudEngine reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
 \f[V]--vfs-read-chunk-size\f[R] concurrently.
 The size for each read will stay constant.
 .PP
@@ -11208,7 +11208,7 @@ By default rclone will serve from the root.
 If you used \f[V]--rc-baseurl \[dq]/rclone\[dq]\f[R] then rclone would
 serve from a URL starting with \[dq]/rclone/\[dq].
 This is useful if you wish to proxy rclone serve.
-Rclone automatically inserts leading and trailing \[dq]/\[dq] on
+SecureCloudEngine automatically inserts leading and trailing \[dq]/\[dq] on
 \f[V]--rc-baseurl\f[R], so \f[V]--rc-baseurl \[dq]rclone\[dq]\f[R],
 \f[V]--rc-baseurl \[dq]/rclone\[dq]\f[R] and
 \f[V]--rc-baseurl \[dq]/rclone/\[dq]\f[R] are all treated identically.
@@ -11734,13 +11734,13 @@ VLC is also supported.
 Service discovery uses UDP multicast packets (SSDP) and will thus only
 work on LANs.
 .PP
-Rclone will list all files present in the remote, without filtering
+SecureCloudEngine will list all files present in the remote, without filtering
 based on media formats or file extensions.
 Additionally, there is no media transcoding support.
 This means that some players might show files that they are not able to
 play back correctly.
 .PP
-Rclone will add external subtitle files (.srt) to videos if they have
+SecureCloudEngine will add external subtitle files (.srt) to videos if they have
 the same filename as the video file itself (except the extension),
 either in the same directory as the video, or in a \[dq]Subs\[dq]
 subdirectory.
@@ -11980,7 +11980,7 @@ required.
 .PP
 \f[B]IMPORTANT\f[R] not all file systems support sparse files.
 In particular FAT/exFAT do not.
-Rclone will perform very badly if the cache directory is on a filesystem
+SecureCloudEngine will perform very badly if the cache directory is on a filesystem
 which doesn\[aq]t support sparse files and it will log an ERROR message
 if one is detected.
 .SS Fingerprinting
@@ -12040,7 +12040,7 @@ The chunking behaves differently depending on the
 \f[V]--vfs-read-chunk-streams\f[R] parameter.
 .SS \f[V]--vfs-read-chunk-streams\f[R] == 0
 .PP
-Rclone will start reading a chunk of size
+SecureCloudEngine will start reading a chunk of size
 \f[V]--vfs-read-chunk-size\f[R], and then double the size for each read.
 When \f[V]--vfs-read-chunk-size-limit\f[R] is specified, and greater
 than \f[V]--vfs-read-chunk-size\f[R], the chunk size for each open file
@@ -12061,7 +12061,7 @@ disables chunked reading.
 The chunks will not be buffered in memory.
 .SS \f[V]--vfs-read-chunk-streams\f[R] > 0
 .PP
-Rclone reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
+SecureCloudEngine reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
 \f[V]--vfs-read-chunk-size\f[R] concurrently.
 The size for each read will stay constant.
 .PP
@@ -12684,7 +12684,7 @@ required.
 .PP
 \f[B]IMPORTANT\f[R] not all file systems support sparse files.
 In particular FAT/exFAT do not.
-Rclone will perform very badly if the cache directory is on a filesystem
+SecureCloudEngine will perform very badly if the cache directory is on a filesystem
 which doesn\[aq]t support sparse files and it will log an ERROR message
 if one is detected.
 .SS Fingerprinting
@@ -12744,7 +12744,7 @@ The chunking behaves differently depending on the
 \f[V]--vfs-read-chunk-streams\f[R] parameter.
 .SS \f[V]--vfs-read-chunk-streams\f[R] == 0
 .PP
-Rclone will start reading a chunk of size
+SecureCloudEngine will start reading a chunk of size
 \f[V]--vfs-read-chunk-size\f[R], and then double the size for each read.
 When \f[V]--vfs-read-chunk-size-limit\f[R] is specified, and greater
 than \f[V]--vfs-read-chunk-size\f[R], the chunk size for each open file
@@ -12765,7 +12765,7 @@ disables chunked reading.
 The chunks will not be buffered in memory.
 .SS \f[V]--vfs-read-chunk-streams\f[R] > 0
 .PP
-Rclone reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
+SecureCloudEngine reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
 \f[V]--vfs-read-chunk-size\f[R] concurrently.
 The size for each read will stay constant.
 .PP
@@ -13379,7 +13379,7 @@ required.
 .PP
 \f[B]IMPORTANT\f[R] not all file systems support sparse files.
 In particular FAT/exFAT do not.
-Rclone will perform very badly if the cache directory is on a filesystem
+SecureCloudEngine will perform very badly if the cache directory is on a filesystem
 which doesn\[aq]t support sparse files and it will log an ERROR message
 if one is detected.
 .SS Fingerprinting
@@ -13439,7 +13439,7 @@ The chunking behaves differently depending on the
 \f[V]--vfs-read-chunk-streams\f[R] parameter.
 .SS \f[V]--vfs-read-chunk-streams\f[R] == 0
 .PP
-Rclone will start reading a chunk of size
+SecureCloudEngine will start reading a chunk of size
 \f[V]--vfs-read-chunk-size\f[R], and then double the size for each read.
 When \f[V]--vfs-read-chunk-size-limit\f[R] is specified, and greater
 than \f[V]--vfs-read-chunk-size\f[R], the chunk size for each open file
@@ -13460,7 +13460,7 @@ disables chunked reading.
 The chunks will not be buffered in memory.
 .SS \f[V]--vfs-read-chunk-streams\f[R] > 0
 .PP
-Rclone reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
+SecureCloudEngine reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
 \f[V]--vfs-read-chunk-size\f[R] concurrently.
 The size for each read will stay constant.
 .PP
@@ -13952,7 +13952,7 @@ By default rclone will serve from the root.
 If you used \f[V]--baseurl \[dq]/rclone\[dq]\f[R] then rclone would
 serve from a URL starting with \[dq]/rclone/\[dq].
 This is useful if you wish to proxy rclone serve.
-Rclone automatically inserts leading and trailing \[dq]/\[dq] on
+SecureCloudEngine automatically inserts leading and trailing \[dq]/\[dq] on
 \f[V]--baseurl\f[R], so \f[V]--baseurl \[dq]rclone\[dq]\f[R],
 \f[V]--baseurl \[dq]/rclone\[dq]\f[R] and
 \f[V]--baseurl \[dq]/rclone/\[dq]\f[R] are all treated identically.
@@ -14408,7 +14408,7 @@ required.
 .PP
 \f[B]IMPORTANT\f[R] not all file systems support sparse files.
 In particular FAT/exFAT do not.
-Rclone will perform very badly if the cache directory is on a filesystem
+SecureCloudEngine will perform very badly if the cache directory is on a filesystem
 which doesn\[aq]t support sparse files and it will log an ERROR message
 if one is detected.
 .SS Fingerprinting
@@ -14468,7 +14468,7 @@ The chunking behaves differently depending on the
 \f[V]--vfs-read-chunk-streams\f[R] parameter.
 .SS \f[V]--vfs-read-chunk-streams\f[R] == 0
 .PP
-Rclone will start reading a chunk of size
+SecureCloudEngine will start reading a chunk of size
 \f[V]--vfs-read-chunk-size\f[R], and then double the size for each read.
 When \f[V]--vfs-read-chunk-size-limit\f[R] is specified, and greater
 than \f[V]--vfs-read-chunk-size\f[R], the chunk size for each open file
@@ -14489,7 +14489,7 @@ disables chunked reading.
 The chunks will not be buffered in memory.
 .SS \f[V]--vfs-read-chunk-streams\f[R] > 0
 .PP
-Rclone reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
+SecureCloudEngine reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
 \f[V]--vfs-read-chunk-size\f[R] concurrently.
 The size for each read will stay constant.
 .PP
@@ -14981,7 +14981,7 @@ If the server is restarted the handle cache will be lost and connected
 NFS clients will get stale handle errors.
 .PP
 \f[V]--nfs-cache-type disk\f[R] uses an on disk NFS handle cache.
-Rclone hashes the path of the object and stores it in a file named after
+SecureCloudEngine hashes the path of the object and stores it in a file named after
 the hash.
 These hashes are stored on disk the directory controlled by
 \f[V]--cache-dir\f[R] or the exact directory may be specified with
@@ -14992,7 +14992,7 @@ affecting the connected clients.
 \f[V]--nfs-cache-type symlink\f[R] is similar to
 \f[V]--nfs-cache-type disk\f[R] in that it uses an on disk cache, but
 the cache entries are held as symlinks.
-Rclone will use the handle of the underlying file as the NFS handle
+SecureCloudEngine will use the handle of the underlying file as the NFS handle
 which improves performance.
 This sort of cache can\[aq]t be backed up and restored as the underlying
 handles will change.
@@ -15264,7 +15264,7 @@ required.
 .PP
 \f[B]IMPORTANT\f[R] not all file systems support sparse files.
 In particular FAT/exFAT do not.
-Rclone will perform very badly if the cache directory is on a filesystem
+SecureCloudEngine will perform very badly if the cache directory is on a filesystem
 which doesn\[aq]t support sparse files and it will log an ERROR message
 if one is detected.
 .SS Fingerprinting
@@ -15324,7 +15324,7 @@ The chunking behaves differently depending on the
 \f[V]--vfs-read-chunk-streams\f[R] parameter.
 .SS \f[V]--vfs-read-chunk-streams\f[R] == 0
 .PP
-Rclone will start reading a chunk of size
+SecureCloudEngine will start reading a chunk of size
 \f[V]--vfs-read-chunk-size\f[R], and then double the size for each read.
 When \f[V]--vfs-read-chunk-size-limit\f[R] is specified, and greater
 than \f[V]--vfs-read-chunk-size\f[R], the chunk size for each open file
@@ -15345,7 +15345,7 @@ disables chunked reading.
 The chunks will not be buffered in memory.
 .SS \f[V]--vfs-read-chunk-streams\f[R] > 0
 .PP
-Rclone reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
+SecureCloudEngine reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
 \f[V]--vfs-read-chunk-size\f[R] concurrently.
 The size for each read will stay constant.
 .PP
@@ -15820,7 +15820,7 @@ By default rclone will serve from the root.
 If you used \f[V]--baseurl \[dq]/rclone\[dq]\f[R] then rclone would
 serve from a URL starting with \[dq]/rclone/\[dq].
 This is useful if you wish to proxy rclone serve.
-Rclone automatically inserts leading and trailing \[dq]/\[dq] on
+SecureCloudEngine automatically inserts leading and trailing \[dq]/\[dq] on
 \f[V]--baseurl\f[R], so \f[V]--baseurl \[dq]rclone\[dq]\f[R],
 \f[V]--baseurl \[dq]/rclone\[dq]\f[R] and
 \f[V]--baseurl \[dq]/rclone/\[dq]\f[R] are all treated identically.
@@ -16056,7 +16056,7 @@ which is defined like this:
 \f[C]
 [serves3]
 type = s3
-provider = Rclone
+provider = SecureCloudEngine
 endpoint = http://127.0.0.1:8080/
 access_key_id = ACCESS_KEY_ID
 secret_access_key = SECRET_ACCESS_KEY
@@ -16220,7 +16220,7 @@ By default rclone will serve from the root.
 If you used \f[V]--baseurl \[dq]/rclone\[dq]\f[R] then rclone would
 serve from a URL starting with \[dq]/rclone/\[dq].
 This is useful if you wish to proxy rclone serve.
-Rclone automatically inserts leading and trailing \[dq]/\[dq] on
+SecureCloudEngine automatically inserts leading and trailing \[dq]/\[dq] on
 \f[V]--baseurl\f[R], so \f[V]--baseurl \[dq]rclone\[dq]\f[R],
 \f[V]--baseurl \[dq]/rclone\[dq]\f[R] and
 \f[V]--baseurl \[dq]/rclone/\[dq]\f[R] are all treated identically.
@@ -16492,7 +16492,7 @@ required.
 .PP
 \f[B]IMPORTANT\f[R] not all file systems support sparse files.
 In particular FAT/exFAT do not.
-Rclone will perform very badly if the cache directory is on a filesystem
+SecureCloudEngine will perform very badly if the cache directory is on a filesystem
 which doesn\[aq]t support sparse files and it will log an ERROR message
 if one is detected.
 .SS Fingerprinting
@@ -16552,7 +16552,7 @@ The chunking behaves differently depending on the
 \f[V]--vfs-read-chunk-streams\f[R] parameter.
 .SS \f[V]--vfs-read-chunk-streams\f[R] == 0
 .PP
-Rclone will start reading a chunk of size
+SecureCloudEngine will start reading a chunk of size
 \f[V]--vfs-read-chunk-size\f[R], and then double the size for each read.
 When \f[V]--vfs-read-chunk-size-limit\f[R] is specified, and greater
 than \f[V]--vfs-read-chunk-size\f[R], the chunk size for each open file
@@ -16573,7 +16573,7 @@ disables chunked reading.
 The chunks will not be buffered in memory.
 .SS \f[V]--vfs-read-chunk-streams\f[R] > 0
 .PP
-Rclone reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
+SecureCloudEngine reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
 \f[V]--vfs-read-chunk-size\f[R] concurrently.
 The size for each read will stay constant.
 .PP
@@ -17242,7 +17242,7 @@ required.
 .PP
 \f[B]IMPORTANT\f[R] not all file systems support sparse files.
 In particular FAT/exFAT do not.
-Rclone will perform very badly if the cache directory is on a filesystem
+SecureCloudEngine will perform very badly if the cache directory is on a filesystem
 which doesn\[aq]t support sparse files and it will log an ERROR message
 if one is detected.
 .SS Fingerprinting
@@ -17302,7 +17302,7 @@ The chunking behaves differently depending on the
 \f[V]--vfs-read-chunk-streams\f[R] parameter.
 .SS \f[V]--vfs-read-chunk-streams\f[R] == 0
 .PP
-Rclone will start reading a chunk of size
+SecureCloudEngine will start reading a chunk of size
 \f[V]--vfs-read-chunk-size\f[R], and then double the size for each read.
 When \f[V]--vfs-read-chunk-size-limit\f[R] is specified, and greater
 than \f[V]--vfs-read-chunk-size\f[R], the chunk size for each open file
@@ -17323,7 +17323,7 @@ disables chunked reading.
 The chunks will not be buffered in memory.
 .SS \f[V]--vfs-read-chunk-streams\f[R] > 0
 .PP
-Rclone reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
+SecureCloudEngine reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
 \f[V]--vfs-read-chunk-size\f[R] concurrently.
 The size for each read will stay constant.
 .PP
@@ -17882,7 +17882,7 @@ By default rclone will serve from the root.
 If you used \f[V]--baseurl \[dq]/rclone\[dq]\f[R] then rclone would
 serve from a URL starting with \[dq]/rclone/\[dq].
 This is useful if you wish to proxy rclone serve.
-Rclone automatically inserts leading and trailing \[dq]/\[dq] on
+SecureCloudEngine automatically inserts leading and trailing \[dq]/\[dq] on
 \f[V]--baseurl\f[R], so \f[V]--baseurl \[dq]rclone\[dq]\f[R],
 \f[V]--baseurl \[dq]/rclone\[dq]\f[R] and
 \f[V]--baseurl \[dq]/rclone/\[dq]\f[R] are all treated identically.
@@ -18338,7 +18338,7 @@ required.
 .PP
 \f[B]IMPORTANT\f[R] not all file systems support sparse files.
 In particular FAT/exFAT do not.
-Rclone will perform very badly if the cache directory is on a filesystem
+SecureCloudEngine will perform very badly if the cache directory is on a filesystem
 which doesn\[aq]t support sparse files and it will log an ERROR message
 if one is detected.
 .SS Fingerprinting
@@ -18398,7 +18398,7 @@ The chunking behaves differently depending on the
 \f[V]--vfs-read-chunk-streams\f[R] parameter.
 .SS \f[V]--vfs-read-chunk-streams\f[R] == 0
 .PP
-Rclone will start reading a chunk of size
+SecureCloudEngine will start reading a chunk of size
 \f[V]--vfs-read-chunk-size\f[R], and then double the size for each read.
 When \f[V]--vfs-read-chunk-size-limit\f[R] is specified, and greater
 than \f[V]--vfs-read-chunk-size\f[R], the chunk size for each open file
@@ -18419,7 +18419,7 @@ disables chunked reading.
 The chunks will not be buffered in memory.
 .SS \f[V]--vfs-read-chunk-streams\f[R] > 0
 .PP
-Rclone reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
+SecureCloudEngine reads \f[V]--vfs-read-chunk-streams\f[R] chunks of size
 \f[V]--vfs-read-chunk-size\f[R] concurrently.
 The size for each read will stay constant.
 .PP
@@ -18941,7 +18941,7 @@ commands, flags and backends.
 Run a test command
 .SS Synopsis
 .PP
-Rclone test is used to run test commands.
+SecureCloudEngine test is used to run test commands.
 .PP
 Select which test command you want with the subcommand, eg
 .IP
@@ -19784,7 +19784,7 @@ page\[dq].
 Do not use single character names on Windows as it creates ambiguity
 with Windows drives\[aq] names, e.g.: remote called \f[V]C\f[R] is
 indistinguishable from \f[V]C\f[R] drive.
-Rclone will always assume that single letter name refers to a drive.
+SecureCloudEngine will always assume that single letter name refers to a drive.
 .SS Adding global configuration to a remote
 .PP
 It is possible to add global configuration to the remote configuration
@@ -20041,7 +20041,7 @@ contents of the file (or directory).
 Normally rclone only preserves the modification time and the content
 (MIME) type where possible.
 .PP
-Rclone supports preserving all the available metadata on files and
+SecureCloudEngine supports preserving all the available metadata on files and
 directories when using the \f[V]--metadata\f[R] or \f[V]-M\f[R] flag.
 .PP
 Exactly what metadata is supported and what that support means depends
@@ -20053,7 +20053,7 @@ are listed in the features table (https://rclone.org/overview/#features)
 Some backends don\[aq]t support metadata, some only support metadata on
 files and some support metadata on both files and directories.
 .PP
-Rclone only supports a one-time sync of metadata.
+SecureCloudEngine only supports a one-time sync of metadata.
 This means that metadata will be synced from the source object to the
 destination object only when the source object has changed and needs to
 be re-uploaded.
@@ -20076,7 +20076,7 @@ The --metadata-mapper flag can be used to pass the name of a program in
 which can transform metadata when it is being copied from source to
 destination.
 .PP
-Rclone supports \f[V]--metadata-set\f[R] and \f[V]--metadata-mapper\f[R]
+SecureCloudEngine supports \f[V]--metadata-set\f[R] and \f[V]--metadata-mapper\f[R]
 when doing server-side \f[V]Move\f[R] and server-side \f[V]Copy\f[R],
 but not when doing server side \f[V]DirMove\f[R] (renaming a directory)
 as this would involve recursing into the directory.
@@ -20110,7 +20110,7 @@ However should the local object be copied back to s3, the Content-Type
 will be set correctly.
 .SS Metadata framework
 .PP
-Rclone implements a metadata framework which can read metadata from an
+SecureCloudEngine implements a metadata framework which can read metadata from an
 object and write it to the object when (and only when) it is being
 uploaded.
 .PP
@@ -20269,7 +20269,7 @@ Hashes are not included in system metadata as there is a well defined
 way of reading those already.
 .SS Options
 .PP
-Rclone has a number of options to control its behaviour.
+SecureCloudEngine has a number of options to control its behaviour.
 These are documented below, and in the flags page.
 .PP
 Options that take parameters can have the values passed in two ways,
@@ -20738,7 +20738,7 @@ backwards compatibility, but in most cases it is as simple as:
 .IP \[bu] 2
 \f[V]\[ti]/.config/rclone/rclone.conf\f[R] on other
 .PP
-The complete logic is as follows: Rclone will look for an existing
+The complete logic is as follows: SecureCloudEngine will look for an existing
 configuration file in any of the following locations, in priority order:
 .IP "1." 3
 \f[V]rclone.conf\f[R] (in program directory, where rclone executable is)
@@ -20843,7 +20843,7 @@ file.
 The configuration file will typically contain login information, and
 should therefore have restricted permissions so that only the current
 user can read it.
-Rclone tries to ensure this when it writes the file.
+SecureCloudEngine tries to ensure this when it writes the file.
 You may also choose to encrypt the file.
 .PP
 When token-based authentication are used, the configuration file must be
@@ -21089,7 +21089,7 @@ so may be used as a workaround for those with care.
 .IP
 .nf
 \f[C]
-rclone ls remote:test --header \[dq]X-Rclone: Foo\[dq] --header \[dq]X-LetMeIn: Yes\[dq]
+rclone ls remote:test --header \[dq]X-SecureCloudEngine: Foo\[dq] --header \[dq]X-LetMeIn: Yes\[dq]
 \f[R]
 .fi
 .SS --header-download stringArray
@@ -21122,13 +21122,13 @@ currently supported backends.
 .PP
 Use this option to set an HTTP proxy for all HTTP based services to use.
 .PP
-Rclone also supports the standard HTTP proxy environment variables which
+SecureCloudEngine also supports the standard HTTP proxy environment variables which
 it will pick up automatically.
 The is the way the HTTP proxy will normally be set but this flag can be
 used to override it.
 .SS --human-readable
 .PP
-Rclone commands output values for sizes (e.g.
+SecureCloudEngine commands output values for sizes (e.g.
 number of bytes) and counts (e.g.
 number of files) either as \f[I]raw\f[R] numbers, or in
 \f[I]human-readable\f[R] format.
@@ -21136,7 +21136,7 @@ number of files) either as \f[I]raw\f[R] numbers, or in
 In human-readable format the values are scaled to larger units,
 indicated with a suffix shown after the value, and rounded to three
 decimals.
-Rclone consistently uses binary units (powers of 2) for sizes and
+SecureCloudEngine consistently uses binary units (powers of 2) for sizes and
 decimal units (powers of 10) for counts.
 The unit prefix for size is according to IEC standard notation, e.g.
 \f[V]Ki\f[R] for kibi.
@@ -21518,7 +21518,7 @@ but not currently used).
 .IP \[bu] 2
 \f[V]Info\f[R] ← \f[V]NOTICE\f[R], \f[V]INFO\f[R] and \f[V]DEBUG\f[R].
 .PP
-Rclone will declare its log source as \[dq]rclone\[dq] if it is has
+SecureCloudEngine will declare its log source as \[dq]rclone\[dq] if it is has
 enough permissions to create the registry key needed.
 If not then logs will appear as \[dq]Application\[dq].
 You can run \f[V]rclone version --windows-event-log DEBUG\f[R] once as
@@ -21697,7 +21697,7 @@ If that limit is exceeded then a fatal error will be generated and
 rclone will stop the operation in progress.
 .SS --max-delete-size SizeSuffix
 .PP
-Rclone will stop deleting files when the total size of deletions has
+SecureCloudEngine will stop deleting files when the total size of deletions has
 reached the size specified.
 It defaults to off.
 .PP
@@ -21726,23 +21726,23 @@ Test first with \f[V]--dry-run\f[R] if you are not sure what will
 happen.
 .SS --max-duration Duration
 .PP
-Rclone will stop transferring when it has run for the duration
+SecureCloudEngine will stop transferring when it has run for the duration
 specified.
 Defaults to off.
 .PP
 When the limit is reached all transfers will stop immediately.
 Use \f[V]--cutoff-mode\f[R] to modify this behaviour.
 .PP
-Rclone will exit with exit code 10 if the duration limit is reached.
+SecureCloudEngine will exit with exit code 10 if the duration limit is reached.
 .SS --max-transfer SizeSuffix
 .PP
-Rclone will stop transferring when it has reached the size specified.
+SecureCloudEngine will stop transferring when it has reached the size specified.
 Defaults to off.
 .PP
 When the limit is reached all transfers will stop immediately.
 Use \f[V]--cutoff-mode\f[R] to modify this behaviour.
 .PP
-Rclone will exit with exit code 8 if the transfer limit is reached.
+SecureCloudEngine will exit with exit code 8 if the transfer limit is reached.
 .SS --cutoff-mode HARD|SOFT|CAUTIOUS
 .PP
 Configure the behavior of \f[V]--max-transfer\f[R] and
@@ -22172,7 +22172,7 @@ scanned yet
 .IP \[bu] 2
 there are more than --max-backlog files in the backlog
 .PP
-Rclone will do its best to transfer the best file it has so in practice
+SecureCloudEngine will do its best to transfer the best file it has so in practice
 this should not cause a problem.
 Think of \f[V]--order-by\f[R] as being more of a best efforts flag
 rather than a perfect ordering.
@@ -22636,7 +22636,7 @@ results.
 Some backends provide the support for an alternative strategy, where all
 files beneath a directory can be listed in one (or a small number) of
 transactions.
-Rclone supports this alternative strategy through an optional backend
+SecureCloudEngine supports this alternative strategy through an optional backend
 feature called \f[V]ListR\f[R] (https://rclone.org/overview/#listr).
 You can see in the storage system overview documentation\[aq]s optional
 features (https://rclone.org/overview/#optional-features) section which
@@ -22659,14 +22659,14 @@ for \f[V]sync\f[R] and \f[V]copy\f[R], where it needs to keep the listed
 files in memory, and is performing operations on them where
 parallelization may be a huge advantage.
 .PP
-Rclone is not able to take all relevant parameters into account for
+SecureCloudEngine is not able to take all relevant parameters into account for
 deciding the best strategy, and therefore allows you to influence the
 choice in two ways: You can stop rclone from using \f[V]ListR\f[R] by
 disabling the feature, using the --disable option
 (\f[V]--disable ListR\f[R]), or you can allow rclone to use
 \f[V]ListR\f[R] where it would normally choose not to do so due to
 higher memory usage, using the \f[V]--fast-list\f[R] option.
-Rclone should always produce identical results either way.
+SecureCloudEngine should always produce identical results either way.
 Using \f[V]--disable ListR\f[R] or \f[V]--fast-list\f[R] on a remote
 which doesn\[aq]t support \f[V]ListR\f[R] does nothing, rclone will just
 ignore it.
@@ -22785,7 +22785,7 @@ Prints the version number
 The outgoing SSL/TLS connections rclone makes can be controlled with
 these options.
 For example this can be very useful with the HTTP or WebDAV backends.
-Rclone HTTP servers have their own set of configuration for SSL/TLS
+SecureCloudEngine HTTP servers have their own set of configuration for SSL/TLS
 which you can find in their documentation.
 .SS --ca-cert stringArray
 .PP
@@ -23240,19 +23240,19 @@ standard error to a file.
 If you use the \f[V]--syslog\f[R] flag then rclone will log to syslog
 and the \f[V]--syslog-facility\f[R] control which facility it uses.
 .PP
-Rclone prefixes all log messages with their level in capitals, e.g.
+SecureCloudEngine prefixes all log messages with their level in capitals, e.g.
 INFO which makes it easy to grep the log file for different kinds of
 information.
 .SS Metrics
 .PP
-Rclone can publish metrics in the OpenMetrics/Prometheus format.
+SecureCloudEngine can publish metrics in the OpenMetrics/Prometheus format.
 .PP
 To enable the metrics endpoint, use the \f[V]--metrics-addr\f[R] flag.
 Metrics can also be published on the \f[V]--rc-addr\f[R] port if the
 \f[V]--rc\f[R] flag and \f[V]--rc-enable-metrics\f[R] flags are supplied
 or if using rclone rcd \f[V]--rc-enable-metrics\f[R]
 .PP
-Rclone provides extensive configuration options for the metrics HTTP
+SecureCloudEngine provides extensive configuration options for the metrics HTTP
 endpoint.
 These settings are grouped under the Metrics section and have a prefix
 \f[V]--metrics-*\f[R].
@@ -23312,7 +23312,7 @@ account suspended) (Fatal errors)
 \f[V]10\f[R] - Duration exceeded - limit set by --max-duration reached
 .SS Environment variables
 .PP
-Rclone can be configured entirely using environment variables.
+SecureCloudEngine can be configured entirely using environment variables.
 These can be used to set defaults for options or config file entries.
 .SS Options
 .PP
@@ -23597,7 +23597,7 @@ y/e/d>
 .fi
 .SS Configuring by copying the config file
 .PP
-Rclone stores all of its configuration in a single file.
+SecureCloudEngine stores all of its configuration in a single file.
 This can easily be copied to configure a remote rclone (although some
 backends does not support reusing the same configuration, consult your
 backend documentation to be sure).
@@ -23673,13 +23673,13 @@ file age and size, or presence of a file in a directory.
 Bucket based remotes without the concept of directory apply filters to
 object key, age and size in an analogous way.
 .PP
-Rclone \f[V]purge\f[R] does not obey filters.
+SecureCloudEngine \f[V]purge\f[R] does not obey filters.
 .PP
 To test filters without risk of damage to data, apply them to
 \f[V]rclone ls\f[R], or with the \f[V]--dry-run\f[R] and \f[V]-vv\f[R]
 flags.
 .PP
-Rclone filter patterns can only be used in filter command line options,
+SecureCloudEngine filter patterns can only be used in filter command line options,
 not in the specification of a remote.
 .PP
 E.g.
@@ -23698,7 +23698,7 @@ Instead use a \f[V]--filter...\f[R] flag.
 .PP
 Here is a formal definition of the pattern syntax, examples are below.
 .PP
-Rclone matching rules follow a glob style:
+SecureCloudEngine matching rules follow a glob style:
 .IP
 .nf
 \f[C]
@@ -23830,7 +23830,7 @@ The syntax of filter patterns is glob style matching (like
 However this does not provide absolute control over the matching, so for
 advanced users rclone also provides a regular expression syntax.
 .PP
-Rclone generally accepts Perl-style regular expressions, the exact
+SecureCloudEngine generally accepts Perl-style regular expressions, the exact
 syntax is defined in the Go regular expression
 reference (https://golang.org/pkg/regexp/syntax/).
 Regular expressions should be enclosed in \f[V]{{\f[R] \f[V]}}\f[R].
@@ -24071,7 +24071,7 @@ T}
 .TE
 .SS How filter rules are applied to files
 .PP
-Rclone path/file name filters are made up of one or more of the
+SecureCloudEngine path/file name filters are made up of one or more of the
 following flags:
 .IP \[bu] 2
 \f[V]--include\f[R]
@@ -24088,7 +24088,7 @@ following flags:
 .PP
 There can be more than one instance of individual flags.
 .PP
-Rclone internally uses a combined list of all the include and exclude
+SecureCloudEngine internally uses a combined list of all the include and exclude
 rules.
 The order in which rules are processed can influence the result of the
 filter.
@@ -24138,7 +24138,7 @@ contain character classes.
 Go regular expression reference (https://golang.org/pkg/regexp/syntax/)
 .SS How filter rules are applied to directories
 .PP
-Rclone commands are applied to path/file names not directories.
+SecureCloudEngine commands are applied to path/file names not directories.
 The entire contents of a directory can be matched to a filter by the
 pattern \f[V]directory/*\f[R] or recursively by \f[V]directory/**\f[R].
 .PP
@@ -24147,7 +24147,7 @@ Directory filter rules are defined with a closing \f[V]/\f[R] separator.
 E.g.
 \f[V]/directory/subdirectory/\f[R] is an rclone directory filter rule.
 .PP
-Rclone commands can use directory filter rules to determine whether they
+SecureCloudEngine commands can use directory filter rules to determine whether they
 recurse into subdirectories.
 This potentially optimises access to a remote by avoiding listing
 unnecessary directories.
@@ -24175,7 +24175,7 @@ recursive but \f[V]sync\f[R], \f[V]copy\f[R] and \f[V]move\f[R] are not.
 Whenever the \f[V]--disable ListR\f[R] flag is applied to an rclone
 command.
 .PP
-Rclone commands imply directory filter rules from path/file filter
+SecureCloudEngine commands imply directory filter rules from path/file filter
 rules.
 To view the directory filter rules rclone has implied for a command
 specify the \f[V]--dump filters\f[R] flag.
@@ -24189,7 +24189,7 @@ for an include rule
 \f[R]
 .fi
 .PP
-Rclone implies the directory include rule
+SecureCloudEngine implies the directory include rule
 .IP
 .nf
 \f[C]
@@ -24246,7 +24246,7 @@ for an include rule
 \f[R]
 .fi
 .PP
-Rclone will match files below directories \f[V]dir1\f[R] or
+SecureCloudEngine will match files below directories \f[V]dir1\f[R] or
 \f[V]dir2\f[R] only, but will not be able to use this filter to exclude
 a directory \f[V]dir3\f[R] from being traversed.
 .PP
@@ -24533,7 +24533,7 @@ Prior rules are cleared by the \f[V]!\f[R].
 .SS \f[V]--files-from\f[R] - Read list of source-file names
 .PP
 Adds path/files to an rclone command from a list in a named file.
-Rclone processes the path/file names in the order of the list, and no
+SecureCloudEngine processes the path/file names in the order of the list, and no
 others.
 .PP
 Other filter flags (\f[V]--include\f[R], \f[V]--include-from\f[R],
@@ -24548,7 +24548,7 @@ Lines starting with \f[V]#\f[R] or \f[V];\f[R] are ignored.
 \f[V]--files-from\f[R] followed by \f[V]-\f[R] reads the list of files
 from standard input.
 .PP
-Rclone commands with a \f[V]--files-from\f[R] flag traverse the remote,
+SecureCloudEngine commands with a \f[V]--files-from\f[R] flag traverse the remote,
 treating the names in \f[V]--files-from\f[R] as a set of filters.
 .PP
 If the \f[V]--no-traverse\f[R] and \f[V]--files-from\f[R] flags are used
@@ -24558,7 +24558,7 @@ For each path/file name, that requires typically 1 API call.
 This can be efficient for a short \f[V]--files-from\f[R] list and a
 remote containing many files.
 .PP
-Rclone commands do not error if any names in the \f[V]--files-from\f[R]
+SecureCloudEngine commands do not error if any names in the \f[V]--files-from\f[R]
 file are missing from the source remote.
 .PP
 The \f[V]--files-from\f[R] flag can be repeated in a single rclone
@@ -24682,7 +24682,7 @@ E.g.
 With \f[V]--ignore-case\f[R] a match is made.
 .SS Quoting shell metacharacters
 .PP
-Rclone commands with filter patterns containing shell metacharacters may
+SecureCloudEngine commands with filter patterns containing shell metacharacters may
 not as work as expected in your shell and may require quoting.
 .PP
 E.g.
@@ -24804,7 +24804,7 @@ number between 0 and 2.
 This will stay constant across retries.
 .SS How It Works
 .IP \[bu] 2
-Rclone takes each file\[aq]s full path, normalizes it to lowercase, and
+SecureCloudEngine takes each file\[aq]s full path, normalizes it to lowercase, and
 applies Unicode normalization.
 .IP \[bu] 2
 It then hashes the normalized path into a 64 bit number.
@@ -24817,7 +24817,7 @@ excluded.
 .IP \[bu] 2
 Other filters may apply if the file is not excluded.
 .PP
-\f[B]Important:\f[R] Rclone will traverse all directories to apply the
+\f[B]Important:\f[R] SecureCloudEngine will traverse all directories to apply the
 filter.
 .SS Usage Notes
 .IP \[bu] 2
@@ -24988,7 +24988,7 @@ Not using \f[V]/\f[R] to match from the root of a remote
 Not using \f[V]**\f[R] to match the contents of a directory
 .SH GUI (Experimental)
 .PP
-Rclone can serve a web based GUI (graphical user interface).
+SecureCloudEngine can serve a web based GUI (graphical user interface).
 This is somewhat experimental at the moment so things may be subject to
 change.
 .PP
@@ -25048,7 +25048,7 @@ Log out
 .PP
 When you run the \f[V]rclone rcd --rc-web-gui\f[R] this is what happens
 .IP \[bu] 2
-Rclone starts but only runs the remote control API (\[dq]rc\[dq]).
+SecureCloudEngine starts but only runs the remote control API (\[dq]rc\[dq]).
 .IP \[bu] 2
 The API is bound to localhost with an auto-generated username and
 password.
@@ -25278,7 +25278,7 @@ Default is root
 User-specified template.
 .SS Accessing the remote control via the rclone rc command
 .PP
-Rclone itself implements the remote control protocol in its
+SecureCloudEngine itself implements the remote control protocol in its
 \f[V]rclone rc\f[R] command.
 .PP
 You can use it like this:
@@ -26828,7 +26828,7 @@ rclone rc mount/listmounts
 .SS mount/mount: Create a new mount point
 .PP
 rclone allows Linux, FreeBSD, macOS and Windows to mount any of
-Rclone\[aq]s cloud storage systems as a file system with FUSE.
+SecureCloudEngine\[aq]s cloud storage systems as a file system with FUSE.
 .PP
 If no mountType is provided, the priority is given as follows: 1.
 mount 2.cmount 3.mount2
@@ -26891,7 +26891,7 @@ rclone rc mount/types
 .SS mount/unmount: Unmount selected active mount
 .PP
 rclone allows Linux, FreeBSD, macOS and Windows to mount any of
-Rclone\[aq]s cloud storage systems as a file system with FUSE.
+SecureCloudEngine\[aq]s cloud storage systems as a file system with FUSE.
 .PP
 This takes the following parameters:
 .IP \[bu] 2
@@ -26910,7 +26910,7 @@ rclone rc mount/unmount mountPoint=/home/<user>/mountPoint
 .SS mount/unmountall: Unmount all active mounts
 .PP
 rclone allows Linux, FreeBSD, macOS and Windows to mount any of
-Rclone\[aq]s cloud storage systems as a file system with FUSE.
+SecureCloudEngine\[aq]s cloud storage systems as a file system with FUSE.
 .PP
 This takes no parameters and returns error if unmount does not succeed.
 .PP
@@ -28253,7 +28253,7 @@ If there is more than one VFS in use then the \[dq]fs\[dq] parameter
 must be supplied.
 .SS Accessing the remote control via HTTP
 .PP
-Rclone implements a simple HTTP based protocol.
+SecureCloudEngine implements a simple HTTP based protocol.
 .PP
 Each endpoint takes an JSON object and returns a JSON object or an
 error.
@@ -28529,7 +28529,7 @@ used (https://stackoverflow.com/q/26545159/164234).
 .SH Overview of cloud storage systems
 .PP
 Each cloud storage system is slightly different.
-Rclone attempts to provide a unified interface to them, but some
+SecureCloudEngine attempts to provide a unified interface to them, but some
 underlying differences show through.
 .SS Features
 .PP
@@ -28697,7 +28697,7 @@ the Unicode fullwidth variants of the punctuation marks that are used.
 .PP
 On Windows, the characters \f[V]:\f[R], \f[V]*\f[R] and \f[V]?\f[R] are
 examples of restricted characters.
-If these are used in filenames on a remote that supports it, Rclone will
+If these are used in filenames on a remote that supports it, SecureCloudEngine will
 transparently convert them to their fullwidth Unicode variants
 \f[V]＊\f[R], \f[V]？\f[R] and \f[V]：\f[R] when downloading to Windows,
 and back again when uploading.
@@ -28730,7 +28730,7 @@ That is all good.
 However, this can also lead to an issue: If you already had a
 \f[I]different\f[R] file named \f[V]Test：1.jpg\f[R] on Windows, and
 then use rclone to copy either way.
-Rclone will then treat the file originally named \f[V]Test:1.jpg\f[R] on
+SecureCloudEngine will then treat the file originally named \f[V]Test:1.jpg\f[R] on
 Google Drive and the file originally named \f[V]Test：1.jpg\f[R] on
 Windows as the same file, and replace the contents from one with the
 other.
@@ -29337,7 +29337,7 @@ that the file gets renamed to \f[V]Test:1.jpg\f[R].
 To avoid this you can change the set of characters rclone should convert
 for the local filesystem, using command-line argument
 \f[V]--local-encoding\f[R].
-Rclone\[aq]s default behavior on Windows corresponds to
+SecureCloudEngine\[aq]s default behavior on Windows corresponds to
 .IP
 .nf
 \f[C]
@@ -29517,7 +29517,7 @@ that allows others to access them, even if they don\[aq]t have an
 account on the particular cloud provider.
 .SS About
 .PP
-Rclone \f[V]about\f[R] prints quota information for a remote.
+SecureCloudEngine \f[V]about\f[R] prints quota information for a remote.
 Typical output includes bytes used, free, quota and in trash.
 .PP
 If a remote lacks about capability \f[V]rclone about remote:\f[R]returns
@@ -29535,7 +29535,7 @@ See Limitations (https://rclone.org/bugs/#limitations) for details.
 Most Object/Bucket-based remotes do not support this.
 .SH Tiers
 .PP
-Rclone backends are divided into tiers to give users an idea of the
+SecureCloudEngine backends are divided into tiers to give users an idea of the
 stability of each backend.
 .PP
 .TS
@@ -30364,7 +30364,7 @@ Backend-only flags (these can be set in the config file also).
       --filefabric-version string                           Version read from the file fabric
       --filelu-description string                           Description of the remote
       --filelu-encoding Encoding                            The encoding for the backend (default Slash,LtGt,DoubleQuote,SingleQuote,BackQuote,Dollar,Colon,Question,Asterisk,Pipe,Hash,Percent,BackSlash,CrLf,Del,Ctl,LeftSpace,LeftPeriod,LeftTilde,LeftCrLfHtVt,RightSpace,RightPeriod,RightCrLfHtVt,InvalidUtf8,Dot,SquareBracket,Semicolon,Exclamation)
-      --filelu-key string                                   Your FileLu Rclone key from My Account
+      --filelu-key string                                   Your FileLu SecureCloudEngine key from My Account
       --filen-api-key string                                API Key for your Filen account (obscured)
       --filen-auth-version string                           Authentication Version (internal use only)
       --filen-base-folder-uuid string                       UUID of Account Root Directory (internal use only)
@@ -31002,7 +31002,7 @@ volume is removed.
 Plugins can run managed by the docker daemon, as a native system service
 (under systemd, \f[I]sysv\f[R] or \f[I]upstart\f[R]) or as a standalone
 executable.
-Rclone can run as docker volume plugin in all these modes.
+SecureCloudEngine can run as docker volume plugin in all these modes.
 It interacts with the local docker daemon via plugin
 API (https://docs.docker.com/engine/extend/plugin_api/) and handles
 mounting of remote file systems into docker containers so it must run on
@@ -31203,7 +31203,7 @@ docker volume inspect vol1
 .fi
 .SS Volume Configuration
 .PP
-Rclone flags and volume options are set via the \f[V]-o\f[R] flag to the
+SecureCloudEngine flags and volume options are set via the \f[V]-o\f[R] flag to the
 \f[V]docker volume create\f[R] command.
 They include backend-specific parameters as well as mount and
 \f[I]VFS\f[R] options.
@@ -31371,7 +31371,7 @@ We maintain the
 docker-volume-rclone (https://hub.docker.com/p/rclone/docker-volume-rclone/)
 plugin image on Docker Hub (https://hub.docker.com).
 .PP
-Rclone volume plugin requires \f[B]Docker Engine >= 19.03.15\f[R]
+SecureCloudEngine volume plugin requires \f[B]Docker Engine >= 19.03.15\f[R]
 .PP
 The plugin requires presence of two directories on the host before it
 can be installed.
@@ -31738,7 +31738,7 @@ with care.
 Make sure you have read and understood the entire
 manual (https://rclone.org/bisync) (especially the Limitations section)
 before using, or data loss can result.
-Questions can be asked in the Rclone Forum (https://forum.rclone.org/).
+Questions can be asked in the SecureCloudEngine Forum (https://forum.rclone.org/).
 .SS Getting started
 .IP \[bu] 2
 Install rclone (https://rclone.org/install/) and setup your remotes.
@@ -33202,7 +33202,7 @@ known issues that are deemed unfixable for the time being:
 \f[V]TestBisyncRemoteRemote/extended_filenames\f[R]
 .RE
 .IP \[bu] 2
-\f[V]TestS3Rclone\f[R] (\f[V]s3\f[R])
+\f[V]TestS3SecureCloudEngine\f[R] (\f[V]s3\f[R])
 .IP \[bu] 2
 \f[V]TestSFTPRsyncNet\f[R] (\f[V]sftp\f[R])
 .IP \[bu] 2
@@ -33645,7 +33645,7 @@ been copied to Path1 then the threatened deletes on Path2 may be
 disregarded.
 .SS Retries
 .PP
-Rclone has built-in retries.
+SecureCloudEngine has built-in retries.
 If you run with \f[V]--verbose\f[R] you\[aq]ll see error and retry
 messages such as shown below.
 This is usually not a bug.
@@ -33657,7 +33657,7 @@ The following run shows an intermittent fail.
 Lines \f[I]5\f[R] and \f[I]6\f[R] are low-level messages.
 Line \f[I]6\f[R] is a bubbled-up \f[I]warning\f[R] message, conveying
 the error.
-Rclone normally retries failing commands, so there may be numerous such
+SecureCloudEngine normally retries failing commands, so there may be numerous such
 messages in the log.
 .PP
 Since there are no final error/warning messages on line \f[I]7\f[R],
@@ -33772,7 +33772,7 @@ To ignore Google Docs entirely, use
 .SS Usage examples
 .SS Cron
 .PP
-Rclone does not yet have a built-in capability to monitor the local file
+SecureCloudEngine does not yet have a built-in capability to monitor the local file
 system for changes and must be blindly run periodically.
 On Windows this can be done using a \f[I]Task Scheduler\f[R], on Linux
 you can use \f[I]Cron\f[R] which is described below.
@@ -35125,7 +35125,7 @@ Rabata Cloud Storage
 .IP \[bu] 2
 RackCorp Object Storage
 .IP \[bu] 2
-Rclone Serve S3
+SecureCloudEngine Serve S3
 .IP \[bu] 2
 Scaleway
 .IP \[bu] 2
@@ -35530,7 +35530,7 @@ You could also use \f[V]--use-server-modtime\f[R] if you are happy with
 the modification times of the objects being the time of upload.
 .SS Avoiding GET requests to read directory listings
 .PP
-Rclone\[aq]s default directory traversal is to process each directory
+SecureCloudEngine\[aq]s default directory traversal is to process each directory
 individually.
 This takes one API call per directory.
 Using the \f[V]--fast-list\f[R] flag will read all info about the
@@ -35601,7 +35601,7 @@ You can increase the rate of API requests to S3 by increasing the
 parallelism using \f[V]--transfers\f[R] and \f[V]--checkers\f[R]
 options.
 .PP
-Rclone uses a very conservative defaults for these settings, as not all
+SecureCloudEngine uses a very conservative defaults for these settings, as not all
 providers support high rates of requests.
 Depending on your provider, you can increase significantly the number of
 transfers and checkers.
@@ -35621,7 +35621,7 @@ You will need to experiment with these values to find the optimal
 settings for your setup.
 .SS Data integrity
 .PP
-Rclone does its best to verify every part of an upload or download to
+SecureCloudEngine does its best to verify every part of an upload or download to
 the s3 provider using various hashes.
 .PP
 Every HTTP transaction to/from the provider has a
@@ -35634,11 +35634,11 @@ All communications with the provider is done over https for encryption
 and additional error protection.
 .SS Single part uploads
 .IP \[bu] 2
-Rclone uploads single part uploads with a \f[V]Content-Md5\f[R] using
+SecureCloudEngine uploads single part uploads with a \f[V]Content-Md5\f[R] using
 the MD5 hash read from the source.
 The provider checks this is correct on receipt of the data.
 .IP \[bu] 2
-Rclone then does a HEAD request (disable with \f[V]--s3-no-head\f[R]) to
+SecureCloudEngine then does a HEAD request (disable with \f[V]--s3-no-head\f[R]) to
 read the \f[V]ETag\f[R] back which is the MD5 of the file and checks
 that with what it sent.
 .PP
@@ -35666,7 +35666,7 @@ This info is all protected with a \f[V]X-Amz-Content-Sha256\f[R]
 The provider checks the MD5 for all the parts it has received against
 what rclone sends and if it is good it returns OK.
 .PP
-Rclone then does a HEAD request (disable with \f[V]--s3-no-head\f[R])
+SecureCloudEngine then does a HEAD request (disable with \f[V]--s3-no-head\f[R])
 and checks the ETag is what it expects (in this case it should be the
 MD5 sum of all the MD5 sums of all the parts with the number of parts on
 the end).
@@ -35677,14 +35677,14 @@ multipart upload can\[aq]t easily be checked against the file as the
 chunk size must be known in order to calculate it.
 .SS Downloads
 .PP
-Rclone checks the MD5 hash of the data downloaded against either the
+SecureCloudEngine checks the MD5 hash of the data downloaded against either the
 ETag or the \f[V]X-Amz-Meta-Md5chksum\f[R] metadata (if present) which
 rclone uploads with multipart uploads.
 .SS Further checking
 .PP
 At each stage rclone and the provider are sending and checking hashes of
 \f[B]everything\f[R].
-Rclone deliberately HEADs each object after upload to check it arrived
+SecureCloudEngine deliberately HEADs each object after upload to check it arrived
 safely for extra security.
 (You can disable this with \f[V]--s3-no-head\f[R]).
 .PP
@@ -35999,7 +35999,7 @@ This is typically used when the role is accessed by a third party.
 The assume role feature works with both direct credentials
 (\f[V]env_auth = false\f[R]) and environment-based authentication
 (\f[V]env_auth = true\f[R]).
-Rclone will first authenticate using the base credentials, then use
+SecureCloudEngine will first authenticate using the base credentials, then use
 those credentials to assume the specified role.
 .PP
 Example configuration for cross-account access:
@@ -36170,7 +36170,7 @@ Storage Providers including AWS, Alibaba, ArvanCloud, BizflyCloud, Ceph,
 ChinaMobile, Cloudflare, Cubbit, DigitalOcean, Dreamhost, Exaba, FileLu,
 FlashBlade, GCS, Hetzner, HuaweiOBS, IBMCOS, IDrive, Intercolo, IONOS,
 Leviia, Liara, Linode, LyveCloud, Magalu, Mega, Minio, Netease,
-Outscale, OVHcloud, Petabox, Qiniu, Rabata, RackCorp, Rclone, Scaleway,
+Outscale, OVHcloud, Petabox, Qiniu, Rabata, RackCorp, SecureCloudEngine, Scaleway,
 SeaweedFS, Selectel, Servercore, SpectraLogic, StackPath, Storj,
 Synology, TencentCOS, Wasabi, Zata, Other).
 .SS --s3-provider
@@ -36394,10 +36394,10 @@ Rabata Cloud Storage
 RackCorp Object Storage
 .RE
 .IP \[bu] 2
-\[dq]Rclone\[dq]
+\[dq]SecureCloudEngine\[dq]
 .RS 2
 .IP \[bu] 2
-Rclone S3 Server
+SecureCloudEngine S3 Server
 .RE
 .IP \[bu] 2
 \[dq]Scaleway\[dq]
@@ -37675,7 +37675,7 @@ Config: endpoint
 Env Var: RCLONE_S3_ENDPOINT
 .IP \[bu] 2
 Provider:
-AWS,Alibaba,ArvanCloud,BizflyCloud,Ceph,ChinaMobile,Cloudflare,Cubbit,DigitalOcean,Dreamhost,Exaba,FileLu,FlashBlade,GCS,Hetzner,HuaweiOBS,IBMCOS,Intercolo,IONOS,Leviia,Liara,Linode,LyveCloud,Magalu,Mega,Minio,Netease,Outscale,OVHcloud,Petabox,Qiniu,Rabata,RackCorp,Rclone,Scaleway,SeaweedFS,Selectel,Servercore,SpectraLogic,StackPath,Storj,Synology,TencentCOS,Wasabi,Zata,Other
+AWS,Alibaba,ArvanCloud,BizflyCloud,Ceph,ChinaMobile,Cloudflare,Cubbit,DigitalOcean,Dreamhost,Exaba,FileLu,FlashBlade,GCS,Hetzner,HuaweiOBS,IBMCOS,Intercolo,IONOS,Leviia,Liara,Linode,LyveCloud,Magalu,Mega,Minio,Netease,Outscale,OVHcloud,Petabox,Qiniu,Rabata,RackCorp,SecureCloudEngine,Scaleway,SeaweedFS,Selectel,Servercore,SpectraLogic,StackPath,Storj,Synology,TencentCOS,Wasabi,Zata,Other
 .IP \[bu] 2
 Type: string
 .IP \[bu] 2
@@ -41548,7 +41548,7 @@ Storage Providers including AWS, Alibaba, ArvanCloud, BizflyCloud, Ceph,
 ChinaMobile, Cloudflare, Cubbit, DigitalOcean, Dreamhost, Exaba, FileLu,
 FlashBlade, GCS, Hetzner, HuaweiOBS, IBMCOS, IDrive, Intercolo, IONOS,
 Leviia, Liara, Linode, LyveCloud, Magalu, Mega, Minio, Netease,
-Outscale, OVHcloud, Petabox, Qiniu, Rabata, RackCorp, Rclone, Scaleway,
+Outscale, OVHcloud, Petabox, Qiniu, Rabata, RackCorp, SecureCloudEngine, Scaleway,
 SeaweedFS, Selectel, Servercore, SpectraLogic, StackPath, Storj,
 Synology, TencentCOS, Wasabi, Zata, Other).
 .SS --s3-bucket-acl
@@ -41778,7 +41778,7 @@ buffered in memory per transfer.
 If you are transferring large files over high-speed links and you have
 enough memory, then increasing this will speed up the transfers.
 .PP
-Rclone will automatically increase the chunk size when uploading a large
+SecureCloudEngine will automatically increase the chunk size when uploading a large
 file of known size to stay below the 10,000 chunks limit.
 .PP
 Files of unknown size are uploaded with the configured chunk_size.
@@ -41790,7 +41790,7 @@ chunk_size.
 .PP
 Increasing the chunk size decreases the accuracy of the progress
 statistics displayed with \[dq]-P\[dq] flag.
-Rclone treats chunk as sent when it\[aq]s buffered by the AWS SDK, when
+SecureCloudEngine treats chunk as sent when it\[aq]s buffered by the AWS SDK, when
 in fact it may still be uploading.
 A bigger chunk size means a bigger AWS SDK buffer and progress reporting
 more deviating from the truth.
@@ -41814,7 +41814,7 @@ doing a multipart upload.
 This can be useful if a service does not support the AWS S3
 specification of 10,000 chunks.
 .PP
-Rclone will automatically increase the chunk size when uploading a large
+SecureCloudEngine will automatically increase the chunk size when uploading a large
 file of a known size to stay below this number of chunks limit.
 .PP
 Properties:
@@ -42374,7 +42374,7 @@ Default: unset
 .PP
 Whether to use an unsigned payload in PutObject
 .PP
-Rclone has to avoid the AWS SDK seeking the body when calling PutObject.
+SecureCloudEngine has to avoid the AWS SDK seeking the body when calling PutObject.
 The AWS provider can add checksums in the trailer to avoid seeking but
 other providers can\[aq]t.
 .PP
@@ -42717,7 +42717,7 @@ Versioning
 .IP \[bu] 2
 \f[V]Content-Encoding: gzip\f[R]
 .PP
-Rclone limitations with Directory Buckets:
+SecureCloudEngine limitations with Directory Buckets:
 .IP \[bu] 2
 rclone does not support creating Directory Buckets with
 \f[V]rclone mkdir\f[R]
@@ -42728,7 +42728,7 @@ or removing them with \f[V]rclone rmdir\f[R] yet
 Directory Buckets do not appear when doing \f[V]rclone lsf\f[R] at the
 top level.
 .IP \[bu] 2
-Rclone can\[aq]t remove auto created directories yet.
+SecureCloudEngine can\[aq]t remove auto created directories yet.
 In theory this should work with \f[V]directory_markers = true\f[R] but
 it doesn\[aq]t.
 .IP \[bu] 2
@@ -44258,7 +44258,7 @@ endpoint = https://storage.googleapis.com
 .PP
 \f[B]Note\f[R] that \f[V]--s3-versions\f[R] does not work with GCS when
 it needs to do directory paging.
-Rclone will return the error:
+SecureCloudEngine will return the error:
 .IP
 .nf
 \f[C]
@@ -44296,7 +44296,7 @@ Option Storage.
 Type of storage to configure.
 Choose a number from below, or type in your own value.
 [snip]
- XX / Amazon S3 Compliant Storage Providers including AWS, Alibaba, ArvanCloud, Ceph, ChinaMobile, Cloudflare, DigitalOcean, Dreamhost, GCS, Hetzner, HuaweiOBS, IBMCOS, IDrive, IONOS, LyveCloud, Leviia, Liara, Linode, Magalu, Minio, Netease, Outscale, Petabox, RackCorp, Rclone, Scaleway, SeaweedFS, Selectel, StackPath, Storj, Synology, TencentCOS, Wasabi, Qiniu and others
+ XX / Amazon S3 Compliant Storage Providers including AWS, Alibaba, ArvanCloud, Ceph, ChinaMobile, Cloudflare, DigitalOcean, Dreamhost, GCS, Hetzner, HuaweiOBS, IBMCOS, IDrive, IONOS, LyveCloud, Leviia, Liara, Linode, Magalu, Minio, Netease, Outscale, Petabox, RackCorp, SecureCloudEngine, Scaleway, SeaweedFS, Selectel, StackPath, Storj, Synology, TencentCOS, Wasabi, Qiniu and others
    \[rs] (s3)
 [snip]
 Storage> s3
@@ -46286,7 +46286,7 @@ Option Storage.
 Type of storage to configure.
 Choose a number from below, or type in your own value.
 [...]
- XX / Amazon S3 Compliant Storage Providers including AWS, Alibaba, ArvanCloud, Ceph, ChinaMobile, Cloudflare, DigitalOcean, Dreamhost, GCS, HuaweiOBS, IBMCOS, IDrive, IONOS, LyveCloud, Leviia, Liara, Linode, Magalu, Minio, Netease, Outscale, OVHcloud, Petabox, RackCorp, Rclone, Scaleway, SeaweedFS, Selectel, StackPath, Storj, Synology, TencentCOS, Wasabi, Qiniu and others
+ XX / Amazon S3 Compliant Storage Providers including AWS, Alibaba, ArvanCloud, Ceph, ChinaMobile, Cloudflare, DigitalOcean, Dreamhost, GCS, HuaweiOBS, IBMCOS, IDrive, IONOS, LyveCloud, Leviia, Liara, Linode, Magalu, Minio, Netease, Outscale, OVHcloud, Petabox, RackCorp, SecureCloudEngine, Scaleway, SeaweedFS, Selectel, StackPath, Storj, Synology, TencentCOS, Wasabi, Qiniu and others
    \[rs] (s3)
 [...]
 Storage> s3
@@ -46676,7 +46676,7 @@ Option Storage.
 Type of storage to configure.
 Choose a number from below, or type in your own value.
 [snip]
- 4 / Amazon S3 Compliant Storage Providers including AWS, Alibaba, ArvanCloud, Ceph, ChinaMobile, Cloudflare, DigitalOcean, Dreamhost, FlashBlade, GCS, HuaweiOBS, IBMCOS, IDrive, IONOS, LyveCloud, Leviia, Liara, Linode, Magalu, Minio, Netease, Outscale, Petabox, RackCorp, Rclone, Scaleway, SeaweedFS, Selectel, StackPath, Storj, Synology, TencentCOS, Wasabi, Qiniu and others
+ 4 / Amazon S3 Compliant Storage Providers including AWS, Alibaba, ArvanCloud, Ceph, ChinaMobile, Cloudflare, DigitalOcean, Dreamhost, FlashBlade, GCS, HuaweiOBS, IBMCOS, IDrive, IONOS, LyveCloud, Leviia, Liara, Linode, Magalu, Minio, Netease, Outscale, Petabox, RackCorp, SecureCloudEngine, Scaleway, SeaweedFS, Selectel, StackPath, Storj, Synology, TencentCOS, Wasabi, Qiniu and others
    \[rs] (s3)
 [snip]
 Storage> s3
@@ -47126,7 +47126,7 @@ archive use cases.
 Server side copy is not implemented with Rabata, also meaning
 modification time of objects cannot be updated.
 .PP
-Rclone config:
+SecureCloudEngine config:
 .IP
 .nf
 \f[C]
@@ -47278,9 +47278,9 @@ endpoint = s3.rackcorp.com
 location_constraint = au-nsw
 \f[R]
 .fi
-.SS Rclone Serve S3
+.SS SecureCloudEngine Serve S3
 .PP
-Rclone can serve any remote over the S3 protocol.
+SecureCloudEngine can serve any remote over the S3 protocol.
 For details see the rclone serve
 s3 (https://rclone.org/commands/rclone_serve_s3/) documentation.
 .PP
@@ -47300,7 +47300,7 @@ this:
 \f[C]
 [serves3]
 type = s3
-provider = Rclone
+provider = SecureCloudEngine
 endpoint = http://127.0.0.1:8080/
 access_key_id = ACCESS_KEY_ID
 secret_access_key = SECRET_ACCESS_KEY
@@ -48618,7 +48618,7 @@ Despite s3 not really having the concepts of directories, rclone does
 the sync on a directory by directory basis to be compatible with normal
 filing systems.
 .PP
-Rclone loads each directory into memory as rclone objects.
+SecureCloudEngine loads each directory into memory as rclone objects.
 Each rclone object takes 0.5k-1k of memory, so approximately 1GB per
 1,000,000 files, and the sync for that directory does not begin until it
 is entirely loaded in memory.
@@ -48837,7 +48837,7 @@ It typically uses compression (most commonly the DEFLATE algorithm) to
 reduce the overall size of the archived content.
 Zip files are supported natively by most modern operating systems.
 .PP
-Rclone does not support the following advanced features of Zip files:
+SecureCloudEngine does not support the following advanced features of Zip files:
 .IP \[bu] 2
 Splitting large archives into smaller parts
 .IP \[bu] 2
@@ -48856,7 +48856,7 @@ live CDs/USBs, embedded devices with limited storage, and software
 package distribution, as it saves space and ensures the integrity of the
 original files.
 .PP
-Rclone supports the following squashfs compression formats:
+SecureCloudEngine supports the following squashfs compression formats:
 .IP \[bu] 2
 \f[V]Gzip\f[R]
 .IP \[bu] 2
@@ -48873,7 +48873,7 @@ These are not yet working:
 \f[V]Lz4\f[R] - Broken with \[dq]error decompressing: lz4: bad magic
 number\[dq]
 .PP
-Rclone works fastest with large squashfs block sizes.
+SecureCloudEngine works fastest with large squashfs block sizes.
 For example:
 .IP
 .nf
@@ -49241,7 +49241,7 @@ be used in JSON strings.
 .PP
 Note that in 2020-05 Backblaze started allowing \ characters in file
 names.
-Rclone hasn\[aq]t changed its encoding as this could cause syncs to
+SecureCloudEngine hasn\[aq]t changed its encoding as this could cause syncs to
 re-transfer files.
 If you want rclone not to replace \ then see the \f[V]--b2-encoding\f[R]
 flag below and remove the \f[V]BackSlash\f[R] from the string.
@@ -49483,7 +49483,7 @@ Note that when using \f[V]--b2-versions\f[R] no file write operations
 are permitted, so you can\[aq]t upload files or delete them.
 .SS B2 and rclone link
 .PP
-Rclone supports generating file share links for private B2 buckets.
+SecureCloudEngine supports generating file share links for private B2 buckets.
 They can either be for a file for example:
 .IP
 .nf
@@ -49733,7 +49733,7 @@ Custom endpoint for downloads.
 .PP
 This is usually set to a Cloudflare CDN URL as Backblaze offers free
 egress for data downloaded through the Cloudflare network.
-Rclone works with private buckets by sending an \[dq]Authorization\[dq]
+SecureCloudEngine works with private buckets by sending an \[dq]Authorization\[dq]
 header.
 If the custom endpoint rewrites the requests for authentication, e.g.,
 in Cloudflare Workers, this header needs to be handled properly.
@@ -50046,7 +50046,7 @@ rclone backend lifecycle b2:bucket -o daysFromUploadingToHiding=5 -o daysFromHid
 .PP
 This will run and then print the new lifecycle rules as above.
 .PP
-Rclone only lets you set lifecycles for the whole bucket with the
+SecureCloudEngine only lets you set lifecycles for the whole bucket with the
 fileNamePrefix = \[dq]\[dq].
 .PP
 You can\[aq]t disable versioning with B2.
@@ -50186,9 +50186,9 @@ access_token>
 
 Enter a string value. Press Enter for the default (\[dq]user\[dq]).
 Choose a number from below, or type in your own value
- 1 / Rclone should act on behalf of a user
+ 1 / SecureCloudEngine should act on behalf of a user
    \[rs] \[dq]user\[dq]
- 2 / Rclone should act on behalf of a service account
+ 2 / SecureCloudEngine should act on behalf of a service account
    \[rs] \[dq]enterprise\[dq]
 box_sub_type>
 Remote config
@@ -50420,7 +50420,7 @@ be used in JSON strings.
 .SS Transfers
 .PP
 For files above 50 MiB rclone will use a chunked transfer.
-Rclone will upload up to \f[V]--transfers\f[R] chunks at the same time
+SecureCloudEngine will upload up to \f[V]--transfers\f[R] chunks at the same time
 (shared among all the multipart uploads).
 Chunks are buffered in memory and are normally 8 MiB so increasing
 \f[V]--transfers\f[R] will increase memory use.
@@ -50554,13 +50554,13 @@ Examples:
 \[dq]user\[dq]
 .RS 2
 .IP \[bu] 2
-Rclone should act on behalf of a user.
+SecureCloudEngine should act on behalf of a user.
 .RE
 .IP \[bu] 2
 \[dq]enterprise\[dq]
 .RS 2
 .IP \[bu] 2
-Rclone should act on behalf of a service account.
+SecureCloudEngine should act on behalf of a service account.
 .RE
 .RE
 .SS Advanced options
@@ -50998,7 +50998,7 @@ locally where they can be available almost immediately before the reader
 usually needs them.
 .PP
 This is similar to buffering when media files are played online.
-Rclone will stay around the current marker but always try its best to
+SecureCloudEngine will stay around the current marker but always try its best to
 stay ahead and prepare the data before.
 .SS Plex Integration
 .PP
@@ -52246,9 +52246,9 @@ Metadata is required for no rename transactions (meta format cannot be
 \[dq]none\[dq]).
 .IP \[bu] 2
 If you are using norename transactions you should be careful not to
-downgrade Rclone
+downgrade SecureCloudEngine
 .IP \[bu] 2
-as older versions of Rclone don\[aq]t support this transaction style and
+as older versions of SecureCloudEngine don\[aq]t support this transaction style and
 will misinterpret
 .IP \[bu] 2
 files manipulated by norename transactions.
@@ -52698,7 +52698,7 @@ ShareFile supports MD5 type hashes, so you can use the
 .SS Transfers
 .PP
 For files above 128 MiB rclone will use a chunked transfer.
-Rclone will upload up to \f[V]--transfers\f[R] chunks at the same time
+SecureCloudEngine will upload up to \f[V]--transfers\f[R] chunks at the same time
 (shared among all the multipart uploads).
 Chunks are buffered in memory and are normally 64 MiB so increasing
 \f[V]--transfers\f[R] will increase memory use.
@@ -53056,7 +53056,7 @@ about (https://rclone.org/overview/#optional-features) and rclone
 about (https://rclone.org/commands/rclone_about/).
 .SH Crypt
 .PP
-Rclone \f[V]crypt\f[R] remotes encrypt and decrypt other remotes.
+SecureCloudEngine \f[V]crypt\f[R] remotes encrypt and decrypt other remotes.
 .PP
 A remote of type \f[V]crypt\f[R] does not access a storage
 system (https://rclone.org/overview/) directly, but instead wraps
@@ -53067,7 +53067,7 @@ and a few others work.
 It makes the usage very flexible, as you can add a layer, in this case
 an encryption layer, on top of any other backend, even in multiple
 layers.
-Rclone\[aq]s functionality can be used as with any other remote, for
+SecureCloudEngine\[aq]s functionality can be used as with any other remote, for
 example you can mount (https://rclone.org/commands/rclone_mount/) a
 crypt remote.
 .PP
@@ -53261,7 +53261,7 @@ If you reconfigure rclone with the same passwords/passphrases elsewhere
 it will be compatible, but the obscured version will be different due to
 the different salt.
 .PP
-Rclone does not encrypt
+SecureCloudEngine does not encrypt
 .IP \[bu] 2
 file length - this can be calculated within 16 bytes
 .IP \[bu] 2
@@ -53451,7 +53451,7 @@ Obfuscation
 .PP
 This is a simple \[dq]rotate\[dq] of the filename, with each file having
 a rot distance based on the filename.
-Rclone stores the distance at the beginning of the filename.
+SecureCloudEngine stores the distance at the beginning of the filename.
 A file called \[dq]hello\[dq] may become \[dq]53.jgnnq\[dq].
 .PP
 Obfuscation is not a strong encryption of filenames, but hinders
@@ -54035,7 +54035,7 @@ so rclone can be used on case insensitive remotes (e.g.
 Windows, Box, Dropbox, Onedrive etc).
 .SS Key derivation
 .PP
-Rclone uses \f[V]scrypt\f[R] with parameters \f[V]N=16384, r=8, p=1\f[R]
+SecureCloudEngine uses \f[V]scrypt\f[R] with parameters \f[V]N=16384, r=8, p=1\f[R]
 with an optional user supplied salt (password2) to derive the 32+32+16 =
 80 bytes of key material required.
 If the user doesn\[aq]t supply a salt then rclone uses an internal one.
@@ -54397,7 +54397,7 @@ y/e/d> y
 .fi
 .SS Configuring for Google Drive Shared Drives
 .PP
-Rclone has a convenience feature for making a combine backend for all
+SecureCloudEngine has a convenience feature for making a combine backend for all
 the shared drives you have access to.
 .PP
 Assuming your main (non shared drive) Google drive remote is called
@@ -55029,7 +55029,7 @@ buffered in memory per transfer.
 If you are transferring large files over high-speed links and you have
 enough memory, then increasing this will speed up the transfers.
 .PP
-Rclone will automatically increase the chunk size when uploading a large
+SecureCloudEngine will automatically increase the chunk size when uploading a large
 file of known size to stay below the 10,000 chunks limit.
 .PP
 Files of unknown size are uploaded with the configured chunk_size.
@@ -55199,7 +55199,7 @@ rclone copy /home/source remote:backup
 .fi
 .SS Dropbox for business
 .PP
-Rclone supports Dropbox for business and Team Folders.
+SecureCloudEngine supports Dropbox for business and Team Folders.
 .PP
 When using Dropbox for business \f[V]remote:\f[R] and
 \f[V]remote:path/to/file\f[R] will refer to your personal folder.
@@ -55373,12 +55373,12 @@ download based on the \f[V]--dropbox-export-formats\f[R] setting.
 By default, the export formats are \f[V]html,md\f[R], which are sensible
 defaults for Dropbox Paper.
 .PP
-Rclone chooses the first format ID in the export formats list that
+SecureCloudEngine chooses the first format ID in the export formats list that
 Dropbox supports for a given file.
 If no format in the list is usable, rclone will choose the default
 format that Dropbox suggests.
 .PP
-Rclone will change the extension to correspond to the export format.
+SecureCloudEngine will change the extension to correspond to the export format.
 Here are some examples of how extensions are mapped:
 .PP
 .TS
@@ -55620,7 +55620,7 @@ When this flag is used with no path only the List operation is supported
 and all available shared folders will be listed.
 If you specify a path the first part will be interpreted as the name of
 shared folder.
-Rclone will then try to mount this shared to the root namespace.
+SecureCloudEngine will then try to mount this shared to the root namespace.
 On success shared folder rclone proceeds normally.
 The shared folder is now pretty much a normal folder and all normal
 operations are supported.
@@ -55759,7 +55759,7 @@ sync - batch uploads and check completion (default)
 .IP \[bu] 2
 async - batch upload and don\[aq]t check completion
 .PP
-Rclone will close any outstanding batches when it exits which may make a
+SecureCloudEngine will close any outstanding batches when it exits which may make a
 delay on quit.
 .PP
 Properties:
@@ -55787,7 +55787,7 @@ batch_mode: sync - default batch_size is the same as --transfers
 .IP \[bu] 2
 batch_mode: off - not in use
 .PP
-Rclone will close any outstanding batches when it exits which may make a
+SecureCloudEngine will close any outstanding batches when it exits which may make a
 delay on quit.
 .PP
 Setting this is a great idea if you are uploading lots of small files as
@@ -55864,7 +55864,7 @@ There are some file names such as \f[V]thumbs.db\f[R] which Dropbox
 can\[aq]t store.
 There is a full list of them in the \[dq]Ignored Files\[dq] section of
 this document (https://www.dropbox.com/en/help/145).
-Rclone will issue an error message
+SecureCloudEngine will issue an error message
 \f[V]File name disallowed - not uploading\f[R] if it attempts to upload
 one of those file names, but the sync won\[aq]t fail.
 .PP
@@ -56076,7 +56076,7 @@ be used in JSON strings.
 .SS Empty files
 .PP
 Empty files aren\[aq]t supported by the Enterprise File Fabric.
-Rclone will therefore upload an empty file as a single space with a mime
+SecureCloudEngine will therefore upload an empty file as a single space with a mime
 type of \f[V]application/vnd.rclone.empty.file\f[R] and files with that
 mime type are treated as empty.
 .SS Root folder ID
@@ -56309,7 +56309,7 @@ xx / FileLu Cloud Storage
    \[rs] \[dq]filelu\[dq]
 [snip]
 Storage> filelu
-Enter your FileLu Rclone Key:
+Enter your FileLu SecureCloudEngine Key:
 key> YOUR_FILELU_RCLONE_KEY RC_xxxxxxxxxxxxxxxxxxxxxxxx
 Configuration complete.
 
@@ -56323,10 +56323,10 @@ y/e/d> y
 .SS Paths
 .PP
 A path without an initial \f[V]/\f[R] will operate in the
-\f[V]Rclone\f[R] directory.
+\f[V]SecureCloudEngine\f[R] directory.
 .PP
 A path with an initial \f[V]/\f[R] will operate at the root where you
-can see the \f[V]Rclone\f[R] directory.
+can see the \f[V]SecureCloudEngine\f[R] directory.
 .IP
 .nf
 \f[C]
@@ -56336,14 +56336,14 @@ Camera/
 Documents/
 Music/
 Photos/
-Rclone/
+SecureCloudEngine/
 Vault/
 Videos/
 \f[R]
 .fi
 .SS Example Commands
 .PP
-Create a new folder named \f[V]foldername\f[R] in the \f[V]Rclone\f[R]
+Create a new folder named \f[V]foldername\f[R] in the \f[V]SecureCloudEngine\f[R]
 directory:
 .IP
 .nf
@@ -56467,17 +56467,17 @@ FileLu only supports filenames and folder names up to 255 characters in
 length, where a character is a Unicode character.
 .SS Duplicated Files
 .PP
-When uploading and syncing via Rclone, FileLu does not allow uploading
+When uploading and syncing via SecureCloudEngine, FileLu does not allow uploading
 duplicate files within the same directory.
 However, you can upload duplicate files, provided they are in different
 directories (folders).
 .SS Failure to Log / Invalid Credentials or KEY
 .PP
-Ensure that you have the correct Rclone key, which can be found in My
+Ensure that you have the correct SecureCloudEngine key, which can be found in My
 Account (https://filelu.com/account/).
-Every time you toggle Rclone OFF and ON in My Account, a new
+Every time you toggle SecureCloudEngine OFF and ON in My Account, a new
 RC_xxxxxxxxxxxxxxxxxxxx key is generated.
-Be sure to update your Rclone configuration with the new key.
+Be sure to update your SecureCloudEngine configuration with the new key.
 .PP
 If you are connecting to your FileLu remote for the first time and
 encounter an error such as:
@@ -56488,7 +56488,7 @@ Failed to create file system for \[dq]my-filelu-remote:\[dq]: couldn\[aq]t login
 \f[R]
 .fi
 .PP
-Ensure your Rclone Key is correct.
+Ensure your SecureCloudEngine Key is correct.
 .SS Process \f[V]killed\f[R]
 .PP
 Accounts with large files or extensive metadata may experience
@@ -56500,7 +56500,7 @@ to handle these operations.
 Here are the Standard options specific to filelu (FileLu Cloud Storage).
 .SS --filelu-key
 .PP
-Your FileLu Rclone key from My Account
+Your FileLu SecureCloudEngine key from My Account
 .PP
 Properties:
 .IP \[bu] 2
@@ -56951,7 +56951,7 @@ by visiting the \[dq]File Integrity\[dq] section in \[dq]Data
 Governance\[dq] to configure your settings and select the checksum
 algorithms that meet your requirements.
 .PP
-Rclone currently only support CRC32 and MD5 for use in syncing but
+SecureCloudEngine currently only support CRC32 and MD5 for use in syncing but
 selecting more checksums will not affect rclone\[aq]s operations.
 .PP
 For use with rclone, selecting at least MD5 is recommended so rclone can
@@ -57052,11 +57052,11 @@ Required: false
 .SH FTP
 .PP
 FTP is the File Transfer Protocol.
-Rclone FTP support is provided using the
+SecureCloudEngine FTP support is provided using the
 github.com/jlaffaye/ftp (https://godoc.org/github.com/jlaffaye/ftp)
 package.
 .PP
-Limitations of Rclone\[aq]s FTP backend
+Limitations of SecureCloudEngine\[aq]s FTP backend
 .PP
 Paths are specified as \f[V]remote:path\f[R].
 If the path does not begin with a \f[V]/\f[R] it is relative to the home
@@ -57072,7 +57072,7 @@ rclone config
 \f[R]
 .fi
 .PP
-Rclone config guides you through an interactive setup process.
+SecureCloudEngine config guides you through an interactive setup process.
 A minimal rclone FTP remote definition only requires host, username and
 password.
 For an anonymous FTP server, see below.
@@ -57750,12 +57750,12 @@ FTP servers acting as rclone remotes must support \f[V]passive\f[R]
 mode.
 The mode cannot be configured as \f[V]passive\f[R] is the only supported
 one.
-Rclone\[aq]s FTP implementation is not compatible with \f[V]active\f[R]
+SecureCloudEngine\[aq]s FTP implementation is not compatible with \f[V]active\f[R]
 mode as the library it uses doesn\[aq]t support
 it (https://github.com/jlaffaye/ftp/issues/29).
 This will likely never be supported due to security concerns.
 .PP
-Rclone\[aq]s FTP backend does not support any checksums but can compare
+SecureCloudEngine\[aq]s FTP backend does not support any checksums but can compare
 file sizes.
 .PP
 \f[V]rclone about\f[R] is not supported by the FTP backend.
@@ -57776,7 +57776,7 @@ control.
 .PP
 \f[V]--bind\f[R] isn\[aq]t supported.
 .PP
-Rclone\[aq]s FTP backend could support server-side move but does not at
+SecureCloudEngine\[aq]s FTP backend could support server-side move but does not at
 present.
 .PP
 The \f[V]ftp_proxy\f[R] environment variable is not currently supported.
@@ -58167,7 +58167,7 @@ This limit may be lifted in the future.
 Gofile is capable of having files with duplicated file names.
 For instance two files called \f[V]hello.txt\f[R] in the same directory.
 .PP
-Rclone cannot sync that to a normal file system but it can be fixed with
+SecureCloudEngine cannot sync that to a normal file system but it can be fixed with
 the \f[V]rclone dedupe\f[R] command.
 .PP
 Duplicated files cause problems with the syncing and you will see
@@ -59550,7 +59550,7 @@ rclone copy /home/source remote:backup
 .fi
 .SS Scopes
 .PP
-Rclone allows you to select which scope you would like for rclone to
+SecureCloudEngine allows you to select which scope you would like for rclone to
 use.
 This changes what type of token is granted to rclone.
 The scopes are defined
@@ -59585,7 +59585,7 @@ Files created with this scope are visible in the web interface.
 .SS drive.appfolder
 .PP
 This gives rclone its own private area to store files.
-Rclone will not be able to see any other files on your drive and you
+SecureCloudEngine will not be able to see any other files on your drive and you
 won\[aq]t be able to see rclone\[aq]s files from the web interface
 either.
 .SS drive.metadata.readonly
@@ -59769,11 +59769,11 @@ n) No
 y/n> y
 Fetching Shared Drive list...
 Choose a number from below, or type in your own value
- 1 / Rclone Test
+ 1 / SecureCloudEngine Test
    \[rs] \[dq]xxxxxxxxxxxxxxxxxxxx\[dq]
- 2 / Rclone Test 2
+ 2 / SecureCloudEngine Test 2
    \[rs] \[dq]yyyyyyyyyyyyyyyyyyyy\[dq]
- 3 / Rclone Test 3
+ 3 / SecureCloudEngine Test 3
    \[rs] \[dq]zzzzzzzzzzzzzzzzzzzz\[dq]
 Enter a Shared Drive ID> 1
 Configuration complete.
@@ -61189,7 +61189,7 @@ Normally rclone will work around a bug in Google Drive when using
 parents)\[dq] returns nothing sometimes.
 See #3114, #4289 and https://issuetracker.google.com/issues/149522397
 .PP
-Rclone detects this by finding no items in more than one directory when
+SecureCloudEngine detects this by finding no items in more than one directory when
 listing and retries them as lists of individual directories.
 .PP
 This means that if you have a lot of empty directories rclone will end
@@ -62096,7 +62096,7 @@ Use \f[V]rclone dedupe\f[R] to fix duplicated files.
 .PP
 Note that this isn\[aq]t just a problem with rclone, even Google Photos
 on Android duplicates files on drive sometimes.
-.SS Rclone appears to be re-copying files it shouldn\[aq]t
+.SS SecureCloudEngine appears to be re-copying files it shouldn\[aq]t
 .PP
 The most likely cause of this is the duplicated file issue above - run
 \f[V]rclone dedupe\f[R] and check your logs for duplicate object or
@@ -62760,7 +62760,7 @@ sync - batch uploads and check completion (default)
 .IP \[bu] 2
 async - batch upload and don\[aq]t check completion
 .PP
-Rclone will close any outstanding batches when it exits which may make a
+SecureCloudEngine will close any outstanding batches when it exits which may make a
 delay on quit.
 .PP
 Properties:
@@ -62788,7 +62788,7 @@ batch_mode: sync - default batch_size is the same as --transfers
 .IP \[bu] 2
 batch_mode: off - not in use
 .PP
-Rclone will close any outstanding batches when it exits which may make a
+SecureCloudEngine will close any outstanding batches when it exits which may make a
 delay on quit.
 .PP
 Setting this is a great idea if you are uploading lots of small files as
@@ -62956,19 +62956,19 @@ You\[aq]ll need to experiment to see if it works for you without the
 flag.
 .SS Albums
 .PP
-Rclone can only upload files to albums it created.
+SecureCloudEngine can only upload files to albums it created.
 This is a limitation of the Google Photos
 API (https://developers.google.com/photos/library/guides/manage-albums).
 .PP
-Rclone can remove files it uploaded from albums it created only.
+SecureCloudEngine can remove files it uploaded from albums it created only.
 .SS Deleting files
 .PP
-Rclone can remove files from albums it created, but note that the Google
+SecureCloudEngine can remove files from albums it created, but note that the Google
 Photos API does not allow media to be deleted permanently so this media
 will still remain.
 See bug #109759781 (https://issuetracker.google.com/issues/109759781).
 .PP
-Rclone cannot delete files anywhere except under \f[V]album\f[R].
+SecureCloudEngine cannot delete files anywhere except under \f[V]album\f[R].
 .SS Deleting albums
 .PP
 The Google Photos API does not support deleting albums - see bug
@@ -63942,7 +63942,7 @@ HiDrive limits file sizes per single request to a maximum of 2 GiB.
 To allow storage of larger files and allow for better upload
 performance, the hidrive backend will use a chunked transfer for files
 larger than 96 MiB.
-Rclone will upload multiple parts/chunks of the file at the same time.
+SecureCloudEngine will upload multiple parts/chunks of the file at the same time.
 Chunks in the process of being uploaded are buffered in memory, so you
 may want to restrict this behaviour on systems with limited resources.
 .PP
@@ -65760,7 +65760,7 @@ Required: false
 .PP
 Metadata fields provided by Internet Archive.
 If there are multiple values for a key, only the first one is returned.
-This is a limitation of Rclone, that supports one value per one key.
+This is a limitation of SecureCloudEngine, that supports one value per one key.
 .PP
 Owner is able to add custom keys.
 Metadata feature grabs all the keys including them.
@@ -65819,7 +65819,7 @@ T}
 T{
 mtime
 T}@T{
-Time of last modification, managed by Rclone
+Time of last modification, managed by SecureCloudEngine
 T}@T{
 RFC 3339
 T}@T{
@@ -65863,7 +65863,7 @@ T}
 T{
 rclone-mtime
 T}@T{
-Time of last modification, managed by Rclone
+Time of last modification, managed by SecureCloudEngine
 T}@T{
 RFC 3339
 T}@T{
@@ -65874,7 +65874,7 @@ T}
 T{
 rclone-update-track
 T}@T{
-Random value used by Rclone for tracking changes inside Internet Archive
+Random value used by SecureCloudEngine for tracking changes inside Internet Archive
 T}@T{
 string
 T}@T{
@@ -66219,7 +66219,7 @@ Detection\[dq], which has some implications.
 Access tokens normally have one hour expiry, after which they need to be
 refreshed (rotated), an operation that requires the refresh token to be
 supplied.
-Rclone does this automatically.
+SecureCloudEngine does this automatically.
 This is standard OAuth.
 But in Jottacloud, such a refresh operation not only creates a new
 access token, but also refresh token, and invalidates the existing
@@ -66312,7 +66312,7 @@ the remote: <https://www.jottacloud.com/web/secure>.
 Scroll down to the section \[dq]Personal login token\[dq], and click the
 \[dq]Generate\[dq] button.
 Copy the presented string and paste it where rclone asks for it.
-Rclone will then use this to perform an initial token request, and
+SecureCloudEngine will then use this to perform an initial token request, and
 receive a regular OAuth token which it stores in your remote
 configuration.
 There will then also be a new entry in the \[dq]My logged in
@@ -66540,7 +66540,7 @@ In addition to the mentioned Archive and Sync, it may contain several
 other mountpoints such as: Latest, Links, Shared and Trash.
 All of these are special mountpoints with a different internal
 representation than the \[dq]regular\[dq] mountpoints.
-Rclone will only to a very limited degree support them.
+SecureCloudEngine will only to a very limited degree support them.
 Generally you should avoid these, unless you know what you are doing.
 .SS --fast-list
 .PP
@@ -66949,7 +66949,7 @@ called \[dq]Hello.doc\[dq] and one called \[dq]hello.doc\[dq].
 .PP
 There are quite a few characters that can\[aq]t be in Jottacloud file
 names.
-Rclone will map these names to and from an identical looking unicode
+SecureCloudEngine will map these names to and from an identical looking unicode
 equivalent.
 For example if a file has a ?
 in it will be mapped to ？ instead.
@@ -67544,7 +67544,7 @@ Here is an example of making a mailru configuration.
 First create a Mail.ru Cloud account and choose a tariff.
 .PP
 You will need to log in and create an app password for rclone.
-Rclone \f[B]will not work\f[R] with your normal username and password -
+SecureCloudEngine \f[B]will not work\f[R] with your normal username and password -
 it will give an error like
 \f[V]oauth2: server response missing access_token\f[R].
 .IP \[bu] 2
@@ -67558,7 +67558,7 @@ Add the password - give it a name - eg \[dq]rclone\[dq]
 .IP \[bu] 2
 Select the permissions level.
 For some reason just \[dq]Full access to Cloud\[dq] (WebDav) doesn\[aq]t
-work for Rclone currently.
+work for SecureCloudEngine currently.
 You have to select \[dq]Full access to Mail, Cloud and Calendar\[dq]
 (all protocols).
 (thread on
@@ -68382,7 +68382,7 @@ This will log-in when mounting and a log-out when unmounting only.
 You can also run \f[V]rclone rcd\f[R] and then use \f[V]rclone rc\f[R]
 to run the commands over the API to avoid logging in each time.
 .PP
-Rclone does not currently close mega sessions (you can see them in the
+SecureCloudEngine does not currently close mega sessions (you can see them in the
 web interface), however closing the sessions does not solve the issue.
 .PP
 If you space rclone commands by 3 seconds it will avoid blocking the
@@ -68948,12 +68948,12 @@ NetStorage creates these as \[dq]implicit.\[dq] While the directories
 aren\[aq]t physically created, they exist implicitly and the noted path
 is connected with the uploaded file.
 .PP
-Rclone will intercept all file uploads and mkdir commands for the
+SecureCloudEngine will intercept all file uploads and mkdir commands for the
 NetStorage remote and will explicitly issue the mkdir command for each
 directory in the uploading path.
 This will help with the interoperability with the other Akamai services
 such as SFTP and the Content Management Shell (CMShell).
-Rclone will not guarantee correctness of operations with implicit
+SecureCloudEngine will not guarantee correctness of operations with implicit
 directories which might have been created as a result of using an upload
 API directly.
 .SS \f[V]--fast-list\f[R] / ListR support
@@ -68963,12 +68963,12 @@ NetStorage API action to return a lexicographical list of all objects
 within the specified CP code, recursing into subdirectories as
 they\[aq]re encountered.
 .IP \[bu] 2
-\f[B]Rclone will use the ListR method for some commands by default\f[R].
+\f[B]SecureCloudEngine will use the ListR method for some commands by default\f[R].
 Commands such as \f[V]lsf -R\f[R] will use ListR by default.
 To disable this, include the \f[V]--disable listR\f[R] option to use the
 non-recursive method of listing objects.
 .IP \[bu] 2
-\f[B]Rclone will not use the ListR method for some commands\f[R].
+\f[B]SecureCloudEngine will not use the ListR method for some commands\f[R].
 Commands such as \f[V]sync\f[R] don\[aq]t use ListR by default.
 To force using the ListR method, include the \f[V]--fast-list\f[R]
 option.
@@ -68992,7 +68992,7 @@ NetStorage remote supports the purge feature by using the
 \[dq]quick-delete\[dq] NetStorage API action.
 The quick-delete action is disabled by default for security reasons and
 can be enabled for the account through the Akamai portal.
-Rclone will first try to use quick-delete action for the purge command
+SecureCloudEngine will first try to use quick-delete action for the purge command
 and if this functionality is disabled then will fall back to a standard
 delete method.
 .PP
@@ -69271,7 +69271,7 @@ source remote was capable of MD5 hashes, e.g.
 the local disk.
 .SS Metadata and tags
 .PP
-Rclone can map arbitrary metadata to Azure Blob headers, user metadata,
+SecureCloudEngine can map arbitrary metadata to Azure Blob headers, user metadata,
 and tags when \f[V]--metadata\f[R] is enabled (or when using
 \f[V]--metadata-set\f[R] / \f[V]--metadata-mapper\f[R]).
 .IP \[bu] 2
@@ -69300,7 +69300,7 @@ to override the stored modtime persisted in user metadata.
 If \f[V]mtime\f[R] cannot be parsed, rclone logs a debug message and
 ignores the override.
 .PP
-Notes: - Rclone ignores reserved \f[V]x-ms-*\f[R] keys (except
+Notes: - SecureCloudEngine ignores reserved \f[V]x-ms-*\f[R] keys (except
 \f[V]x-ms-tags\f[R]) for user metadata.
 .SS Performance
 .PP
@@ -69373,7 +69373,7 @@ be used in JSON strings.
 .PP
 There are a number of ways of supplying credentials for Azure Blob
 Storage.
-Rclone tries them in the order of the sections below.
+SecureCloudEngine tries them in the order of the sections below.
 .SS Env Auth
 .PP
 If the \f[V]env_auth\f[R] config parameter is \f[V]true\f[R] then rclone
@@ -70192,7 +70192,7 @@ account.
 If true (the default) then rclone will use the Copy Blob API for copies
 to the same storage account even when the size is above the copy_cutoff.
 .PP
-Rclone assumes that the same storage account means the same config and
+SecureCloudEngine assumes that the same storage account means the same config and
 does not check for the same storage account in different configs.
 .PP
 There should be no need to change this value.
@@ -70886,7 +70886,7 @@ file.
 .PP
 There are a number of ways of supplying credentials for Azure Files
 Storage.
-Rclone tries them in the order of the sections below.
+SecureCloudEngine tries them in the order of the sections below.
 .SS Env Auth
 .PP
 If the \f[V]env_auth\f[R] config parameter is \f[V]true\f[R] then rclone
@@ -72684,7 +72684,7 @@ Examples:
 \[dq]auto\[dq]
 .RS 2
 .IP \[bu] 2
-Rclone chooses the best hash
+SecureCloudEngine chooses the best hash
 .RE
 .IP \[bu] 2
 \[dq]quickxor\[dq]
@@ -73301,7 +73301,7 @@ There are quite a few characters that can\[aq]t be in OneDrive file
 names.
 These can\[aq]t occur on Windows platforms, but on non-Windows platforms
 they are common.
-Rclone will map these names to and from an identical looking unicode
+SecureCloudEngine will map these names to and from an identical looking unicode
 equivalent.
 For example if a file has a \f[V]?\f[R] in it will be mapped to
 \f[V]？\f[R] instead.
@@ -73413,7 +73413,7 @@ through every file under the path supplied and delete all version but
 the current version.
 Because this involves traversing all the files, then querying each file
 for versions it can be quite slow.
-Rclone does \f[V]--checkers\f[R] tests in parallel.
+SecureCloudEngine does \f[V]--checkers\f[R] tests in parallel.
 The command also supports \f[V]--interactive\f[R]/\f[V]i\f[R] or
 \f[V]--dry-run\f[R] which is a great way to see what it would do.
 .IP
@@ -73966,7 +73966,7 @@ There are quite a few characters that can\[aq]t be in OpenDrive file
 names.
 These can\[aq]t occur on Windows platforms, but on non-Windows platforms
 they are common.
-Rclone will map these names to and from an identical looking unicode
+SecureCloudEngine will map these names to and from an identical looking unicode
 equivalent.
 For example if a file has a \f[V]?\f[R] in it will be mapped to
 \f[V]？\f[R] instead.
@@ -74155,7 +74155,7 @@ authentication
 methods (https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdk_authentication_methods.htm)
 These choices can be specified in the rclone config file.
 .PP
-Rclone supports the following OCI authentication provider.
+SecureCloudEngine supports the following OCI authentication provider.
 .IP
 .nf
 \f[C]
@@ -74243,7 +74243,7 @@ It cannot be used on external instance or resources.
 Resource principal auth is very similar to instance principal auth but
 used for resources that are not compute instances such as serverless
 functions (https://docs.oracle.com/en-us/iaas/Content/Functions/Concepts/functionsoverview.htm).
-To use resource principal ensure Rclone process is started with these
+To use resource principal ensure SecureCloudEngine process is started with these
 environment variables set in its process.
 .IP
 .nf
@@ -74270,12 +74270,12 @@ provider = resource_principal_auth
 .fi
 .SS Workload Identity
 .PP
-Workload Identity auth may be used when running Rclone from Kubernetes
+Workload Identity auth may be used when running SecureCloudEngine from Kubernetes
 pod on a Container Engine for Kubernetes (OKE) cluster.
 For more details on configuring Workload Identity, see Granting
 Workloads Access to OCI
 Resources (https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contenggrantingworkloadaccesstoresources.htm).
-To use workload identity, ensure Rclone is started with these
+To use workload identity, ensure SecureCloudEngine is started with these
 environment variables set in its process.
 .IP
 .nf
@@ -74600,7 +74600,7 @@ in memory per transfer.
 If you are transferring large files over high-speed links and you have
 enough memory, then increasing this will speed up the transfers.
 .PP
-Rclone will automatically increase the chunk size when uploading a large
+SecureCloudEngine will automatically increase the chunk size when uploading a large
 file of known size to stay below the 10,000 chunks limit.
 .PP
 Files of unknown size are uploaded with the configured chunk_size.
@@ -74631,7 +74631,7 @@ doing a multipart upload.
 .PP
 OCI has max parts limit of 10,000 chunks.
 .PP
-Rclone will automatically increase the chunk size when uploading a large
+SecureCloudEngine will automatically increase the chunk size when uploading a large
 file of a known size to stay below this number of chunks limit.
 .PP
 Properties:
@@ -75795,7 +75795,7 @@ A file name cannot be equal to \f[V].\f[R] or \f[V]..\f[R] nor contain
 .SS Transfers
 .PP
 For files above 50 MiB rclone will use a chunked transfer.
-Rclone will upload up to \f[V]--transfers\f[R] chunks at the same time
+SecureCloudEngine will upload up to \f[V]--transfers\f[R] chunks at the same time
 (shared among all multipart uploads).
 Chunks are buffered in memory, and the minimal chunk size is 10_000_000
 bytes by default, and it can be changed in the advanced configuration,
@@ -76960,7 +76960,7 @@ container or a \f[V].file-segments\f[R] directory.
 Default for this is 5 GiB which is its maximum value, which means only
 files above this size will be chunked.
 .PP
-Rclone uploads chunked files as dynamic large objects (DLO).
+SecureCloudEngine uploads chunked files as dynamic large objects (DLO).
 .PP
 Properties:
 .IP \[bu] 2
@@ -76984,7 +76984,7 @@ This will limit the maximum streamed upload size to 5 GiB.
 This is useful because non chunked files are easier to deal with and
 have an MD5SUM.
 .PP
-Rclone will still chunk files bigger than \f[V]chunk_size\f[R] when
+SecureCloudEngine will still chunk files bigger than \f[V]chunk_size\f[R] when
 doing normal copy operations.
 .PP
 Properties:
@@ -77104,7 +77104,7 @@ The Swift API doesn\[aq]t return a correct MD5SUM for segmented files
 (Dynamic or Static Large Objects) so rclone won\[aq]t check or use the
 MD5SUM for these.
 .SS Troubleshooting
-.SS Rclone gives Failed to create file system for \[dq]remote:\[dq]: Bad Request
+.SS SecureCloudEngine gives Failed to create file system for \[dq]remote:\[dq]: Bad Request
 .PP
 Due to an oddity of the underlying swift library, it gives a \[dq]Bad
 Request\[dq] error rather than a more sensible error when the
@@ -77116,7 +77116,7 @@ You can investigate further with the \f[V]--dump-bodies\f[R] flag.
 This may also be caused by specifying the region when you shouldn\[aq]t
 have (e.g.
 OVH).
-.SS Rclone gives Failed to create file system: Response didn\[aq]t have storage url and auth token
+.SS SecureCloudEngine gives Failed to create file system: Response didn\[aq]t have storage url and auth token
 .PP
 This is most likely caused by forgetting to specify your tenant when
 setting up a swift remote.
@@ -77145,7 +77145,7 @@ like the following:
 \f[R]
 .fi
 .PP
-Rclone will wait for the time specified then retry the copy.
+SecureCloudEngine will wait for the time specified then retry the copy.
 .SH pCloud
 .PP
 Paths are specified as \f[V]remote:path\f[R]
@@ -77838,7 +77838,7 @@ stored at once in memory.
 If you are transferring large files over high-speed links and you have
 enough memory, then increasing this will speed up the transfers.
 .PP
-Rclone will automatically increase the chunk size when uploading a large
+SecureCloudEngine will automatically increase the chunk size when uploading a large
 file of known size to stay below the 10,000 chunks limit.
 .PP
 Increasing the chunk size decreases the accuracy of the progress
@@ -80001,7 +80001,7 @@ replaced (https://rclone.org/overview/#invalid-utf8), as they can\[aq]t
 be used in JSON strings.
 .SS Seafile and rclone link
 .PP
-Rclone supports generating share links for non-encrypted libraries only.
+SecureCloudEngine supports generating share links for non-encrypted libraries only.
 They can either be for a file or a directory:
 .IP
 .nf
@@ -80542,7 +80542,7 @@ This includes checksum, and in some cases also about.
 The shell commands that must be executed may be different on different
 type of shells, and also quoting/escaping of file path arguments
 containing special characters may be different.
-Rclone therefore needs to know what type of shell it is, and if shell
+SecureCloudEngine therefore needs to know what type of shell it is, and if shell
 access is available at all.
 .PP
 Most servers run on some version of Unix, and then a basic Unix shell
@@ -80556,7 +80556,7 @@ Cygwin bash, the default is to use Windows Command Prompt (cmd.exe), and
 PowerShell is a recommended alternative.
 All of these have behave differently, which rclone must handle.
 .PP
-Rclone tries to auto-detect what type of shell is used on the server,
+SecureCloudEngine tries to auto-detect what type of shell is used on the server,
 first time you access the SFTP remote.
 If a remote shell session is successfully created, it will look for
 indications that it is CMD or PowerShell, with fall-back to Unix if not
@@ -80611,7 +80611,7 @@ SFTP does not natively support checksums (file hash), but rclone is able
 to use checksumming if the same login has shell access, and can execute
 remote commands.
 If there is a command that can calculate compatible checksums on the
-remote system, Rclone can then be configured to execute this whenever a
+remote system, SecureCloudEngine can then be configured to execute this whenever a
 checksum is needed, and read back the results.
 By default MD5 and SHA-1 are considered, but also CRC32, SHA-256,
 BLAKE3, XXH3 and XXH128 are supported, option \f[V]hashes\f[R] can be
@@ -80642,7 +80642,7 @@ are located, or specify some other tool that print checksums in
 compatible format.
 The value can include command-line arguments, or even shell script
 blocks as with PowerShell.
-Rclone has subcommands
+SecureCloudEngine has subcommands
 hashsum (https://rclone.org/commands/rclone_hashsum/),
 md5sum (https://rclone.org/commands/rclone_md5sum/) and
 sha1sum (https://rclone.org/commands/rclone_sha1sum/) that use
@@ -80967,14 +80967,14 @@ server.
 However it does not implement all possible ssh options so it may be
 desirable to use an external ssh binary.
 .PP
-Rclone ignores all the internal config if you use this option and
+SecureCloudEngine ignores all the internal config if you use this option and
 expects you to configure the ssh binary with the user/host/port and any
 other options you need.
 .PP
 \f[B]Important\f[R] The ssh command must log in without asking for a
 password so needs to be configured with keys or certificates.
 .PP
-Rclone will run the command supplied either with the additional
+SecureCloudEngine will run the command supplied either with the additional
 arguments \[dq]-s sftp\[dq] to access the SFTP subsystem or with
 commands such as \[dq]md5sum /path/to/file\[dq] appended to read
 checksums.
@@ -82266,7 +82266,7 @@ Default: \[dq]WORKGROUP\[dq]
 .PP
 Service principal name.
 .PP
-Rclone presents this name to the server.
+SecureCloudEngine presents this name to the server.
 Some servers use this as further authentication, and it often needs to
 be set for clusters.
 For example:
@@ -83529,7 +83529,7 @@ be used in JSON strings.
 .PP
 All files are currently uploaded using a single HTTP request, so for
 uploading large files a stable connection is necessary.
-Rclone will upload up to \f[V]--transfers\f[R] chunks at the same time
+SecureCloudEngine will upload up to \f[V]--transfers\f[R] chunks at the same time
 (shared among all uploads).
 .SS Deleting files
 .PP
@@ -84102,7 +84102,7 @@ When files are written, they will be written to both
 As many remotes as desired can be added to \f[V]upstreams\f[R] but there
 should only be one \f[V]:writeback\f[R] tag.
 .PP
-Rclone does not manage the \f[V]:writeback\f[R] remote in any way other
+SecureCloudEngine does not manage the \f[V]:writeback\f[R] remote in any way other
 than writing files back to it.
 So if you need to expire old files or manage the size then you will have
 to do this yourself.
@@ -84689,7 +84689,7 @@ protocol.
 The chunk size is currently fixed 10 MB.
 .SS Sharepoint Online
 .PP
-Rclone can be used with Sharepoint provided by OneDrive for Business or
+SecureCloudEngine can be used with Sharepoint provided by OneDrive for Business or
 Office365 Education Accounts.
 This feature is only needed for a few of these Accounts, mostly
 Office365 Education ones.
@@ -84771,10 +84771,10 @@ won\[aq]t be able to use the documents size or the documents hash to
 compare if a file has been changed since the upload / which file is
 newer.
 .PP
-For Rclone calls copying files (especially Office files such as .docx,
+For SecureCloudEngine calls copying files (especially Office files such as .docx,
 \&.xlsx, etc.)
 from/to SharePoint (like copy, sync, etc.), you should append these
-flags to ensure Rclone uses the \[dq]Last Modified\[dq] datetime
+flags to ensure SecureCloudEngine uses the \[dq]Last Modified\[dq] datetime
 property to compare your documents:
 .IP
 .nf
@@ -84782,7 +84782,7 @@ property to compare your documents:
 --ignore-size --ignore-checksum --update
 \f[R]
 .fi
-.SS Rclone
+.SS SecureCloudEngine
 .PP
 Use this option if you are hosting remotes over WebDAV provided by
 rclone.
@@ -85185,7 +85185,7 @@ enough, so if you want to upload a 30 GiB file set a timeout of
 .PP
 Having a Yandex Mail account is mandatory to use the Yandex.Disk
 subscription.
-Token generation will work without a mail account, but Rclone won\[aq]t
+Token generation will work without a mail account, but SecureCloudEngine won\[aq]t
 be able to complete any actions.
 .IP
 .nf
@@ -85276,7 +85276,7 @@ See the remote setup docs (https://rclone.org/remote_setup/) for how to
 set it up on a machine without an internet-connected web browser
 available.
 .PP
-Rclone runs a webserver on your local computer to collect the
+SecureCloudEngine runs a webserver on your local computer to collect the
 authorization token from Zoho Workdrive.
 This is only from the moment your browser is opened until the token is
 returned.
@@ -85568,7 +85568,7 @@ using rclone remote paths, e.g.
 \f[V]remote:path/to/wherever\f[R], but it is probably easier not to.
 .SS Modification times
 .PP
-Rclone reads and writes the modification times using an accuracy
+SecureCloudEngine reads and writes the modification times using an accuracy
 determined by the OS.
 Typically this is 1ns on Linux, 10 ns on Windows and 1 Second on OS X.
 .SS Filenames
@@ -85994,7 +85994,7 @@ specify path to volumes identified by their GUID, e.g.
 \f[V]\[rs]\[rs]?\[rs]Volume{b75e2c83-0000-0000-0000-602f00000000}\[rs]some\[rs]path\f[R].
 .SS Long paths
 .PP
-Rclone handles long paths automatically, by converting all paths to
+SecureCloudEngine handles long paths automatically, by converting all paths to
 extended-length path
 format (https://docs.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation),
 which allows paths up to 32,767 characters.
@@ -86231,7 +86231,7 @@ $ rclone -q ls root
 \f[R]
 .fi
 .PP
-\f[B]NB\f[R] Rclone (like most unix tools such as \f[V]du\f[R],
+\f[B]NB\f[R] SecureCloudEngine (like most unix tools such as \f[V]du\f[R],
 \f[V]rsync\f[R] and \f[V]tar\f[R]) treats a bind mount to the same
 device as being on the same filesystem.
 .PP
@@ -86328,7 +86328,7 @@ Default: false
 Assume the Stat size of links is zero (and read them instead)
 (deprecated).
 .PP
-Rclone used to use the Stat size of links as the link size, but this
+SecureCloudEngine used to use the Stat size of links as the link size, but this
 fails in quite a few places:
 .IP \[bu] 2
 Windows
@@ -86355,7 +86355,7 @@ Apply unicode NFC normalization to paths and filenames.
 This flag can be used to normalize file names into unicode NFC form that
 are read from the local filesystem.
 .PP
-Rclone does not normally touch the encoding of file names it reads from
+SecureCloudEngine does not normally touch the encoding of file names it reads from
 the file system.
 .PP
 This can be useful when using macOS as it normally provides decomposed
@@ -88404,7 +88404,7 @@ ServerConfig.PublicKeyCallback may cause authorization bypass
 (dependabot)
 .RS 2
 .IP \[bu] 2
-Rclone was \f[B]not\f[R] vulnerable to this.
+SecureCloudEngine was \f[B]not\f[R] vulnerable to this.
 .IP \[bu] 2
 See <https://github.com/advisories/GHSA-v778-237x-gjrc>
 .RE
@@ -88413,7 +88413,7 @@ build: Update golang.org/x/net to v0.33.0 to fix CVE-2024-45338 -
 Non-linear parsing of case-insensitive content (Nick Craig-Wood)
 .RS 2
 .IP \[bu] 2
-Rclone was \f[B]not\f[R] vulnerable to this.
+SecureCloudEngine was \f[B]not\f[R] vulnerable to this.
 .IP \[bu] 2
 See <https://github.com/advisories/GHSA-w32m-9786-jp63>
 .RE
@@ -89675,7 +89675,7 @@ See commits (https://github.com/rclone/rclone/compare/v1.65.0...v1.66.0)
 Major features
 .RS 2
 .IP \[bu] 2
-Rclone will now sync directory modification times if the backend
+SecureCloudEngine will now sync directory modification times if the backend
 supports it.
 .RS 2
 .IP \[bu] 2
@@ -89687,7 +89687,7 @@ the \f[V]D\f[R] flags in the \f[V]ModTime\f[R] column to see which
 backends support it.
 .RE
 .IP \[bu] 2
-Rclone will now sync directory metadata if the backend supports it when
+SecureCloudEngine will now sync directory metadata if the backend supports it when
 \f[V]-M\f[R]/\f[V]--metadata\f[R] is in use.
 .RS 2
 .IP \[bu] 2
@@ -93770,7 +93770,7 @@ lib/kv: Add key-value database api (Ivan Andreev)
 librclone
 .RS 2
 .IP \[bu] 2
-Add \f[V]RcloneFreeString\f[R] function (albertony)
+Add \f[V]SecureCloudEngineFreeString\f[R] function (albertony)
 .IP \[bu] 2
 Free strings in python example (albertony)
 .RE
@@ -98382,7 +98382,7 @@ Add ability to stop async jobs (Aleksandar Jankovic)
 Return current settings if core/bwlimit called without parameters (Nick
 Craig-Wood)
 .IP \[bu] 2
-Rclone-WebUI integration with rclone (Chaitanya Bankanhal)
+SecureCloudEngine-WebUI integration with rclone (Chaitanya Bankanhal)
 .IP \[bu] 2
 Added command line parameter to control the cross origin resource
 sharing (CORS) in the rcd.
@@ -100939,7 +100939,7 @@ Remote control support for path flushing
 Amazon cloud drive
 .RS 2
 .IP \[bu] 2
-Rclone no longer has any working keys - disable integration tests
+SecureCloudEngine no longer has any working keys - disable integration tests
 .IP \[bu] 2
 Implement DirChangeNotify to notify cache/vfs/mount of changes
 .RE
@@ -103283,7 +103283,7 @@ Some backends do not support it -- see
 overview (https://rclone.org/overview/) for a complete list.
 Additionally, note that empty directories are not synced by default
 (this can be enabled with \f[V]--create-empty-src-dirs\f[R].)
-.SS Rclone struggles with millions of files in a directory/bucket
+.SS SecureCloudEngine struggles with millions of files in a directory/bucket
 .PP
 Currently rclone loads each directory/bucket entirely into memory before
 using it.
@@ -103298,12 +103298,12 @@ the bucket.
 .PP
 Bucket-based remotes (e.g.
 S3/GCS/Swift/B2) do not have a concept of directories.
-Rclone therefore cannot create directories in them which means that
+SecureCloudEngine therefore cannot create directories in them which means that
 empty directories on a bucket-based remote will tend to disappear.
 .PP
 Some software creates empty keys ending in \f[V]/\f[R] as directory
 markers.
-Rclone doesn\[aq]t do this as it potentially creates more objects and
+SecureCloudEngine doesn\[aq]t do this as it potentially creates more objects and
 costs more.
 This ability may be added in the future (probably via a flag/option).
 .SS Bugs
@@ -103325,7 +103325,7 @@ will work on all the remote storage systems.
 .SS Can I copy the config from one machine to another
 .PP
 Sure!
-Rclone stores all of its config in a single file.
+SecureCloudEngine stores all of its config in a single file.
 If you want to find this file, run \f[V]rclone config file\f[R] which
 will tell you where it is.
 .PP
@@ -103354,7 +103354,7 @@ rclone config touch
 .fi
 .SS Can rclone sync directly from drive to s3
 .PP
-Rclone can sync between two remote cloud storage systems just fine.
+SecureCloudEngine can sync between two remote cloud storage systems just fine.
 .PP
 Note that it effectively downloads the file and uploads it again, so the
 node running rclone would need to have lots of bandwidth.
@@ -103396,7 +103396,7 @@ in this case, otherwise some file systems (e.g.
 Drive) may make duplicates.
 .SS Why doesn\[aq]t rclone support partial transfers / binary diffs like rsync?
 .PP
-Rclone stores each file you transfer as a native object on the remote
+SecureCloudEngine stores each file you transfer as a native object on the remote
 cloud storage system.
 This means that you can see the files you upload as expected using
 alternative access methods (e.g.
@@ -103491,7 +103491,7 @@ The FTP and SFTP backends have their own \f[V]http_proxy\f[R] settings
 to support an HTTP CONNECT proxy (
 --ftp-http-proxy (https://rclone.org/ftp/#ftp-http-proxy) and
 --sftp-http-proxy (https://rclone.org/ftp/#sftp-http-proxy) )
-.SS Rclone gives x509 SSL root certificates error
+.SS SecureCloudEngine gives x509 SSL root certificates error
 .PP
 \f[V]x509: failed to load system roots and no roots provided\f[R] means
 that \f[V]rclone\f[R] can\[aq]t find the SSL root certificates.
@@ -103502,7 +103502,7 @@ OS, or possibly on Solaris.
 on outdated systems, where \f[V]rclone\f[R] can\[aq]t verify the server
 with the SSL root certificates.
 .PP
-Rclone (via the Go runtime) tries to load the root certificates from
+SecureCloudEngine (via the Go runtime) tries to load the root certificates from
 these places on Linux.
 .IP
 .nf
@@ -103550,7 +103550,7 @@ brew install ca-certificates
 find $(brew --prefix)/etc/ca-certificates -type f
 \f[R]
 .fi
-.SS Rclone gives Failed to load config file: function not implemented error
+.SS SecureCloudEngine gives Failed to load config file: function not implemented error
 .PP
 Likely this means that you are running rclone on Linux version not
 supported by the go runtime, ie earlier than version 2.6.23.
@@ -103620,9 +103620,9 @@ By default, rclone only gets 10,000 files ahead in a sync so as not to
 use up too much memory.
 You can change this default with the
 --max-backlog (https://rclone.org/docs/#max-backlog-int) flag.
-.SS Rclone is using too much memory or appears to have a memory leak
+.SS SecureCloudEngine is using too much memory or appears to have a memory leak
 .PP
-Rclone is written in Go which uses a garbage collector.
+SecureCloudEngine is written in Go which uses a garbage collector.
 The default settings for the garbage collector mean that it runs when
 the heap size has doubled.
 .PP
@@ -103651,7 +103651,7 @@ From v1.70 rclone also has the
 --max-buffer-memory (https://rclone.org/docs/#max-buffer-memory) flag
 which helps particularly when multi-thread transfers are using too much
 memory.
-.SS Rclone changes fullwidth Unicode punctuation marks in file names
+.SS SecureCloudEngine changes fullwidth Unicode punctuation marks in file names
 .PP
 For example: On a Windows system, you have a file with name
 \f[V]Test：1.jpg\f[R], where \f[V]：\f[R] is the Unicode fullwidth colon

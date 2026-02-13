@@ -60,7 +60,7 @@ func TestS3(t *testing.T) {
 		// Config for the backend we'll use to connect to the server
 		config := configmap.Simple{
 			"type":              "s3",
-			"provider":          "Rclone",
+			"provider":          "SecureCloudEngine",
 			"endpoint":          testURL,
 			"access_key_id":     keyid,
 			"secret_access_key": keysec,

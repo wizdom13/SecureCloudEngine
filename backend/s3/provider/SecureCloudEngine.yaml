@@ -1,5 +1,5 @@
-name: Rclone
-description: Rclone S3 Server
+name: SecureCloudEngine
+description: SecureCloudEngine S3 Server
 endpoint: {}
 quirks:
   force_path_style: true

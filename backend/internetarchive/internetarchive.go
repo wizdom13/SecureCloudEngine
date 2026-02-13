@@ -55,7 +55,7 @@ func init() {
 					ReadOnly: true,
 				},
 				"mtime": {
-					Help:     "Time of last modification, managed by Rclone",
+					Help:     "Time of last modification, managed by SecureCloudEngine",
 					Type:     "RFC 3339",
 					Example:  "2006-01-02T15:04:05.999999999Z",
 					ReadOnly: true,
@@ -115,19 +115,19 @@ func init() {
 					Example: "2006-01-02T15:04:05.999999999Z",
 				},
 				"rclone-mtime": {
-					Help:    "Time of last modification, managed by Rclone",
+					Help:    "Time of last modification, managed by SecureCloudEngine",
 					Type:    "RFC 3339",
 					Example: "2006-01-02T15:04:05.999999999Z",
 				},
 				"rclone-update-track": {
-					Help:    "Random value used by Rclone for tracking changes inside Internet Archive",
+					Help:    "Random value used by SecureCloudEngine for tracking changes inside Internet Archive",
 					Type:    "string",
 					Example: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
 				},
 			},
 			Help: `Metadata fields provided by Internet Archive.
 If there are multiple values for a key, only the first one is returned.
-This is a limitation of Rclone, that supports one value per one key.
+This is a limitation of SecureCloudEngine, that supports one value per one key.
 
 Owner is able to add custom keys. Metadata feature grabs all the keys including them.
 `,
@@ -247,16 +247,15 @@ type Object struct {
 
 // IAFile represents a subset of object in MetadataResponse.Files
 type IAFile struct {
-	Name string `json:"name"`
-	// Source     string `json:"source"`
-	Mtime       string          `json:"mtime"`
-	RcloneMtime json.RawMessage `json:"rclone-mtime"`
-	UpdateTrack json.RawMessage `json:"rclone-update-track"`
-	Size        string          `json:"size"`
-	Md5         string          `json:"md5"`
-	Crc32       string          `json:"crc32"`
-	Sha1        string          `json:"sha1"`
-	Summation   string          `json:"summation"`
+	Name                   string          `json:"name"`
+	Mtime                  string          `json:"mtime"`
+	SecureCloudEngineMtime json.RawMessage `json:"rclone-mtime"`
+	UpdateTrack            json.RawMessage `json:"rclone-update-track"`
+	Size                   string          `json:"size"`
+	Md5                    string          `json:"md5"`
+	Crc32                  string          `json:"crc32"`
+	Sha1                   string          `json:"sha1"`
+	Summation              string          `json:"summation"`
 
 	rawData json.RawMessage
 }
@@ -1255,7 +1254,7 @@ func listOrString(jm json.RawMessage) (rmArray []string, err error) {
 
 func (file IAFile) parseMtime() (mtime time.Time) {
 	// method 1: use metadata added by rclone
-	rmArray, err := listOrString(file.RcloneMtime)
+	rmArray, err := listOrString(file.SecureCloudEngineMtime)
 	// let's take the first value we can deserialize
 	for _, value := range rmArray {
 		mtime, err = time.Parse(time.RFC3339Nano, value)

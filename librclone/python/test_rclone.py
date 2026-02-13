@@ -8,22 +8,22 @@ import subprocess
 import unittest
 from rclone import *
 
-class TestRclone(unittest.TestCase):
+class TestSecureCloudEngine(unittest.TestCase):
     """TestSuite for rclone python module"""
     shared_object = "librclone.so"
 
     @classmethod
     def setUpClass(cls):
-        super(TestRclone, cls).setUpClass()
+        super(TestSecureCloudEngine, cls).setUpClass()
         cls.shared_object = "./librclone.so"
-        Rclone.build(cls.shared_object)
-        cls.rclone = Rclone(shared_object=cls.shared_object)
+        SecureCloudEngine.build(cls.shared_object)
+        cls.rclone = SecureCloudEngine(shared_object=cls.shared_object)
 
     @classmethod
     def tearDownClass(cls):
         cls.rclone.close()
         os.remove(cls.shared_object)
-        super(TestRclone, cls).tearDownClass()
+        super(TestSecureCloudEngine, cls).tearDownClass()
 
     def test_rpc(self):
         o = self.rclone.rpc("rc/noop", a=42, b="string", c=[1234])
@@ -32,7 +32,7 @@ class TestRclone(unittest.TestCase):
     def test_rpc_error(self):
         try:
             o = self.rclone.rpc("rc/error", a=42, b="string", c=[1234])
-        except RcloneException as e:
+        except SecureCloudEngineException as e:
             self.assertEqual(e.status, 500)
             self.assertTrue(e.output["error"].startswith("arbitrary error"))
         else:

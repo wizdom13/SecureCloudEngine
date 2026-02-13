@@ -69,7 +69,7 @@ const (
 )
 
 // Storage defines an interface for loading and saving config to
-// persistent storage. Rclone provides a default implementation to
+// persistent storage. SecureCloudEngine provides a default implementation to
 // load and save to a config file when this is imported
 //
 // import "github.com/rclone/rclone/fs/config/configfile"

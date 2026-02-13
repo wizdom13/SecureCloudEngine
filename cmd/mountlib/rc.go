@@ -51,7 +51,7 @@ func init() {
 		Fn:           mountRc,
 		Title:        "Create a new mount point",
 		Help: `rclone allows Linux, FreeBSD, macOS and Windows to mount any of
-Rclone's cloud storage systems as a file system with FUSE.
+SecureCloudEngine's cloud storage systems as a file system with FUSE.
 
 If no mountType is provided, the priority is given as follows: 1. mount 2.cmount 3.mount2
 
@@ -153,7 +153,7 @@ func init() {
 		Title:        "Unmount selected active mount",
 		Help: `
 rclone allows Linux, FreeBSD, macOS and Windows to
-mount any of Rclone's cloud storage systems as a file system with
+mount any of SecureCloudEngine's cloud storage systems as a file system with
 FUSE.
 
 This takes the following parameters:
@@ -280,7 +280,7 @@ func init() {
 		Title:        "Unmount all active mounts",
 		Help: `
 rclone allows Linux, FreeBSD, macOS and Windows to
-mount any of Rclone's cloud storage systems as a file system with
+mount any of SecureCloudEngine's cloud storage systems as a file system with
 FUSE.
 
 This takes no parameters and returns error if unmount does not succeed.

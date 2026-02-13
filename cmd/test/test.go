@@ -14,7 +14,7 @@ func init() {
 var Command = &cobra.Command{
 	Use:   "test <subcommand>",
 	Short: `Run a test command`,
-	Long: `Rclone test is used to run test commands.
+	Long: `SecureCloudEngine test is used to run test commands.
 
 Select which test command you want with the subcommand, eg
 

@@ -19,10 +19,10 @@ import (
 	"github.com/rclone/rclone/lib/buildinfo"
 )
 
-// checkRcloneBinaryVersion runs whichever rclone is on the PATH and checks
+// checkSecureCloudEngineBinaryVersion runs whichever rclone is on the PATH and checks
 // whether it reports a version that matches the test's expectations. Returns
 // nil when the version is the expected version, otherwise returns an error.
-func checkRcloneBinaryVersion(t *testing.T) error {
+func checkSecureCloudEngineBinaryVersion(t *testing.T) error {
 	// versionInfo is a subset of information produced by "core/version".
 	type versionInfo struct {
 		Version string
@@ -131,7 +131,7 @@ func makeE2eTestingContext(t *testing.T) e2eTestingContext {
 
 // Install the symlink that enables git-annex to invoke "rclone gitannex"
 // without explicitly specifying the subcommand.
-func (e *e2eTestingContext) installRcloneGitannexSymlink(t *testing.T) {
+func (e *e2eTestingContext) installSecureCloudEngineGitannexSymlink(t *testing.T) {
 	rcloneBinaryPath, err := exec.LookPath("rclone")
 	require.NoError(t, err)
 	require.NoError(t, os.Symlink(
@@ -140,12 +140,12 @@ func (e *e2eTestingContext) installRcloneGitannexSymlink(t *testing.T) {
 }
 
 // Install a rclone.conf file in an appropriate location in the fake home
-// directory. The config defines an rclone remote named "MyRcloneRemote" using
+// directory. The config defines an rclone remote named "MySecureCloudEngineRemote" using
 // the local backend.
-func (e *e2eTestingContext) installRcloneConfig(t *testing.T) {
+func (e *e2eTestingContext) installSecureCloudEngineConfig(t *testing.T) {
 	// Install the rclone.conf file that defines the remote.
 	rcloneConfigPath := filepath.Join(e.rcloneConfigDir, "rclone.conf")
-	rcloneConfigContents := "[MyRcloneRemote]\ntype = local"
+	rcloneConfigContents := "[MySecureCloudEngineRemote]\ntype = local"
 	require.NoError(t, os.WriteFile(rcloneConfigPath, []byte(rcloneConfigContents), 0600))
 }
 
@@ -203,7 +203,7 @@ func skipE2eTestIfNecessary(t *testing.T) {
 		t.Skipf("GOOS %q is not supported.", runtime.GOOS)
 	}
 
-	if err := checkRcloneBinaryVersion(t); err != nil {
+	if err := checkSecureCloudEngineBinaryVersion(t); err != nil {
 		t.Skipf("Skipping due to rclone version: %s", err)
 	}
 
@@ -233,13 +233,13 @@ func TestEndToEnd(t *testing.T) {
 			t.Parallel()
 
 			testingContext := makeE2eTestingContext(t)
-			testingContext.installRcloneGitannexSymlink(t)
-			testingContext.installRcloneConfig(t)
+			testingContext.installSecureCloudEngineGitannexSymlink(t)
+			testingContext.installSecureCloudEngineConfig(t)
 			testingContext.createGitRepo(t)
 
 			testingContext.runInRepo(t, "git", "annex", "initremote", "MyTestRemote",
 				"type=external", "externaltype=rclone-builtin", "encryption=none",
-				"rcloneremotename=MyRcloneRemote", "rcloneprefix="+testingContext.ephemeralRepoDir,
+				"rcloneremotename=MySecureCloudEngineRemote", "rcloneprefix="+testingContext.ephemeralRepoDir,
 				"rclonelayout="+string(mode))
 
 			testingContext.runInRepo(t, "git", "annex", "testremote", "MyTestRemote")
@@ -261,8 +261,8 @@ func TestEndToEndMigration(t *testing.T) {
 			t.Parallel()
 
 			tc := makeE2eTestingContext(t)
-			tc.installRcloneGitannexSymlink(t)
-			tc.installRcloneConfig(t)
+			tc.installSecureCloudEngineGitannexSymlink(t)
+			tc.installSecureCloudEngineConfig(t)
 			tc.createGitRepo(t)
 
 			remoteStorage := filepath.Join(tc.tempDir, "remotePrefix")
@@ -271,7 +271,7 @@ func TestEndToEndMigration(t *testing.T) {
 			tc.runInRepo(t,
 				"git", "annex", "initremote", "MigratedRemote",
 				"type=external", "externaltype=rclone", "encryption=none",
-				"target=MyRcloneRemote",
+				"target=MySecureCloudEngineRemote",
 				"rclone_layout="+string(mode),
 				"prefix="+remoteStorage,
 			)
@@ -292,7 +292,7 @@ func TestEndToEndMigration(t *testing.T) {
 			tc.runInRepo(t,
 				"git", "annex", "enableremote", "MigratedRemote",
 				"externaltype=rclone-builtin",
-				"rcloneremotename=MyRcloneRemote",
+				"rcloneremotename=MySecureCloudEngineRemote",
 				"rclonelayout="+string(mode),
 				"rcloneprefix="+remoteStorage,
 			)
@@ -320,8 +320,8 @@ func TestEndToEndRepoLayoutCompat(t *testing.T) {
 			t.Parallel()
 
 			tc := makeE2eTestingContext(t)
-			tc.installRcloneGitannexSymlink(t)
-			tc.installRcloneConfig(t)
+			tc.installSecureCloudEngineGitannexSymlink(t)
+			tc.installSecureCloudEngineConfig(t)
 			tc.createGitRepo(t)
 
 			remoteStorage := filepath.Join(tc.tempDir, "remotePrefix")
@@ -330,14 +330,14 @@ func TestEndToEndRepoLayoutCompat(t *testing.T) {
 			tc.runInRepo(t,
 				"git", "annex", "initremote", "Control",
 				"type=external", "externaltype=rclone", "encryption=none",
-				"target=MyRcloneRemote",
+				"target=MySecureCloudEngineRemote",
 				"rclone_layout="+string(mode),
 				"prefix="+remoteStorage)
 
 			tc.runInRepo(t,
 				"git", "annex", "initremote", "Experiment",
 				"type=external", "externaltype=rclone-builtin", "encryption=none",
-				"rcloneremotename=MyRcloneRemote",
+				"rcloneremotename=MySecureCloudEngineRemote",
 				"rclonelayout="+string(mode),
 				"rcloneprefix="+remoteStorage)
 

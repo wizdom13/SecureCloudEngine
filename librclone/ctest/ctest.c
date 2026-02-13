@@ -8,7 +8,7 @@ This is a very simple test/demo program for librclone's C interface
 #include "librclone.h"
 
 void testRPC(char *method, char *in) {
-    struct RcloneRPCResult out = RcloneRPC(method, in);
+    struct SecureCloudEngineRPCResult out = SecureCloudEngineRPC(method, in);
     printf("status: %d\n", out.Status);
     printf("output: %s\n", out.Output);
     free(out.Output);
@@ -17,7 +17,7 @@ void testRPC(char *method, char *in) {
 // noop command
 void testNoOp() {
     printf("test rc/noop\n");
-    struct RcloneRPCResult out = RcloneRPC("rc/noop", "{"
+    struct SecureCloudEngineRPCResult out = SecureCloudEngineRPC("rc/noop", "{"
             " \"p1\": [1,\"2\",null,4],"
             " \"p2\": { \"a\":1, \"b\":2 } "
             "}");
@@ -50,7 +50,7 @@ void testNoOp() {
 // error command
 void testError() {
     printf("test rc/error\n");
-    struct RcloneRPCResult out = RcloneRPC("rc/error",
+    struct SecureCloudEngineRPCResult out = SecureCloudEngineRPC("rc/error",
             "{"
             " \"p1\": [1,\"2\",null,4],"
             " \"p2\": { \"a\":1, \"b\":2 } "
@@ -106,7 +106,7 @@ void testListRemotes() {
 
 int main(int argc, char** argv) {
     printf("c main begin\n");
-    RcloneInitialize();
+    SecureCloudEngineInitialize();
 
     testNoOp();
     testError();
@@ -116,6 +116,6 @@ int main(int argc, char** argv) {
     /* testRPC("config/setpath", "{\"path\":\"/tmp/rclone.conf\"}"); */
     /* testRPC("config/listremotes", "{}"); */
 
-    RcloneFinalize();
+    SecureCloudEngineFinalize();
     return EXIT_SUCCESS;
 }

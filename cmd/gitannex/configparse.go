@@ -28,8 +28,8 @@ type configDefinition struct {
 }
 
 const (
-	defaultRclonePrefix = "git-annex-rclone"
-	defaultRcloneLayout = "nodir"
+	defaultSecureCloudEnginePrefix = "git-annex-rclone"
+	defaultSecureCloudEngineLayout = "nodir"
 )
 
 var requiredConfigs = []configDefinition{
@@ -44,17 +44,17 @@ var requiredConfigs = []configDefinition{
 		id:    configPrefix,
 		names: []string{"rcloneprefix", "prefix"},
 		description: "Directory where rclone will write git-annex content. " +
-			fmt.Sprintf("If not specified, defaults to %q. ", defaultRclonePrefix) +
+			fmt.Sprintf("If not specified, defaults to %q. ", defaultSecureCloudEnginePrefix) +
 			"This directory will be created on init if it does not exist.",
-		defaultValue: defaultRclonePrefix,
+		defaultValue: defaultSecureCloudEnginePrefix,
 	},
 	{
 		id:    configLayout,
 		names: []string{"rclonelayout", "rclone_layout"},
 		description: "Defines where, within the rcloneprefix directory, rclone will write git-annex content. " +
 			fmt.Sprintf("Must be one of %v. ", allLayoutModes()) +
-			fmt.Sprintf("If empty, defaults to %q.", defaultRcloneLayout),
-		defaultValue: defaultRcloneLayout,
+			fmt.Sprintf("If empty, defaults to %q.", defaultSecureCloudEngineLayout),
+		defaultValue: defaultSecureCloudEngineLayout,
 	},
 }
 

@@ -237,7 +237,7 @@ backends:
    remote:   "TestS3,directory_markers:"
    fastlist: true
  - backend:  "s3"
-   remote:   "TestS3Rclone:"
+   remote:   "TestS3SecureCloudEngine:"
    fastlist: true
    ignoretests:
      - cmd/bisync
@@ -329,12 +329,12 @@ backends:
    ignoretests:
      - cmd/gitannex
  - backend:  "sftp"
-   remote:   "TestSFTPRclone:"
+   remote:   "TestSFTPSecureCloudEngine:"
    fastlist: false
    ignoretests:
      - cmd/gitannex
  - backend:  "sftp"
-   remote:   "TestSFTPRcloneSSH:"
+   remote:   "TestSFTPSecureCloudEngineSSH:"
    fastlist: false
    ignoretests:
      - cmd/gitannex
@@ -396,7 +396,7 @@ backends:
    ignoretests:
      - cmd/gitannex
  - backend:  "ftp"
-   remote:   "TestFTPRclone:"
+   remote:   "TestFTPSecureCloudEngine:"
    fastlist: false
    ignoretests:
      - cmd/gitannex
@@ -491,7 +491,7 @@ backends:
      - cmd/bisync
      - cmd/gitannex
  - backend:  "webdav"
-   remote:   "TestWebdavRclone:"
+   remote:   "TestWebdavSecureCloudEngine:"
    ignore:
      - TestFileReadAtZeroLength
    fastlist: false

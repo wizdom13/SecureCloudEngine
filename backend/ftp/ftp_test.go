@@ -12,7 +12,7 @@ import (
 // TestIntegration runs integration tests against rclone FTP server
 func TestIntegration(t *testing.T) {
 	fstests.Run(t, &fstests.Opt{
-		RemoteName: "TestFTPRclone:",
+		RemoteName: "TestFTPSecureCloudEngine:",
 		NilObject:  (*ftp.Object)(nil),
 	})
 }

@@ -26,7 +26,7 @@ const (
 	defaultChunkSize    = fs.SizeSuffix(64 * 1024 * 1024)
 )
 
-// Register the backend with Rclone
+// Register the backend with SecureCloudEngine
 func init() {
 	fs.Register(&fs.RegInfo{
 		Name:        "filelu",
@@ -34,7 +34,7 @@ func init() {
 		NewFs:       NewFs,
 		Options: []fs.Option{{
 			Name:      "key",
-			Help:      "Your FileLu Rclone key from My Account",
+			Help:      "Your FileLu SecureCloudEngine key from My Account",
 			Required:  true,
 			Sensitive: true,
 		},
@@ -116,7 +116,7 @@ func NewFs(ctx context.Context, name string, root string, m configmap.Mapper) (f
 	}
 
 	if opt.Key == "" {
-		return nil, fmt.Errorf("FileLu Rclone Key is required")
+		return nil, fmt.Errorf("FileLu SecureCloudEngine Key is required")
 	}
 
 	client := fshttp.NewClient(ctx)

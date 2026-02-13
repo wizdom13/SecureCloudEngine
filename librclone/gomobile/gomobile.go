@@ -10,32 +10,32 @@ import (
 	_ "golang.org/x/mobile/event/key" // make go.mod add this as a dependency
 )
 
-// RcloneInitialize initializes rclone as a library
-func RcloneInitialize() {
+// SecureCloudEngineInitialize initializes rclone as a library
+func SecureCloudEngineInitialize() {
 	librclone.Initialize()
 }
 
-// RcloneFinalize finalizes the library
-func RcloneFinalize() {
+// SecureCloudEngineFinalize finalizes the library
+func SecureCloudEngineFinalize() {
 	librclone.Finalize()
 }
 
-// RcloneRPCResult is returned from RcloneRPC
+// SecureCloudEngineRPCResult is returned from SecureCloudEngineRPC
 //
 //	Output will be returned as a serialized JSON object
 //	Status is a HTTP status return (200=OK anything else fail)
-type RcloneRPCResult struct {
+type SecureCloudEngineRPCResult struct {
 	Output string
 	Status int
 }
 
-// RcloneRPC has an interface optimised for gomobile, in particular
+// SecureCloudEngineRPC has an interface optimised for gomobile, in particular
 // the function signature is valid under gobind rules.
 //
 // https://pkg.go.dev/golang.org/x/mobile/cmd/gobind#hdr-Type_restrictions
-func RcloneRPC(method string, input string) (result *RcloneRPCResult) { //nolint:deadcode
+func SecureCloudEngineRPC(method string, input string) (result *SecureCloudEngineRPCResult) { //nolint:deadcode
 	output, status := librclone.RPC(method, input)
-	return &RcloneRPCResult{
+	return &SecureCloudEngineRPCResult{
 		Output: output,
 		Status: status,
 	}

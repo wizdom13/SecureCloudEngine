@@ -40,7 +40,7 @@ func TestIntegration3(t *testing.T) {
 		t.Skip("skipping as -remote is set")
 	}
 	fstests.Run(t, &fstests.Opt{
-		RemoteName: "TestWebdavRclone:",
+		RemoteName: "TestWebdavSecureCloudEngine:",
 		NilObject:  (*Object)(nil),
 		ChunkedUpload: fstests.ChunkedUploadConfig{
 			Skip: true,

@@ -25,7 +25,7 @@ func TestIntegration2(t *testing.T) {
 		t.Skip("skipping as -remote is set")
 	}
 	fstests.Run(t, &fstests.Opt{
-		RemoteName: "TestSFTPRclone:",
+		RemoteName: "TestSFTPSecureCloudEngine:",
 		NilObject:  (*sftp.Object)(nil),
 	})
 }
@@ -35,7 +35,7 @@ func TestIntegration3(t *testing.T) {
 		t.Skip("skipping as -remote is set")
 	}
 	fstests.Run(t, &fstests.Opt{
-		RemoteName: "TestSFTPRcloneSSH:",
+		RemoteName: "TestSFTPSecureCloudEngineSSH:",
 		NilObject:  (*sftp.Object)(nil),
 	})
 }

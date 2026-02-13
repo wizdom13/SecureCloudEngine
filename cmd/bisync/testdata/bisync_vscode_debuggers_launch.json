@@ -25490,652 +25490,652 @@
 			"args": ["-remote", "TestS3,directory_markers:", "-remote2", "TestS3,directory_markers:", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_all_changed LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_all_changed LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_all_changed", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_all_changed", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_all_changed RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_all_changed RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_all_changed", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_all_changed", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_all_changed RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_all_changed RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_all_changed", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_all_changed", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_backupdir LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_backupdir LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_backupdir", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_backupdir", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_backupdir RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_backupdir RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_backupdir", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_backupdir", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_backupdir RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_backupdir RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_backupdir", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_backupdir", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_basic LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_basic LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_basic", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_basic", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_basic RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_basic RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_basic", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_basic", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_basic RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_basic RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_basic", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_basic", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_changes LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_changes LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_changes", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_changes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_changes RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_changes RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_changes", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_changes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_changes RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_changes RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_changes", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_changes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_check_access LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_check_access LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_check_access", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_check_access", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_check_access RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_check_access RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_check_access", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_check_access", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_check_access RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_check_access RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_check_access", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_check_access", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_check_access_filters LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_check_access_filters LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_check_access_filters", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_check_access_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_check_access_filters RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_check_access_filters RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_check_access_filters", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_check_access_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_check_access_filters RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_check_access_filters RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_check_access_filters", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_check_access_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_check_filename LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_check_filename LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_check_filename", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_check_filename", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_check_filename RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_check_filename RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_check_filename", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_check_filename", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_check_filename RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_check_filename RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_check_filename", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_check_filename", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_check_sync LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_check_sync LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_check_sync", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_check_sync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_check_sync RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_check_sync RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_check_sync", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_check_sync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_check_sync RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_check_sync RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_check_sync", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_check_sync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_compare_all LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_compare_all LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_compare_all", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_compare_all", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_compare_all RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_compare_all RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_compare_all", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_compare_all", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_compare_all RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_compare_all RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_compare_all", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_compare_all", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_createemptysrcdirs LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_createemptysrcdirs LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_createemptysrcdirs RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_createemptysrcdirs RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_createemptysrcdirs", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_createemptysrcdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_createemptysrcdirs RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_createemptysrcdirs RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_dry_run LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_dry_run LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_dry_run", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_dry_run", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_dry_run RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_dry_run RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_dry_run", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_dry_run", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_dry_run RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_dry_run RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_dry_run", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_dry_run", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_equal LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_equal LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_equal", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_equal", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_equal RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_equal RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_equal", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_equal", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_equal RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_equal RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_equal", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_equal", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_ext_paths LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_ext_paths LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_ext_paths", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_ext_paths", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_ext_paths RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_ext_paths RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_ext_paths", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_ext_paths", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_ext_paths RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_ext_paths RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_ext_paths", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_ext_paths", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_extended_filenames LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_extended_filenames LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_extended_filenames", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_extended_filenames", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_extended_filenames RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_extended_filenames RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_extended_filenames", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_extended_filenames", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_extended_filenames RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_extended_filenames RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_extended_filenames", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_extended_filenames", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_filters LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_filters LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_filters", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_filters RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_filters RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_filters", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_filters RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_filters RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_filters", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_filtersfile_checks LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_filtersfile_checks LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_filtersfile_checks", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_filtersfile_checks", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_filtersfile_checks RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_filtersfile_checks RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_filtersfile_checks", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_filtersfile_checks", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_filtersfile_checks RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_filtersfile_checks RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_filtersfile_checks", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_filtersfile_checks", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_ignorelistingchecksum LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_ignorelistingchecksum LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_ignorelistingchecksum RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_ignorelistingchecksum RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_ignorelistingchecksum RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_ignorelistingchecksum RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_max_delete_path1 LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_max_delete_path1 LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_max_delete_path1", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_max_delete_path1", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_max_delete_path1 RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_max_delete_path1 RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_max_delete_path1", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_max_delete_path1", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_max_delete_path1 RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_max_delete_path1 RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_max_delete_path1", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_max_delete_path1", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_max_delete_path2_force LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_max_delete_path2_force LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_max_delete_path2_force RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_max_delete_path2_force RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_max_delete_path2_force", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_max_delete_path2_force", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_max_delete_path2_force RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_max_delete_path2_force RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_nomodtime LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_nomodtime LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_nomodtime", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_nomodtime", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_nomodtime RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_nomodtime RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_nomodtime", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_nomodtime", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_nomodtime RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_nomodtime RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_nomodtime", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_nomodtime", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_normalization LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_normalization LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_normalization", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_normalization", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_normalization RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_normalization RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_normalization", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_normalization", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_normalization RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_normalization RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_normalization", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_normalization", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_rclone_args LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_rclone_args LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_rclone_args", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_rclone_args", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_rclone_args RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_rclone_args RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_rclone_args", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_rclone_args", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_rclone_args RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_rclone_args RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_rclone_args", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_rclone_args", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_resolve LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_resolve LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_resolve", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_resolve", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_resolve RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_resolve RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_resolve", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_resolve", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_resolve RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_resolve RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_resolve", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_resolve", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_resync LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_resync LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_resync", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_resync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_resync RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_resync RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_resync", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_resync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_resync RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_resync RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_resync", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_resync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_resync_modes LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_resync_modes LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_resync_modes", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_resync_modes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_resync_modes RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_resync_modes RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_resync_modes", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_resync_modes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_resync_modes RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_resync_modes RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_resync_modes", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_resync_modes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_rmdirs LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_rmdirs LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_rmdirs", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_rmdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_rmdirs RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_rmdirs RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_rmdirs", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_rmdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_rmdirs RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_rmdirs RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_rmdirs", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_rmdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_volatile LocalRemote",
+			"name": "Test TestS3SecureCloudEngine: test_volatile LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestS3Rclone:", "-case", "test_volatile", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_volatile RemoteLocal",
+			"name": "Test TestS3SecureCloudEngine: test_volatile RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "local", "-case", "test_volatile", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "local", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestS3Rclone: test_volatile RemoteRemote",
+			"name": "Test TestS3SecureCloudEngine: test_volatile RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestS3Rclone:", "-remote2", "TestS3Rclone:", "-case", "test_volatile", "-no-cleanup"]
+			"args": ["-remote", "TestS3SecureCloudEngine:", "-remote2", "TestS3SecureCloudEngine:", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
 			"name": "Test TestS3Minio: test_all_changed LocalRemote",
@@ -30026,1300 +30026,1300 @@
 			"args": ["-remote", "TestSFTPOpenssh:", "-remote2", "TestSFTPOpenssh:", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_all_changed LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_all_changed LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_all_changed", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_all_changed", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_all_changed RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_all_changed RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_all_changed", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_all_changed", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_all_changed RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_all_changed RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_all_changed", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_all_changed", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_backupdir LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_backupdir LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_backupdir", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_backupdir", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_backupdir RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_backupdir RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_backupdir", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_backupdir", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_backupdir RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_backupdir RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_backupdir", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_backupdir", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_basic LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_basic LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_basic", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_basic", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_basic RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_basic RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_basic", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_basic", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_basic RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_basic RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_basic", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_basic", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_changes LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_changes LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_changes", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_changes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_changes RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_changes RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_changes", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_changes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_changes RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_changes RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_changes", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_changes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_check_access LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_check_access LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_check_access", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_check_access", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_check_access RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_check_access RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_check_access", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_check_access", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_check_access RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_check_access RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_check_access", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_check_access", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_check_access_filters LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_check_access_filters LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_check_access_filters", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_check_access_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_check_access_filters RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_check_access_filters RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_check_access_filters", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_check_access_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_check_access_filters RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_check_access_filters RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_check_access_filters", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_check_access_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_check_filename LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_check_filename LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_check_filename", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_check_filename", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_check_filename RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_check_filename RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_check_filename", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_check_filename", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_check_filename RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_check_filename RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_check_filename", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_check_filename", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_check_sync LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_check_sync LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_check_sync", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_check_sync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_check_sync RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_check_sync RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_check_sync", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_check_sync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_check_sync RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_check_sync RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_check_sync", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_check_sync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_compare_all LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_compare_all LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_compare_all", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_compare_all", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_compare_all RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_compare_all RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_compare_all", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_compare_all", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_compare_all RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_compare_all RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_compare_all", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_compare_all", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_createemptysrcdirs LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_createemptysrcdirs LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_createemptysrcdirs RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_createemptysrcdirs RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_createemptysrcdirs", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_createemptysrcdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_createemptysrcdirs RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_createemptysrcdirs RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_dry_run LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_dry_run LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_dry_run", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_dry_run", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_dry_run RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_dry_run RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_dry_run", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_dry_run", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_dry_run RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_dry_run RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_dry_run", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_dry_run", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_equal LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_equal LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_equal", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_equal", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_equal RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_equal RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_equal", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_equal", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_equal RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_equal RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_equal", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_equal", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_ext_paths LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_ext_paths LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_ext_paths", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_ext_paths", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_ext_paths RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_ext_paths RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_ext_paths", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_ext_paths", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_ext_paths RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_ext_paths RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_ext_paths", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_ext_paths", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_extended_filenames LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_extended_filenames LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_extended_filenames", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_extended_filenames", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_extended_filenames RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_extended_filenames RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_extended_filenames", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_extended_filenames", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_extended_filenames RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_extended_filenames RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_extended_filenames", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_extended_filenames", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_filters LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_filters LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_filters", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_filters RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_filters RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_filters", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_filters RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_filters RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_filters", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_filtersfile_checks LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_filtersfile_checks LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_filtersfile_checks", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_filtersfile_checks", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_filtersfile_checks RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_filtersfile_checks RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_filtersfile_checks", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_filtersfile_checks", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_filtersfile_checks RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_filtersfile_checks RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_filtersfile_checks", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_filtersfile_checks", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_ignorelistingchecksum LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_ignorelistingchecksum LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_ignorelistingchecksum RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_ignorelistingchecksum RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_ignorelistingchecksum RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_ignorelistingchecksum RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_max_delete_path1 LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_max_delete_path1 LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_max_delete_path1", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_max_delete_path1", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_max_delete_path1 RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_max_delete_path1 RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_max_delete_path1", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_max_delete_path1", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_max_delete_path1 RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_max_delete_path1 RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_max_delete_path1", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_max_delete_path1", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_max_delete_path2_force LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_max_delete_path2_force LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_max_delete_path2_force RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_max_delete_path2_force RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_max_delete_path2_force", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_max_delete_path2_force", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_max_delete_path2_force RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_max_delete_path2_force RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_nomodtime LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_nomodtime LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_nomodtime", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_nomodtime", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_nomodtime RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_nomodtime RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_nomodtime", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_nomodtime", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_nomodtime RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_nomodtime RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_nomodtime", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_nomodtime", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_normalization LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_normalization LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_normalization", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_normalization", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_normalization RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_normalization RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_normalization", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_normalization", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_normalization RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_normalization RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_normalization", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_normalization", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_rclone_args LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_rclone_args LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_rclone_args", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_rclone_args", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_rclone_args RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_rclone_args RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_rclone_args", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_rclone_args", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_rclone_args RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_rclone_args RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_rclone_args", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_rclone_args", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_resolve LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_resolve LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_resolve", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_resolve", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_resolve RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_resolve RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_resolve", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_resolve", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_resolve RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_resolve RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_resolve", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_resolve", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_resync LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_resync LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_resync", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_resync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_resync RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_resync RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_resync", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_resync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_resync RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_resync RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_resync", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_resync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_resync_modes LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_resync_modes LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_resync_modes", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_resync_modes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_resync_modes RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_resync_modes RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_resync_modes", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_resync_modes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_resync_modes RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_resync_modes RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_resync_modes", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_resync_modes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_rmdirs LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_rmdirs LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_rmdirs", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_rmdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_rmdirs RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_rmdirs RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_rmdirs", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_rmdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_rmdirs RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_rmdirs RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_rmdirs", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_rmdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_volatile LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_volatile LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRclone:", "-case", "test_volatile", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_volatile RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngine: test_volatile RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "local", "-case", "test_volatile", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRclone: test_volatile RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngine: test_volatile RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRclone:", "-remote2", "TestSFTPRclone:", "-case", "test_volatile", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngine:", "-remote2", "TestSFTPSecureCloudEngine:", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_all_changed LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_all_changed LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_all_changed", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_all_changed", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_all_changed RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_all_changed RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_all_changed", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_all_changed", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_all_changed RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_all_changed RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_all_changed", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_all_changed", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_backupdir LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_backupdir LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_backupdir", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_backupdir", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_backupdir RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_backupdir RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_backupdir", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_backupdir", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_backupdir RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_backupdir RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_backupdir", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_backupdir", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_basic LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_basic LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_basic", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_basic", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_basic RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_basic RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_basic", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_basic", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_basic RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_basic RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_basic", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_basic", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_changes LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_changes LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_changes", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_changes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_changes RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_changes RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_changes", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_changes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_changes RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_changes RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_changes", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_changes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_check_access LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_check_access LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_check_access", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_check_access", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_check_access RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_check_access RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_check_access", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_check_access", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_check_access RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_check_access RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_check_access", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_check_access", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_check_access_filters LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_check_access_filters LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_check_access_filters", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_check_access_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_check_access_filters RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_check_access_filters RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_check_access_filters", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_check_access_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_check_access_filters RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_check_access_filters RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_check_access_filters", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_check_access_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_check_filename LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_check_filename LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_check_filename", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_check_filename", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_check_filename RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_check_filename RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_check_filename", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_check_filename", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_check_filename RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_check_filename RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_check_filename", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_check_filename", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_check_sync LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_check_sync LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_check_sync", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_check_sync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_check_sync RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_check_sync RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_check_sync", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_check_sync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_check_sync RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_check_sync RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_check_sync", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_check_sync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_compare_all LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_compare_all LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_compare_all", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_compare_all", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_compare_all RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_compare_all RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_compare_all", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_compare_all", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_compare_all RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_compare_all RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_compare_all", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_compare_all", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_createemptysrcdirs LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_createemptysrcdirs LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_createemptysrcdirs RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_createemptysrcdirs RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_createemptysrcdirs", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_createemptysrcdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_createemptysrcdirs RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_createemptysrcdirs RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_dry_run LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_dry_run LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_dry_run", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_dry_run", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_dry_run RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_dry_run RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_dry_run", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_dry_run", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_dry_run RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_dry_run RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_dry_run", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_dry_run", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_equal LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_equal LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_equal", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_equal", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_equal RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_equal RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_equal", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_equal", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_equal RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_equal RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_equal", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_equal", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_ext_paths LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_ext_paths LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_ext_paths", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_ext_paths", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_ext_paths RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_ext_paths RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_ext_paths", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_ext_paths", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_ext_paths RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_ext_paths RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_ext_paths", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_ext_paths", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_extended_filenames LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_extended_filenames LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_extended_filenames", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_extended_filenames", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_extended_filenames RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_extended_filenames RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_extended_filenames", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_extended_filenames", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_extended_filenames RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_extended_filenames RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_extended_filenames", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_extended_filenames", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_filters LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_filters LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_filters", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_filters RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_filters RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_filters", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_filters RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_filters RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_filters", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_filtersfile_checks LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_filtersfile_checks LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_filtersfile_checks", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_filtersfile_checks", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_filtersfile_checks RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_filtersfile_checks RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_filtersfile_checks", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_filtersfile_checks", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_filtersfile_checks RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_filtersfile_checks RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_filtersfile_checks", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_filtersfile_checks", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_ignorelistingchecksum LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_ignorelistingchecksum LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_ignorelistingchecksum RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_ignorelistingchecksum RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_ignorelistingchecksum RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_ignorelistingchecksum RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_max_delete_path1 LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_max_delete_path1 LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_max_delete_path1", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_max_delete_path1", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_max_delete_path1 RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_max_delete_path1 RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_max_delete_path1", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_max_delete_path1", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_max_delete_path1 RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_max_delete_path1 RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_max_delete_path1", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_max_delete_path1", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_max_delete_path2_force LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_max_delete_path2_force LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_max_delete_path2_force RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_max_delete_path2_force RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_max_delete_path2_force", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_max_delete_path2_force", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_max_delete_path2_force RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_max_delete_path2_force RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_nomodtime LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_nomodtime LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_nomodtime", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_nomodtime", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_nomodtime RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_nomodtime RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_nomodtime", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_nomodtime", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_nomodtime RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_nomodtime RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_nomodtime", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_nomodtime", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_normalization LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_normalization LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_normalization", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_normalization", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_normalization RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_normalization RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_normalization", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_normalization", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_normalization RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_normalization RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_normalization", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_normalization", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_rclone_args LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_rclone_args LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_rclone_args", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_rclone_args", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_rclone_args RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_rclone_args RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_rclone_args", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_rclone_args", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_rclone_args RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_rclone_args RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_rclone_args", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_rclone_args", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_resolve LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_resolve LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_resolve", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_resolve", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_resolve RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_resolve RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_resolve", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_resolve", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_resolve RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_resolve RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_resolve", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_resolve", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_resync LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_resync LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_resync", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_resync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_resync RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_resync RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_resync", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_resync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_resync RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_resync RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_resync", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_resync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_resync_modes LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_resync_modes LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_resync_modes", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_resync_modes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_resync_modes RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_resync_modes RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_resync_modes", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_resync_modes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_resync_modes RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_resync_modes RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_resync_modes", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_resync_modes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_rmdirs LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_rmdirs LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_rmdirs", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_rmdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_rmdirs RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_rmdirs RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_rmdirs", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_rmdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_rmdirs RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_rmdirs RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_rmdirs", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_rmdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_volatile LocalRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_volatile LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_volatile", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_volatile RemoteLocal",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_volatile RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "local", "-case", "test_volatile", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "local", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestSFTPRcloneSSH: test_volatile RemoteRemote",
+			"name": "Test TestSFTPSecureCloudEngineSSH: test_volatile RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestSFTPRcloneSSH:", "-remote2", "TestSFTPRcloneSSH:", "-case", "test_volatile", "-no-cleanup"]
+			"args": ["-remote", "TestSFTPSecureCloudEngineSSH:", "-remote2", "TestSFTPSecureCloudEngineSSH:", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
 			"name": "Test TestSFTPRsyncNet: test_all_changed LocalRemote",
@@ -36506,652 +36506,652 @@
 			"args": ["-remote", "TestFTPVsftpd:", "-remote2", "TestFTPVsftpd:", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_all_changed LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_all_changed LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_all_changed", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_all_changed", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_all_changed RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_all_changed RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_all_changed", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_all_changed", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_all_changed RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_all_changed RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_all_changed", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_all_changed", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_backupdir LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_backupdir LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_backupdir", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_backupdir", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_backupdir RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_backupdir RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_backupdir", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_backupdir", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_backupdir RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_backupdir RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_backupdir", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_backupdir", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_basic LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_basic LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_basic", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_basic", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_basic RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_basic RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_basic", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_basic", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_basic RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_basic RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_basic", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_basic", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_changes LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_changes LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_changes", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_changes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_changes RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_changes RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_changes", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_changes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_changes RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_changes RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_changes", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_changes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_check_access LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_check_access LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_check_access", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_check_access", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_check_access RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_check_access RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_check_access", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_check_access", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_check_access RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_check_access RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_check_access", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_check_access", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_check_access_filters LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_check_access_filters LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_check_access_filters", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_check_access_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_check_access_filters RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_check_access_filters RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_check_access_filters", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_check_access_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_check_access_filters RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_check_access_filters RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_check_access_filters", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_check_access_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_check_filename LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_check_filename LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_check_filename", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_check_filename", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_check_filename RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_check_filename RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_check_filename", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_check_filename", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_check_filename RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_check_filename RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_check_filename", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_check_filename", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_check_sync LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_check_sync LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_check_sync", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_check_sync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_check_sync RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_check_sync RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_check_sync", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_check_sync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_check_sync RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_check_sync RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_check_sync", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_check_sync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_compare_all LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_compare_all LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_compare_all", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_compare_all", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_compare_all RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_compare_all RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_compare_all", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_compare_all", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_compare_all RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_compare_all RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_compare_all", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_compare_all", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_createemptysrcdirs LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_createemptysrcdirs LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_createemptysrcdirs RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_createemptysrcdirs RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_createemptysrcdirs", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_createemptysrcdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_createemptysrcdirs RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_createemptysrcdirs RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_dry_run LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_dry_run LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_dry_run", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_dry_run", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_dry_run RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_dry_run RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_dry_run", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_dry_run", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_dry_run RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_dry_run RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_dry_run", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_dry_run", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_equal LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_equal LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_equal", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_equal", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_equal RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_equal RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_equal", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_equal", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_equal RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_equal RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_equal", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_equal", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_ext_paths LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_ext_paths LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_ext_paths", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_ext_paths", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_ext_paths RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_ext_paths RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_ext_paths", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_ext_paths", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_ext_paths RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_ext_paths RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_ext_paths", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_ext_paths", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_extended_filenames LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_extended_filenames LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_extended_filenames", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_extended_filenames", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_extended_filenames RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_extended_filenames RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_extended_filenames", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_extended_filenames", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_extended_filenames RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_extended_filenames RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_extended_filenames", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_extended_filenames", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_filters LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_filters LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_filters", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_filters RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_filters RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_filters", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_filters RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_filters RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_filters", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_filtersfile_checks LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_filtersfile_checks LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_filtersfile_checks", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_filtersfile_checks", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_filtersfile_checks RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_filtersfile_checks RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_filtersfile_checks", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_filtersfile_checks", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_filtersfile_checks RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_filtersfile_checks RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_filtersfile_checks", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_filtersfile_checks", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_ignorelistingchecksum LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_ignorelistingchecksum LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_ignorelistingchecksum RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_ignorelistingchecksum RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_ignorelistingchecksum RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_ignorelistingchecksum RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_max_delete_path1 LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_max_delete_path1 LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_max_delete_path1", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_max_delete_path1", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_max_delete_path1 RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_max_delete_path1 RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_max_delete_path1", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_max_delete_path1", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_max_delete_path1 RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_max_delete_path1 RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_max_delete_path1", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_max_delete_path1", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_max_delete_path2_force LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_max_delete_path2_force LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_max_delete_path2_force RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_max_delete_path2_force RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_max_delete_path2_force", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_max_delete_path2_force", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_max_delete_path2_force RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_max_delete_path2_force RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_nomodtime LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_nomodtime LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_nomodtime", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_nomodtime", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_nomodtime RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_nomodtime RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_nomodtime", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_nomodtime", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_nomodtime RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_nomodtime RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_nomodtime", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_nomodtime", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_normalization LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_normalization LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_normalization", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_normalization", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_normalization RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_normalization RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_normalization", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_normalization", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_normalization RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_normalization RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_normalization", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_normalization", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_rclone_args LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_rclone_args LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_rclone_args", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_rclone_args", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_rclone_args RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_rclone_args RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_rclone_args", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_rclone_args", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_rclone_args RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_rclone_args RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_rclone_args", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_rclone_args", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_resolve LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_resolve LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_resolve", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_resolve", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_resolve RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_resolve RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_resolve", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_resolve", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_resolve RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_resolve RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_resolve", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_resolve", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_resync LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_resync LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_resync", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_resync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_resync RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_resync RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_resync", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_resync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_resync RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_resync RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_resync", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_resync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_resync_modes LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_resync_modes LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_resync_modes", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_resync_modes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_resync_modes RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_resync_modes RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_resync_modes", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_resync_modes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_resync_modes RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_resync_modes RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_resync_modes", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_resync_modes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_rmdirs LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_rmdirs LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_rmdirs", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_rmdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_rmdirs RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_rmdirs RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_rmdirs", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_rmdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_rmdirs RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_rmdirs RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_rmdirs", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_rmdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_volatile LocalRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_volatile LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestFTPRclone:", "-case", "test_volatile", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_volatile RemoteLocal",
+			"name": "Test TestFTPSecureCloudEngine: test_volatile RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "local", "-case", "test_volatile", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "local", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestFTPRclone: test_volatile RemoteRemote",
+			"name": "Test TestFTPSecureCloudEngine: test_volatile RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestFTPRclone:", "-remote2", "TestFTPRclone:", "-case", "test_volatile", "-no-cleanup"]
+			"args": ["-remote", "TestFTPSecureCloudEngine:", "-remote2", "TestFTPSecureCloudEngine:", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
 			"name": "Test TestBox: test_all_changed LocalRemote",
@@ -43634,652 +43634,652 @@
 			"args": ["-remote", "TestWebdavOwncloud:", "-remote2", "TestWebdavOwncloud:", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_all_changed LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_all_changed LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_all_changed", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_all_changed", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_all_changed RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_all_changed RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_all_changed", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_all_changed", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_all_changed RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_all_changed RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_all_changed", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_all_changed", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_backupdir LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_backupdir LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_backupdir", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_backupdir", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_backupdir RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_backupdir RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_backupdir", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_backupdir", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_backupdir RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_backupdir RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_backupdir", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_backupdir", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_basic LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_basic LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_basic", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_basic", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_basic RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_basic RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_basic", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_basic", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_basic RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_basic RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_basic", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_basic", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_changes LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_changes LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_changes", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_changes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_changes RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_changes RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_changes", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_changes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_changes RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_changes RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_changes", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_changes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_check_access LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_check_access LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_check_access", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_check_access", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_check_access RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_check_access RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_check_access", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_check_access", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_check_access RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_check_access RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_check_access", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_check_access", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_check_access_filters LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_check_access_filters LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_check_access_filters", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_check_access_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_check_access_filters RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_check_access_filters RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_check_access_filters", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_check_access_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_check_access_filters RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_check_access_filters RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_check_access_filters", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_check_access_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_check_filename LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_check_filename LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_check_filename", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_check_filename", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_check_filename RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_check_filename RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_check_filename", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_check_filename", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_check_filename RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_check_filename RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_check_filename", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_check_filename", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_check_sync LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_check_sync LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_check_sync", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_check_sync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_check_sync RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_check_sync RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_check_sync", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_check_sync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_check_sync RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_check_sync RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_check_sync", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_check_sync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_compare_all LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_compare_all LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_compare_all", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_compare_all", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_compare_all RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_compare_all RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_compare_all", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_compare_all", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_compare_all RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_compare_all RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_compare_all", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_compare_all", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_createemptysrcdirs LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_createemptysrcdirs LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_createemptysrcdirs RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_createemptysrcdirs RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_createemptysrcdirs", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_createemptysrcdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_createemptysrcdirs RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_createemptysrcdirs RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_createemptysrcdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_dry_run LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_dry_run LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_dry_run", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_dry_run", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_dry_run RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_dry_run RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_dry_run", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_dry_run", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_dry_run RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_dry_run RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_dry_run", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_dry_run", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_equal LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_equal LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_equal", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_equal", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_equal RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_equal RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_equal", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_equal", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_equal RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_equal RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_equal", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_equal", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_ext_paths LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_ext_paths LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_ext_paths", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_ext_paths", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_ext_paths RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_ext_paths RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_ext_paths", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_ext_paths", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_ext_paths RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_ext_paths RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_ext_paths", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_ext_paths", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_extended_filenames LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_extended_filenames LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_extended_filenames", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_extended_filenames", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_extended_filenames RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_extended_filenames RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_extended_filenames", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_extended_filenames", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_extended_filenames RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_extended_filenames RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_extended_filenames", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_extended_filenames", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_filters LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_filters LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_filters", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_filters RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_filters RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_filters", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_filters RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_filters RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_filters", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_filters", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_filtersfile_checks LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_filtersfile_checks LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_filtersfile_checks", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_filtersfile_checks", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_filtersfile_checks RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_filtersfile_checks RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_filtersfile_checks", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_filtersfile_checks", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_filtersfile_checks RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_filtersfile_checks RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_filtersfile_checks", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_filtersfile_checks", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_ignorelistingchecksum LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_ignorelistingchecksum LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_ignorelistingchecksum RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_ignorelistingchecksum RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_ignorelistingchecksum RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_ignorelistingchecksum RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_ignorelistingchecksum", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_max_delete_path1 LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_max_delete_path1 LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_max_delete_path1", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_max_delete_path1", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_max_delete_path1 RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_max_delete_path1 RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_max_delete_path1", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_max_delete_path1", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_max_delete_path1 RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_max_delete_path1 RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_max_delete_path1", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_max_delete_path1", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_max_delete_path2_force LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_max_delete_path2_force LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_max_delete_path2_force RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_max_delete_path2_force RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_max_delete_path2_force", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_max_delete_path2_force", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_max_delete_path2_force RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_max_delete_path2_force RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_max_delete_path2_force", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_nomodtime LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_nomodtime LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_nomodtime", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_nomodtime", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_nomodtime RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_nomodtime RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_nomodtime", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_nomodtime", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_nomodtime RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_nomodtime RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_nomodtime", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_nomodtime", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_normalization LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_normalization LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_normalization", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_normalization", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_normalization RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_normalization RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_normalization", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_normalization", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_normalization RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_normalization RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_normalization", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_normalization", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_rclone_args LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_rclone_args LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_rclone_args", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_rclone_args", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_rclone_args RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_rclone_args RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_rclone_args", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_rclone_args", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_rclone_args RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_rclone_args RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_rclone_args", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_rclone_args", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_resolve LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_resolve LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_resolve", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_resolve", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_resolve RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_resolve RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_resolve", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_resolve", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_resolve RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_resolve RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_resolve", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_resolve", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_resync LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_resync LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_resync", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_resync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_resync RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_resync RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_resync", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_resync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_resync RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_resync RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_resync", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_resync", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_resync_modes LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_resync_modes LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_resync_modes", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_resync_modes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_resync_modes RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_resync_modes RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_resync_modes", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_resync_modes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_resync_modes RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_resync_modes RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_resync_modes", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_resync_modes", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_rmdirs LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_rmdirs LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_rmdirs", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_rmdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_rmdirs RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_rmdirs RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_rmdirs", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_rmdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_rmdirs RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_rmdirs RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_rmdirs", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_rmdirs", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_volatile LocalRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_volatile LocalRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "local", "-remote2", "TestWebdavRclone:", "-case", "test_volatile", "-no-cleanup"]
+			"args": ["-remote", "local", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_volatile RemoteLocal",
+			"name": "Test TestWebdavSecureCloudEngine: test_volatile RemoteLocal",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "local", "-case", "test_volatile", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "local", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
-			"name": "Test TestWebdavRclone: test_volatile RemoteRemote",
+			"name": "Test TestWebdavSecureCloudEngine: test_volatile RemoteRemote",
 			"type": "go",
 			"request": "launch",
 			"mode": "test",
 			"program": "./cmd/bisync",
-			"args": ["-remote", "TestWebdavRclone:", "-remote2", "TestWebdavRclone:", "-case", "test_volatile", "-no-cleanup"]
+			"args": ["-remote", "TestWebdavSecureCloudEngine:", "-remote2", "TestWebdavSecureCloudEngine:", "-case", "test_volatile", "-no-cleanup"]
 		},
 		{
 			"name": "Test TestCache: test_all_changed LocalRemote",

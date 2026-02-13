@@ -344,7 +344,7 @@ rclone.
 `,
 			Examples: []fs.OptionExample{{
 				Value: "auto",
-				Help:  "Rclone chooses the best hash",
+				Help:  "SecureCloudEngine chooses the best hash",
 			}, {
 				Value: "quickxor",
 				Help:  "QuickXor",

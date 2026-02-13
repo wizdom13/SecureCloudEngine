@@ -62,10 +62,10 @@ go run bin/resource_windows.go -binary librclone.dll -dir librclone
 
 For documentation see the Go documentation for:
 
-- [RcloneInitialize](https://pkg.go.dev/github.com/rclone/rclone/librclone#RcloneInitialize)
-- [RcloneFinalize](https://pkg.go.dev/github.com/rclone/rclone/librclone#RcloneFinalize)
-- [RcloneRPC](https://pkg.go.dev/github.com/rclone/rclone/librclone#RcloneRPC)
-- [RcloneFreeString](https://pkg.go.dev/github.com/rclone/rclone/librclone#RcloneFreeString)
+- [SecureCloudEngineInitialize](https://pkg.go.dev/github.com/rclone/rclone/librclone#SecureCloudEngineInitialize)
+- [SecureCloudEngineFinalize](https://pkg.go.dev/github.com/rclone/rclone/librclone#SecureCloudEngineFinalize)
+- [SecureCloudEngineRPC](https://pkg.go.dev/github.com/rclone/rclone/librclone#SecureCloudEngineRPC)
+- [SecureCloudEngineFreeString](https://pkg.go.dev/github.com/rclone/rclone/librclone#SecureCloudEngineFreeString)
 
 ### Linux C example
 
@@ -84,9 +84,9 @@ following these guidelines:
   (see [linking](#linking)).
 - Do not try to unload the library with `FreeLibrary`
   (see [unloading](#unloading)).
-- Deallocate returned strings with API function `RcloneFreeString`
+- Deallocate returned strings with API function `SecureCloudEngineFreeString`
   (see [memory management](#memory-management)).
-- Define struct `RcloneRPCResult`, instead of including `librclone.h`
+- Define struct `SecureCloudEngineRPCResult`, instead of including `librclone.h`
   (see [include file](#include-file)).
 - Use UTF-8 encoded strings
   (see [encoding](#encoding)).
@@ -122,11 +122,11 @@ exits.
 
 #### Memory management
 
-The output string returned from `RcloneRPC` is allocated within the `librclone`
+The output string returned from `SecureCloudEngineRPC` is allocated within the `librclone`
 library, and caller is responsible for freeing the memory. Due to C runtime
 library differences, as mentioned [above](#linking), it is not recommended to do
 this by calling `free` from the consuming application. You should instead use
-the API function `RcloneFreeString`, which will call `free` from within the
+the API function `SecureCloudEngineFreeString`, which will call `free` from within the
 `librclone` library, using the same runtime that allocated it in the first
 place.
 
@@ -139,10 +139,10 @@ run-time dynamic linking, you have no use of the extern declared functions
 either.
 
 The interface of librclone is so simple, that all you need is to define the
-small struct `RcloneRPCResult`, from [librclone.go](librclone.go):
+small struct `SecureCloudEngineRPCResult`, from [librclone.go](librclone.go):
 
 ```c++
-struct RcloneRPCResult {
+struct SecureCloudEngineRPCResult {
     char* Output;
     int Status;
 };
@@ -222,13 +222,13 @@ within `libgojni.so` and loaded automatically.
 ```java
 // imports
 import org.rclone.gomobile.Gomobile;
-import org.rclone.gomobile.RcloneRPCResult;
+import org.rclone.gomobile.SecureCloudEngineRPCResult;
 
 // initialize rclone
 Gomobile.rcloneInitialize();
 
 // call RC method and log response.
-RcloneRPCResult response = Gomobile.rcloneRPC("core/version", "{}");
+SecureCloudEngineRPCResult response = Gomobile.rcloneRPC("core/version", "{}");
 Log.i("rclone", "response status: " + response.getStatus());
 Log.i("rclone", "output: " + response.getOutput());
 
@@ -274,7 +274,7 @@ Useful docs:
 
 ## TODO
 
-- Async jobs must currently be cancelled manually at the moment - RcloneFinalize
+- Async jobs must currently be cancelled manually at the moment - SecureCloudEngineFinalize
   doesn't do it.
 - This will use the rclone config system and rclone logging system.
 - Need examples showing how to configure things,

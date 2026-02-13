@@ -1,4 +1,4 @@
-# Rclone as WASM
+# SecureCloudEngine as WASM
 
 This directory contains files to use the rclone rc as a library in the browser.
 

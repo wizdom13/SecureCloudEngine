@@ -1,4 +1,4 @@
-Rclone's `gitannex` subcommand enables [git-annex] to store and retrieve content
+SecureCloudEngine's `gitannex` subcommand enables [git-annex] to store and retrieve content
 from an rclone remote. It is meant to be run by git-annex, not directly by
 users.
 
@@ -50,7 +50,7 @@ users.
    > [git-annex-remote-rclone]: https://github.com/git-annex-remote-rclone/git-annex-remote-rclone
 
    The following example creates a new git-annex remote named "MyRemote" that
-   will use the rclone remote named "SomeRcloneRemote". That rclone remote must
+   will use the rclone remote named "SomeSecureCloudEngineRemote". That rclone remote must
    be one configured in your rclone.conf file, which can be located with `rclone
    config file`.
 
@@ -59,7 +59,7 @@ users.
        type=external                     \
        externaltype=rclone-builtin       \
        encryption=none                   \
-       rcloneremotename=SomeRcloneRemote \
+       rcloneremotename=SomeSecureCloudEngineRemote \
        rcloneprefix=git-annex-content    \
        rclonelayout=nodir
    ```

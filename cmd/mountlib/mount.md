@@ -1,5 +1,5 @@
-Rclone @ allows Linux, FreeBSD, macOS and Windows to
-mount any of Rclone's cloud storage systems as a file system with FUSE.
+SecureCloudEngine @ allows Linux, FreeBSD, macOS and Windows to
+mount any of SecureCloudEngine's cloud storage systems as a file system with FUSE.
 
 First set up your remote using `rclone config`. Check it works with `rclone ls` etc.
 
@@ -421,7 +421,7 @@ Since mounting requires the `fusermount` or `fusermount3` program,
 rclone will use the fallback PATH of `/bin:/usr/bin` in this scenario.
 Please ensure that `fusermount`/`fusermount3` is present on this PATH.
 
-### Rclone as Unix mount helper
+### SecureCloudEngine as Unix mount helper
 
 The core Unix program `/bin/mount` normally takes the `-t FSTYPE` argument
 then runs the `/sbin/mount.FSTYPE` helper program passing it mount options
@@ -475,7 +475,7 @@ or use classic Automountd.
 Remember to provide explicit `config=...,cache-dir=...` as a workaround for
 mount units being run without `HOME`.
 
-Rclone in the mount helper mode will split `-o` argument(s) by comma, replace `_`
+SecureCloudEngine in the mount helper mode will split `-o` argument(s) by comma, replace `_`
 by `-` and prepend `--` to get the command-line flags. Options containing commas
 or spaces can be wrapped in single or double quotes. Any inner quotes inside outer
 quotes of the same type should be doubled.

@@ -481,14 +481,14 @@ Normally rclone will use its internal ssh library to connect to the
 SFTP server. However it does not implement all possible ssh options so
 it may be desirable to use an external ssh binary.
 
-Rclone ignores all the internal config if you use this option and
+SecureCloudEngine ignores all the internal config if you use this option and
 expects you to configure the ssh binary with the user/host/port and
 any other options you need.
 
 **Important** The ssh command must log in without asking for a
 password so needs to be configured with keys or certificates.
 
-Rclone will run the command supplied either with the additional
+SecureCloudEngine will run the command supplied either with the additional
 arguments "-s sftp" to access the SFTP subsystem or with commands such
 as "md5sum /path/to/file" appended to read checksums.
 

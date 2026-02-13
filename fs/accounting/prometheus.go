@@ -8,8 +8,8 @@ import (
 
 var namespace = "rclone_"
 
-// RcloneCollector is a Prometheus collector for Rclone
-type RcloneCollector struct {
+// SecureCloudEngineCollector is a Prometheus collector for SecureCloudEngine
+type SecureCloudEngineCollector struct {
 	ctx              context.Context
 	bytesTransferred *prometheus.Desc
 	transferSpeed    *prometheus.Desc
@@ -24,16 +24,16 @@ type RcloneCollector struct {
 	retryError       *prometheus.Desc
 }
 
-// NewRcloneCollector make a new RcloneCollector
-func NewRcloneCollector(ctx context.Context) *RcloneCollector {
-	return &RcloneCollector{
+// NewSecureCloudEngineCollector make a new SecureCloudEngineCollector
+func NewSecureCloudEngineCollector(ctx context.Context) *SecureCloudEngineCollector {
+	return &SecureCloudEngineCollector{
 		ctx: ctx,
 		bytesTransferred: prometheus.NewDesc(namespace+"bytes_transferred_total",
-			"Total transferred bytes since the start of the Rclone process",
+			"Total transferred bytes since the start of the SecureCloudEngine process",
 			nil, nil,
 		),
 		transferSpeed: prometheus.NewDesc(namespace+"speed",
-			"Average speed in bytes per second since the start of the Rclone process",
+			"Average speed in bytes per second since the start of the SecureCloudEngine process",
 			nil, nil,
 		),
 		numOfErrors: prometheus.NewDesc(namespace+"errors_total",
@@ -76,7 +76,7 @@ func NewRcloneCollector(ctx context.Context) *RcloneCollector {
 }
 
 // Describe is part of the Collector interface: https://godoc.org/github.com/prometheus/client_golang/prometheus#Collector
-func (c *RcloneCollector) Describe(ch chan<- *prometheus.Desc) {
+func (c *SecureCloudEngineCollector) Describe(ch chan<- *prometheus.Desc) {
 	ch <- c.bytesTransferred
 	ch <- c.transferSpeed
 	ch <- c.numOfErrors
@@ -91,7 +91,7 @@ func (c *RcloneCollector) Describe(ch chan<- *prometheus.Desc) {
 }
 
 // Collect is part of the Collector interface: https://godoc.org/github.com/prometheus/client_golang/prometheus#Collector
-func (c *RcloneCollector) Collect(ch chan<- prometheus.Metric) {
+func (c *SecureCloudEngineCollector) Collect(ch chan<- prometheus.Metric) {
 	s := groups.sum(c.ctx)
 	s.mu.RLock()
 

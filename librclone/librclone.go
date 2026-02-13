@@ -22,7 +22,7 @@ package main
 /*
 #include <stdlib.h>
 
-struct RcloneRPCResult {
+struct SecureCloudEngineRPCResult {
 	char*	Output;
 	int	Status;
 };
@@ -43,30 +43,30 @@ import (
 	_ "github.com/rclone/rclone/lib/plugin"    // import plugins
 )
 
-// RcloneInitialize initializes rclone as a library
+// SecureCloudEngineInitialize initializes rclone as a library
 //
-//export RcloneInitialize
-func RcloneInitialize() {
+//export SecureCloudEngineInitialize
+func SecureCloudEngineInitialize() {
 	librclone.Initialize()
 }
 
-// RcloneFinalize finalizes the library
+// SecureCloudEngineFinalize finalizes the library
 //
-//export RcloneFinalize
-func RcloneFinalize() {
+//export SecureCloudEngineFinalize
+func SecureCloudEngineFinalize() {
 	librclone.Finalize()
 }
 
-// RcloneRPCResult is returned from RcloneRPC
+// SecureCloudEngineRPCResult is returned from SecureCloudEngineRPC
 //
 //	Output will be returned as a serialized JSON object
 //	Status is a HTTP status return (200=OK anything else fail)
-type RcloneRPCResult struct { //nolint:deadcode
+type SecureCloudEngineRPCResult struct { //nolint:deadcode
 	Output *C.char
 	Status C.int
 }
 
-// RcloneRPC does a single RPC call. The inputs are (method, input)
+// SecureCloudEngineRPC does a single RPC call. The inputs are (method, input)
 // and the output is (output, status). This is an exported interface
 // to the rclone API as described in https://rclone.org/rc/
 //
@@ -78,25 +78,25 @@ type RcloneRPCResult struct { //nolint:deadcode
 // All strings are UTF-8 encoded, on all platforms.
 //
 // Caller is responsible for freeing the memory for result.Output
-// (see RcloneFreeString), result itself is passed on the stack.
+// (see SecureCloudEngineFreeString), result itself is passed on the stack.
 //
-//export RcloneRPC
-func RcloneRPC(method *C.char, input *C.char) (result C.struct_RcloneRPCResult) { //nolint:golint
+//export SecureCloudEngineRPC
+func SecureCloudEngineRPC(method *C.char, input *C.char) (result C.struct_SecureCloudEngineRPCResult) { //nolint:golint
 	output, status := librclone.RPC(C.GoString(method), C.GoString(input))
 	result.Output = C.CString(output)
 	result.Status = C.int(status)
 	return result
 }
 
-// RcloneFreeString may be used to free the string returned by RcloneRPC
+// SecureCloudEngineFreeString may be used to free the string returned by SecureCloudEngineRPC
 //
 // If the caller has access to the C standard library, the free function can
 // normally be called directly instead. In some cases the caller uses a
 // runtime library which is not compatible, and then this function can be
 // used to release the memory with the same library that allocated it.
 //
-//export RcloneFreeString
-func RcloneFreeString(str *C.char) {
+//export SecureCloudEngineFreeString
+func SecureCloudEngineFreeString(str *C.char) {
 	C.free(unsafe.Pointer(str))
 }
 

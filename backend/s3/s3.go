@@ -245,7 +245,7 @@ in memory per transfer.
 If you are transferring large files over high-speed links and you have
 enough memory, then increasing this will speed up the transfers.
 
-Rclone will automatically increase the chunk size when uploading a
+SecureCloudEngine will automatically increase the chunk size when uploading a
 large file of known size to stay below the 10,000 chunks limit.
 
 Files of unknown size are uploaded with the configured
@@ -255,7 +255,7 @@ a file you can stream upload is 48 GiB.  If you wish to stream upload
 larger files then you will need to increase chunk_size.
 
 Increasing the chunk size decreases the accuracy of the progress
-statistics displayed with "-P" flag. Rclone treats chunk as sent when
+statistics displayed with "-P" flag. SecureCloudEngine treats chunk as sent when
 it's buffered by the AWS SDK, when in fact it may still be uploading.
 A bigger chunk size means a bigger AWS SDK buffer and progress
 reporting more deviating from the truth.
@@ -272,7 +272,7 @@ when doing a multipart upload.
 This can be useful if a service does not support the AWS S3
 specification of 10,000 chunks.
 
-Rclone will automatically increase the chunk size when uploading a
+SecureCloudEngine will automatically increase the chunk size when uploading a
 large file of a known size to stay below this number of chunks limit.
 `,
 			Default:  maxUploadParts,
@@ -579,7 +579,7 @@ This should be true, false or left unset to use the default for the provider.
 			Name: "use_unsigned_payload",
 			Help: `Whether to use an unsigned payload in PutObject
 
-Rclone has to avoid the AWS SDK seeking the body when calling
+SecureCloudEngine has to avoid the AWS SDK seeking the body when calling
 PutObject. The AWS provider can add checksums in the trailer to avoid
 seeking but other providers can't.
 
@@ -790,12 +790,12 @@ Note that Directory Buckets do not support:
 - Versioning
 - |Content-Encoding: gzip|
 
-Rclone limitations with Directory Buckets:
+SecureCloudEngine limitations with Directory Buckets:
 
 - rclone does not support creating Directory Buckets with |rclone mkdir|
 - ... or removing them with |rclone rmdir| yet
 - Directory Buckets do not appear when doing |rclone lsf| at the top level.
-- Rclone can't remove auto created directories yet. In theory this should
+- SecureCloudEngine can't remove auto created directories yet. In theory this should
   work with |directory_markers = true| but it doesn't.
 - Directories don't seem to appear in recursive (ListR) listings.
 `, "|", "`"),
@@ -1455,7 +1455,7 @@ func checkUploadCutoff(cs fs.SizeSuffix) error {
 }
 
 func (f *Fs) setUploadCutoff(cs fs.SizeSuffix) (old fs.SizeSuffix, err error) {
-	if f.opt.Provider != "Rclone" {
+	if f.opt.Provider != "SecureCloudEngine" {
 		err = checkUploadCutoff(cs)
 	}
 	if err == nil {

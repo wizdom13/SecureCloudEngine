@@ -1,5 +1,5 @@
 {
-    "description": "Rclone volume plugin for Docker",
+    "description": "SecureCloudEngine volume plugin for Docker",
     "documentation": "https://rclone.org/docker",
     "interface": {
         "socket": "rclone.sock",

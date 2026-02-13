@@ -4,7 +4,7 @@ PHP interface to librclone.so, using FFI ( Foreign Function Interface )
 
 Create an rclone object
 
-$rc = new Rclone( __DIR__ . '/librclone.so' );
+$rc = new SecureCloudEngine( __DIR__ . '/librclone.so' );
 
 Then call rpc calls on it
 
@@ -15,7 +15,7 @@ When finished, close it
     $rc->close();
 */
 
-class Rclone {
+class SecureCloudEngine {
 
     protected $rclone;
     private $out;
@@ -23,31 +23,31 @@ class Rclone {
     public function __construct( $libshared )
     {
         $this->rclone = \FFI::cdef("
-        struct RcloneRPCResult {
+        struct SecureCloudEngineRPCResult {
             char* Output;
             int	Status;
         };        
-        extern void RcloneInitialize();
-        extern void RcloneFinalize();
-        extern struct RcloneRPCResult RcloneRPC(char* method, char* input);
-        extern void RcloneFreeString(char* str);
+        extern void SecureCloudEngineInitialize();
+        extern void SecureCloudEngineFinalize();
+        extern struct SecureCloudEngineRPCResult SecureCloudEngineRPC(char* method, char* input);
+        extern void SecureCloudEngineFreeString(char* str);
         ", $libshared);
-        $this->rclone->RcloneInitialize();
+        $this->rclone->SecureCloudEngineInitialize();
     }
 
     public function rpc( $method, $input ): array
     {
-        $this->out = $this->rclone->RcloneRPC( $method, $input );
+        $this->out = $this->rclone->SecureCloudEngineRPC( $method, $input );
         $response = [
             'output' => \FFI::string( $this->out->Output ),
             'status' => $this->out->Status
         ];
-        $this->rclone->RcloneFreeString( $this->out->Output );
+        $this->rclone->SecureCloudEngineFreeString( $this->out->Output );
         return $response;
     }
 
     public function close( ): void
     {
-        $this->rclone->RcloneFinalize();
+        $this->rclone->SecureCloudEngineFinalize();
     }
 }

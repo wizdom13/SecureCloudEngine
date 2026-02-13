@@ -31,7 +31,7 @@ In `backend/s3/provider/YourProvider.yaml`
           Leave location constraint empty.
       ```
 
-    - The defaults (as seen in Rclone.yaml):
+    - The defaults (as seen in SecureCloudEngine.yaml):
 
       ```yaml
       region:

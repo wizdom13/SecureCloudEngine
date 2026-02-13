@@ -20,7 +20,7 @@ const path = "/metrics"
 var promHandlerFunc http.HandlerFunc
 
 func init() {
-	rcloneCollector := accounting.NewRcloneCollector(context.Background())
+	rcloneCollector := accounting.NewSecureCloudEngineCollector(context.Background())
 	prometheus.MustRegister(rcloneCollector)
 
 	m := fshttp.NewMetrics("rclone")
