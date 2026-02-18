@@ -14,9 +14,9 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/operations"
-	"github.com/rclone/rclone/fstest/runs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/fstest/runs"
 	"github.com/stretchr/testify/assert/yaml"
 )
 

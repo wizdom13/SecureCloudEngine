@@ -6,12 +6,12 @@ import (
 	"path/filepath"
 	"testing"
 
-	_ "github.com/rclone/rclone/backend/drive"
-	_ "github.com/rclone/rclone/backend/local"
-	_ "github.com/rclone/rclone/backend/s3"
-	_ "github.com/rclone/rclone/backend/swift"
-	"github.com/rclone/rclone/fstest"
-	"github.com/rclone/rclone/fstest/fstests"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/drive"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/s3"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/swift"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 var defaultOpt = fstests.Opt{

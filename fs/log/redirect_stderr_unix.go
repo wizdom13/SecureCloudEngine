@@ -7,8 +7,8 @@ package log
 import (
 	"os"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
 	"golang.org/x/sys/unix"
 )
 

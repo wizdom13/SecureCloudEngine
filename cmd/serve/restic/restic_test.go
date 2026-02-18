@@ -12,12 +12,12 @@ import (
 	"os/exec"
 	"testing"
 
-	_ "github.com/rclone/rclone/backend/all"
-	"github.com/rclone/rclone/cmd"
-	"github.com/rclone/rclone/cmd/serve/servetest"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/rc"
-	"github.com/rclone/rclone/fstest"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/all"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/cmd/serve/servetest"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

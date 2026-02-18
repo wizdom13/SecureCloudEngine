@@ -9,8 +9,8 @@ import (
 	"sync"
 
 	"github.com/aalpar/deheap"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
 )
 
 // compare two items for order by

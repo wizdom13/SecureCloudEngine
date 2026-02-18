@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/hash"
-	"github.com/rclone/rclone/fs/object"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/object"
 	"github.com/stretchr/testify/assert"
 )
 

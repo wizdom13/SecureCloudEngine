@@ -2,7 +2,7 @@
 package vfscommon
 
 import (
-	"github.com/rclone/rclone/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 type cacheModeChoices struct{}

@@ -17,17 +17,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/rclone/rclone/backend/shade/api"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config"
-	"github.com/rclone/rclone/fs/config/configmap"
-	"github.com/rclone/rclone/fs/config/configstruct"
-	"github.com/rclone/rclone/fs/fshttp"
-	"github.com/rclone/rclone/fs/hash"
-	"github.com/rclone/rclone/fs/object"
-	"github.com/rclone/rclone/lib/encoder"
-	"github.com/rclone/rclone/lib/pacer"
-	"github.com/rclone/rclone/lib/rest"
+	"github.com/wizdom13/SecureCloudEngine/backend/shade/api"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/object"
+	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
+	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
+	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 )
 
 const (

@@ -13,10 +13,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/filter"
-	"github.com/rclone/rclone/fs/rc"
-	"github.com/rclone/rclone/lib/errcount"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/filter"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
+	"github.com/wizdom13/SecureCloudEngine/lib/errcount"
 )
 
 // Handle describes what a server can do

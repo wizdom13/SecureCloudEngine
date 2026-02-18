@@ -4,8 +4,8 @@ package rmdir
 import (
 	"context"
 
-	"github.com/rclone/rclone/cmd"
-	"github.com/rclone/rclone/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
 	"github.com/spf13/cobra"
 )
 

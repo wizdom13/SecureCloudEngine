@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/rclone/rclone/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/rclone/rclone/fs/rc"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
 
-	"github.com/rclone/rclone/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 const globalStats = "global_stats"

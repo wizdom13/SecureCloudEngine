@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/lanrat/extsort"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/lib/errcount"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/lib/errcount"
 	"golang.org/x/sync/errgroup"
 )
 

@@ -9,9 +9,9 @@ import (
 	"path"
 	"time"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/hash"
-	"github.com/rclone/rclone/vfs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/vfs"
 )
 
 // Fs represents a wrapped fs.Fs

@@ -11,10 +11,10 @@ import (
 	"path"
 	"strings"
 
-	"github.com/rclone/rclone/backend/seafile/api"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/lib/readers"
-	"github.com/rclone/rclone/lib/rest"
+	"github.com/wizdom13/SecureCloudEngine/backend/seafile/api"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/lib/readers"
+	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 )
 
 // Start of the API URLs

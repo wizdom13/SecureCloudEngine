@@ -6,10 +6,10 @@ import (
 	"errors"
 	"time"
 
-	"github.com/rclone/rclone/cmd"
-	"github.com/rclone/rclone/cmd/test"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config/flags"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/cmd/test"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
 	"github.com/spf13/cobra"
 )
 

@@ -18,10 +18,10 @@ import (
 	"time"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config/flags"
-	"github.com/rclone/rclone/lib/atexit"
-	sdActivation "github.com/rclone/rclone/lib/sdactivation"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
+	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
+	sdActivation "github.com/wizdom13/SecureCloudEngine/lib/sdactivation"
 	"github.com/spf13/pflag"
 )
 

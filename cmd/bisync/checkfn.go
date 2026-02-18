@@ -6,14 +6,14 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/rclone/rclone/backend/crypt"
-	"github.com/rclone/rclone/cmd/bisync/bilib"
-	"github.com/rclone/rclone/cmd/check"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/accounting"
-	"github.com/rclone/rclone/fs/filter"
-	"github.com/rclone/rclone/fs/hash"
-	"github.com/rclone/rclone/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/backend/crypt"
+	"github.com/wizdom13/SecureCloudEngine/cmd/bisync/bilib"
+	"github.com/wizdom13/SecureCloudEngine/cmd/check"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"github.com/wizdom13/SecureCloudEngine/fs/filter"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
 )
 
 type bisyncCheck = struct {

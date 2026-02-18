@@ -13,11 +13,11 @@ import (
 	"os/exec"
 	"runtime"
 
-	"github.com/rclone/rclone/cmd/mountlib"
-	"github.com/rclone/rclone/cmd/serve/nfs"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config/flags"
-	"github.com/rclone/rclone/vfs"
+	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
+	"github.com/wizdom13/SecureCloudEngine/cmd/serve/nfs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
+	"github.com/wizdom13/SecureCloudEngine/vfs"
 )
 
 var (

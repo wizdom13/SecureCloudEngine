@@ -17,13 +17,13 @@ import (
 	"unicode/utf8"
 
 	"github.com/peterh/liner"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config/configmap"
-	"github.com/rclone/rclone/fs/config/configstruct"
-	"github.com/rclone/rclone/fs/config/obscure"
-	"github.com/rclone/rclone/fs/driveletter"
-	"github.com/rclone/rclone/fs/fspath"
-	"github.com/rclone/rclone/lib/terminal"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
+	"github.com/wizdom13/SecureCloudEngine/fs/driveletter"
+	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
+	"github.com/wizdom13/SecureCloudEngine/lib/terminal"
 	"golang.org/x/text/unicode/norm"
 )
 

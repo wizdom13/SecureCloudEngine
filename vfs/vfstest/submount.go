@@ -13,13 +13,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rclone/rclone/cmd/mountlib"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/cache"
-	"github.com/rclone/rclone/fstest"
-	"github.com/rclone/rclone/lib/file"
-	"github.com/rclone/rclone/vfs"
-	"github.com/rclone/rclone/vfs/vfscommon"
+	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/cache"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/lib/file"
+	"github.com/wizdom13/SecureCloudEngine/vfs"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 )
 
 // Functions to run and control the mount subprocess

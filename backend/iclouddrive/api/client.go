@@ -10,9 +10,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/fshttp"
-	"github.com/rclone/rclone/lib/rest"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
+	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 )
 
 const (

@@ -5,7 +5,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/rclone/rclone/lib/exitcode"
+	"github.com/wizdom13/SecureCloudEngine/lib/exitcode"
 	"github.com/stretchr/testify/assert"
 )
 

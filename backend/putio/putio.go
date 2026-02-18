@@ -6,13 +6,13 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config"
-	"github.com/rclone/rclone/fs/config/configmap"
-	"github.com/rclone/rclone/fs/config/obscure"
-	"github.com/rclone/rclone/lib/dircache"
-	"github.com/rclone/rclone/lib/encoder"
-	"github.com/rclone/rclone/lib/oauthutil"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
+	"github.com/wizdom13/SecureCloudEngine/lib/dircache"
+	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
+	"github.com/wizdom13/SecureCloudEngine/lib/oauthutil"
 )
 
 /*

@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/rclone/rclone/backend/union/upstream"
-	"github.com/rclone/rclone/fs"
+	"github.com/wizdom13/SecureCloudEngine/backend/union/upstream"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // Object describes a union Object

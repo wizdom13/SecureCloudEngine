@@ -9,9 +9,9 @@ import (
 
 	nfs "github.com/willscott/go-nfs"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/vfs"
-	"github.com/rclone/rclone/vfs/vfscommon"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/vfs"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 )
 
 // Server contains everything to run the Server

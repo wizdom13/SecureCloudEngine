@@ -1,4 +1,4 @@
-module github.com/rclone/rclone
+module github.com/wizdom13/SecureCloudEngine
 
 go 1.24.4
 

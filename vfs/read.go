@@ -10,10 +10,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/accounting"
-	"github.com/rclone/rclone/fs/chunkedreader"
-	"github.com/rclone/rclone/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"github.com/wizdom13/SecureCloudEngine/fs/chunkedreader"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 )
 
 // ReadFileHandle is an open for read file handle on a File

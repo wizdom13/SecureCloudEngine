@@ -6,7 +6,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/rclone/rclone/lib/random"
+	"github.com/wizdom13/SecureCloudEngine/lib/random"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

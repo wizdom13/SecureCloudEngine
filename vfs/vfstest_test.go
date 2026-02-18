@@ -5,12 +5,12 @@ package vfs_test
 import (
 	"testing"
 
-	_ "github.com/rclone/rclone/backend/all" // import all the backends
-	"github.com/rclone/rclone/cmd/mountlib"
-	"github.com/rclone/rclone/fstest"
-	"github.com/rclone/rclone/vfs"
-	"github.com/rclone/rclone/vfs/vfscommon"
-	"github.com/rclone/rclone/vfs/vfstest"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/all" // import all the backends
+	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/vfs"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfstest"
 )
 
 // TestFunctional runs more functional tests all the tests against all the

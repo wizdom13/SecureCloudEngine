@@ -19,12 +19,12 @@ import (
 	"testing"
 	"time"
 
-	_ "github.com/rclone/rclone/backend/all" // import all the backends
-	"github.com/rclone/rclone/cmd/mountlib"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/walk"
-	"github.com/rclone/rclone/fstest"
-	"github.com/rclone/rclone/vfs/vfscommon"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/all" // import all the backends
+	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/walk"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

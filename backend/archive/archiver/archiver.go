@@ -4,7 +4,7 @@ package archiver
 import (
 	"context"
 
-	"github.com/rclone/rclone/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // Archiver describes an archive package

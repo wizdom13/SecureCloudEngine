@@ -7,12 +7,12 @@ import (
 	"testing"
 	"time"
 
-	_ "github.com/rclone/rclone/backend/local"
-	"github.com/rclone/rclone/fs/operations"
-	"github.com/rclone/rclone/fstest"
-	"github.com/rclone/rclone/lib/ranges"
-	"github.com/rclone/rclone/lib/readers"
-	"github.com/rclone/rclone/vfs/vfscommon"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/lib/ranges"
+	"github.com/wizdom13/SecureCloudEngine/lib/readers"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

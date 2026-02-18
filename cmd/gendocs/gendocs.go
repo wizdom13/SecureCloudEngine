@@ -13,10 +13,10 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/rclone/rclone/cmd"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config/flags"
-	"github.com/rclone/rclone/lib/file"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
+	"github.com/wizdom13/SecureCloudEngine/lib/file"
 	"github.com/spf13/cobra"
 	"github.com/spf13/cobra/doc"
 )

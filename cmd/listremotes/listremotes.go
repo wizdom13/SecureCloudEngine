@@ -9,11 +9,11 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/rclone/rclone/cmd"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config"
-	"github.com/rclone/rclone/fs/config/flags"
-	"github.com/rclone/rclone/fs/filter"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
+	"github.com/wizdom13/SecureCloudEngine/fs/filter"
 	"github.com/spf13/cobra"
 )
 

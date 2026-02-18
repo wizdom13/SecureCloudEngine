@@ -5,7 +5,7 @@ package fs
 import (
 	"os"
 
-	"github.com/rclone/rclone/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
 )
 
 // A configmap.Getter to read from the environment SCE_CONFIG_backend_option_name

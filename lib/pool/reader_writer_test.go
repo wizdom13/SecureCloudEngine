@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rclone/rclone/lib/random"
-	"github.com/rclone/rclone/lib/readers"
+	"github.com/wizdom13/SecureCloudEngine/lib/random"
+	"github.com/wizdom13/SecureCloudEngine/lib/readers"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

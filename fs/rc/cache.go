@@ -7,11 +7,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/cache"
-	"github.com/rclone/rclone/fs/config/configmap"
-	"github.com/rclone/rclone/fs/filter"
-	"github.com/rclone/rclone/fs/fspath"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/cache"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/filter"
+	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
 )
 
 // getFsName gets an fs name from fsName either from the cache or direct

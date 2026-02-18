@@ -14,9 +14,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/rclone/rclone/fs/config/configmap"
-	"github.com/rclone/rclone/fs/config/configstruct"
-	"github.com/rclone/rclone/fs/fspath"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
 )
 
 // Store the hashes of the overridden config

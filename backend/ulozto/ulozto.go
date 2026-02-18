@@ -17,19 +17,19 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rclone/rclone/backend/ulozto/api"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config"
-	"github.com/rclone/rclone/fs/config/configmap"
-	"github.com/rclone/rclone/fs/config/configstruct"
-	"github.com/rclone/rclone/fs/config/obscure"
-	"github.com/rclone/rclone/fs/fserrors"
-	"github.com/rclone/rclone/fs/fshttp"
-	"github.com/rclone/rclone/fs/hash"
-	"github.com/rclone/rclone/lib/dircache"
-	"github.com/rclone/rclone/lib/encoder"
-	"github.com/rclone/rclone/lib/pacer"
-	"github.com/rclone/rclone/lib/rest"
+	"github.com/wizdom13/SecureCloudEngine/backend/ulozto/api"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/lib/dircache"
+	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
+	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
+	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 )
 
 // TODO Uloz.to only supports file names of 255 characters or less and silently truncates names that are longer.
@@ -122,7 +122,7 @@ func NewFs(ctx context.Context, name, root string, m configmap.Mapper) (fs.Fs, e
 		return nil, err
 	}
 
-	// Strip leading and trailing slashes, see https://github.com/rclone/rclone/issues/7796 for details.
+	// Strip leading and trailing slashes, see https://github.com/wizdom13/SecureCloudEngine/issues/7796 for details.
 	root = strings.Trim(root, "/")
 
 	client := fshttp.NewClient(ctx)

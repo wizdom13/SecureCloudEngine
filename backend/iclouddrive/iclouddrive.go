@@ -15,18 +15,18 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config"
-	"github.com/rclone/rclone/fs/config/configmap"
-	"github.com/rclone/rclone/fs/config/configstruct"
-	"github.com/rclone/rclone/fs/config/obscure"
-	"github.com/rclone/rclone/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
 
-	"github.com/rclone/rclone/backend/iclouddrive/api"
-	"github.com/rclone/rclone/fs/hash"
-	"github.com/rclone/rclone/lib/dircache"
-	"github.com/rclone/rclone/lib/encoder"
-	"github.com/rclone/rclone/lib/pacer"
+	"github.com/wizdom13/SecureCloudEngine/backend/iclouddrive/api"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/lib/dircache"
+	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
+	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
 )
 
 /*

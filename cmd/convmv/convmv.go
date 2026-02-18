@@ -6,11 +6,11 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/rclone/rclone/cmd"
-	"github.com/rclone/rclone/fs/config/flags"
-	"github.com/rclone/rclone/fs/operations"
-	"github.com/rclone/rclone/fs/sync"
-	"github.com/rclone/rclone/lib/transform"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/fs/sync"
+	"github.com/wizdom13/SecureCloudEngine/lib/transform"
 	"github.com/spf13/cobra"
 )
 

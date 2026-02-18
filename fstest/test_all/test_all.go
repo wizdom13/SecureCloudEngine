@@ -20,11 +20,11 @@ import (
 	"strings"
 	"time"
 
-	_ "github.com/rclone/rclone/backend/all" // import all fs
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config/configfile"
-	"github.com/rclone/rclone/fstest/runs"
-	"github.com/rclone/rclone/lib/pacer"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/all" // import all fs
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configfile"
+	"github.com/wizdom13/SecureCloudEngine/fstest/runs"
+	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
 )
 
 func init() {

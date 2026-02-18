@@ -11,10 +11,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/fserrors"
-	"github.com/rclone/rclone/fs/rc"
-	"github.com/rclone/rclone/lib/terminal"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
+	"github.com/wizdom13/SecureCloudEngine/lib/terminal"
 )
 
 const (

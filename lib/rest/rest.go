@@ -19,8 +19,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/lib/readers"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/lib/readers"
 )
 
 // Client contains the info to sustain the API

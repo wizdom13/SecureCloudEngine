@@ -8,13 +8,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/accounting"
-	"github.com/rclone/rclone/fs/asyncreader"
-	"github.com/rclone/rclone/fs/chunkedreader"
-	"github.com/rclone/rclone/fs/fserrors"
-	"github.com/rclone/rclone/lib/ranges"
-	"github.com/rclone/rclone/vfs/vfscommon"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"github.com/wizdom13/SecureCloudEngine/fs/asyncreader"
+	"github.com/wizdom13/SecureCloudEngine/fs/chunkedreader"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/lib/ranges"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 )
 
 // FIXME implement max downloaders

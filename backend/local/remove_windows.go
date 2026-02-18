@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/rclone/rclone/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 	"golang.org/x/sys/windows"
 )
 

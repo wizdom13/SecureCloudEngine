@@ -10,12 +10,12 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/dirtree"
-	"github.com/rclone/rclone/fs/filter"
-	"github.com/rclone/rclone/fs/list"
-	"github.com/rclone/rclone/fs/walk"
-	"github.com/rclone/rclone/lib/transform"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/dirtree"
+	"github.com/wizdom13/SecureCloudEngine/fs/filter"
+	"github.com/wizdom13/SecureCloudEngine/fs/list"
+	"github.com/wizdom13/SecureCloudEngine/fs/walk"
+	"github.com/wizdom13/SecureCloudEngine/lib/transform"
 	"golang.org/x/text/unicode/norm"
 )
 

@@ -12,11 +12,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fstest"
-	"github.com/rclone/rclone/lib/random"
-	"github.com/rclone/rclone/lib/readers"
-	"github.com/rclone/rclone/vfs/vfscommon"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/lib/random"
+	"github.com/wizdom13/SecureCloudEngine/lib/readers"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

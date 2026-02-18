@@ -10,7 +10,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/rclone/rclone/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 var (

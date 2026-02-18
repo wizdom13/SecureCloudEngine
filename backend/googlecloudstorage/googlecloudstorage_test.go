@@ -5,9 +5,9 @@ package googlecloudstorage_test
 import (
 	"testing"
 
-	"github.com/rclone/rclone/backend/googlecloudstorage"
-	"github.com/rclone/rclone/fstest"
-	"github.com/rclone/rclone/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/backend/googlecloudstorage"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

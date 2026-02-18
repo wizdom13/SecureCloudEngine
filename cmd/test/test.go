@@ -2,7 +2,7 @@
 package test
 
 import (
-	"github.com/rclone/rclone/cmd"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
 	"github.com/spf13/cobra"
 )
 

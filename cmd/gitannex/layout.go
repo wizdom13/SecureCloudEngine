@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/rclone/rclone/fs/fspath"
+	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
 )
 
 type layoutMode string

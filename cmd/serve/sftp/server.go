@@ -22,14 +22,14 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/rclone/rclone/cmd/serve/proxy"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config"
-	"github.com/rclone/rclone/lib/env"
-	"github.com/rclone/rclone/lib/file"
-	sdActivation "github.com/rclone/rclone/lib/sdactivation"
-	"github.com/rclone/rclone/vfs"
-	"github.com/rclone/rclone/vfs/vfscommon"
+	"github.com/wizdom13/SecureCloudEngine/cmd/serve/proxy"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/lib/env"
+	"github.com/wizdom13/SecureCloudEngine/lib/file"
+	sdActivation "github.com/wizdom13/SecureCloudEngine/lib/sdactivation"
+	"github.com/wizdom13/SecureCloudEngine/vfs"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 	"golang.org/x/crypto/ssh"
 )
 

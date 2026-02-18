@@ -12,14 +12,14 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/dirtree"
-	"github.com/rclone/rclone/fs/list"
-	"github.com/rclone/rclone/fs/log"
-	"github.com/rclone/rclone/fs/object"
-	"github.com/rclone/rclone/fs/operations"
-	"github.com/rclone/rclone/fs/walk"
-	"github.com/rclone/rclone/vfs/vfscommon"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/dirtree"
+	"github.com/wizdom13/SecureCloudEngine/fs/list"
+	"github.com/wizdom13/SecureCloudEngine/fs/log"
+	"github.com/wizdom13/SecureCloudEngine/fs/object"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/fs/walk"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 	"golang.org/x/text/unicode/norm"
 )
 

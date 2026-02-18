@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rclone/rclone/fstest"
-	"github.com/rclone/rclone/lib/version"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/lib/version"
 	"github.com/stretchr/testify/assert"
 )
 

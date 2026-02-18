@@ -11,10 +11,10 @@ import (
 
 	"github.com/klauspost/compress/zstd"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/accounting"
-	"github.com/rclone/rclone/fs/chunkedreader"
-	"github.com/rclone/rclone/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"github.com/wizdom13/SecureCloudEngine/fs/chunkedreader"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 )
 
 // zstdModeHandler implements compressionModeHandler for zstd

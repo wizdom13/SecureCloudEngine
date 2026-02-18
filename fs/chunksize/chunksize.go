@@ -2,7 +2,7 @@
 package chunksize
 
 import (
-	"github.com/rclone/rclone/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // Calculator calculates the minimum chunk size needed to fit within

@@ -5,12 +5,12 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/rclone/rclone/backend/hasher"
-	"github.com/rclone/rclone/fstest"
-	"github.com/rclone/rclone/fstest/fstests"
-	"github.com/rclone/rclone/lib/kv"
+	"github.com/wizdom13/SecureCloudEngine/backend/hasher"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/lib/kv"
 
-	_ "github.com/rclone/rclone/backend/all" // for integration tests
+	_ "github.com/wizdom13/SecureCloudEngine/backend/all" // for integration tests
 )
 
 // TestIntegration runs integration tests against the remote

@@ -26,16 +26,16 @@ import (
 	"time"
 
 	// Import all the required archivers here
-	_ "github.com/rclone/rclone/backend/archive/squashfs"
-	_ "github.com/rclone/rclone/backend/archive/zip"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/archive/squashfs"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/archive/zip"
 
-	"github.com/rclone/rclone/backend/archive/archiver"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/cache"
-	"github.com/rclone/rclone/fs/config/configmap"
-	"github.com/rclone/rclone/fs/config/configstruct"
-	"github.com/rclone/rclone/fs/fspath"
-	"github.com/rclone/rclone/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/backend/archive/archiver"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/cache"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 )
 
 // Register with Fs
