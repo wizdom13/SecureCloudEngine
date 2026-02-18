@@ -11,8 +11,8 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/rclone/rclone/cmd/test/info/internal"
-	"github.com/rclone/rclone/fs"
+	"github.com/wizdom13/SecureCloudEngine/cmd/test/info/internal"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 func main() {

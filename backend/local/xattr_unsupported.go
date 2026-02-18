@@ -4,7 +4,7 @@
 
 package local
 
-import "github.com/rclone/rclone/fs"
+import "github.com/wizdom13/SecureCloudEngine/fs"
 
 const (
 	xattrSupported = false

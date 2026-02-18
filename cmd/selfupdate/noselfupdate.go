@@ -3,7 +3,7 @@
 package selfupdate
 
 import (
-	"github.com/rclone/rclone/lib/buildinfo"
+	"github.com/wizdom13/SecureCloudEngine/lib/buildinfo"
 )
 
 func init() {

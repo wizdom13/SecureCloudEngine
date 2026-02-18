@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rclone/rclone/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 	"golang.org/x/sync/errgroup"
 	"golang.org/x/text/unicode/norm"
 )

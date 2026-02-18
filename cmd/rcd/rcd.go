@@ -5,13 +5,13 @@ import (
 	"context"
 	"strings"
 
-	"github.com/rclone/rclone/cmd"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/rc"
-	"github.com/rclone/rclone/fs/rc/rcflags"
-	"github.com/rclone/rclone/fs/rc/rcserver"
-	libhttp "github.com/rclone/rclone/lib/http"
-	"github.com/rclone/rclone/lib/systemd"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc/rcflags"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc/rcserver"
+	libhttp "github.com/wizdom13/SecureCloudEngine/lib/http"
+	"github.com/wizdom13/SecureCloudEngine/lib/systemd"
 	"github.com/spf13/cobra"
 )
 

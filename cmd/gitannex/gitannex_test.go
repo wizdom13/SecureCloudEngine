@@ -15,10 +15,10 @@ import (
 
 	// Without this import, the various backends would be unavailable. It looks
 	// unused, but the act of importing runs the package's `init()` function.
-	_ "github.com/rclone/rclone/backend/all"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/all"
 
-	"github.com/rclone/rclone/fs/fspath"
-	"github.com/rclone/rclone/fstest"
+	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

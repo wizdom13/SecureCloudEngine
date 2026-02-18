@@ -6,17 +6,17 @@ import (
 	"testing"
 
 	"github.com/mholt/archives"
-	_ "github.com/rclone/rclone/backend/local"
-	_ "github.com/rclone/rclone/backend/memory"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/operations"
-	"github.com/rclone/rclone/fstest"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/memory"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/rclone/rclone/cmd/archive/create"
-	"github.com/rclone/rclone/cmd/archive/extract"
-	"github.com/rclone/rclone/cmd/archive/list"
+	"github.com/wizdom13/SecureCloudEngine/cmd/archive/create"
+	"github.com/wizdom13/SecureCloudEngine/cmd/archive/extract"
+	"github.com/wizdom13/SecureCloudEngine/cmd/archive/list"
 )
 
 var (

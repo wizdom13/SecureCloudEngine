@@ -7,8 +7,8 @@ package hdfs_test
 import (
 	"testing"
 
-	"github.com/rclone/rclone/backend/hdfs"
-	"github.com/rclone/rclone/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/backend/hdfs"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

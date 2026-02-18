@@ -3,8 +3,8 @@ package policy
 import (
 	"context"
 
-	"github.com/rclone/rclone/backend/union/upstream"
-	"github.com/rclone/rclone/fs"
+	"github.com/wizdom13/SecureCloudEngine/backend/union/upstream"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 func init() {

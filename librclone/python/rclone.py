@@ -105,4 +105,4 @@ class SecureCloudEngine():
         if os.path.exists(shared_object):
             return
         print("Building "+shared_object)
-        subprocess.check_call(["go", "build", "--buildmode=c-shared", "-o", shared_object, "github.com/rclone/rclone/librclone"])
+        subprocess.check_call(["go", "build", "--buildmode=c-shared", "-o", shared_object, "github.com/wizdom13/SecureCloudEngine/librclone"])

@@ -5,7 +5,7 @@ import (
 	"maps"
 	"sync"
 
-	"github.com/rclone/rclone/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // inProgress holds a synchronized map of in progress transfers

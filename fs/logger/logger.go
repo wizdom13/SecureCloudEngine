@@ -2,10 +2,10 @@
 package logger
 
 import (
-	_ "github.com/rclone/rclone/backend/all" // import all backends
-	"github.com/rclone/rclone/cmd"
-	_ "github.com/rclone/rclone/cmd/all"    // import all commands
-	_ "github.com/rclone/rclone/lib/plugin" // import plugins
+	_ "github.com/wizdom13/SecureCloudEngine/backend/all" // import all backends
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	_ "github.com/wizdom13/SecureCloudEngine/cmd/all"    // import all commands
+	_ "github.com/wizdom13/SecureCloudEngine/lib/plugin" // import plugins
 )
 
 // Main enables the testscript package. See:
