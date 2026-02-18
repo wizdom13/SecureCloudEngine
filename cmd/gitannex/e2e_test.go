@@ -19,7 +19,19 @@ import (
 	"github.com/rclone/rclone/lib/buildinfo"
 )
 
-// checkSecureCloudEngineBinaryVersion runs whichever rclone is on the PATH and checks
+// findSecureCloudEngineBinary returns the preferred SecureCloudEngine CLI binary from PATH.
+// It checks "sce" first and falls back to "rclone" for compatibility.
+func findSecureCloudEngineBinary() (string, error) {
+	if path, err := exec.LookPath("sce"); err == nil {
+		return path, nil
+	}
+	if path, err := exec.LookPath("rclone"); err == nil {
+		return path, nil
+	}
+	return "", errors.New("neither sce nor rclone was found in $PATH")
+}
+
+// checkSecureCloudEngineBinaryVersion runs whichever SecureCloudEngine binary is on the PATH and checks
 // whether it reports a version that matches the test's expectations. Returns
 // nil when the version is the expected version, otherwise returns an error.
 func checkSecureCloudEngineBinaryVersion(t *testing.T) error {
@@ -30,9 +42,16 @@ func checkSecureCloudEngineBinaryVersion(t *testing.T) error {
 		GoTags  string
 	}
 
-	cmd := exec.Command("rclone", "rc", "--loopback", "core/version")
+	binaryPath, err := findSecureCloudEngineBinary()
+	if err != nil {
+		return err
+	}
+
+	cmd := exec.Command(binaryPath, "rc", "--loopback", "core/version")
 	stdout, err := cmd.Output()
-	require.NoError(t, err)
+	if err != nil {
+		return err
+	}
 
 	var parsed versionInfo
 	if err := json.Unmarshal(stdout, &parsed); err != nil {
@@ -132,7 +151,7 @@ func makeE2eTestingContext(t *testing.T) e2eTestingContext {
 // Install the symlink that enables git-annex to invoke "rclone gitannex"
 // without explicitly specifying the subcommand.
 func (e *e2eTestingContext) installSecureCloudEngineGitannexSymlink(t *testing.T) {
-	rcloneBinaryPath, err := exec.LookPath("rclone")
+	rcloneBinaryPath, err := findSecureCloudEngineBinary()
 	require.NoError(t, err)
 	require.NoError(t, os.Symlink(
 		rcloneBinaryPath,
