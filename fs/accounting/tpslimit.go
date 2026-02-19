@@ -3,7 +3,7 @@ package accounting
 import (
 	"context"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 	"golang.org/x/time/rate"
 )
 

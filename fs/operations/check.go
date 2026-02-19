@@ -13,13 +13,13 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
-	"github.com/wizdom13/SecureCloudEngine/fs/filter"
-	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/march"
-	"github.com/wizdom13/SecureCloudEngine/lib/readers"
+	"/fs"
+	"/fs/accounting"
+	"/fs/filter"
+	"/fs/fserrors"
+	"/fs/hash"
+	"/fs/march"
+	"/lib/readers"
 	"golang.org/x/text/unicode/norm"
 )
 

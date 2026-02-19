@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"/fs"
+	"/fs/operations"
 )
 
 // WriteFileHandle is an open for write handle on a File

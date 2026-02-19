@@ -5,9 +5,9 @@ import (
 	"context"
 	"os"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd"
-	"github.com/wizdom13/SecureCloudEngine/cmd/ls/lshelp"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"/cmd"
+	"/cmd/ls/lshelp"
+	"/fs/operations"
 	"github.com/spf13/cobra"
 )
 

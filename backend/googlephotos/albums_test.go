@@ -3,7 +3,7 @@ package googlephotos
 import (
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/googlephotos/api"
+	"/backend/googlephotos/api"
 	"github.com/stretchr/testify/assert"
 )
 

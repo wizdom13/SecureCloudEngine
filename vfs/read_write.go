@@ -6,9 +6,9 @@ import (
 	"os"
 	"sync"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/log"
-	"github.com/wizdom13/SecureCloudEngine/vfs/vfscache"
+	"/fs"
+	"/fs/log"
+	"/vfs/vfscache"
 )
 
 // RWFileHandle is a handle that can be open for read and write.

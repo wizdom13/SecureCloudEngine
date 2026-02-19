@@ -10,8 +10,8 @@ import (
 
 	fusefs "github.com/hanwen/go-fuse/v2/fs"
 	"github.com/hanwen/go-fuse/v2/fuse"
-	"github.com/wizdom13/SecureCloudEngine/fs/log"
-	"github.com/wizdom13/SecureCloudEngine/vfs"
+	"/fs/log"
+	"/vfs"
 )
 
 // FileHandle is a resource identifier for opened files. Usually, a

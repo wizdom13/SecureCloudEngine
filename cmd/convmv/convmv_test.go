@@ -10,14 +10,14 @@ import (
 	"strings"
 	"testing"
 
-	_ "github.com/wizdom13/SecureCloudEngine/backend/all" // import all backends
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/filter"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/fs/sync"
-	"github.com/wizdom13/SecureCloudEngine/fs/walk"
-	"github.com/wizdom13/SecureCloudEngine/fstest"
-	"github.com/wizdom13/SecureCloudEngine/lib/transform"
+	_ "/backend/all" // import all backends
+	"/fs"
+	"/fs/filter"
+	"/fs/operations"
+	"/fs/sync"
+	"/fs/walk"
+	"/fstest"
+	"/lib/transform"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/text/unicode/norm"

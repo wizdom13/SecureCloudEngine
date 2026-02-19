@@ -9,9 +9,9 @@ import (
 	"path"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/lib/bucket"
+	"/fs"
+	"/fs/hash"
+	"/lib/bucket"
 	"golang.org/x/text/unicode/norm"
 
 	"storj.io/uplink"

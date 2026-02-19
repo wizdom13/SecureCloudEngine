@@ -5,9 +5,9 @@ import (
 	"errors"
 	"log"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd/bisync/bilib"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/rc"
+	"/cmd/bisync/bilib"
+	"/fs"
+	"/fs/rc"
 )
 
 func init() {

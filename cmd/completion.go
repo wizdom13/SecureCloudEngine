@@ -7,10 +7,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/cache"
-	"github.com/wizdom13/SecureCloudEngine/fs/config"
-	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
+	"/fs"
+	"/fs/cache"
+	"/fs/config"
+	"/fs/fspath"
 	"github.com/spf13/cobra"
 )
 

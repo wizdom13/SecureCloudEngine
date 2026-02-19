@@ -9,14 +9,14 @@ import (
 	mutex "sync" // renamed as "sync" already in use
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd/bisync/bilib"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
-	"github.com/wizdom13/SecureCloudEngine/fs/filter"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/fs/sync"
-	"github.com/wizdom13/SecureCloudEngine/lib/terminal"
+	"/cmd/bisync/bilib"
+	"/fs"
+	"/fs/accounting"
+	"/fs/filter"
+	"/fs/hash"
+	"/fs/operations"
+	"/fs/sync"
+	"/lib/terminal"
 )
 
 // Results represents a pair of synced files, as reported by the LoggerFn

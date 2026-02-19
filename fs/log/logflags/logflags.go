@@ -2,8 +2,8 @@
 package logflags
 
 import (
-	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
-	"github.com/wizdom13/SecureCloudEngine/fs/log"
+	"/fs/config/flags"
+	"/fs/log"
 	"github.com/spf13/pflag"
 )
 

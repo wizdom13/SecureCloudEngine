@@ -5,8 +5,8 @@ import (
 	"errors"
 	"os"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/rc"
+	"/fs"
+	"/fs/rc"
 )
 
 func init() {

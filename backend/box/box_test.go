@@ -4,8 +4,8 @@ package box_test
 import (
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/box"
-	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	"/backend/box"
+	"/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

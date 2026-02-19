@@ -13,8 +13,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"/fs"
+	"/fs/operations"
 )
 
 var uploaderMap = make(map[string]*backgroundWriter)

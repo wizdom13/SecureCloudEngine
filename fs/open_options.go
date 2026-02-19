@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"/fs/hash"
 )
 
 // OpenOption is an interface describing options for Open

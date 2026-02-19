@@ -8,11 +8,11 @@ import (
 	"io"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
-	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
-	"github.com/wizdom13/SecureCloudEngine/lib/multipart"
-	"github.com/wizdom13/SecureCloudEngine/lib/pool"
+	"/fs"
+	"/fs/accounting"
+	"/lib/atexit"
+	"/lib/multipart"
+	"/lib/pool"
 	"golang.org/x/sync/errgroup"
 )
 

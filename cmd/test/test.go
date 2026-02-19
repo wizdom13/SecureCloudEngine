@@ -2,7 +2,7 @@
 package test
 
 import (
-	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"/cmd"
 	"github.com/spf13/cobra"
 )
 

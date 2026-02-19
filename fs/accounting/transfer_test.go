@@ -6,9 +6,9 @@ import (
 	"io"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/rc"
-	"github.com/wizdom13/SecureCloudEngine/fstest/mockfs"
-	"github.com/wizdom13/SecureCloudEngine/fstest/mockobject"
+	"/fs/rc"
+	"/fstest/mockfs"
+	"/fstest/mockobject"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

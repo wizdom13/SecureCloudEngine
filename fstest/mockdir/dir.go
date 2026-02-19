@@ -4,7 +4,7 @@ package mockdir
 import (
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 // New makes a mock directory object with the name given

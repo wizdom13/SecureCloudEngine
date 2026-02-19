@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 const metadataTimeFormat = time.RFC3339Nano

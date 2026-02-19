@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
-	"github.com/wizdom13/SecureCloudEngine/lib/rest"
+	"/fs"
+	"/fs/accounting"
+	"/lib/rest"
 )
 
 // DirEntry is a directory entry

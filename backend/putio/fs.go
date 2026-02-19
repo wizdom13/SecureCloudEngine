@@ -15,16 +15,16 @@ import (
 	"time"
 
 	"github.com/putdotio/go-putio/putio"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
-	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/lib/dircache"
-	"github.com/wizdom13/SecureCloudEngine/lib/oauthutil"
-	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
-	"github.com/wizdom13/SecureCloudEngine/lib/random"
-	"github.com/wizdom13/SecureCloudEngine/lib/readers"
+	"/fs"
+	"/fs/config/configmap"
+	"/fs/config/configstruct"
+	"/fs/fshttp"
+	"/fs/hash"
+	"/lib/dircache"
+	"/lib/oauthutil"
+	"/lib/pacer"
+	"/lib/random"
+	"/lib/readers"
 )
 
 // Fs represents a remote Putio server
@@ -119,7 +119,7 @@ func NewFs(ctx context.Context, name, root string, m configmap.Mapper) (f fs.Fs,
 		}
 		// XXX: update the old f here instead of returning tempF, since
 		// `features` were already filled with functions having *f as a receiver.
-		// See https://github.com/wizdom13/SecureCloudEngine/issues/2182
+		// See https:///issues/2182
 		p.dirCache = tempF.dirCache
 		p.root = tempF.root
 		return p, fs.ErrorIsFile

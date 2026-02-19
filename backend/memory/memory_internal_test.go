@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"testing"
 
-	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/fstest"
-	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	_ "/backend/local"
+	"/fs/operations"
+	"/fstest"
+	"/fstest/fstests"
 	"github.com/stretchr/testify/require"
 )
 

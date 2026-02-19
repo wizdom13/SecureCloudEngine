@@ -17,10 +17,10 @@ import (
 	"sync"
 
 	billy "github.com/go-git/go-billy/v5"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config"
-	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
-	"github.com/wizdom13/SecureCloudEngine/lib/file"
+	"/fs"
+	"/fs/config"
+	"/lib/encoder"
+	"/lib/file"
 	"github.com/willscott/go-nfs"
 	nfshelper "github.com/willscott/go-nfs/helpers"
 )

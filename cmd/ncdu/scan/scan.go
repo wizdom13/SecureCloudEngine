@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/walk"
+	"/fs"
+	"/fs/walk"
 )
 
 // Dir represents a directory found in the remote

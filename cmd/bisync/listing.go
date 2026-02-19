@@ -16,12 +16,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd/bisync/bilib"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
-	"github.com/wizdom13/SecureCloudEngine/fs/filter"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"/cmd/bisync/bilib"
+	"/fs"
+	"/fs/accounting"
+	"/fs/filter"
+	"/fs/hash"
+	"/fs/operations"
 )
 
 // ListingHeader defines first line of a listing
@@ -610,7 +610,7 @@ func (b *bisyncRun) modifyListing(ctx context.Context, src fs.Fs, dst fs.Fs, res
 			}
 			if srcNewName != "" { // if it was renamed and not deleted
 				if new == nil { // should not happen. log error and debug info
-					b.handleErr(b.renames, "internal error", fmt.Errorf("missing info for %q. Please report a bug at https://github.com/wizdom13/SecureCloudEngine/issues", srcNewName), true, true)
+					b.handleErr(b.renames, "internal error", fmt.Errorf("missing info for %q. Please report a bug at https:///issues", srcNewName), true, true)
 					fs.PrettyPrint(srcList, "srcList for debugging", fs.LogLevelNotice)
 					continue
 				}

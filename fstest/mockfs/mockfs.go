@@ -9,9 +9,9 @@ import (
 	"path"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"/fs"
+	"/fs/config/configmap"
+	"/fs/hash"
 )
 
 // Register with Fs

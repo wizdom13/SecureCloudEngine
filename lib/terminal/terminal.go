@@ -10,7 +10,7 @@ import (
 	"sync"
 
 	colorable "github.com/mattn/go-colorable"
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 // VT100 codes

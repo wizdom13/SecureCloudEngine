@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/googlephotos/api"
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/backend/googlephotos/api"
+	"/fs"
 )
 
 // lister describes the subset of the interfaces on Fs needed for the

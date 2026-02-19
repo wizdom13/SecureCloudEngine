@@ -8,12 +8,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
-	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
-	"github.com/wizdom13/SecureCloudEngine/fs/object"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"/cmd"
+	"/fs"
+	"/fs/config/flags"
+	"/fs/fspath"
+	"/fs/object"
+	"/fs/operations"
 	"github.com/spf13/cobra"
 )
 

@@ -16,11 +16,11 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
-	"github.com/wizdom13/SecureCloudEngine/fs/cache"
-	"github.com/wizdom13/SecureCloudEngine/fs/filter"
-	"github.com/wizdom13/SecureCloudEngine/fs/rc"
+	"/fs"
+	"/fs/accounting"
+	"/fs/cache"
+	"/fs/filter"
+	"/fs/rc"
 	"golang.org/x/sync/errgroup"
 )
 

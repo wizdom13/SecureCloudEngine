@@ -13,8 +13,8 @@ import (
 	_ "net/http/pprof" // install the pprof http handlers
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	libhttp "github.com/wizdom13/SecureCloudEngine/lib/http"
+	"/fs"
+	libhttp "/lib/http"
 )
 
 // OptionsInfo describes the Options in use

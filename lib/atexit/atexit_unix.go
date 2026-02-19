@@ -6,7 +6,7 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/wizdom13/SecureCloudEngine/lib/exitcode"
+	"/lib/exitcode"
 )
 
 var exitSignals = []os.Signal{syscall.SIGINT, syscall.SIGTERM} // Not syscall.SIGQUIT as we want the default behaviour

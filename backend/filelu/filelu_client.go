@@ -10,10 +10,10 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/filelu/api"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
-	"github.com/wizdom13/SecureCloudEngine/lib/rest"
+	"/backend/filelu/api"
+	"/fs"
+	"/fs/fserrors"
+	"/lib/rest"
 )
 
 // multipartInit starts a new multipart upload and returns server details.

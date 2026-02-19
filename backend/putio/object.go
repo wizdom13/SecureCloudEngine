@@ -11,9 +11,9 @@ import (
 	"time"
 
 	"github.com/putdotio/go-putio/putio"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"/fs"
+	"/fs/fserrors"
+	"/fs/hash"
 )
 
 // Object describes a Putio object

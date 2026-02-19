@@ -13,8 +13,8 @@ import (
 	"testing/iotest"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/lib/israce"
-	"github.com/wizdom13/SecureCloudEngine/lib/readers"
+	"/lib/israce"
+	"/lib/readers"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

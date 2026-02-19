@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
-	"github.com/wizdom13/SecureCloudEngine/fs/list"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/fstest/runs"
+	"/fs"
+	"/fs/fspath"
+	"/fs/list"
+	"/fs/operations"
+	"/fstest/runs"
 )
 
 // MatchTestRemote matches the remote names used for testing (copied

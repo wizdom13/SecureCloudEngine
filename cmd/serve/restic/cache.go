@@ -4,7 +4,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 // cache implements a simple object cache

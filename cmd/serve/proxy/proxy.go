@@ -13,13 +13,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/cache"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
-	libcache "github.com/wizdom13/SecureCloudEngine/lib/cache"
-	"github.com/wizdom13/SecureCloudEngine/vfs"
-	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
+	"/fs"
+	"/fs/cache"
+	"/fs/config/configmap"
+	"/fs/config/obscure"
+	libcache "/lib/cache"
+	"/vfs"
+	"/vfs/vfscommon"
 )
 
 // Help contains text describing how to use the proxy
@@ -35,7 +35,7 @@ together, if |--auth-proxy| is set the authorized keys option will be
 ignored.
 
 There is an example program
-[bin/test_proxy.py](https://github.com/wizdom13/SecureCloudEngine/blob/master/bin/test_proxy.py)
+[bin/test_proxy.py](https:///blob/master/bin/test_proxy.py)
 in the rclone source code.
 
 The program's job is to take a |user| and |pass| on the input and turn

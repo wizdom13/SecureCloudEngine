@@ -18,12 +18,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
-	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/lib/rest"
+	"/fs"
+	"/fs/config/configmap"
+	"/fs/config/configstruct"
+	"/fs/fshttp"
+	"/fs/hash"
+	"/lib/rest"
 	"golang.org/x/net/html"
 )
 

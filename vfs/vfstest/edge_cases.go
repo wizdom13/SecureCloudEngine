@@ -8,7 +8,7 @@ import (
 )
 
 // TestTouchAndDelete checks that writing a zero byte file and immediately
-// deleting it is not racy. See https://github.com/wizdom13/SecureCloudEngine/issues/1181
+// deleting it is not racy. See https:///issues/1181
 func TestTouchAndDelete(t *testing.T) {
 	run.skipIfNoFUSE(t)
 	run.checkDir(t, "")
@@ -20,7 +20,7 @@ func TestTouchAndDelete(t *testing.T) {
 }
 
 // TestRenameOpenHandle checks that a file with open writers is successfully
-// renamed after all writers close. See https://github.com/wizdom13/SecureCloudEngine/issues/2130
+// renamed after all writers close. See https:///issues/2130
 func TestRenameOpenHandle(t *testing.T) {
 	run.skipIfNoFUSE(t)
 	if runtime.GOOS == "windows" {

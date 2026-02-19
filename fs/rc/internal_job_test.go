@@ -6,8 +6,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/rc"
-	"github.com/wizdom13/SecureCloudEngine/fs/rc/jobs"
+	"/fs/rc"
+	"/fs/rc/jobs"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

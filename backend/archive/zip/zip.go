@@ -12,14 +12,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/archive/archiver"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/dirtree"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/log"
-	"github.com/wizdom13/SecureCloudEngine/lib/readers"
-	"github.com/wizdom13/SecureCloudEngine/vfs"
-	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
+	"/backend/archive/archiver"
+	"/fs"
+	"/fs/dirtree"
+	"/fs/hash"
+	"/fs/log"
+	"/lib/readers"
+	"/vfs"
+	"/vfs/vfscommon"
 )
 
 func init() {

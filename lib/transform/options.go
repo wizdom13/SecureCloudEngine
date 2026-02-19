@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 type transform struct {

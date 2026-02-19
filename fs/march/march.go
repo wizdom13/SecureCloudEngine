@@ -10,12 +10,12 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/dirtree"
-	"github.com/wizdom13/SecureCloudEngine/fs/filter"
-	"github.com/wizdom13/SecureCloudEngine/fs/list"
-	"github.com/wizdom13/SecureCloudEngine/fs/walk"
-	"github.com/wizdom13/SecureCloudEngine/lib/transform"
+	"/fs"
+	"/fs/dirtree"
+	"/fs/filter"
+	"/fs/list"
+	"/fs/walk"
+	"/lib/transform"
 	"golang.org/x/text/unicode/norm"
 )
 

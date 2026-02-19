@@ -14,8 +14,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
+	"/fs"
+	"/fs/fspath"
 )
 
 var (

@@ -7,7 +7,7 @@ package log
 import (
 	"runtime"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 // Starts syslog if configured, returns true if it was started

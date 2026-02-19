@@ -10,10 +10,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd/bisync/bilib"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/filter"
-	"github.com/wizdom13/SecureCloudEngine/lib/terminal"
+	"/cmd/bisync/bilib"
+	"/fs"
+	"/fs/filter"
+	"/lib/terminal"
 	"golang.org/x/text/unicode/norm"
 )
 

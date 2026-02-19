@@ -4,11 +4,11 @@ package union_test
 import (
 	"testing"
 
-	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
-	_ "github.com/wizdom13/SecureCloudEngine/backend/memory"
-	"github.com/wizdom13/SecureCloudEngine/backend/union"
-	"github.com/wizdom13/SecureCloudEngine/fstest"
-	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	_ "/backend/local"
+	_ "/backend/memory"
+	"/backend/union"
+	"/fstest"
+	"/fstest/fstests"
 )
 
 var (

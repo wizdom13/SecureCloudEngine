@@ -13,7 +13,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 // Implement the sshClient interface for external ssh programs

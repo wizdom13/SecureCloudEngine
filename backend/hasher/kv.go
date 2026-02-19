@@ -10,10 +10,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/lib/kv"
+	"/fs"
+	"/fs/hash"
+	"/fs/operations"
+	"/lib/kv"
 )
 
 const (

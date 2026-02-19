@@ -8,7 +8,7 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 // About gets quota information

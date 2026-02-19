@@ -16,7 +16,7 @@ import (
 	"hash"
 	"io"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/hidrive/hidrivehash/internal"
+	"/backend/hidrive/hidrivehash/internal"
 )
 
 const (

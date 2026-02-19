@@ -9,11 +9,11 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
-	"github.com/wizdom13/SecureCloudEngine/fs/filter"
+	"/cmd"
+	"/fs"
+	"/fs/config"
+	"/fs/config/flags"
+	"/fs/filter"
 	"github.com/spf13/cobra"
 )
 

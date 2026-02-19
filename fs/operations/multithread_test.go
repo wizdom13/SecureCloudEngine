@@ -9,15 +9,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/object"
-	"github.com/wizdom13/SecureCloudEngine/fstest/mockfs"
-	"github.com/wizdom13/SecureCloudEngine/fstest/mockobject"
-	"github.com/wizdom13/SecureCloudEngine/lib/random"
+	"/fs/accounting"
+	"/fs/hash"
+	"/fs/object"
+	"/fstest/mockfs"
+	"/fstest/mockobject"
+	"/lib/random"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"/fs"
+	"/fstest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

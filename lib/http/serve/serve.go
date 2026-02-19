@@ -8,8 +8,8 @@ import (
 	"path"
 	"strconv"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"/fs"
+	"/fs/accounting"
 )
 
 // Object serves an fs.Object via HEAD or GET

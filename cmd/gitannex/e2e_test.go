@@ -14,9 +14,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fstest"
-	"github.com/wizdom13/SecureCloudEngine/lib/buildinfo"
+	"/fs"
+	"/fstest"
+	"/lib/buildinfo"
 )
 
 // findSecureCloudEngineBinary returns the preferred SecureCloudEngine CLI binary from PATH.

@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"path"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
-	"github.com/wizdom13/SecureCloudEngine/fs/cache"
-	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/lib/kv"
+	"/fs"
+	"/fs/accounting"
+	"/fs/cache"
+	"/fs/fspath"
+	"/fs/hash"
+	"/fs/operations"
+	"/lib/kv"
 )
 
 // Command the backend to run a named command

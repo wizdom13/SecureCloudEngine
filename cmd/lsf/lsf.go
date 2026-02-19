@@ -7,12 +7,12 @@ import (
 	"io"
 	"os"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd"
-	"github.com/wizdom13/SecureCloudEngine/cmd/ls/lshelp"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"/cmd"
+	"/cmd/ls/lshelp"
+	"/fs"
+	"/fs/config/flags"
+	"/fs/hash"
+	"/fs/operations"
 	"github.com/spf13/cobra"
 )
 

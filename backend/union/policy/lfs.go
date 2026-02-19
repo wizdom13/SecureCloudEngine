@@ -3,8 +3,8 @@ package policy
 import (
 	"context"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/union/upstream"
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/backend/union/upstream"
+	"/fs"
 )
 
 func init() {

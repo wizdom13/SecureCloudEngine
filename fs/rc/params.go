@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 // Params is the input and output type for the Func

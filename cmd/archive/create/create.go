@@ -15,14 +15,14 @@ import (
 	"time"
 
 	"github.com/mholt/archives"
-	"github.com/wizdom13/SecureCloudEngine/cmd"
-	"github.com/wizdom13/SecureCloudEngine/cmd/archive"
-	"github.com/wizdom13/SecureCloudEngine/cmd/archive/files"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
-	"github.com/wizdom13/SecureCloudEngine/fs/filter"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/fs/walk"
+	"/cmd"
+	"/cmd/archive"
+	"/cmd/archive/files"
+	"/fs"
+	"/fs/config/flags"
+	"/fs/filter"
+	"/fs/operations"
+	"/fs/walk"
 	"github.com/spf13/cobra"
 )
 

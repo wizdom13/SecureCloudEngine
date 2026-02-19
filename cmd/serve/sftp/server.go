@@ -22,14 +22,14 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd/serve/proxy"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config"
-	"github.com/wizdom13/SecureCloudEngine/lib/env"
-	"github.com/wizdom13/SecureCloudEngine/lib/file"
-	sdActivation "github.com/wizdom13/SecureCloudEngine/lib/sdactivation"
-	"github.com/wizdom13/SecureCloudEngine/vfs"
-	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
+	"/cmd/serve/proxy"
+	"/fs"
+	"/fs/config"
+	"/lib/env"
+	"/lib/file"
+	sdActivation "/lib/sdactivation"
+	"/vfs"
+	"/vfs/vfscommon"
 	"golang.org/x/crypto/ssh"
 )
 

@@ -12,11 +12,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/union/common"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/cache"
-	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"/backend/union/common"
+	"/fs"
+	"/fs/cache"
+	"/fs/fspath"
+	"/fs/operations"
 )
 
 var (

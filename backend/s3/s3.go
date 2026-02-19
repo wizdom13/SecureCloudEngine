@@ -44,26 +44,26 @@ import (
 	"golang.org/x/net/http/httpguts"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
-	"github.com/wizdom13/SecureCloudEngine/fs/chunksize"
-	"github.com/wizdom13/SecureCloudEngine/fs/config"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
-	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
-	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/list"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
-	"github.com/wizdom13/SecureCloudEngine/lib/bucket"
-	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
-	"github.com/wizdom13/SecureCloudEngine/lib/multipart"
-	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
-	"github.com/wizdom13/SecureCloudEngine/lib/pool"
-	"github.com/wizdom13/SecureCloudEngine/lib/readers"
-	"github.com/wizdom13/SecureCloudEngine/lib/rest"
-	"github.com/wizdom13/SecureCloudEngine/lib/version"
+	"/fs"
+	"/fs/accounting"
+	"/fs/chunksize"
+	"/fs/config"
+	"/fs/config/configmap"
+	"/fs/config/configstruct"
+	"/fs/fserrors"
+	"/fs/fshttp"
+	"/fs/hash"
+	"/fs/list"
+	"/fs/operations"
+	"/lib/atexit"
+	"/lib/bucket"
+	"/lib/encoder"
+	"/lib/multipart"
+	"/lib/pacer"
+	"/lib/pool"
+	"/lib/readers"
+	"/lib/rest"
+	"/lib/version"
 )
 
 // Register with Fs
@@ -549,7 +549,7 @@ There is currently an unsolved issue with the s3 (specifically minio) backend
 and HTTP/2.  HTTP/2 is enabled by default for the s3 backend but can be
 disabled here.  When the issue is solved this flag will be removed.
 
-See: https://github.com/wizdom13/SecureCloudEngine/issues/4673, https://github.com/wizdom13/SecureCloudEngine/issues/3631
+See: https:///issues/4673, https:///issues/3631
 
 `,
 		}, {
@@ -2187,7 +2187,7 @@ func (f *Fs) list(ctx context.Context, opt listOpt, fn listFn) error {
 	// it doesn't encode CommonPrefixes.
 	// See: https://tracker.ceph.com/issues/41870
 	//
-	// This does not work under IBM COS also: See https://github.com/wizdom13/SecureCloudEngine/issues/3345
+	// This does not work under IBM COS also: See https:///issues/3345
 	// though maybe it does on some versions.
 	//
 	// This does work with minio but was only added relatively recently

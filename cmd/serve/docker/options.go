@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
-	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
-	"github.com/wizdom13/SecureCloudEngine/fs/rc"
-	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
+	"/cmd/mountlib"
+	"/fs"
+	"/fs/config/configmap"
+	"/fs/config/configstruct"
+	"/fs/fspath"
+	"/fs/rc"
+	"/vfs/vfscommon"
 )
 
 // applyOptions configures volume from request options.

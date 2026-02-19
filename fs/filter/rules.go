@@ -8,7 +8,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 // RulesOpt is configuration for a rule set

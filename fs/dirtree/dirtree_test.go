@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fstest/mockdir"
-	"github.com/wizdom13/SecureCloudEngine/fstest/mockobject"
+	"/fstest/mockdir"
+	"/fstest/mockobject"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -23,30 +23,30 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd/bisync"
-	"github.com/wizdom13/SecureCloudEngine/cmd/bisync/bilib"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
-	"github.com/wizdom13/SecureCloudEngine/fs/cache"
-	"github.com/wizdom13/SecureCloudEngine/fs/filter"
-	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/object"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/fs/sync"
-	"github.com/wizdom13/SecureCloudEngine/fs/walk"
-	"github.com/wizdom13/SecureCloudEngine/fstest"
-	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
-	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
-	"github.com/wizdom13/SecureCloudEngine/lib/random"
-	"github.com/wizdom13/SecureCloudEngine/lib/terminal"
+	"/cmd/bisync"
+	"/cmd/bisync/bilib"
+	"/fs"
+	"/fs/accounting"
+	"/fs/cache"
+	"/fs/filter"
+	"/fs/fspath"
+	"/fs/hash"
+	"/fs/object"
+	"/fs/operations"
+	"/fs/sync"
+	"/fs/walk"
+	"/fstest"
+	"/lib/atexit"
+	"/lib/encoder"
+	"/lib/random"
+	"/lib/terminal"
 	"golang.org/x/text/unicode/norm"
 
 	"github.com/pmezard/go-difflib/difflib"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	_ "github.com/wizdom13/SecureCloudEngine/backend/all" // for integration tests
+	_ "/backend/all" // for integration tests
 )
 
 const (
@@ -67,8 +67,8 @@ var initDate = time.Date(2000, time.January, 1, 0, 0, 0, 0, bisync.TZ)
 // go test ./cmd/bisync -remote local -case extended_filenames
 // go run ./fstest/test_all -run '^TestBisync.*$' -timeout 3h -verbose -maxtries 5
 // go run ./fstest/test_all -remotes local,TestCrypt:,TestDrive:,TestOneDrive:,TestOneDriveBusiness:,TestDropbox:,TestCryptDrive:,TestOpenDrive:,TestChunker:,:memory:,TestCryptNoEncryption:,TestCombine:DirA,TestFTPSecureCloudEngine:,TestWebdavSecureCloudEngine:,TestS3SecureCloudEngine:,TestSFTPSecureCloudEngine:,TestSFTPSecureCloudEngineSSH:,TestNextcloud:,TestChunkerNometaLocal:,TestChunkerChunk3bLocal:,TestChunkerLocal:,TestChunkerChunk3bNometaLocal:,TestStorj: -run '^TestBisync.*$' -timeout 3h -verbose -maxtries 5
-// go test -timeout 3h -run '^TestBisync.*$' github.com/wizdom13/SecureCloudEngine/cmd/bisync -remote TestDrive:Bisync -v
-// go test -timeout 3h -run '^TestBisyncRemoteRemote/basic$' github.com/wizdom13/SecureCloudEngine/cmd/bisync -remote TestDropbox:Bisync -v
+// go test -timeout 3h -run '^TestBisync.*$' /cmd/bisync -remote TestDrive:Bisync -v
+// go test -timeout 3h -run '^TestBisyncRemoteRemote/basic$' /cmd/bisync -remote TestDropbox:Bisync -v
 // TestFTPProftpd:,TestFTPPureftpd:,TestFTPSecureCloudEngine:,TestFTPVsftpd:,TestHdfs:,TestS3Minio:,TestS3MinioEdge:,TestS3SecureCloudEngine:,TestSeafile:,TestSeafileEncrypted:,TestSeafileV6:,TestSFTPOpenssh:,TestSFTPSecureCloudEngine:,TestSFTPSecureCloudEngineSSH:,TestSia:,TestSwiftAIO:,TestWebdavNextcloud:,TestWebdavOwncloud:,TestWebdavSecureCloudEngine:
 
 // logReplacements make modern test logs comparable with golden dir.
@@ -981,17 +981,17 @@ func (b *bisyncTest) checkPreReqs(ctx context.Context, opt *bisync.Options) (con
 		fs.GetConfig(ctx).RefreshTimes = true // https://rclone.org/bisync/#notes-about-testing
 	}
 	if strings.HasPrefix(b.fs1.String(), "Dropbox") {
-		b.fs1.Features().Disable("Copy") // https://github.com/wizdom13/SecureCloudEngine/issues/6199#issuecomment-1570366202
+		b.fs1.Features().Disable("Copy") // https:///issues/6199#issuecomment-1570366202
 	}
 	if strings.HasPrefix(b.fs2.String(), "Dropbox") {
-		b.fs2.Features().Disable("Copy") // https://github.com/wizdom13/SecureCloudEngine/issues/6199#issuecomment-1570366202
+		b.fs2.Features().Disable("Copy") // https:///issues/6199#issuecomment-1570366202
 	}
 	if strings.HasPrefix(b.fs1.String(), "OneDrive") {
-		b.fs1.Features().Disable("Copy") // API has longstanding bug for conflictBehavior=replace https://github.com/wizdom13/SecureCloudEngine/issues/4590
+		b.fs1.Features().Disable("Copy") // API has longstanding bug for conflictBehavior=replace https:///issues/4590
 		b.fs1.Features().Disable("Move")
 	}
 	if strings.HasPrefix(b.fs2.String(), "OneDrive") {
-		b.fs2.Features().Disable("Copy") // API has longstanding bug for conflictBehavior=replace https://github.com/wizdom13/SecureCloudEngine/issues/4590
+		b.fs2.Features().Disable("Copy") // API has longstanding bug for conflictBehavior=replace https:///issues/4590
 		b.fs2.Features().Disable("Move")
 	}
 	if strings.HasPrefix(b.fs1.String(), "sftp") {
@@ -1001,7 +1001,7 @@ func (b *bisyncTest) checkPreReqs(ctx context.Context, opt *bisync.Options) (con
 		b.fs2.Features().Disable("Copy") // disable --sftp-copy-is-hardlink as hardlinks are not truly copies
 	}
 	if strings.Contains(strings.ToLower(fs.ConfigString(b.fs1)), "mailru") || strings.Contains(strings.ToLower(fs.ConfigString(b.fs2)), "mailru") {
-		fs.GetConfig(ctx).TPSLimit = 10 // https://github.com/wizdom13/SecureCloudEngine/issues/7768#issuecomment-2060888980
+		fs.GetConfig(ctx).TPSLimit = 10 // https:///issues/7768#issuecomment-2060888980
 	}
 	if (!b.fs1.Features().CanHaveEmptyDirectories || !b.fs2.Features().CanHaveEmptyDirectories) && (b.testCase == "createemptysrcdirs" || b.testCase == "rmdirs") {
 		b.t.Skip("skipping test as remote does not support empty dirs")

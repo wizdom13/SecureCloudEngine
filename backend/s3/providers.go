@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 	orderedmap "github.com/wk8/go-ordered-map/v2"
 	"gopkg.in/yaml.v3"
 )

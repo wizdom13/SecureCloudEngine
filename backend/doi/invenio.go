@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/doi/api"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/lib/rest"
+	"/backend/doi/api"
+	"/fs"
+	"/lib/rest"
 )
 
 var invenioRecordRegex = regexp.MustCompile(`\/records?\/(.+)`)

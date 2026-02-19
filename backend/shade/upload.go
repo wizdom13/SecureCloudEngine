@@ -13,11 +13,11 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/shade/api"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/chunksize"
-	"github.com/wizdom13/SecureCloudEngine/lib/multipart"
-	"github.com/wizdom13/SecureCloudEngine/lib/rest"
+	"/backend/shade/api"
+	"/fs"
+	"/fs/chunksize"
+	"/lib/multipart"
+	"/lib/rest"
 )
 
 var warnStreamUpload sync.Once

@@ -6,9 +6,9 @@ package nfs
 import (
 	"testing"
 
-	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
-	"github.com/wizdom13/SecureCloudEngine/cmd/serve/servetest"
-	"github.com/wizdom13/SecureCloudEngine/fs/rc"
+	_ "/backend/local"
+	"/cmd/serve/servetest"
+	"/fs/rc"
 )
 
 func TestRc(t *testing.T) {

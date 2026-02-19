@@ -13,12 +13,12 @@ import (
 	"time"
 
 	"github.com/coreos/go-systemd/v22/daemon"
-	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config"
-	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
-	"github.com/wizdom13/SecureCloudEngine/lib/file"
-	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
+	"/cmd/mountlib"
+	"/fs"
+	"/fs/config"
+	"/lib/atexit"
+	"/lib/file"
+	"/vfs/vfscommon"
 )
 
 // Driver implements docker driver api

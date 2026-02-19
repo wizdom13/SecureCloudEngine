@@ -9,8 +9,8 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/lib/rest"
+	"/fs"
+	"/lib/rest"
 )
 
 // Uploader holds all information about a currently running upload

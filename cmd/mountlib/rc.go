@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/rc"
-	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
+	"/fs"
+	"/fs/rc"
+	"/vfs/vfscommon"
 )
 
 var (

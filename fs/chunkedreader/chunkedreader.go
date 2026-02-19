@@ -6,7 +6,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 // io related errors returned by ChunkedReader

@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"/cmd"
 	"github.com/stretchr/testify/require"
 )
 

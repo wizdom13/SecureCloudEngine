@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
+	"/fs/config/configmap"
+	"/fs/fspath"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -6,7 +6,7 @@ import (
 	"log/slog"
 	"sync"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/log"
+	"/fs/log"
 )
 
 // CaptureOutput runs a function capturing its output at log level INFO.

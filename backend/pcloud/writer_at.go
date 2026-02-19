@@ -10,9 +10,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/pcloud/api"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/lib/rest"
+	"/backend/pcloud/api"
+	"/fs"
+	"/lib/rest"
 )
 
 // writerAt implements fs.WriterAtCloser, adding the OpenWrtierAt feature to pcloud.

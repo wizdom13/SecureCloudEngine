@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"/fstest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

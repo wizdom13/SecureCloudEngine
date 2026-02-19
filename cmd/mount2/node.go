@@ -10,10 +10,10 @@ import (
 
 	fusefs "github.com/hanwen/go-fuse/v2/fs"
 	"github.com/hanwen/go-fuse/v2/fuse"
-	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/log"
-	"github.com/wizdom13/SecureCloudEngine/vfs"
+	"/cmd/mountlib"
+	"/fs"
+	"/fs/log"
+	"/vfs"
 )
 
 // Node represents a directory or file

@@ -34,7 +34,7 @@ import (
 	"path/filepath"
 	"syscall"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 	"golang.org/x/sys/unix"
 )
 

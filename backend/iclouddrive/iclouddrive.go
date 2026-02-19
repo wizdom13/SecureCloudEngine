@@ -15,18 +15,18 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
-	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
+	"/fs"
+	"/fs/config"
+	"/fs/config/configmap"
+	"/fs/config/configstruct"
+	"/fs/config/obscure"
+	"/fs/fserrors"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/iclouddrive/api"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/lib/dircache"
-	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
-	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
+	"/backend/iclouddrive/api"
+	"/fs/hash"
+	"/lib/dircache"
+	"/lib/encoder"
+	"/lib/pacer"
 )
 
 /*

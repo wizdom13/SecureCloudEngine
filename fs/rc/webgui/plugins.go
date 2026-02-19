@@ -14,9 +14,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config"
-	"github.com/wizdom13/SecureCloudEngine/fs/rc"
+	"/fs"
+	"/fs/config"
+	"/fs/rc"
 )
 
 // PackageJSON is the structure of package.json of a plugin

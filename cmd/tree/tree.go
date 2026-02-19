@@ -12,14 +12,14 @@ import (
 	"time"
 
 	"github.com/a8m/tree"
-	"github.com/wizdom13/SecureCloudEngine/cmd"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
-	"github.com/wizdom13/SecureCloudEngine/fs/dirtree"
-	"github.com/wizdom13/SecureCloudEngine/fs/log"
-	"github.com/wizdom13/SecureCloudEngine/fs/walk"
-	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
-	"github.com/wizdom13/SecureCloudEngine/lib/terminal"
+	"/cmd"
+	"/fs"
+	"/fs/config/flags"
+	"/fs/dirtree"
+	"/fs/log"
+	"/fs/walk"
+	"/lib/encoder"
+	"/lib/terminal"
 	"github.com/spf13/cobra"
 )
 

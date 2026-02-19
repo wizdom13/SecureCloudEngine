@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/filter"
+	"/fs"
+	"/fs/filter"
 )
 
 func init() {

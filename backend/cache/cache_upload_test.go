@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/cache"
-	_ "github.com/wizdom13/SecureCloudEngine/backend/drive"
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/backend/cache"
+	_ "/backend/drive"
+	"/fs"
 	"github.com/stretchr/testify/require"
 )
 

@@ -9,7 +9,7 @@ import (
 	"path"
 	"slices"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 	yaml "gopkg.in/yaml.v3"
 )
 

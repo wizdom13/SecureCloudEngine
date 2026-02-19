@@ -4,8 +4,8 @@ package reveal
 import (
 	"fmt"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
+	"/cmd"
+	"/fs/config/obscure"
 	"github.com/spf13/cobra"
 )
 

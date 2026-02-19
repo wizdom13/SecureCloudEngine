@@ -27,25 +27,25 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/cache"
-	"github.com/wizdom13/SecureCloudEngine/fs/config"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
-	"github.com/wizdom13/SecureCloudEngine/fs/filter"
-	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
-	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
-	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/list"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/lib/dircache"
-	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
-	"github.com/wizdom13/SecureCloudEngine/lib/env"
-	"github.com/wizdom13/SecureCloudEngine/lib/oauthutil"
-	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
-	"github.com/wizdom13/SecureCloudEngine/lib/readers"
+	"/fs"
+	"/fs/cache"
+	"/fs/config"
+	"/fs/config/configmap"
+	"/fs/config/configstruct"
+	"/fs/config/obscure"
+	"/fs/filter"
+	"/fs/fserrors"
+	"/fs/fshttp"
+	"/fs/fspath"
+	"/fs/hash"
+	"/fs/list"
+	"/fs/operations"
+	"/lib/dircache"
+	"/lib/encoder"
+	"/lib/env"
+	"/lib/oauthutil"
+	"/lib/pacer"
+	"/lib/readers"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
 	drive_v2 "google.golang.org/api/drive/v2"
@@ -585,7 +585,7 @@ HTTP/2.  HTTP/2 is therefore disabled by default for the drive backend
 but can be re-enabled here.  When the issue is solved this flag will
 be removed.
 
-See: https://github.com/wizdom13/SecureCloudEngine/issues/3631
+See: https:///issues/3631
 
 `,
 			Advanced: true,
@@ -603,7 +603,7 @@ the in-progress sync.
 Note that this detection is relying on error message strings which
 Google don't document so it may break in the future.
 
-See: https://github.com/wizdom13/SecureCloudEngine/issues/3857
+See: https:///issues/3857
 `,
 			Advanced: true,
 		}, {
@@ -1497,7 +1497,7 @@ func NewFs(ctx context.Context, name, path string, m configmap.Mapper) (fs.Fs, e
 		}
 		// XXX: update the old f here instead of returning tempF, since
 		// `features` were already filled with functions having *f as a receiver.
-		// See https://github.com/wizdom13/SecureCloudEngine/issues/2182
+		// See https:///issues/2182
 		f.dirCache = tempF.dirCache
 		f.root = tempF.root
 		return f, fs.ErrorIsFile
@@ -2850,7 +2850,7 @@ func (f *Fs) Copy(ctx context.Context, src fs.Object, remote string) (fs.Object,
 		return nil, err
 	}
 	// Google docs aren't preserving their mod time after copy, so set them explicitly
-	// See: https://github.com/wizdom13/SecureCloudEngine/issues/4517
+	// See: https:///issues/4517
 	//
 	// FIXME remove this when google fixes the problem!
 	if isDoc {

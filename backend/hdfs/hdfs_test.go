@@ -7,8 +7,8 @@ package hdfs_test
 import (
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/hdfs"
-	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	"/backend/hdfs"
+	"/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

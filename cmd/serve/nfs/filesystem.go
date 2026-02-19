@@ -9,10 +9,10 @@ import (
 	"time"
 
 	billy "github.com/go-git/go-billy/v5"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/log"
-	"github.com/wizdom13/SecureCloudEngine/vfs"
-	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
+	"/fs"
+	"/fs/log"
+	"/vfs"
+	"/vfs/vfscommon"
 	"github.com/willscott/go-nfs/file"
 )
 

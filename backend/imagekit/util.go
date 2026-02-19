@@ -8,10 +8,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/imagekit/client"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
-	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
+	"/backend/imagekit/client"
+	"/fs"
+	"/fs/fserrors"
+	"/lib/pacer"
 )
 
 func (f *Fs) getFiles(ctx context.Context, path string, includeVersions bool) (files []client.File, err error) {

@@ -12,11 +12,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/rc"
-	"github.com/wizdom13/SecureCloudEngine/lib/diskusage"
+	"/fs"
+	"/fs/config"
+	"/fs/hash"
+	"/fs/rc"
+	"/lib/diskusage"
 )
 
 func init() {

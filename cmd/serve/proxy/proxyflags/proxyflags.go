@@ -2,8 +2,8 @@
 package proxyflags
 
 import (
-	"github.com/wizdom13/SecureCloudEngine/cmd/serve/proxy"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
+	"/cmd/serve/proxy"
+	"/fs/config/flags"
 	"github.com/spf13/pflag"
 )
 

@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configfile"
+	"/cmd"
+	"/fs/config/configfile"
 	"github.com/stretchr/testify/require"
 )
 

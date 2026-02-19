@@ -15,14 +15,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/cache"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/list"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/fs/walk"
+	"/fs"
+	"/fs/cache"
+	"/fs/config/configmap"
+	"/fs/config/configstruct"
+	"/fs/hash"
+	"/fs/list"
+	"/fs/operations"
+	"/fs/walk"
 	"golang.org/x/sync/errgroup"
 )
 

@@ -7,7 +7,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 // CreateZip creates a zip file from a vfs.Dir writing it to w

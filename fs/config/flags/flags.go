@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 	"github.com/spf13/pflag"
 )
 

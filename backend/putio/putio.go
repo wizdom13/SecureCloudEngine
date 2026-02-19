@@ -6,13 +6,13 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
-	"github.com/wizdom13/SecureCloudEngine/lib/dircache"
-	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
-	"github.com/wizdom13/SecureCloudEngine/lib/oauthutil"
+	"/fs"
+	"/fs/config"
+	"/fs/config/configmap"
+	"/fs/config/obscure"
+	"/lib/dircache"
+	"/lib/encoder"
+	"/lib/oauthutil"
 )
 
 /*

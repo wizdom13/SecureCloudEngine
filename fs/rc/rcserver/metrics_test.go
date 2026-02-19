@@ -7,10 +7,10 @@ import (
 	"regexp"
 	"testing"
 
-	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configfile"
-	"github.com/wizdom13/SecureCloudEngine/fs/rc"
+	_ "/backend/local"
+	"/fs/accounting"
+	"/fs/config/configfile"
+	"/fs/rc"
 	"github.com/stretchr/testify/require"
 )
 

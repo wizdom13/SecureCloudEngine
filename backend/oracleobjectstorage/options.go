@@ -5,9 +5,9 @@ package oracleobjectstorage
 import (
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config"
-	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
+	"/fs"
+	"/fs/config"
+	"/lib/encoder"
 )
 
 const (

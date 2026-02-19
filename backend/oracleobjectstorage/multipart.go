@@ -14,16 +14,16 @@ import (
 	"time"
 
 	"github.com/ncw/swift/v2"
-	"github.com/wizdom13/SecureCloudEngine/lib/multipart"
-	"github.com/wizdom13/SecureCloudEngine/lib/pool"
+	"/lib/multipart"
+	"/lib/pool"
 	"golang.org/x/net/http/httpguts"
 
 	"github.com/oracle/oci-go-sdk/v65/common"
 	"github.com/oracle/oci-go-sdk/v65/objectstorage"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/chunksize"
-	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"/fs"
+	"/fs/chunksize"
+	"/fs/fserrors"
+	"/fs/hash"
 )
 
 var warnStreamUpload sync.Once

@@ -14,16 +14,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/doi/api"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
-	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
-	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/lib/cache"
-	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
-	"github.com/wizdom13/SecureCloudEngine/lib/rest"
+	"/backend/doi/api"
+	"/fs"
+	"/fs/config/configmap"
+	"/fs/config/configstruct"
+	"/fs/fserrors"
+	"/fs/fshttp"
+	"/fs/hash"
+	"/lib/cache"
+	"/lib/pacer"
+	"/lib/rest"
 )
 
 const (

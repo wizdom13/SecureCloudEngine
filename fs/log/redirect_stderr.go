@@ -7,7 +7,7 @@ package log
 import (
 	"os"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 // redirectStderr to the file passed in

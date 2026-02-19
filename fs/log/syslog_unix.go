@@ -10,7 +10,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 var (

@@ -8,7 +8,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"/fs/config/configmap"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

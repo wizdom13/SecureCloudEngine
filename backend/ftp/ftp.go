@@ -17,20 +17,20 @@ import (
 	"time"
 
 	"github.com/jlaffaye/ftp"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
-	"github.com/wizdom13/SecureCloudEngine/fs/config"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
-	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
-	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
-	"github.com/wizdom13/SecureCloudEngine/lib/env"
-	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
-	"github.com/wizdom13/SecureCloudEngine/lib/proxy"
-	"github.com/wizdom13/SecureCloudEngine/lib/readers"
+	"/fs"
+	"/fs/accounting"
+	"/fs/config"
+	"/fs/config/configmap"
+	"/fs/config/configstruct"
+	"/fs/config/obscure"
+	"/fs/fserrors"
+	"/fs/fshttp"
+	"/fs/hash"
+	"/lib/encoder"
+	"/lib/env"
+	"/lib/pacer"
+	"/lib/proxy"
+	"/lib/readers"
 )
 
 var (
@@ -411,7 +411,7 @@ func shouldRetry(ctx context.Context, err error) (bool, error) {
 //
 // We can't share session caches between connections.
 //
-// See: https://github.com/wizdom13/SecureCloudEngine/issues/7234
+// See: https:///issues/7234
 func (f *Fs) tlsConfig() *tls.Config {
 	var tlsConfig *tls.Config
 	if f.opt.TLS || f.opt.ExplicitTLS {
@@ -496,7 +496,7 @@ func (f *Fs) ftpConnection(ctx context.Context) (c *ftp.ServerConn, err error) {
 		tlsConn := tls.Client(conn, tlsConfig)
 		// Do the initial handshake - tls.Client doesn't do it for us
 		// If we do this then connections to proftpd/pureftpd lock up
-		// See: https://github.com/wizdom13/SecureCloudEngine/issues/6426
+		// See: https:///issues/6426
 		// See: https://github.com/jlaffaye/ftp/issues/282
 		if false {
 			err = tlsConn.HandshakeContext(ctx)
@@ -1295,7 +1295,7 @@ func (f *ftpReadCloser) Close() error {
 	}
 	// mask the error if it was caused by a premature close
 	// NB StatusAboutToSend is to work around a bug in pureftpd
-	// See: https://github.com/wizdom13/SecureCloudEngine/issues/3445#issuecomment-521654257
+	// See: https:///issues/3445#issuecomment-521654257
 	if errX := textprotoError(err); errX != nil {
 		switch errX.Code {
 		case ftp.StatusTransfertAborted, ftp.StatusFileUnavailable, ftp.StatusAboutToSend, ftp.StatusRequestedFileActionOK:

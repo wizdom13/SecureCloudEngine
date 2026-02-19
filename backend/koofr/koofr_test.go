@@ -3,7 +3,7 @@ package koofr_test
 import (
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	"/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

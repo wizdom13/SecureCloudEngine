@@ -15,8 +15,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/walk"
+	"/fs"
+	"/fs/walk"
 	bolt "go.etcd.io/bbolt"
 	"go.etcd.io/bbolt/errors"
 )

@@ -8,8 +8,8 @@ import (
 
 	"bazil.org/fuse"
 	fusefs "bazil.org/fuse/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/log"
-	"github.com/wizdom13/SecureCloudEngine/vfs"
+	"/fs/log"
+	"/vfs"
 )
 
 // FileHandle is an open for read file handle on a File

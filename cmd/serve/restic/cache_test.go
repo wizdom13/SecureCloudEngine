@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fstest/mockobject"
+	"/fstest/mockobject"
 	"github.com/stretchr/testify/assert"
 )
 

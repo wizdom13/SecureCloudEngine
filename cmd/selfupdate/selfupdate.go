@@ -22,16 +22,16 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd"
-	"github.com/wizdom13/SecureCloudEngine/cmd/cmount"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
-	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
-	"github.com/wizdom13/SecureCloudEngine/lib/buildinfo"
-	"github.com/wizdom13/SecureCloudEngine/lib/random"
+	"/cmd"
+	"/cmd/cmount"
+	"/fs"
+	"/fs/config/flags"
+	"/fs/fshttp"
+	"/lib/buildinfo"
+	"/lib/random"
 	"github.com/spf13/cobra"
 
-	versionCmd "github.com/wizdom13/SecureCloudEngine/cmd/version"
+	versionCmd "/cmd/version"
 )
 
 //go:embed selfupdate.md

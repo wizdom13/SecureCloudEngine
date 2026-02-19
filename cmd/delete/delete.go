@@ -5,9 +5,9 @@ import (
 	"context"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"/cmd"
+	"/fs/config/flags"
+	"/fs/operations"
 	"github.com/spf13/cobra"
 )
 

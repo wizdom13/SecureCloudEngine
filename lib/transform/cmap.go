@@ -5,7 +5,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 	"golang.org/x/text/encoding/charmap"
 )
 

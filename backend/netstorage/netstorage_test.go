@@ -3,8 +3,8 @@ package netstorage_test
 import (
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/netstorage"
-	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	"/backend/netstorage"
+	"/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

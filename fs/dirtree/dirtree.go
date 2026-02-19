@@ -9,7 +9,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 // DirTree is a map of directories to entries

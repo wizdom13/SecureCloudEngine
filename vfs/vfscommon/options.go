@@ -6,7 +6,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 // OptionsInfo describes the Options in use

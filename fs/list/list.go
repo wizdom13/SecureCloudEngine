@@ -7,10 +7,10 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
-	"github.com/wizdom13/SecureCloudEngine/fs/filter"
-	"github.com/wizdom13/SecureCloudEngine/lib/bucket"
+	"/fs"
+	"/fs/accounting"
+	"/fs/filter"
+	"/lib/bucket"
 )
 
 // DirSorted reads Object and *Dir into entries for the given Fs.

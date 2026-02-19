@@ -12,8 +12,8 @@ import (
 	"testing"
 
 	"github.com/Max-Sum/base32768"
-	"github.com/wizdom13/SecureCloudEngine/backend/crypt/pkcs7"
-	"github.com/wizdom13/SecureCloudEngine/lib/readers"
+	"/backend/crypt/pkcs7"
+	"/lib/readers"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 // Read the time specified from the os.FileInfo

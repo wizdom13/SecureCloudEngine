@@ -6,14 +6,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/ulozto/api"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"/backend/ulozto/api"
+	"/fs"
+	"/fs/hash"
+	"/fs/operations"
+	"/fstest"
 	"github.com/stretchr/testify/require"
 
-	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	"/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

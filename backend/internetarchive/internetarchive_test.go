@@ -4,8 +4,8 @@ package internetarchive_test
 import (
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/internetarchive"
-	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	"/backend/internetarchive"
+	"/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

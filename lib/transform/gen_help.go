@@ -12,9 +12,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
-	"github.com/wizdom13/SecureCloudEngine/lib/transform"
+	"/fs"
+	"/lib/encoder"
+	"/lib/transform"
 )
 
 type commands struct {

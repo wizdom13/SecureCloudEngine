@@ -3,8 +3,8 @@ package list
 import (
 	"context"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"/fs"
+	"/fs/accounting"
 )
 
 // Listing helpers used by backends

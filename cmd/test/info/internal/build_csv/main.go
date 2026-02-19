@@ -11,8 +11,8 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd/test/info/internal"
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/cmd/test/info/internal"
+	"/fs"
 )
 
 func main() {

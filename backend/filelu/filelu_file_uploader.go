@@ -13,7 +13,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 // multipartUpload uploads a file in fixed-size chunks using the multipart API.

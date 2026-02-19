@@ -7,11 +7,11 @@
 //
 // Build a shared library like this:
 //
-//	go build --buildmode=c-shared -o librclone.so github.com/wizdom13/SecureCloudEngine/librclone
+//	go build --buildmode=c-shared -o librclone.so /librclone
 //
 // Build a static library like this:
 //
-//	go build --buildmode=c-archive -o librclone.a github.com/wizdom13/SecureCloudEngine/librclone
+//	go build --buildmode=c-archive -o librclone.a /librclone
 //
 // Both the above commands will also generate `librclone.h` which should
 // be `#include`d in `C` programs wishing to use the library.
@@ -32,15 +32,15 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/wizdom13/SecureCloudEngine/librclone/librclone"
+	"/librclone/librclone"
 
-	_ "github.com/wizdom13/SecureCloudEngine/backend/all"   // import all backends
-	_ "github.com/wizdom13/SecureCloudEngine/cmd/cmount"    // import cmount
-	_ "github.com/wizdom13/SecureCloudEngine/cmd/mount"     // import mount
-	_ "github.com/wizdom13/SecureCloudEngine/cmd/mount2"    // import mount2
-	_ "github.com/wizdom13/SecureCloudEngine/fs/operations" // import operations/* rc commands
-	_ "github.com/wizdom13/SecureCloudEngine/fs/sync"       // import sync/*
-	_ "github.com/wizdom13/SecureCloudEngine/lib/plugin"    // import plugins
+	_ "/backend/all"   // import all backends
+	_ "/cmd/cmount"    // import cmount
+	_ "/cmd/mount"     // import mount
+	_ "/cmd/mount2"    // import mount2
+	_ "/fs/operations" // import operations/* rc commands
+	_ "/fs/sync"       // import sync/*
+	_ "/lib/plugin"    // import plugins
 )
 
 // SecureCloudEngineInitialize initializes rclone as a library

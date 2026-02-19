@@ -8,10 +8,10 @@ import (
 	"os"
 	"path"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd"
-	"github.com/wizdom13/SecureCloudEngine/cmd/test"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/walk"
+	"/cmd"
+	"/cmd/test"
+	"/fs"
+	"/fs/walk"
 	"github.com/spf13/cobra"
 )
 

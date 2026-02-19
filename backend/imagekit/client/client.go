@@ -5,9 +5,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
-	"github.com/wizdom13/SecureCloudEngine/lib/rest"
+	"/fs"
+	"/fs/fshttp"
+	"/lib/rest"
 )
 
 // ImageKit main struct

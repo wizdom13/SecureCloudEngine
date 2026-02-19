@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/object"
-	"github.com/wizdom13/SecureCloudEngine/fstest/mockobject"
+	"/fs"
+	"/fs/object"
+	"/fstest/mockobject"
 	"github.com/stretchr/testify/assert"
 )
 

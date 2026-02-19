@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/crypt"
-	"github.com/wizdom13/SecureCloudEngine/cmd"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
+	"/backend/crypt"
+	"/cmd"
+	"/fs"
+	"/fs/config/flags"
 	"github.com/spf13/cobra"
 )
 

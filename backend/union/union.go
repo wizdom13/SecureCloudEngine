@@ -13,15 +13,15 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/union/common"
-	"github.com/wizdom13/SecureCloudEngine/backend/union/policy"
-	"github.com/wizdom13/SecureCloudEngine/backend/union/upstream"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/fs/walk"
+	"/backend/union/common"
+	"/backend/union/policy"
+	"/backend/union/upstream"
+	"/fs"
+	"/fs/config/configmap"
+	"/fs/config/configstruct"
+	"/fs/hash"
+	"/fs/operations"
+	"/fs/walk"
 )
 
 // Register with Fs

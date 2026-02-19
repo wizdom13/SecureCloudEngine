@@ -10,8 +10,8 @@ import (
 	"strings"
 
 	"github.com/oracle/oci-go-sdk/v65/common"
-	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
-	"github.com/wizdom13/SecureCloudEngine/lib/rest"
+	"/fs/fshttp"
+	"/lib/rest"
 )
 
 // Session represents an iCloud session

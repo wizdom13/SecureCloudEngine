@@ -10,15 +10,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
-	"github.com/wizdom13/SecureCloudEngine/fs/cache"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
-	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/list"
+	"/fs"
+	"/fs/accounting"
+	"/fs/cache"
+	"/fs/config/configmap"
+	"/fs/config/configstruct"
+	"/fs/config/obscure"
+	"/fs/fspath"
+	"/fs/hash"
+	"/fs/list"
 )
 
 // Globals

@@ -7,11 +7,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd/bisync/bilib"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/lib/terminal"
-	"github.com/wizdom13/SecureCloudEngine/lib/transform"
+	"/cmd/bisync/bilib"
+	"/fs"
+	"/fs/operations"
+	"/lib/terminal"
+	"/lib/transform"
 )
 
 // Prefer describes strategies for resolving sync conflicts

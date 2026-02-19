@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/cmd/mountlib"
+	"/fs"
 )
 
 func getMountpoint(f fs.Fs, mountPath string, opt *mountlib.Options) (string, error) {

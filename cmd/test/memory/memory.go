@@ -6,10 +6,10 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd"
-	"github.com/wizdom13/SecureCloudEngine/cmd/test"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"/cmd"
+	"/cmd/test"
+	"/fs"
+	"/fs/operations"
 	"github.com/spf13/cobra"
 )
 

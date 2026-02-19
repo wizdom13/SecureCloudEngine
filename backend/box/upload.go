@@ -16,11 +16,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/box/api"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
-	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
-	"github.com/wizdom13/SecureCloudEngine/lib/rest"
+	"/backend/box/api"
+	"/fs"
+	"/fs/accounting"
+	"/lib/atexit"
+	"/lib/rest"
 )
 
 // createUploadSession creates an upload session for the object
@@ -100,7 +100,7 @@ func (o *Object) commitUpload(ctx context.Context, SessionID string, parts []api
 	var body []byte
 	var resp *http.Response
 	// For discussion of this value see:
-	// https://github.com/wizdom13/SecureCloudEngine/issues/2054
+	// https:///issues/2054
 	maxTries := o.fs.opt.CommitRetries
 	const defaultDelay = 10
 	var tries int

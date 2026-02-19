@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 var refreshGracePeriod = 30 * time.Second

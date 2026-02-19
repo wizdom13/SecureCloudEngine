@@ -10,7 +10,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 // startSignalHandler() sets a signal handler to catch SIGUSR2 and toggle throttling.

@@ -8,9 +8,9 @@ import (
 	"io"
 	"sync"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/lib/pool"
-	"github.com/wizdom13/SecureCloudEngine/lib/readers"
+	"/fs"
+	"/lib/pool"
+	"/lib/readers"
 )
 
 const (

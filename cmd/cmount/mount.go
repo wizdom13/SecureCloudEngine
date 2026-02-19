@@ -13,11 +13,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
-	"github.com/wizdom13/SecureCloudEngine/lib/buildinfo"
-	"github.com/wizdom13/SecureCloudEngine/vfs"
+	"/cmd/mountlib"
+	"/fs"
+	"/lib/atexit"
+	"/lib/buildinfo"
+	"/vfs"
 	"github.com/winfsp/cgofuse/fuse"
 )
 

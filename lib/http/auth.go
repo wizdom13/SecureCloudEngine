@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"html/template"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
+	"/fs"
+	"/fs/config/flags"
 	"github.com/spf13/pflag"
 )
 

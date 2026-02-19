@@ -10,8 +10,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fstest"
-	"github.com/wizdom13/SecureCloudEngine/lib/random"
+	"/fstest"
+	"/lib/random"
 	"github.com/stretchr/testify/require"
 )
 

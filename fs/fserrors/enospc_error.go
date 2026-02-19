@@ -5,7 +5,7 @@ package fserrors
 import (
 	"syscall"
 
-	liberrors "github.com/wizdom13/SecureCloudEngine/lib/errors"
+	liberrors "/lib/errors"
 )
 
 // IsErrNoSpace checks a possibly wrapped error to

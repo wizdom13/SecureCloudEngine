@@ -3,7 +3,7 @@ package chunksize
 import (
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 func TestComputeChunkSize(t *testing.T) {

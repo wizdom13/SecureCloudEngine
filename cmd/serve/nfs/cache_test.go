@@ -9,9 +9,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/object"
-	"github.com/wizdom13/SecureCloudEngine/vfs"
+	"/fs"
+	"/fs/object"
+	"/vfs"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

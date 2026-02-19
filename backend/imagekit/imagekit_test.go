@@ -3,8 +3,8 @@ package imagekit
 import (
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fstest"
-	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	"/fstest"
+	"/fstest/fstests"
 )
 
 func TestIntegration(t *testing.T) {

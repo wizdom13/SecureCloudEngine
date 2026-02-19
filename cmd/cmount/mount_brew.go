@@ -9,8 +9,8 @@ package cmount
 import (
 	"errors"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
-	"github.com/wizdom13/SecureCloudEngine/vfs"
+	"/cmd/mountlib"
+	"/vfs"
 )
 
 func init() {

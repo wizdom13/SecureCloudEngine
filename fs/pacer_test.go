@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
-	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
+	"/fs/fserrors"
+	"/lib/pacer"
 	"github.com/stretchr/testify/require"
 )
 

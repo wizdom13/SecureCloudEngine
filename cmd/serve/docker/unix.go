@@ -8,7 +8,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/wizdom13/SecureCloudEngine/lib/file"
+	"/lib/file"
 )
 
 func newUnixListener(path string, gid int) (net.Listener, string, error) {

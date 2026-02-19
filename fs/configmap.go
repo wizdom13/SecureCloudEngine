@@ -5,7 +5,7 @@ package fs
 import (
 	"os"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"/fs/config/configmap"
 )
 
 // A configmap.Getter to read from the environment SCE_CONFIG_backend_option_name

@@ -5,7 +5,7 @@ import (
 	"maps"
 	"sync"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 // inProgress holds a synchronized map of in progress transfers

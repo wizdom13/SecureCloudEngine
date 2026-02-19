@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"/fs/config/configmap"
 )
 
 const (

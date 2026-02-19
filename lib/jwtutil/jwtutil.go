@@ -15,9 +15,9 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt/v4"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/lib/oauthutil"
+	"/fs"
+	"/fs/config/configmap"
+	"/lib/oauthutil"
 
 	"maps"
 

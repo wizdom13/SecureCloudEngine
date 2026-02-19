@@ -4,9 +4,9 @@ package ftp_test
 import (
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/ftp"
-	"github.com/wizdom13/SecureCloudEngine/fstest"
-	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	"/backend/ftp"
+	"/fstest"
+	"/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against rclone FTP server

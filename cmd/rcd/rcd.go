@@ -5,13 +5,13 @@ import (
 	"context"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/rc"
-	"github.com/wizdom13/SecureCloudEngine/fs/rc/rcflags"
-	"github.com/wizdom13/SecureCloudEngine/fs/rc/rcserver"
-	libhttp "github.com/wizdom13/SecureCloudEngine/lib/http"
-	"github.com/wizdom13/SecureCloudEngine/lib/systemd"
+	"/cmd"
+	"/fs"
+	"/fs/rc"
+	"/fs/rc/rcflags"
+	"/fs/rc/rcserver"
+	libhttp "/lib/http"
+	"/lib/systemd"
 	"github.com/spf13/cobra"
 )
 

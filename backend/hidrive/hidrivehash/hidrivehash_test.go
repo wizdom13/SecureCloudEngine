@@ -8,8 +8,8 @@ import (
 	"io"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/hidrive/hidrivehash"
-	"github.com/wizdom13/SecureCloudEngine/backend/hidrive/hidrivehash/internal"
+	"/backend/hidrive/hidrivehash"
+	"/backend/hidrive/hidrivehash/internal"
 	"github.com/stretchr/testify/assert"
 )
 

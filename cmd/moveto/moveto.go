@@ -4,10 +4,10 @@ package moveto
 import (
 	"context"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations/operationsflags"
-	"github.com/wizdom13/SecureCloudEngine/fs/sync"
+	"/cmd"
+	"/fs/operations"
+	"/fs/operations/operationsflags"
+	"/fs/sync"
 	"github.com/spf13/cobra"
 )
 

@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/lib/caller"
-	liberrors "github.com/wizdom13/SecureCloudEngine/lib/errors"
+	"/lib/caller"
+	liberrors "/lib/errors"
 )
 
 // State represents the public Pacer state that will be passed to the

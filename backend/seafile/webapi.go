@@ -11,10 +11,10 @@ import (
 	"path"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/seafile/api"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/lib/readers"
-	"github.com/wizdom13/SecureCloudEngine/lib/rest"
+	"/backend/seafile/api"
+	"/fs"
+	"/lib/readers"
+	"/lib/rest"
 )
 
 // Start of the API URLs

@@ -17,21 +17,21 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
-	"github.com/wizdom13/SecureCloudEngine/cmd/serve/docker"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config"
-	"github.com/wizdom13/SecureCloudEngine/fstest"
-	"github.com/wizdom13/SecureCloudEngine/fstest/testy"
-	"github.com/wizdom13/SecureCloudEngine/lib/file"
+	"/cmd/mountlib"
+	"/cmd/serve/docker"
+	"/fs"
+	"/fs/config"
+	"/fstest"
+	"/fstest/testy"
+	"/lib/file"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
-	_ "github.com/wizdom13/SecureCloudEngine/backend/memory"
-	_ "github.com/wizdom13/SecureCloudEngine/cmd/cmount"
-	_ "github.com/wizdom13/SecureCloudEngine/cmd/mount"
+	_ "/backend/local"
+	_ "/backend/memory"
+	_ "/cmd/cmount"
+	_ "/cmd/mount"
 )
 
 func initialise(ctx context.Context, t *testing.T) (string, fs.Fs) {

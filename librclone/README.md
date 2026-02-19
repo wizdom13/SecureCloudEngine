@@ -21,13 +21,13 @@ helped, you had to resort to the classic MINGW64 subsystem).
 Build a shared library like this (change from .so to .dll on Windows):
 
 ```console
-go build --buildmode=c-shared -o librclone.so github.com/wizdom13/SecureCloudEngine/librclone
+go build --buildmode=c-shared -o librclone.so /librclone
 ```
 
 Build a static library like this (change from .a to .lib on Windows):
 
 ```console
-go build --buildmode=c-archive -o librclone.a github.com/wizdom13/SecureCloudEngine/librclone
+go build --buildmode=c-archive -o librclone.a /librclone
 ```
 
 Both the above commands will also generate `librclone.h` which should
@@ -62,10 +62,10 @@ go run bin/resource_windows.go -binary librclone.dll -dir librclone
 
 For documentation see the Go documentation for:
 
-- [SecureCloudEngineInitialize](https://pkg.go.dev/github.com/wizdom13/SecureCloudEngine/librclone#SecureCloudEngineInitialize)
-- [SecureCloudEngineFinalize](https://pkg.go.dev/github.com/wizdom13/SecureCloudEngine/librclone#SecureCloudEngineFinalize)
-- [SecureCloudEngineRPC](https://pkg.go.dev/github.com/wizdom13/SecureCloudEngine/librclone#SecureCloudEngineRPC)
-- [SecureCloudEngineFreeString](https://pkg.go.dev/github.com/wizdom13/SecureCloudEngine/librclone#SecureCloudEngineFreeString)
+- [SecureCloudEngineInitialize](https://pkg.go.dev//librclone#SecureCloudEngineInitialize)
+- [SecureCloudEngineFinalize](https://pkg.go.dev//librclone#SecureCloudEngineFinalize)
+- [SecureCloudEngineRPC](https://pkg.go.dev//librclone#SecureCloudEngineRPC)
+- [SecureCloudEngineFreeString](https://pkg.go.dev//librclone#SecureCloudEngineFreeString)
 
 ### Linux C example
 
@@ -212,7 +212,7 @@ suitable for using with [gomobile](https://pkg.go.dev/golang.org/x/mobile/cmd/go
 using something like this.
 
 ```console
-gomobile bind -v -target=android -javapkg=org.rclone github.com/wizdom13/SecureCloudEngine/librclone/gomobile
+gomobile bind -v -target=android -javapkg=org.rclone /librclone/gomobile
 ```
 
 The command generates an Android library (`aar`) that can be imported

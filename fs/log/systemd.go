@@ -7,7 +7,7 @@ package log
 import (
 	"runtime"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
+	"/fs"
 )
 
 // Enables systemd logs if configured or if auto-detected

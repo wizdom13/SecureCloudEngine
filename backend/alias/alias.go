@@ -6,11 +6,11 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/cache"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
-	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
+	"/fs"
+	"/fs/cache"
+	"/fs/config/configmap"
+	"/fs/config/configstruct"
+	"/fs/fspath"
 )
 
 // Register with Fs

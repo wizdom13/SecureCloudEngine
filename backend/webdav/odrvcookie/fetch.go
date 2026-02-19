@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
+	"/fs"
+	"/fs/fshttp"
 	"golang.org/x/net/publicsuffix"
 )
 

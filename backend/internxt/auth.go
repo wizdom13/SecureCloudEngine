@@ -13,9 +13,9 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 	internxtauth "github.com/internxt/rclone-adapter/auth"
 	internxtconfig "github.com/internxt/rclone-adapter/config"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/lib/oauthutil"
+	"/fs"
+	"/fs/config/configmap"
+	"/lib/oauthutil"
 	"golang.org/x/oauth2"
 )
 

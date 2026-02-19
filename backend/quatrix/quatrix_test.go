@@ -4,8 +4,8 @@ package quatrix_test
 import (
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/quatrix"
-	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	"/backend/quatrix"
+	"/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

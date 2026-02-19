@@ -5,8 +5,8 @@ import (
 	"io"
 	"sync"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"/fs"
+	"/fs/hash"
 )
 
 // sequential is a reader for an Object with the possibility

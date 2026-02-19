@@ -15,9 +15,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
-	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
+	"/fs"
+	"/fs/fserrors"
+	"/lib/atexit"
 )
 
 // Options for configuring the batcher

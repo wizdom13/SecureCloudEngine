@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/filter"
-	"github.com/wizdom13/SecureCloudEngine/lib/cache"
+	"/fs"
+	"/fs/filter"
+	"/lib/cache"
 )
 
 var (

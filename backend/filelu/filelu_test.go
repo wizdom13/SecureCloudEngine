@@ -3,7 +3,7 @@ package filelu_test
 import (
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	"/fstest/fstests"
 )
 
 // TestIntegration runs integration tests for the FileLu backend

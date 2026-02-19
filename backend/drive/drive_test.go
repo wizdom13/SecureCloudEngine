@@ -5,8 +5,8 @@ package drive
 import (
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	"/fs"
+	"/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

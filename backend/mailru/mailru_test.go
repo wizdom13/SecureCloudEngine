@@ -4,8 +4,8 @@ package mailru_test
 import (
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/mailru"
-	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	"/backend/mailru"
+	"/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

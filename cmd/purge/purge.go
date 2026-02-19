@@ -4,10 +4,10 @@ package purge
 import (
 	"context"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/filter"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"/cmd"
+	"/fs"
+	"/fs/filter"
+	"/fs/operations"
 	"github.com/spf13/cobra"
 )
 

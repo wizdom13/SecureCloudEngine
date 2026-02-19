@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"/fs"
+	"/fs/config/configmap"
 )
 
 // Authorize is for remote authorization of headless machines.

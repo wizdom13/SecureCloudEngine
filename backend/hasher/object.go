@@ -8,9 +8,9 @@ import (
 	"path"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"/fs"
+	"/fs/hash"
+	"/fs/operations"
 )
 
 // obtain hash for an object

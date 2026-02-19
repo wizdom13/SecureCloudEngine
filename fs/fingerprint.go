@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"/fs/hash"
 )
 
 // Fingerprint produces a unique-ish string for an object.

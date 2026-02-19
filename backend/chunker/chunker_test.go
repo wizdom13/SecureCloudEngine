@@ -7,10 +7,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	_ "github.com/wizdom13/SecureCloudEngine/backend/all" // for integration tests
-	"github.com/wizdom13/SecureCloudEngine/backend/chunker"
-	"github.com/wizdom13/SecureCloudEngine/fstest"
-	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	_ "/backend/all" // for integration tests
+	"/backend/chunker"
+	"/fstest"
+	"/fstest/fstests"
 )
 
 // Command line flags

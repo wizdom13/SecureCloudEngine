@@ -7,8 +7,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"/fs"
+	"/fs/accounting"
 )
 
 // SigInfoHandler creates SigInfo handler

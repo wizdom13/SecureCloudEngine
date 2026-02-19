@@ -8,19 +8,19 @@ import (
 	"testing"
 	"time"
 
-	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
-	"github.com/wizdom13/SecureCloudEngine/backend/onedrive/api"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/fstest"
-	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
-	"github.com/wizdom13/SecureCloudEngine/lib/random"
+	_ "/backend/local"
+	"/backend/onedrive/api"
+	"/fs"
+	"/fs/operations"
+	"/fstest"
+	"/fstest/fstests"
+	"/lib/random"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
 
-// go test -timeout 30m -run ^TestIntegration/FsMkdir/FsPutFiles/Internal$ github.com/wizdom13/SecureCloudEngine/backend/onedrive -remote TestOneDrive:meta -v
-// go test -timeout 30m -run ^TestIntegration/FsMkdir/FsPutFiles/Internal$ github.com/wizdom13/SecureCloudEngine/backend/onedrive -remote TestOneDriveBusiness:meta -v
+// go test -timeout 30m -run ^TestIntegration/FsMkdir/FsPutFiles/Internal$ /backend/onedrive -remote TestOneDrive:meta -v
+// go test -timeout 30m -run ^TestIntegration/FsMkdir/FsPutFiles/Internal$ /backend/onedrive -remote TestOneDriveBusiness:meta -v
 // go run ./fstest/test_all -remotes TestOneDriveBusiness:meta,TestOneDrive:meta -verbose -maxtries 1
 
 var (

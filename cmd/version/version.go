@@ -14,10 +14,10 @@ import (
 	"time"
 
 	"github.com/coreos/go-semver/semver"
-	"github.com/wizdom13/SecureCloudEngine/cmd"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
-	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
+	"/cmd"
+	"/fs"
+	"/fs/config/flags"
+	"/fs/fshttp"
 	"github.com/spf13/cobra"
 )
 

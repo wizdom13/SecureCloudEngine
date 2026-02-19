@@ -13,13 +13,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/cache"
-	"github.com/wizdom13/SecureCloudEngine/fstest"
-	"github.com/wizdom13/SecureCloudEngine/lib/file"
-	"github.com/wizdom13/SecureCloudEngine/vfs"
-	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
+	"/cmd/mountlib"
+	"/fs"
+	"/fs/cache"
+	"/fstest"
+	"/lib/file"
+	"/vfs"
+	"/vfs/vfscommon"
 )
 
 // Functions to run and control the mount subprocess

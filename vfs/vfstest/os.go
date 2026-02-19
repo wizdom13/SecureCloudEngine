@@ -4,8 +4,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/lib/file"
-	"github.com/wizdom13/SecureCloudEngine/vfs"
+	"/lib/file"
+	"/vfs"
 )
 
 // Oser defines the things that the "os" package can do

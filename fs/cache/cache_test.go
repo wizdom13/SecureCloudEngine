@@ -5,8 +5,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fstest/mockfs"
+	"/fs"
+	"/fstest/mockfs"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

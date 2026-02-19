@@ -39,21 +39,21 @@ import (
 	"github.com/dropbox/dropbox-sdk-go-unofficial/v6/dropbox/sharing"
 	"github.com/dropbox/dropbox-sdk-go-unofficial/v6/dropbox/team"
 	"github.com/dropbox/dropbox-sdk-go-unofficial/v6/dropbox/users"
-	"github.com/wizdom13/SecureCloudEngine/backend/dropbox/dbhash"
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
-	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
-	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/list"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/lib/batcher"
-	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
-	"github.com/wizdom13/SecureCloudEngine/lib/oauthutil"
-	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
-	"github.com/wizdom13/SecureCloudEngine/lib/readers"
+	"/backend/dropbox/dbhash"
+	"/fs"
+	"/fs/config"
+	"/fs/config/configmap"
+	"/fs/config/configstruct"
+	"/fs/config/obscure"
+	"/fs/fserrors"
+	"/fs/hash"
+	"/fs/list"
+	"/fs/operations"
+	"/lib/batcher"
+	"/lib/encoder"
+	"/lib/oauthutil"
+	"/lib/pacer"
+	"/lib/readers"
 	"golang.org/x/oauth2"
 )
 
@@ -1334,7 +1334,7 @@ func (f *Fs) Move(ctx context.Context, src fs.Object, remote string) (fs.Object,
 		case files.MoveV2APIError:
 			// There seems to be a bit of eventual consistency here which causes this to
 			// fail on just created objects
-			// See: https://github.com/wizdom13/SecureCloudEngine/issues/8881
+			// See: https:///issues/8881
 			if e.EndpointError != nil && e.EndpointError.FromLookup != nil && e.EndpointError.FromLookup.Tag == files.LookupErrorNotFound {
 				fs.Debugf(srcObj, "Retrying move on %v error", err)
 				return true, err

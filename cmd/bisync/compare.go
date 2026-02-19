@@ -8,11 +8,11 @@ import (
 	mutex "sync"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/lib/terminal"
+	"/fs"
+	"/fs/accounting"
+	"/fs/hash"
+	"/fs/operations"
+	"/lib/terminal"
 )
 
 // CompareOpt describes the Compare options in force
