@@ -1,3 +1,5 @@
+//go:build !android
+
 // Package filen provides an interface to Filen cloud storage.
 package filen
 
