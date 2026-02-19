@@ -27,9 +27,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 	"golang.org/x/net/html"
 	"golang.org/x/sys/unix"
+
+	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 )
 
 var (

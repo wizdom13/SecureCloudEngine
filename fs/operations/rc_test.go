@@ -13,6 +13,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/cache"
 	"github.com/wizdom13/SecureCloudEngine/fs/hash"
@@ -21,8 +24,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/wizdom13/SecureCloudEngine/lib/diskusage"
 	"github.com/wizdom13/SecureCloudEngine/lib/rest"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 func rcNewRun(t *testing.T, method string) (*fstest.Run, *rc.Call) {

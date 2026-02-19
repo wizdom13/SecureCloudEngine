@@ -8,6 +8,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
 	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
 	_ "github.com/wizdom13/SecureCloudEngine/cmd/cmount"
 	_ "github.com/wizdom13/SecureCloudEngine/cmd/mount"
@@ -16,8 +19,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configfile"
 	"github.com/wizdom13/SecureCloudEngine/fs/rc"
 	"github.com/wizdom13/SecureCloudEngine/fstest/testy"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 func TestRc(t *testing.T) {

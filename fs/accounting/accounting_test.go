@@ -9,12 +9,13 @@ import (
 	"testing"
 	"unicode/utf8"
 
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/asyncreader"
 	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
 	"github.com/wizdom13/SecureCloudEngine/lib/readers"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 // Check it satisfies the interfaces

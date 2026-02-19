@@ -6,10 +6,11 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fstest/mockobject"
-	"github.com/wizdom13/SecureCloudEngine/lib/multipart"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/wizdom13/SecureCloudEngine/fstest/mockobject"
+	"github.com/wizdom13/SecureCloudEngine/lib/multipart"
 )
 
 func TestParallel(t *testing.T) {

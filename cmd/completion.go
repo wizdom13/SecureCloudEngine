@@ -7,11 +7,12 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/spf13/cobra"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/cache"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
 	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
-	"github.com/spf13/cobra"
 )
 
 // Make a debug message while doing the completion.

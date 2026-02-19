@@ -5,8 +5,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fstest/mockobject"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/wizdom13/SecureCloudEngine/fstest/mockobject"
 )
 
 func (c *cache) String() string {

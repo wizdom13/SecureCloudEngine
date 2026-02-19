@@ -20,6 +20,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/stretchr/testify/require"
+
 	"github.com/wizdom13/SecureCloudEngine/backend/cache"
 	"github.com/wizdom13/SecureCloudEngine/backend/crypt"
 	_ "github.com/wizdom13/SecureCloudEngine/backend/drive"
@@ -33,7 +35,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fstest/testy"
 	"github.com/wizdom13/SecureCloudEngine/lib/random"
 	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
-	"github.com/stretchr/testify/require"
 )
 
 const (

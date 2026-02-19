@@ -10,13 +10,14 @@ import (
 	"os"
 	"testing"
 
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configfile"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
 	"github.com/wizdom13/SecureCloudEngine/fs/rc"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 var simpleOptions = []fs.Option{{

@@ -20,11 +20,12 @@ import (
 	"net/url"
 	"strconv"
 
+	"google.golang.org/api/drive/v3"
+	"google.golang.org/api/googleapi"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
 	"github.com/wizdom13/SecureCloudEngine/lib/readers"
-	"google.golang.org/api/drive/v3"
-	"google.golang.org/api/googleapi"
 )
 
 const (

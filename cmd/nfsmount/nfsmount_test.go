@@ -11,14 +11,15 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/stretchr/testify/require"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
 	"github.com/wizdom13/SecureCloudEngine/cmd/serve/nfs"
 	"github.com/wizdom13/SecureCloudEngine/fs/object"
+	"github.com/wizdom13/SecureCloudEngine/fstest/testy"
 	"github.com/wizdom13/SecureCloudEngine/vfs"
 	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 	"github.com/wizdom13/SecureCloudEngine/vfs/vfstest"
-	"github.com/wizdom13/SecureCloudEngine/fstest/testy"
-	"github.com/stretchr/testify/require"
 )
 
 // Return true if the command ran without error

@@ -24,6 +24,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/cache"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
@@ -38,8 +41,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
 	"github.com/wizdom13/SecureCloudEngine/lib/random"
 	"github.com/wizdom13/SecureCloudEngine/lib/readers"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 // InternalTester is an optional interface for Fs which allows to execute internal tests

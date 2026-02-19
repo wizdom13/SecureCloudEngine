@@ -2,9 +2,10 @@
 package proxyflags
 
 import (
+	"github.com/spf13/pflag"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd/serve/proxy"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
-	"github.com/spf13/pflag"
 )
 
 // AddFlags adds the non filing system specific flags to the command

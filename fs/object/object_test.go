@@ -7,10 +7,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/stretchr/testify/assert"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 	"github.com/wizdom13/SecureCloudEngine/fs/object"
-	"github.com/stretchr/testify/assert"
 )
 
 func TestStaticObject(t *testing.T) {

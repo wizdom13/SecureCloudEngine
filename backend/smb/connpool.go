@@ -9,11 +9,12 @@ import (
 	"time"
 
 	smb2 "github.com/cloudsoda/go-smb2"
+	"golang.org/x/sync/errgroup"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
 	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
-	"golang.org/x/sync/errgroup"
 )
 
 // dial starts a client connection to the given SMB server. It is a

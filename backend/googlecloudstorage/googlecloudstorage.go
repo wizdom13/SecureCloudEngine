@@ -27,6 +27,11 @@ import (
 	"sync"
 	"time"
 
+	"golang.org/x/oauth2"
+	"golang.org/x/oauth2/google"
+	"google.golang.org/api/googleapi"
+	option "google.golang.org/api/option"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
@@ -41,10 +46,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/env"
 	"github.com/wizdom13/SecureCloudEngine/lib/oauthutil"
 	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
-	"golang.org/x/oauth2"
-	"golang.org/x/oauth2/google"
-	"google.golang.org/api/googleapi"
-	option "google.golang.org/api/option"
 
 	// NOTE: This API is deprecated
 	storage "google.golang.org/api/storage/v1"

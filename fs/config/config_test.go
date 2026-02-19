@@ -5,9 +5,10 @@ package config_test
 import (
 	"testing"
 
+	"github.com/stretchr/testify/assert"
+
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configfile"
-	"github.com/stretchr/testify/assert"
 )
 
 func init() {

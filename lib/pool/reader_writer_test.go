@@ -9,10 +9,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/lib/random"
-	"github.com/wizdom13/SecureCloudEngine/lib/readers"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/wizdom13/SecureCloudEngine/lib/random"
+	"github.com/wizdom13/SecureCloudEngine/lib/readers"
 )
 
 const blockSize = 4096

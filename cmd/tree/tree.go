@@ -12,6 +12,8 @@ import (
 	"time"
 
 	"github.com/a8m/tree"
+	"github.com/spf13/cobra"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd"
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
@@ -20,7 +22,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/walk"
 	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
 	"github.com/wizdom13/SecureCloudEngine/lib/terminal"
-	"github.com/spf13/cobra"
 )
 
 var (

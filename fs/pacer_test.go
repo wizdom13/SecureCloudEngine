@@ -7,9 +7,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/stretchr/testify/require"
+
 	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
 	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
-	"github.com/stretchr/testify/require"
 )
 
 var errFoo = errors.New("foo")

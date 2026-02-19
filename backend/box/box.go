@@ -28,6 +28,8 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt/v4"
+	"github.com/youmark/pkcs8"
+
 	"github.com/wizdom13/SecureCloudEngine/backend/box/api"
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
@@ -46,7 +48,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
 	"github.com/wizdom13/SecureCloudEngine/lib/random"
 	"github.com/wizdom13/SecureCloudEngine/lib/rest"
-	"github.com/youmark/pkcs8"
 )
 
 const (

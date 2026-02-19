@@ -8,9 +8,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/stretchr/testify/assert"
+
 	"github.com/wizdom13/SecureCloudEngine/backend/azureblob/auth"
 	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
-	"github.com/stretchr/testify/assert"
 )
 
 func (f *Fs) InternalTest(t *testing.T) {

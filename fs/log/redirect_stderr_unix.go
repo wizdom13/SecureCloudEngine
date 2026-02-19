@@ -7,9 +7,10 @@ package log
 import (
 	"os"
 
+	"golang.org/x/sys/unix"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
-	"golang.org/x/sys/unix"
 )
 
 // redirectStderr to the file passed in

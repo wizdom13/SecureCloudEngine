@@ -10,10 +10,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/fs/config"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
 )
 
 func TestConfigLoadEncrypted(t *testing.T) {

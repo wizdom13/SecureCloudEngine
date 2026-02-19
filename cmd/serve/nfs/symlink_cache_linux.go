@@ -34,8 +34,9 @@ import (
 	"path/filepath"
 	"syscall"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
 	"golang.org/x/sys/unix"
+
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // emptyPath is written instead of "" as symlinks can't be empty

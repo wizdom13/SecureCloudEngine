@@ -8,6 +8,11 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/spf13/cobra"
+	"github.com/spf13/pflag"
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configflags"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
@@ -16,10 +21,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/log/logflags"
 	"github.com/wizdom13/SecureCloudEngine/fs/rc/rcflags"
 	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
-	"github.com/spf13/cobra"
-	"github.com/spf13/pflag"
-	"golang.org/x/text/cases"
-	"golang.org/x/text/language"
 )
 
 // Root is the main rclone command

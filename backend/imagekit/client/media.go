@@ -8,8 +8,9 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 	"gopkg.in/validator.v2"
+
+	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 )
 
 // FilesOrFolderParam struct is a parameter type to ListFiles() function to search / list media library files.

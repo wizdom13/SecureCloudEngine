@@ -8,6 +8,9 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/spf13/cobra"
+	"github.com/spf13/pflag"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd"
 	"github.com/wizdom13/SecureCloudEngine/cmd/serve"
 	"github.com/wizdom13/SecureCloudEngine/cmd/serve/proxy"
@@ -20,8 +23,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/vfs"
 	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 	"github.com/wizdom13/SecureCloudEngine/vfs/vfsflags"
-	"github.com/spf13/cobra"
-	"github.com/spf13/pflag"
 )
 
 // OptionsInfo descripts the Options in use

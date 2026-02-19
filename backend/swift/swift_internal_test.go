@@ -6,8 +6,9 @@ import (
 	"time"
 
 	"github.com/ncw/swift/v2"
-	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
 )
 
 func TestInternalUrlEncode(t *testing.T) {

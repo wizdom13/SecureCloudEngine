@@ -27,6 +27,13 @@ import (
 	"text/template"
 	"time"
 
+	"golang.org/x/oauth2"
+	"golang.org/x/oauth2/google"
+	drive_v2 "google.golang.org/api/drive/v2"
+	drive "google.golang.org/api/drive/v3"
+	"google.golang.org/api/googleapi"
+	"google.golang.org/api/option"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/cache"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
@@ -46,12 +53,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/oauthutil"
 	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
 	"github.com/wizdom13/SecureCloudEngine/lib/readers"
-	"golang.org/x/oauth2"
-	"golang.org/x/oauth2/google"
-	drive_v2 "google.golang.org/api/drive/v2"
-	drive "google.golang.org/api/drive/v3"
-	"google.golang.org/api/googleapi"
-	"google.golang.org/api/option"
 )
 
 // Constants

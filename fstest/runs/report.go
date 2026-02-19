@@ -13,9 +13,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/skratchdot/open-golang/open"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/lib/file"
-	"github.com/skratchdot/open-golang/open"
 )
 
 const timeFormat = "2006-01-02-150405"

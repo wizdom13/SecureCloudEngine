@@ -15,6 +15,8 @@ import (
 	"sync"
 	"time"
 
+	"golang.org/x/sync/errgroup"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/cache"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
@@ -23,7 +25,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/list"
 	"github.com/wizdom13/SecureCloudEngine/fs/operations"
 	"github.com/wizdom13/SecureCloudEngine/fs/walk"
-	"golang.org/x/sync/errgroup"
 )
 
 // Register with Fs

@@ -22,6 +22,8 @@ import (
 	"strings"
 	"time"
 
+	"golang.org/x/oauth2"
+
 	"github.com/wizdom13/SecureCloudEngine/backend/jottacloud/api"
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
@@ -37,7 +39,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/oauthutil"
 	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
 	"github.com/wizdom13/SecureCloudEngine/lib/rest"
-	"golang.org/x/oauth2"
 )
 
 // Globals

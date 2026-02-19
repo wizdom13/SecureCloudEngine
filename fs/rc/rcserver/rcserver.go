@@ -17,6 +17,8 @@ import (
 	"time"
 
 	"github.com/go-chi/chi/v5/middleware"
+	"github.com/skratchdot/open-golang/open"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/cache"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
@@ -27,7 +29,6 @@ import (
 	libhttp "github.com/wizdom13/SecureCloudEngine/lib/http"
 	"github.com/wizdom13/SecureCloudEngine/lib/http/serve"
 	"github.com/wizdom13/SecureCloudEngine/lib/random"
-	"github.com/skratchdot/open-golang/open"
 )
 
 // Start the remote control server if configured

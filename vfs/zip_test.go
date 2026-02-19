@@ -10,9 +10,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/stretchr/testify/require"
+
 	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/wizdom13/SecureCloudEngine/lib/random"
-	"github.com/stretchr/testify/require"
 )
 
 func readZip(t *testing.T, buf *bytes.Buffer) *zip.Reader {

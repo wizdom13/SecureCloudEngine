@@ -16,6 +16,10 @@ import (
 	"strings"
 	"time"
 
+	qsConfig "github.com/yunify/qingstor-sdk-go/v3/config"
+	qsErr "github.com/yunify/qingstor-sdk-go/v3/request/errors"
+	qs "github.com/yunify/qingstor-sdk-go/v3/service"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
@@ -25,9 +29,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/list"
 	"github.com/wizdom13/SecureCloudEngine/lib/bucket"
 	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
-	qsConfig "github.com/yunify/qingstor-sdk-go/v3/config"
-	qsErr "github.com/yunify/qingstor-sdk-go/v3/request/errors"
-	qs "github.com/yunify/qingstor-sdk-go/v3/service"
 )
 
 // Register with Fs

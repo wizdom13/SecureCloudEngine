@@ -4,9 +4,10 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/onedrive/api"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/wizdom13/SecureCloudEngine/backend/onedrive/api"
 )
 
 func TestOrderPermissions(t *testing.T) {

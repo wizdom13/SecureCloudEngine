@@ -18,6 +18,10 @@ import (
 
 	mutex "sync" // renamed as "sync" already in use
 
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+	"golang.org/x/text/unicode/norm"
+
 	_ "github.com/wizdom13/SecureCloudEngine/backend/all" // import all backends
 	"github.com/wizdom13/SecureCloudEngine/cmd/bisync/bilib"
 	"github.com/wizdom13/SecureCloudEngine/fs"
@@ -28,9 +32,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/operations"
 	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/wizdom13/SecureCloudEngine/lib/transform"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
-	"golang.org/x/text/unicode/norm"
 )
 
 // Some times used in the tests

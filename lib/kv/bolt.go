@@ -12,10 +12,11 @@ import (
 	"sync"
 	"time"
 
+	"go.etcd.io/bbolt"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
 	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
-	"go.etcd.io/bbolt"
 )
 
 const (

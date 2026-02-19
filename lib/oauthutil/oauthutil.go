@@ -16,15 +16,16 @@ import (
 	"sync"
 	"time"
 
+	"github.com/skratchdot/open-golang/open"
+	"golang.org/x/oauth2"
+	"golang.org/x/oauth2/clientcredentials"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
 	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
 	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
 	"github.com/wizdom13/SecureCloudEngine/lib/random"
-	"github.com/skratchdot/open-golang/open"
-	"golang.org/x/oauth2"
-	"golang.org/x/oauth2/clientcredentials"
 )
 
 var (

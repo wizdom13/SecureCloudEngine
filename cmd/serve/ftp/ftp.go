@@ -18,6 +18,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/spf13/cobra"
+	"github.com/spf13/pflag"
+	ftp "goftp.io/server/v2"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd"
 	"github.com/wizdom13/SecureCloudEngine/cmd/serve"
 	"github.com/wizdom13/SecureCloudEngine/cmd/serve/proxy"
@@ -32,9 +36,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/vfs"
 	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 	"github.com/wizdom13/SecureCloudEngine/vfs/vfsflags"
-	"github.com/spf13/cobra"
-	"github.com/spf13/pflag"
-	ftp "goftp.io/server/v2"
 )
 
 // OptionsInfo descripts the Options in use

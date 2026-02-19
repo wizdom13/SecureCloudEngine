@@ -9,9 +9,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/stretchr/testify/require"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configfile"
-	"github.com/stretchr/testify/require"
 )
 
 // createOverwriteDeleteSeq returns a sequence which will create a new file at

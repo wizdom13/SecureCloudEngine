@@ -10,6 +10,9 @@ import (
 	"path/filepath"
 	"time"
 
+	"github.com/spf13/cobra"
+	"github.com/spf13/pflag"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd"
 	"github.com/wizdom13/SecureCloudEngine/cmd/test"
 	"github.com/wizdom13/SecureCloudEngine/fs"
@@ -17,8 +20,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/file"
 	"github.com/wizdom13/SecureCloudEngine/lib/random"
 	"github.com/wizdom13/SecureCloudEngine/lib/readers"
-	"github.com/spf13/cobra"
-	"github.com/spf13/pflag"
 )
 
 var (

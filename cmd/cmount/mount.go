@@ -13,12 +13,13 @@ import (
 	"strings"
 	"time"
 
+	"github.com/winfsp/cgofuse/fuse"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
 	"github.com/wizdom13/SecureCloudEngine/lib/buildinfo"
 	"github.com/wizdom13/SecureCloudEngine/vfs"
-	"github.com/winfsp/cgofuse/fuse"
 )
 
 func init() {

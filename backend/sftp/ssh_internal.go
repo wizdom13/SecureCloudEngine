@@ -7,10 +7,11 @@ import (
 	"io"
 	"net"
 
+	"golang.org/x/crypto/ssh"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
 	"github.com/wizdom13/SecureCloudEngine/lib/proxy"
-	"golang.org/x/crypto/ssh"
 )
 
 // Internal ssh connections with "golang.org/x/crypto/ssh"

@@ -11,9 +11,10 @@ import (
 	"time"
 
 	"github.com/lanrat/extsort"
+	"golang.org/x/sync/errgroup"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/lib/errcount"
-	"golang.org/x/sync/errgroup"
 )
 
 // NewObjecter is the minimum facilities we need from the fs.Fs passed into NewSorter.

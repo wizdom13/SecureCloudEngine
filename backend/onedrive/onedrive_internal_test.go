@@ -8,6 +8,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
 	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
 	"github.com/wizdom13/SecureCloudEngine/backend/onedrive/api"
 	"github.com/wizdom13/SecureCloudEngine/fs"
@@ -15,8 +18,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 	"github.com/wizdom13/SecureCloudEngine/lib/random"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 // go test -timeout 30m -run ^TestIntegration/FsMkdir/FsPutFiles/Internal$ github.com/wizdom13/SecureCloudEngine/backend/onedrive -remote TestOneDrive:meta -v

@@ -20,11 +20,12 @@ import (
 	"time"
 	"unicode/utf8"
 
+	"golang.org/x/text/encoding/charmap"
+	"golang.org/x/text/unicode/norm"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
 	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
-	"golang.org/x/text/encoding/charmap"
-	"golang.org/x/text/unicode/norm"
 )
 
 //go:embed transform.md

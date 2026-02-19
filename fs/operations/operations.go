@@ -24,6 +24,9 @@ import (
 	"sync/atomic"
 	"time"
 
+	"golang.org/x/sync/errgroup"
+	"golang.org/x/text/unicode/norm"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
 	"github.com/wizdom13/SecureCloudEngine/fs/cache"
@@ -40,8 +43,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/random"
 	"github.com/wizdom13/SecureCloudEngine/lib/readers"
 	"github.com/wizdom13/SecureCloudEngine/lib/transform"
-	"golang.org/x/sync/errgroup"
-	"golang.org/x/text/unicode/norm"
 )
 
 // CheckHashes checks the two files to see if they have common

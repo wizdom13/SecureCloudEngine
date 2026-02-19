@@ -8,12 +8,13 @@ import (
 	"io"
 	"time"
 
+	"golang.org/x/sync/errgroup"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
 	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
 	"github.com/wizdom13/SecureCloudEngine/lib/multipart"
 	"github.com/wizdom13/SecureCloudEngine/lib/pool"
-	"golang.org/x/sync/errgroup"
 )
 
 const (

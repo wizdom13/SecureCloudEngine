@@ -12,6 +12,8 @@ import (
 	"sync"
 	"time"
 
+	"golang.org/x/sync/errgroup"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
 	"github.com/wizdom13/SecureCloudEngine/fs/filter"
@@ -21,7 +23,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/operations"
 	"github.com/wizdom13/SecureCloudEngine/lib/errcount"
 	"github.com/wizdom13/SecureCloudEngine/lib/transform"
-	"golang.org/x/sync/errgroup"
 )
 
 // ErrorMaxDurationReached defines error when transfer duration is reached

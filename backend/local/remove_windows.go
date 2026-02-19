@@ -6,8 +6,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
 	"golang.org/x/sys/windows"
+
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // Removes name, retrying on a sharing violation

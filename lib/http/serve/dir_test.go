@@ -11,9 +11,10 @@ import (
 	"testing"
 	"time"
 
-	libhttp "github.com/wizdom13/SecureCloudEngine/lib/http"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	libhttp "github.com/wizdom13/SecureCloudEngine/lib/http"
 )
 
 func GetTemplate(t *testing.T) *template.Template {

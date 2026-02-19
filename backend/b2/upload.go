@@ -14,6 +14,8 @@ import (
 	"strings"
 	"sync"
 
+	"golang.org/x/sync/errgroup"
+
 	"github.com/wizdom13/SecureCloudEngine/backend/b2/api"
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
@@ -22,7 +24,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
 	"github.com/wizdom13/SecureCloudEngine/lib/pool"
 	"github.com/wizdom13/SecureCloudEngine/lib/rest"
-	"golang.org/x/sync/errgroup"
 )
 
 type hashAppendingReader struct {

@@ -13,11 +13,12 @@ import (
 	"testing"
 	"time"
 
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	_ "github.com/wizdom13/SecureCloudEngine/fstest" // needed to run under integration tests
 	"github.com/wizdom13/SecureCloudEngine/fstest/testy"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 func TestGetVersion(t *testing.T) {

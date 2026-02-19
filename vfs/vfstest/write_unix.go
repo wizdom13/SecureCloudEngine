@@ -6,10 +6,11 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/sys/unix"
+
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 )
 
 // TestWriteFileDoubleClose tests double close on write

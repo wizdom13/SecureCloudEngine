@@ -4,10 +4,11 @@ import (
 	"sort"
 	"testing"
 
+	"github.com/stretchr/testify/assert"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fstest/mockdir"
 	"github.com/wizdom13/SecureCloudEngine/fstest/mockobject"
-	"github.com/stretchr/testify/assert"
 )
 
 func TestDirEntriesSort(t *testing.T) {

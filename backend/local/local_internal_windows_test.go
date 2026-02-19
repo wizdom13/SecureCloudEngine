@@ -9,10 +9,11 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/operations"
-	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
 )
 
 // TestRmdirWindows tests that FILE_ATTRIBUTE_READONLY does not block Rmdir on windows.

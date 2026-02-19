@@ -13,6 +13,8 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"golang.org/x/text/unicode/norm"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
 	"github.com/wizdom13/SecureCloudEngine/fs/filter"
@@ -20,7 +22,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 	"github.com/wizdom13/SecureCloudEngine/fs/march"
 	"github.com/wizdom13/SecureCloudEngine/lib/readers"
-	"golang.org/x/text/unicode/norm"
 )
 
 // checkFn is the type of the checking function used in CheckFn()

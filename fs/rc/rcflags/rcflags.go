@@ -2,9 +2,10 @@
 package rcflags
 
 import (
+	"github.com/spf13/pflag"
+
 	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
 	"github.com/wizdom13/SecureCloudEngine/fs/rc"
-	"github.com/spf13/pflag"
 )
 
 // FlagPrefix is the prefix used to uniquely identify command line flags.

@@ -16,6 +16,9 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
+	"github.com/spf13/cobra"
+	"golang.org/x/net/http2"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd"
 	cmdserve "github.com/wizdom13/SecureCloudEngine/cmd/serve"
 	"github.com/wizdom13/SecureCloudEngine/fs"
@@ -29,8 +32,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/http/serve"
 	"github.com/wizdom13/SecureCloudEngine/lib/systemd"
 	"github.com/wizdom13/SecureCloudEngine/lib/terminal"
-	"github.com/spf13/cobra"
-	"golang.org/x/net/http2"
 )
 
 // OptionsInfo describes the Options in use
