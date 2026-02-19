@@ -1,14 +1,11 @@
 # tests whether rclone check and rclone sync output exactly the same file lists.
-# uses two different old versions of rclone source code for the src and dst 
-# to produce a more realistic test than makefiles
-# (has lots of files with same name but different content)
+# uses deterministic generated files for src and dst with overlapping seeds
 
-# Filling src and dst with two different versions of rclone source!:
-exec rclone copyurl https://github.com/wizdom13/SecureCloudEngine/archive/refs/tags/v1.49.1.zip $SRC/src.zip
-exec rclone copyurl https://github.com/wizdom13/SecureCloudEngine/archive/refs/tags/v1.54.1.zip $DST/dst.zip
-exec unzip $SRC/src.zip -d $SRC
-exec unzip $DST/dst.zip -d $DST
-
+# Filling src and dst with deterministic generated file trees:
+exec rclone test makefiles $SRC --seed 1
+exec rclone test makefiles $DST --seed 2
+exec rclone test makefiles $SRC --seed 3
+exec rclone test makefiles $DST --seed 3
 
 # running rclone check for baseline test:
 # error is expected here:
