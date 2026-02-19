@@ -9,6 +9,7 @@ import (
 	"path/filepath"
 	"regexp"
 	"runtime"
+	"strings"
 	"testing"
 	"time"
 
@@ -76,7 +77,11 @@ func TestInstallOnLinux(t *testing.T) {
 
 	// Must keep non-standard permissions
 	assert.NoError(t, os.Chmod(path, 0644))
-	require.NoError(t, InstallUpdate(ctx, &Options{Beta: true, Output: path}))
+	err = InstallUpdate(ctx, &Options{Beta: true, Output: path})
+	if err != nil && strings.Contains(err.Error(), "404 Not Found") {
+		t.Skipf("Skipping test because beta artifact is missing: %v", err)
+	}
+	require.NoError(t, err)
 
 	info, err := os.Stat(path)
 	assert.NoError(t, err)
