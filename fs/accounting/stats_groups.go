@@ -429,6 +429,12 @@ func (sg *statsGroups) delete(group string) {
 	}
 	stats.ResetErrors()
 	stats.ResetCounters()
+
+	// Stop the average loop that ResetCounters might have started
+	stats.mu.Lock()
+	stats._stopAverageLoop()
+	stats.mu.Unlock()
+
 	delete(sg.m, group)
 
 	// Remove group reference from the ordering slice.

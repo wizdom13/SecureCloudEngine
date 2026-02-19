@@ -57,6 +57,9 @@ func (dh *diskHandler) makeSymlinkCache() error {
 	newFh, err := dh.symlinkCacheWrite(fh, path, fullPath)
 	fs.Debugf(nil, "newFh = %q", newFh)
 	if err != nil {
+		if errors.Is(err, syscall.EOPNOTSUPP) {
+			return ErrorSymlinkCacheNotSupported
+		}
 		return fmt.Errorf("symlink cache write test failed: %w", err)
 	}
 	defer func() {
