@@ -4,7 +4,7 @@
 # $GOPATH/src/github.com/wizdom13/SecureCloudEngine/cmd/info/test.sh --list | \
 #   parallel -P20 $GOPATH/src/github.com/wizdom13/SecureCloudEngine/cmd/info/test.sh
 
-export PATH=$GOPATH/src/github.com/rclone/rclone:$PATH
+export PATH=$GOPATH/src/github.com/wizdom13/SecureCloudEngine:$PATH
 
 typeset -A allRemotes
 allRemotes=(

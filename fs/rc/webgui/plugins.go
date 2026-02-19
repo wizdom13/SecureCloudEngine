@@ -202,10 +202,10 @@ func (p *Plugins) GetPluginByName(name string) (out *PackageJSON, err error) {
 // getAuthorRepoBranchGitHub gives author, repoName and branch from a github.com url
 //
 //	url examples:
-//	https://github.com/rclone/rclone-webui-react/
-//	http://github.com/rclone/rclone-webui-react
-//	https://github.com/rclone/rclone-webui-react/tree/caman-js
-//	github.com/rclone/rclone-webui-react
+//	https://github.com/wizdom13/SecureCloudEngine-webui-react/
+//	http://github.com/wizdom13/SecureCloudEngine-webui-react
+//	https://github.com/wizdom13/SecureCloudEngine-webui-react/tree/caman-js
+//	github.com/wizdom13/SecureCloudEngine-webui-react
 func getAuthorRepoBranchGitHub(url string) (author string, repoName string, branch string, err error) {
 	repoURL := url
 	repoURL = strings.Replace(repoURL, "https://", "", 1)
