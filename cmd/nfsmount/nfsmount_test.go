@@ -8,13 +8,16 @@ import (
 	"os"
 	"os/exec"
 	"runtime"
+	"strings"
 	"testing"
 
+	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
 	"github.com/wizdom13/SecureCloudEngine/cmd/serve/nfs"
 	"github.com/wizdom13/SecureCloudEngine/fs/object"
 	"github.com/wizdom13/SecureCloudEngine/vfs"
 	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 	"github.com/wizdom13/SecureCloudEngine/vfs/vfstest"
+	"github.com/wizdom13/SecureCloudEngine/fstest/testy"
 	"github.com/stretchr/testify/require"
 )
 
@@ -25,7 +28,24 @@ func commandOK(name string, arg ...string) bool {
 	return err == nil
 }
 
+func checkNFS(t *testing.T) {
+	if runtime.GOOS != "linux" {
+		return
+	}
+	data, err := os.ReadFile("/proc/filesystems")
+	if err != nil {
+		t.Logf("Failed to read /proc/filesystems: %v", err)
+		return // Ignore error
+	}
+	if !strings.Contains(string(data), "\tnfs\n") {
+		t.Logf("NFS not found in /proc/filesystems:\n%s", string(data))
+		t.Skip("Skipping test because NFS is not supported by kernel (not listed in /proc/filesystems)")
+	}
+}
+
 func TestMount(t *testing.T) {
+	testy.SkipUnreliable(t)
+	checkNFS(t)
 	if runtime.GOOS != "darwin" {
 		if !commandOK("sudo", "-n", "mount", "--help") {
 			t.Skip("Can't run sudo mount without a password")
@@ -52,7 +72,14 @@ func TestMount(t *testing.T) {
 				_ = os.Unsetenv("SCE_NFS_CACHE_DIR")
 				_ = os.Unsetenv("SCE_NFS_CACHE_TYPE")
 			})
-			vfstest.RunTests(t, false, vfscommon.CacheModeWrites, false, mount)
+			mountWrapper := func(VFS *vfs.VFS, mountpoint string, opt *mountlib.Options) (<-chan error, func() error, error) {
+				asyncerrors, unmount, err := mount(VFS, mountpoint, opt)
+				if err != nil && strings.Contains(err.Error(), "unknown filesystem type 'nfs'") {
+					t.Skip("Skipping test because NFS is not supported: " + err.Error())
+				}
+				return asyncerrors, unmount, err
+			}
+			vfstest.RunTests(t, false, vfscommon.CacheModeWrites, false, mountWrapper)
 		})
 	}
 }

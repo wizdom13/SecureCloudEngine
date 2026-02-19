@@ -8,6 +8,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"os/exec"
 	"net"
 	"net/http"
 	"os"
@@ -309,6 +310,12 @@ func testMountAPI(t *testing.T, sockAddr string) {
 	}
 	if _, mountFn := mountlib.ResolveMountMethod(""); mountFn == nil {
 		t.Skip("Test requires working mount command")
+	}
+
+	if runtime.GOOS == "linux" {
+		if _, err := exec.LookPath("fusermount3"); err != nil {
+			t.Skip("Test requires fusermount3")
+		}
 	}
 
 	ctx := context.Background()
