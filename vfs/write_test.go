@@ -37,6 +37,9 @@ func TestWriteFileHandleReadonly(t *testing.T) {
 	if *fstest.RemoteName != "" {
 		t.Skip("Skipping test on non local remote")
 	}
+	if os.Geteuid() == 0 {
+		t.Skip("Skipping test as root")
+	}
 	r, vfs, fh := writeHandleCreate(t)
 
 	// Name

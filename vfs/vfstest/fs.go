@@ -179,7 +179,7 @@ func (r *Run) skipIfVFS(t *testing.T) {
 
 // Finalise cleans the remote and unmounts
 func (r *Run) Finalise() {
-	if !r.useVFS {
+	if !r.useVFS && !r.skip {
 		r.sendMountCommand("exit")
 		_, err := r.cmd.Process.Wait()
 		if err != nil {

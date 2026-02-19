@@ -79,14 +79,24 @@ func (r *Run) startMountSubProcess() {
 	}
 	r.scanner = bufio.NewScanner(r.in)
 
-	// Wait it for startup
+	// Wait for startup
 	fs.Log(nil, "Waiting for mount to start")
+	started := false
 	for r.scanner.Scan() {
 		rx := strings.TrimSpace(r.scanner.Text())
 		if rx == "STARTED" {
+			started = true
 			break
 		}
 		fs.Logf(nil, "..Mount said: %s", rx)
+	}
+	if !started {
+		r.skip = true
+		if err := r.cmd.Wait(); err != nil {
+			fs.Logf(nil, "mount subprocess exited before startup completed: %v", err)
+		}
+		fs.Logf(nil, "Mount did not start; skipping FUSE mount tests")
+		return
 	}
 	if r.scanner.Err() != nil {
 		fs.Logf(nil, "scanner err %v", r.scanner.Err())

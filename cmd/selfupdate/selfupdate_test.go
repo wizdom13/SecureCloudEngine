@@ -6,6 +6,7 @@ import (
 	"context"
 	"os"
 	"os/exec"
+	"fmt"
 	"path/filepath"
 	"regexp"
 	"runtime"
@@ -58,8 +59,7 @@ func TestInstallOnLinux(t *testing.T) {
 
 	regexVer := regexp.MustCompile(`v[0-9]\S+`)
 
-	betaVer, _, err := GetVersion(ctx, true, "")
-	assert.NoError(t, err)
+	stableVer := "v1.73.1"
 
 	// Must do nothing if version isn't changing
 	assert.NoError(t, InstallUpdate(ctx, &Options{Beta: true, Output: path, Version: fs.Version}))
@@ -70,13 +70,17 @@ func TestInstallOnLinux(t *testing.T) {
 	defer func() {
 		_ = os.Chmod(path, 0644)
 	}()
-	err = (InstallUpdate(ctx, &Options{Beta: true, Output: path}))
-	assert.Error(t, err)
-	assert.Contains(t, err.Error(), "run self-update as root")
+	err := InstallUpdate(ctx, &Options{Output: path, Version: stableVer})
+	if os.Geteuid() == 0 {
+		assert.NoError(t, err)
+	} else {
+		assert.Error(t, err)
+		assert.Contains(t, err.Error(), "run self-update as root")
+	}
 
 	// Must keep non-standard permissions
 	assert.NoError(t, os.Chmod(path, 0644))
-	require.NoError(t, InstallUpdate(ctx, &Options{Beta: true, Output: path}))
+	require.NoError(t, InstallUpdate(ctx, &Options{Output: path, Version: stableVer}))
 
 	info, err := os.Stat(path)
 	assert.NoError(t, err)
@@ -93,7 +97,7 @@ func TestInstallOnLinux(t *testing.T) {
 	output, err := cmd.CombinedOutput()
 	assert.NoError(t, err)
 	assert.True(t, cmd.ProcessState.Success())
-	assert.Equal(t, betaVer, regexVer.FindString(string(output)))
+	assert.Equal(t, stableVer, regexVer.FindString(string(output)), fmt.Sprintf("unexpected version output: %s", string(output)))
 }
 
 func TestRenameOnWindows(t *testing.T) {
