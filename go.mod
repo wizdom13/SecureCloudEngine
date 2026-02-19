@@ -71,6 +71,7 @@ require (
 	github.com/quasilyte/go-ruleguard/dsl v0.3.23
 	github.com/rclone/Proton-API-Bridge v1.0.1-0.20260127174007-77f974840d11
 	github.com/rclone/go-proton-api v1.0.1-0.20260127173028-eb465cac3b18
+	github.com/rclone/rclone v1.69.1
 	github.com/rclone/gofakes3 v0.0.4
 	github.com/rfjakob/eme v1.1.2
 	github.com/rivo/uniseg v0.4.7
@@ -228,7 +229,6 @@ require (
 	github.com/prometheus/common v0.67.2 // indirect
 	github.com/prometheus/procfs v0.19.2 // indirect
 	github.com/rasky/go-xdr v0.0.0-20170124162913-1a41d1a06c93 // indirect
-	github.com/rclone/rclone v1.69.1 // indirect
 	github.com/relvacode/iso8601 v1.7.0 // indirect
 	github.com/rs/xid v1.6.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
