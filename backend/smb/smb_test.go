@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"/backend/smb"
-	"/fstest"
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/backend/smb"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

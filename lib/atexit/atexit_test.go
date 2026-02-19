@@ -5,7 +5,7 @@ import (
 	"runtime"
 	"testing"
 
-	"/lib/exitcode"
+	"github.com/wizdom13/SecureCloudEngine/lib/exitcode"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -257,7 +257,7 @@ func compileArch(version, goos, goarch, dir string) bool {
 	}
 	args := []string{
 		"go", "build",
-		"--ldflags", "-s -X /fs.Version=" + version,
+		"--ldflags", "-s -X github.com/wizdom13/SecureCloudEngine/fs.Version=" + version,
 		"-trimpath",
 		"-o", output,
 		"-tags", *tags,

@@ -4,7 +4,7 @@ package archiver
 import (
 	"context"
 
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // Archiver describes an archive package

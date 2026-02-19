@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"/cmd/bisync/bilib"
-	"/fs"
-	"/lib/terminal"
+	"github.com/wizdom13/SecureCloudEngine/cmd/bisync/bilib"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/lib/terminal"
 )
 
 const basicallyforever = fs.Duration(200 * 365 * 24 * time.Hour)

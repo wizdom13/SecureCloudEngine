@@ -10,9 +10,9 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"/fs"
-	"/lib/atexit"
-	"/lib/file"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
+	"github.com/wizdom13/SecureCloudEngine/lib/file"
 )
 
 // Server connects plugin with docker daemon by protocol

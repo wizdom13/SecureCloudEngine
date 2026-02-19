@@ -4,12 +4,12 @@ import (
 	"testing"
 	"time"
 
-	"/cmd/mountlib"
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	_ "/backend/local"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
 )
 
 func TestApplyOptions(t *testing.T) {

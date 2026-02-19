@@ -5,8 +5,8 @@ import (
 	"sync"
 
 	"github.com/coreos/go-systemd/v22/daemon"
-	"/fs"
-	"/lib/atexit"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
 )
 
 // Notify systemd that the service is ready. This returns a

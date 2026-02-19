@@ -3,7 +3,7 @@ package sync
 import (
 	"context"
 
-	"/fs/rc"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
 )
 
 func init() {

@@ -13,11 +13,11 @@ import (
 	"os/exec"
 	"runtime"
 
-	"/cmd/mountlib"
-	"/cmd/serve/nfs"
-	"/fs"
-	"/fs/config/flags"
-	"/vfs"
+	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
+	"github.com/wizdom13/SecureCloudEngine/cmd/serve/nfs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
+	"github.com/wizdom13/SecureCloudEngine/vfs"
 )
 
 var (

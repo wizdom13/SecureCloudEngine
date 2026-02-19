@@ -9,9 +9,9 @@ import (
 	"sync/atomic"
 	"testing"
 
-	_ "/backend/local"
-	"/fs"
-	"/fs/operations"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -6,12 +6,12 @@ import (
 	"io"
 	"sync"
 
-	"/fs"
-	"/fs/hash"
-	"/fs/log"
-	"/fs/operations"
-	"/lib/multipart"
-	"/lib/pool"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/log"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/lib/multipart"
+	"github.com/wizdom13/SecureCloudEngine/lib/pool"
 )
 
 // parallel reads Object in chunks of a given size in parallel.

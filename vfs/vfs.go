@@ -36,13 +36,13 @@ import (
 	"slices"
 
 	"github.com/go-git/go-billy/v5"
-	"/fs"
-	"/fs/cache"
-	"/fs/log"
-	"/fs/rc"
-	"/fs/walk"
-	"/vfs/vfscache"
-	"/vfs/vfscommon"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/cache"
+	"github.com/wizdom13/SecureCloudEngine/fs/log"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
+	"github.com/wizdom13/SecureCloudEngine/fs/walk"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscache"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 )
 
 //go:embed vfs.md

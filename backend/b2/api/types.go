@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"time"
 
-	"/fs/fserrors"
-	"/lib/version"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/lib/version"
 )
 
 // Error describes a B2 error response

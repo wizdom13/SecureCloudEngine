@@ -15,11 +15,11 @@ import (
 	"strings"
 	"sync"
 
-	"/backend/sharefile/api"
-	"/fs"
-	"/fs/accounting"
-	"/lib/readers"
-	"/lib/rest"
+	"github.com/wizdom13/SecureCloudEngine/backend/sharefile/api"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"github.com/wizdom13/SecureCloudEngine/lib/readers"
+	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 )
 
 // largeUpload is used to control the upload of large files which need chunking

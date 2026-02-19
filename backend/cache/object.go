@@ -10,9 +10,9 @@ import (
 	"sync"
 	"time"
 
-	"/fs"
-	"/fs/hash"
-	"/lib/readers"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/lib/readers"
 )
 
 const (

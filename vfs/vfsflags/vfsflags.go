@@ -2,8 +2,8 @@
 package vfsflags
 
 import (
-	"/fs/config/flags"
-	"/vfs/vfscommon"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 	"github.com/spf13/pflag"
 )
 

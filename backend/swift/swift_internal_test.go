@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/ncw/swift/v2"
-	"/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -11,7 +11,7 @@ import (
 	"io"
 	"time"
 
-	"/lib/readers"
+	"github.com/wizdom13/SecureCloudEngine/lib/readers"
 )
 
 // protocol errors

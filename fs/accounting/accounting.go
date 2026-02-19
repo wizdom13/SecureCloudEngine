@@ -10,11 +10,11 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"/fs/rc"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
 
-	"/fs"
-	"/fs/asyncreader"
-	"/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/asyncreader"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
 )
 
 // ErrorMaxTransferLimitReached defines error when transfer limit is reached.

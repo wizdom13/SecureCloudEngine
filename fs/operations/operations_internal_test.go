@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"/fs"
-	"/fs/object"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/object"
 	"github.com/stretchr/testify/assert"
 )
 

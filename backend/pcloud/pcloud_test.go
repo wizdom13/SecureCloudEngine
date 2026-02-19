@@ -4,8 +4,8 @@ package pcloud_test
 import (
 	"testing"
 
-	"/backend/pcloud"
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/backend/pcloud"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

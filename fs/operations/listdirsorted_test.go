@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
-	"/fs"
-	"/fs/filter"
-	"/fs/list"
-	"/fstest"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/filter"
+	"github.com/wizdom13/SecureCloudEngine/fs/list"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

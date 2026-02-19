@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
 )
 
 var matchUpper = regexp.MustCompile("([A-Z]+)")

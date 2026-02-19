@@ -9,9 +9,9 @@ import (
 	"path"
 	"time"
 
-	"/fs"
-	"/fs/hash"
-	"/vfs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/vfs"
 )
 
 // Fs represents a wrapped fs.Fs

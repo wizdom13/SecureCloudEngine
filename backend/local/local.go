@@ -18,17 +18,17 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"/fs"
-	"/fs/accounting"
-	"/fs/config"
-	"/fs/config/configmap"
-	"/fs/config/configstruct"
-	"/fs/filter"
-	"/fs/fserrors"
-	"/fs/hash"
-	"/lib/encoder"
-	"/lib/file"
-	"/lib/readers"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/filter"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
+	"github.com/wizdom13/SecureCloudEngine/lib/file"
+	"github.com/wizdom13/SecureCloudEngine/lib/readers"
 	"golang.org/x/text/unicode/norm"
 )
 
@@ -169,7 +169,7 @@ are being uploaded and aborts with a message which starts "can't copy -
 source file is being updated" if the file changes during upload.
 
 However on some file systems this modification time check may fail (e.g.
-[Glusterfs #2206](https:///issues/2206)) so this
+[Glusterfs #2206](https://github.com/wizdom13/SecureCloudEngine/issues/2206)) so this
 check can be disabled with this flag.
 
 If this flag is set, rclone will use its best efforts to transfer a

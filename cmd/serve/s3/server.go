@@ -15,12 +15,12 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/rclone/gofakes3"
 	"github.com/rclone/gofakes3/signature"
-	"/cmd/serve/proxy"
-	"/fs"
-	"/fs/hash"
-	httplib "/lib/http"
-	"/vfs"
-	"/vfs/vfscommon"
+	"github.com/wizdom13/SecureCloudEngine/cmd/serve/proxy"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	httplib "github.com/wizdom13/SecureCloudEngine/lib/http"
+	"github.com/wizdom13/SecureCloudEngine/vfs"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 )
 
 type ctxKey int

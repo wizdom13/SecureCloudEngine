@@ -3,8 +3,8 @@ package protondrive_test
 import (
 	"testing"
 
-	"/backend/protondrive"
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/backend/protondrive"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

@@ -11,9 +11,9 @@ import (
 	"runtime"
 	"testing"
 
-	"/fstest/testy"
-	"/vfs/vfscommon"
-	"/vfs/vfstest"
+	"github.com/wizdom13/SecureCloudEngine/fstest/testy"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfstest"
 )
 
 func TestMount(t *testing.T) {

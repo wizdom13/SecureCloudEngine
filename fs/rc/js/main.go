@@ -16,17 +16,17 @@ import (
 	"runtime"
 	"syscall/js"
 
-	"/fs"
-	"/fs/rc"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
 
 	// Core functionality we need
-	_ "/fs/operations"
-	_ "/fs/sync"
+	_ "github.com/wizdom13/SecureCloudEngine/fs/operations"
+	_ "github.com/wizdom13/SecureCloudEngine/fs/sync"
 
-	//	_ "/backend/all" // import all backends
+	//	_ "github.com/wizdom13/SecureCloudEngine/backend/all" // import all backends
 
 	// Backends
-	_ "/backend/memory"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/memory"
 )
 
 var (

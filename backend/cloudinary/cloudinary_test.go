@@ -5,8 +5,8 @@ package cloudinary_test
 import (
 	"testing"
 
-	"/backend/cloudinary"
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/backend/cloudinary"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

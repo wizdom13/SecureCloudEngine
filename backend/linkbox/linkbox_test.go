@@ -4,8 +4,8 @@ package linkbox_test
 import (
 	"testing"
 
-	"/backend/linkbox"
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/backend/linkbox"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

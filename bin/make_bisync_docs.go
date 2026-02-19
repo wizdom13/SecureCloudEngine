@@ -14,9 +14,9 @@ import (
 	"slices"
 	"strings"
 
-	"/fs"
-	"/fs/operations"
-	"/fstest/runs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/fstest/runs"
 	"github.com/stretchr/testify/assert/yaml"
 )
 

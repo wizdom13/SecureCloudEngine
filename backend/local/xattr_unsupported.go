@@ -4,7 +4,7 @@
 
 package local
 
-import "/fs"
+import "github.com/wizdom13/SecureCloudEngine/fs"
 
 const (
 	xattrSupported = false

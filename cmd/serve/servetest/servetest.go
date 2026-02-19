@@ -13,10 +13,10 @@ import (
 	"strings"
 	"testing"
 
-	"/cmd/serve/proxy"
-	"/fs"
-	"/fs/config/configmap"
-	"/fstest"
+	"github.com/wizdom13/SecureCloudEngine/cmd/serve/proxy"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

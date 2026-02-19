@@ -6,8 +6,8 @@ import (
 	"io"
 	"sync"
 
-	"/fs"
-	"/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
 )
 
 // AccountFn is a function which will be called after every read

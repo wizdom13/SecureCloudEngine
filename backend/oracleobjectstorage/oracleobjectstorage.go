@@ -15,14 +15,14 @@ import (
 	"github.com/ncw/swift/v2"
 	"github.com/oracle/oci-go-sdk/v65/common"
 	"github.com/oracle/oci-go-sdk/v65/objectstorage"
-	"/fs"
-	"/fs/config/configmap"
-	"/fs/config/configstruct"
-	"/fs/hash"
-	"/fs/list"
-	"/fs/operations"
-	"/lib/bucket"
-	"/lib/pacer"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/list"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/lib/bucket"
+	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
 )
 
 // Register with Fs

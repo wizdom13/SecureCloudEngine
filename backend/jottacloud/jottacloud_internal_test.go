@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	"/fs"
-	"/fstest"
-	"/fstest/fstests"
-	"/lib/random"
-	"/lib/readers"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/lib/random"
+	"github.com/wizdom13/SecureCloudEngine/lib/readers"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

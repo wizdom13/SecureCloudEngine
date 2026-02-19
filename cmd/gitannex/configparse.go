@@ -5,9 +5,9 @@ import (
 	"slices"
 	"strings"
 
-	"/fs"
-	"/fs/config"
-	"/fs/fspath"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
 )
 
 type configID int

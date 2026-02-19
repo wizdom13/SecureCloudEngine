@@ -18,10 +18,10 @@ import (
 	"sync"
 	"time"
 
-	"/fs"
-	"/fs/accounting"
-	"/fs/config/obscure"
-	"/lib/structs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
+	"github.com/wizdom13/SecureCloudEngine/lib/structs"
 	"github.com/youmark/pkcs8"
 	"golang.org/x/net/publicsuffix"
 )

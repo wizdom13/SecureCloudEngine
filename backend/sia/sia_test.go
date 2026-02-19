@@ -4,9 +4,9 @@ package sia_test
 import (
 	"testing"
 
-	"/backend/sia"
+	"github.com/wizdom13/SecureCloudEngine/backend/sia"
 
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

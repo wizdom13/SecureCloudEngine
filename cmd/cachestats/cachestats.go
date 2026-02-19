@@ -7,9 +7,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"/backend/cache"
-	"/cmd"
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/backend/cache"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/spf13/cobra"
 )
 

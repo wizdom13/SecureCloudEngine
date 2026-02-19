@@ -9,13 +9,13 @@ import (
 	"testing"
 	"time"
 
-	_ "/backend/local" // import the local backend
-	"/fs"
-	"/fs/config"
-	"/fstest"
-	"/lib/diskusage"
-	"/vfs/vfscache/writeback"
-	"/vfs/vfscommon"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/local" // import the local backend
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/lib/diskusage"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscache/writeback"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

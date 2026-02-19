@@ -13,10 +13,10 @@ import (
 	"sync"
 	"time"
 
-	"/fs"
-	"/fs/filter"
-	"/fs/rc"
-	"/lib/errcount"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/filter"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
+	"github.com/wizdom13/SecureCloudEngine/lib/errcount"
 )
 
 // Handle describes what a server can do

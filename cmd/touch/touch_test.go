@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	_ "/backend/local"
-	"/fs"
-	"/fstest"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/stretchr/testify/require"
 )
 

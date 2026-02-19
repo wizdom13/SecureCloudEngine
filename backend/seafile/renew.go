@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // Renew allows tokens to be renewed on expiry.

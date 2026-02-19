@@ -7,9 +7,9 @@ package azureblob
 import (
 	"testing"
 
-	"/fs"
-	"/fstest"
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 	"github.com/stretchr/testify/assert"
 )
 

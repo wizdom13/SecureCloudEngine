@@ -14,9 +14,9 @@ import (
 	"strings"
 	"sync"
 
-	"/fs/config/configmap"
-	"/fs/config/configstruct"
-	"/fs/fspath"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
 )
 
 // Store the hashes of the overridden config

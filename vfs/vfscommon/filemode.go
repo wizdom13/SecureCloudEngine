@@ -5,7 +5,7 @@ import (
 	"os"
 	"strconv"
 
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // FileMode is a command line friendly os.FileMode

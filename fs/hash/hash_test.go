@@ -6,8 +6,8 @@ import (
 	"io"
 	"testing"
 
-	"/fs"
-	"/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 	"github.com/spf13/pflag"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

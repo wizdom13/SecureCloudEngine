@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"log/slog"
 
-	"/fs"
-	"/lib/atexit"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
 	"golang.org/x/sys/windows"
 	"golang.org/x/sys/windows/svc/eventlog"
 )

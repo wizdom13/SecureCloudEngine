@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"/cmd"
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/spf13/cobra"
 )
 

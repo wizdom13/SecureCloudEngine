@@ -5,9 +5,9 @@ import (
 	"sort"
 	"testing"
 
-	localBackend "/backend/local"
-	"/fs/config/configmap"
-	"/vfs"
+	localBackend "github.com/wizdom13/SecureCloudEngine/backend/local"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/vfs"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

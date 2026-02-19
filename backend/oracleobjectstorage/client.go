@@ -14,9 +14,9 @@ import (
 	"github.com/oracle/oci-go-sdk/v65/common"
 	"github.com/oracle/oci-go-sdk/v65/common/auth"
 	"github.com/oracle/oci-go-sdk/v65/objectstorage"
-	"/fs"
-	"/fs/fserrors"
-	"/fs/fshttp"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
 )
 
 func expandPath(filepath string) (expandedPath string) {

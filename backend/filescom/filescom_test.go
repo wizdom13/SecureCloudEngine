@@ -4,8 +4,8 @@ package filescom_test
 import (
 	"testing"
 
-	"/backend/filescom"
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/backend/filescom"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

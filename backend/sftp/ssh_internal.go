@@ -7,9 +7,9 @@ import (
 	"io"
 	"net"
 
-	"/fs"
-	"/fs/fshttp"
-	"/lib/proxy"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
+	"github.com/wizdom13/SecureCloudEngine/lib/proxy"
 	"golang.org/x/crypto/ssh"
 )
 

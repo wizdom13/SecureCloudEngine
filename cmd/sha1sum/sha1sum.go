@@ -4,10 +4,10 @@ package sha1sum
 import (
 	"context"
 
-	"/cmd"
-	"/cmd/hashsum"
-	"/fs/hash"
-	"/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/cmd/hashsum"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
 	"github.com/spf13/cobra"
 )
 

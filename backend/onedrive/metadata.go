@@ -10,11 +10,11 @@ import (
 	"strings"
 	"time"
 
-	"/backend/onedrive/api"
-	"/fs"
-	"/fs/fserrors"
-	"/lib/dircache"
-	"/lib/errcount"
+	"github.com/wizdom13/SecureCloudEngine/backend/onedrive/api"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/lib/dircache"
+	"github.com/wizdom13/SecureCloudEngine/lib/errcount"
 )
 
 const (
@@ -400,7 +400,7 @@ func (m *Metadata) WritePermissions(ctx context.Context) (err error) {
 // When all of the above are true, Graph indicates it has added the
 // user permission, but it immediately drops it
 //
-// See: https:///issues/8465
+// See: https://github.com/wizdom13/SecureCloudEngine/issues/8465
 func (m *Metadata) orderPermissions(xs []*api.PermissionsType) {
 	// Return true if identity has any user permissions
 	hasUserIdentity := func(identity *api.IdentitySet) bool {

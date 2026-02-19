@@ -26,16 +26,16 @@ import (
 	"time"
 
 	// Import all the required archivers here
-	_ "/backend/archive/squashfs"
-	_ "/backend/archive/zip"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/archive/squashfs"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/archive/zip"
 
-	"/backend/archive/archiver"
-	"/fs"
-	"/fs/cache"
-	"/fs/config/configmap"
-	"/fs/config/configstruct"
-	"/fs/fspath"
-	"/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/backend/archive/archiver"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/cache"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 )
 
 // Register with Fs

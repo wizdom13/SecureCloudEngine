@@ -29,7 +29,7 @@ import (
 
 	"github.com/coreos/go-semver/semver"
 	"github.com/josephspurrier/goversioninfo"
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 func main() {

@@ -10,9 +10,9 @@ import (
 	"time"
 
 	"github.com/colinmarc/hdfs/v2"
-	"/fs"
-	"/fs/hash"
-	"/lib/readers"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/lib/readers"
 )
 
 // Object describes an HDFS file

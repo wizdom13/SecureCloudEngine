@@ -19,12 +19,12 @@ import (
 	"testing"
 	"time"
 
-	_ "/backend/all" // import all the backends
-	"/cmd/mountlib"
-	"/fs"
-	"/fs/walk"
-	"/fstest"
-	"/vfs/vfscommon"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/all" // import all the backends
+	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/walk"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -17,13 +17,13 @@ import (
 	"unicode/utf8"
 
 	"github.com/peterh/liner"
-	"/fs"
-	"/fs/config/configmap"
-	"/fs/config/configstruct"
-	"/fs/config/obscure"
-	"/fs/driveletter"
-	"/fs/fspath"
-	"/lib/terminal"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
+	"github.com/wizdom13/SecureCloudEngine/fs/driveletter"
+	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
+	"github.com/wizdom13/SecureCloudEngine/lib/terminal"
 	"golang.org/x/text/unicode/norm"
 )
 

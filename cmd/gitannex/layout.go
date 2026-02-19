@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"/fs/fspath"
+	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
 )
 
 type layoutMode string

@@ -6,12 +6,12 @@ import (
 	"os"
 	"testing"
 
-	"/fs"
-	"/fs/config/obscure"
-	"/fs/operations"
-	"/fstest"
-	"/fstest/fstests"
-	"/lib/kv"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/lib/kv"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -11,7 +11,7 @@ import (
 	"io"
 	"math"
 
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // crypt internals

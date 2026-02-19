@@ -5,8 +5,8 @@ import (
 	"runtime"
 	"testing"
 
-	"/cmd"
-	"/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
 	"github.com/stretchr/testify/assert"
 )
 

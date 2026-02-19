@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"/backend/dropbox/dbhash"
+	"github.com/wizdom13/SecureCloudEngine/backend/dropbox/dbhash"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"/fs"
-	"/fs/cache"
-	"/fs/rc"
-	"/vfs/vfscache/writeback"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/cache"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscache/writeback"
 )
 
 const getVFSHelp = ` 

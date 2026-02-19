@@ -13,8 +13,8 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"/fs"
-	"/lib/rest"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 )
 
 func (o *Object) updateViaTus(ctx context.Context, in io.Reader, contentType string, src fs.ObjectInfo, options ...fs.OpenOption) (err error) {

@@ -8,8 +8,8 @@ import (
 	"regexp"
 	"strings"
 
-	"/fs/config/configmap"
-	"/fs/driveletter"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/driveletter"
 )
 
 const (

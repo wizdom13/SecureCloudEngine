@@ -2,10 +2,10 @@
 package gomobile
 
 import (
-	"/librclone/librclone"
+	"github.com/wizdom13/SecureCloudEngine/librclone/librclone"
 
-	_ "/backend/all" // import all backends
-	_ "/lib/plugin"  // import plugins
+	_ "github.com/wizdom13/SecureCloudEngine/backend/all" // import all backends
+	_ "github.com/wizdom13/SecureCloudEngine/lib/plugin"  // import plugins
 
 	_ "golang.org/x/mobile/event/key" // make go.mod add this as a dependency
 )

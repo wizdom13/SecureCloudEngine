@@ -10,9 +10,9 @@ import (
 	"strings"
 
 	"github.com/rclone/gofakes3"
-	"/fs"
-	"/fs/hash"
-	"/vfs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/vfs"
 )
 
 func getDirEntries(prefix string, VFS *vfs.VFS) (vfs.Nodes, error) {

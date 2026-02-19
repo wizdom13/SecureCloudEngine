@@ -11,12 +11,12 @@ import (
 	"strings"
 
 	"github.com/mholt/archives"
-	"/cmd"
-	"/cmd/archive"
-	"/fs"
-	"/fs/accounting"
-	"/fs/filter"
-	"/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/cmd/archive"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"github.com/wizdom13/SecureCloudEngine/fs/filter"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
 	"github.com/spf13/cobra"
 )
 

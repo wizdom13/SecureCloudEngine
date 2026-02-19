@@ -4,8 +4,8 @@ package zoho_test
 import (
 	"testing"
 
-	"/backend/zoho"
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/backend/zoho"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

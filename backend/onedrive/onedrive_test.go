@@ -4,9 +4,9 @@ package onedrive
 import (
 	"testing"
 
-	"/fs"
-	"/fstest"
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

@@ -20,7 +20,7 @@ import (
 	"os"
 	"strings"
 
-	"/lib/file"
+	"github.com/wizdom13/SecureCloudEngine/lib/file"
 )
 
 // Interprets err into a vfs error

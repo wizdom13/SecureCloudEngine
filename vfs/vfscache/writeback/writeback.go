@@ -11,8 +11,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"/fs"
-	"/vfs/vfscommon"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 )
 
 const (

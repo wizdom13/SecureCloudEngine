@@ -4,8 +4,8 @@ package local_test
 import (
 	"testing"
 
-	"/backend/local"
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/backend/local"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

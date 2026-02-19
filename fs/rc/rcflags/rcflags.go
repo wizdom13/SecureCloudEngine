@@ -2,8 +2,8 @@
 package rcflags
 
 import (
-	"/fs/config/flags"
-	"/fs/rc"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
 	"github.com/spf13/pflag"
 )
 

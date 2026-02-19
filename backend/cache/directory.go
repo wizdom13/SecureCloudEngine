@@ -7,7 +7,7 @@ import (
 	"path"
 	"time"
 
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // Directory is a generic dir that stores basic information about it

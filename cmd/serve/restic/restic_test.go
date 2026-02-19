@@ -12,12 +12,12 @@ import (
 	"os/exec"
 	"testing"
 
-	_ "/backend/all"
-	"/cmd"
-	"/cmd/serve/servetest"
-	"/fs"
-	"/fs/rc"
-	"/fstest"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/all"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/cmd/serve/servetest"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

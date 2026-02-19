@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"os"
 
-	"/fs"
-	"/lib/terminal"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/lib/terminal"
 )
 
 // ReadPassword reads a password without echoing it to the terminal.

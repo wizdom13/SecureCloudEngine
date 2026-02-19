@@ -9,11 +9,11 @@ import (
 	"sort"
 	"strings"
 
-	"/fs"
-	"/fs/accounting"
-	"/fs/config"
-	"/fs/hash"
-	"/fs/walk"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/walk"
 )
 
 // dedupeRename renames the objs slice to different names

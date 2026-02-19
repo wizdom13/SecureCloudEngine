@@ -21,16 +21,16 @@ import (
 	"sync"
 	"time"
 
-	"/fs"
-	"/fs/config/configmap"
-	"/fs/config/configstruct"
-	"/fs/config/obscure"
-	"/fs/fserrors"
-	"/fs/fshttp"
-	"/fs/hash"
-	"/fs/list"
-	"/lib/pacer"
-	"/lib/rest"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/list"
+	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
+	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 )
 
 // Constants

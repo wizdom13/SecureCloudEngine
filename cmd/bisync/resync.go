@@ -5,10 +5,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"/cmd/bisync/bilib"
-	"/fs"
-	"/fs/filter"
-	"/lib/terminal"
+	"github.com/wizdom13/SecureCloudEngine/cmd/bisync/bilib"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/filter"
+	"github.com/wizdom13/SecureCloudEngine/lib/terminal"
 )
 
 // for backward compatibility, --resync is now equivalent to --resync-mode path1

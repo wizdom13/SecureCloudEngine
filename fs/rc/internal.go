@@ -14,11 +14,11 @@ import (
 
 	"github.com/coreos/go-semver/semver"
 
-	"/fs"
-	"/fs/config/obscure"
-	"/lib/atexit"
-	"/lib/buildinfo"
-	"/lib/debug"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
+	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
+	"github.com/wizdom13/SecureCloudEngine/lib/buildinfo"
+	"github.com/wizdom13/SecureCloudEngine/lib/debug"
 )
 
 func init() {

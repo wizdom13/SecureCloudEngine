@@ -8,7 +8,7 @@ import (
 	"net/url"
 	"time"
 
-	"/lib/rest"
+	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 	"gopkg.in/validator.v2"
 )
 

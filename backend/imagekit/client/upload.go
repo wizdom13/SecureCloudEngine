@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"/lib/rest"
+	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 )
 
 // UploadParam defines upload parameters

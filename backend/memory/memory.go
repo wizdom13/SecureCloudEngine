@@ -14,12 +14,12 @@ import (
 	"sync"
 	"time"
 
-	"/fs"
-	"/fs/config/configmap"
-	"/fs/config/configstruct"
-	"/fs/hash"
-	"/fs/list"
-	"/lib/bucket"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/list"
+	"github.com/wizdom13/SecureCloudEngine/lib/bucket"
 )
 
 var (

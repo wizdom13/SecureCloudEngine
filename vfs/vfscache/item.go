@@ -10,13 +10,13 @@ import (
 	"sync"
 	"time"
 
-	"/fs"
-	"/fs/fserrors"
-	"/fs/operations"
-	"/lib/file"
-	"/lib/ranges"
-	"/vfs/vfscache/downloaders"
-	"/vfs/vfscache/writeback"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/lib/file"
+	"github.com/wizdom13/SecureCloudEngine/lib/ranges"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscache/downloaders"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscache/writeback"
 )
 
 // NB as Cache and Item are tightly linked it is necessary to have a
@@ -1161,8 +1161,8 @@ func (item *Item) _ensure(offset, size int64) (err error) {
 		// OK to call downloaders constructor with item.mu held
 
 		// item.o can also be nil under some circumstances
-		// See: https:///issues/6190
-		// See: https:///issues/6235
+		// See: https://github.com/wizdom13/SecureCloudEngine/issues/6190
+		// See: https://github.com/wizdom13/SecureCloudEngine/issues/6235
 		if item.o == nil {
 			o, err := item.c.fremote.NewObject(context.Background(), item.name)
 			if err != nil {

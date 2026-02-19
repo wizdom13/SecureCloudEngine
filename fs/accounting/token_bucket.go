@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"/fs"
-	"/fs/rc"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
 	"golang.org/x/time/rate"
 )
 

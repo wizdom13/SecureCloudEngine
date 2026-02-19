@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"io"
 
-	"/fs"
-	"/fs/accounting"
-	"/lib/atexit"
-	"/lib/pacer"
-	"/lib/pool"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
+	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
+	"github.com/wizdom13/SecureCloudEngine/lib/pool"
 	"golang.org/x/sync/errgroup"
 )
 

@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
-	"/fs"
-	"/fs/operations"
-	"/fstest"
-	"/vfs/vfscommon"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -717,7 +717,7 @@ func TestRWCacheRename(t *testing.T) {
 
 // Test the cache reading a file that is updated externally
 //
-// See: https:///issues/6053
+// See: https://github.com/wizdom13/SecureCloudEngine/issues/6053
 func TestRWCacheUpdate(t *testing.T) {
 	opt := vfscommon.Opt
 	opt.CacheMode = vfscommon.CacheModeFull

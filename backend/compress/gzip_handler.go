@@ -11,10 +11,10 @@ import (
 
 	"github.com/buengese/sgzip"
 
-	"/fs"
-	"/fs/accounting"
-	"/fs/chunkedreader"
-	"/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"github.com/wizdom13/SecureCloudEngine/fs/chunkedreader"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 )
 
 // gzipModeHandler implements compressionModeHandler for gzip

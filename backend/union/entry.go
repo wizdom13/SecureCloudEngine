@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"/backend/union/upstream"
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/backend/union/upstream"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // Object describes a union Object

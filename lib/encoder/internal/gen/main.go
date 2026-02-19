@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 
-	"/fs"
-	"/lib/encoder"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
 )
 
 const (

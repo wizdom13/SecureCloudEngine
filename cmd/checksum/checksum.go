@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"strings"
 
-	"/cmd"
-	"/cmd/check" // for common flags
-	"/fs/config/flags"
-	"/fs/hash"
-	"/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/cmd/check" // for common flags
+	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
 	"github.com/spf13/cobra"
 )
 

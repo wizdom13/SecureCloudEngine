@@ -13,10 +13,10 @@ import (
 	"text/template"
 	"time"
 
-	"/cmd"
-	"/fs"
-	"/fs/config/flags"
-	"/lib/file"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
+	"github.com/wizdom13/SecureCloudEngine/lib/file"
 	"github.com/spf13/cobra"
 	"github.com/spf13/cobra/doc"
 )

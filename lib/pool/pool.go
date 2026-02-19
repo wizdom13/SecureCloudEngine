@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"/fs"
-	"/lib/mmap"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/lib/mmap"
 	"golang.org/x/sync/semaphore"
 )
 

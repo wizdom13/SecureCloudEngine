@@ -14,14 +14,14 @@ import (
 	"strings"
 	"time"
 
-	"/cmd"
-	"/cmd/bisync/bilib"
-	"/fs"
-	"/fs/config"
-	"/fs/config/flags"
-	"/fs/filter"
-	"/fs/fserrors"
-	"/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/cmd/bisync/bilib"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
+	"github.com/wizdom13/SecureCloudEngine/fs/filter"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 
 	"github.com/spf13/cobra"
 )

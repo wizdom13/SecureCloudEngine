@@ -8,11 +8,11 @@ import (
 	"strings"
 	"time"
 
-	"/backend/crypt"
-	"/fs"
-	"/fs/accounting"
-	"/fs/hash"
-	"/fs/walk"
+	"github.com/wizdom13/SecureCloudEngine/backend/crypt"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/walk"
 )
 
 // ListJSONItem in the struct which gets marshalled for each line

@@ -13,16 +13,16 @@ import (
 	"strings"
 	"time"
 
-	"/backend/imagekit/client"
-	"/fs"
-	"/fs/config"
-	"/fs/config/configmap"
-	"/fs/config/configstruct"
-	"/fs/hash"
-	"/lib/encoder"
-	"/lib/pacer"
-	"/lib/readers"
-	"/lib/version"
+	"github.com/wizdom13/SecureCloudEngine/backend/imagekit/client"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
+	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
+	"github.com/wizdom13/SecureCloudEngine/lib/readers"
+	"github.com/wizdom13/SecureCloudEngine/lib/version"
 )
 
 const (

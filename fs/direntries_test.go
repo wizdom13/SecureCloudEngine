@@ -4,9 +4,9 @@ import (
 	"sort"
 	"testing"
 
-	"/fs"
-	"/fstest/mockdir"
-	"/fstest/mockobject"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fstest/mockdir"
+	"github.com/wizdom13/SecureCloudEngine/fstest/mockobject"
 	"github.com/stretchr/testify/assert"
 )
 

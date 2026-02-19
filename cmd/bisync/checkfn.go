@@ -6,14 +6,14 @@ import (
 	"fmt"
 	"strings"
 
-	"/backend/crypt"
-	"/cmd/bisync/bilib"
-	"/cmd/check"
-	"/fs"
-	"/fs/accounting"
-	"/fs/filter"
-	"/fs/hash"
-	"/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/backend/crypt"
+	"github.com/wizdom13/SecureCloudEngine/cmd/bisync/bilib"
+	"github.com/wizdom13/SecureCloudEngine/cmd/check"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"github.com/wizdom13/SecureCloudEngine/fs/filter"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
 )
 
 type bisyncCheck = struct {

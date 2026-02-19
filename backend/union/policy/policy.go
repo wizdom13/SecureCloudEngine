@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"/backend/union/upstream"
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/backend/union/upstream"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 var policies = make(map[string]Policy)

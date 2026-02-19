@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"/backend/googlephotos/api"
+	"github.com/wizdom13/SecureCloudEngine/backend/googlephotos/api"
 )
 
 // All the albums

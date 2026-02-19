@@ -8,8 +8,8 @@ import (
 	"io"
 	"time"
 
-	"/fs"
-	"/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 )
 
 // StaticObjectInfo is an ObjectInfo which can be constructed from scratch

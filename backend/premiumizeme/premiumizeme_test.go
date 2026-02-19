@@ -4,8 +4,8 @@ package premiumizeme_test
 import (
 	"testing"
 
-	"/backend/premiumizeme"
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/backend/premiumizeme"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

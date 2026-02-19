@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"/cmd/bisync/bilib"
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/cmd/bisync/bilib"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v3"
 )

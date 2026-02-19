@@ -4,8 +4,8 @@ package mega_test
 import (
 	"testing"
 
-	"/backend/mega"
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/backend/mega"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

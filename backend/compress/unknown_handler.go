@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io"
 
-	"/fs"
-	"/fs/chunkedreader"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/chunkedreader"
 )
 
 // unknownModeHandler implements compressionModeHandler for unknown compression types

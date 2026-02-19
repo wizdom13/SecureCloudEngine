@@ -14,7 +14,7 @@ import (
 	"sync"
 	"time"
 
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // Handler is the standard handler for the logging.

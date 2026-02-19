@@ -6,10 +6,10 @@ package archive_test
 import (
 	"testing"
 
-	_ "/backend/local"
-	_ "/backend/memory"
-	"/fstest"
-	"/fstest/fstests"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/memory"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 var (

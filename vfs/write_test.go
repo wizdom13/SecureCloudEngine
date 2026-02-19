@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"/fs"
-	"/fstest"
-	"/lib/random"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/lib/random"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

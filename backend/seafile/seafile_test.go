@@ -4,8 +4,8 @@ package seafile_test
 import (
 	"testing"
 
-	"/backend/seafile"
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/backend/seafile"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

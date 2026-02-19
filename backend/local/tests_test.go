@@ -4,7 +4,7 @@ import (
 	"runtime"
 	"testing"
 
-	"/lib/encoder"
+	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
 )
 
 // Test Windows character replacements

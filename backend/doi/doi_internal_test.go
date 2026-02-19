@@ -14,10 +14,10 @@ import (
 	"testing"
 	"time"
 
-	"/backend/doi/api"
-	"/fs"
-	"/fs/config/configmap"
-	"/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/backend/doi/api"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

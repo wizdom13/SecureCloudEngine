@@ -16,14 +16,14 @@ import (
 	"github.com/FilenCloudDienste/filen-sdk-go/filen/types"
 
 	"github.com/google/uuid"
-	"/fs"
-	"/fs/config"
-	"/fs/config/configmap"
-	"/fs/config/configstruct"
-	"/fs/config/obscure"
-	"/fs/hash"
-	"/fs/list"
-	"/lib/encoder"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/list"
+	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
 	"golang.org/x/sync/errgroup"
 )
 

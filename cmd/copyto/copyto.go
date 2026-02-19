@@ -4,10 +4,10 @@ package copyto
 import (
 	"context"
 
-	"/cmd"
-	"/fs/operations"
-	"/fs/operations/operationsflags"
-	"/fs/sync"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations/operationsflags"
+	"github.com/wizdom13/SecureCloudEngine/fs/sync"
 	"github.com/spf13/cobra"
 )
 

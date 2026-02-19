@@ -9,8 +9,8 @@ import (
 	"io"
 	"time"
 
-	"/fs"
-	"/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 )
 
 var errNotImpl = errors.New("not implemented")

@@ -16,9 +16,9 @@ import (
 
 	"github.com/anacrolix/dms/dlna"
 	"github.com/anacrolix/dms/upnp"
-	"/cmd/serve/dlna/upnpav"
-	"/fs"
-	"/vfs"
+	"github.com/wizdom13/SecureCloudEngine/cmd/serve/dlna/upnpav"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/vfs"
 )
 
 type contentDirectoryService struct {

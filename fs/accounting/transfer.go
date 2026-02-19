@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"/fs"
-	"/fs/rc"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
 )
 
 // TransferSnapshot represents state of an account at point in time.

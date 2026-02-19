@@ -2,8 +2,8 @@
 package filterflags
 
 import (
-	"/fs/config/flags"
-	"/fs/filter"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
+	"github.com/wizdom13/SecureCloudEngine/fs/filter"
 	"github.com/spf13/pflag"
 )
 

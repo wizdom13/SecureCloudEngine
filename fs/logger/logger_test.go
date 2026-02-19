@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"/fs/logger"
+	"github.com/wizdom13/SecureCloudEngine/fs/logger"
 	"github.com/rogpeppe/go-internal/testscript"
 )
 

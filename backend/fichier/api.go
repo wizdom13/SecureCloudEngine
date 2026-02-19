@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
-	"/fs"
-	"/fs/fserrors"
-	"/lib/rest"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 )
 
 // retryErrorCodes is a slice of error codes that we will retry

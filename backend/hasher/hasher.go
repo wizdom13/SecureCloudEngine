@@ -12,14 +12,14 @@ import (
 	"sync"
 	"time"
 
-	"/fs"
-	"/fs/cache"
-	"/fs/config/configmap"
-	"/fs/config/configstruct"
-	"/fs/fspath"
-	"/fs/hash"
-	"/fs/list"
-	"/lib/kv"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/cache"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/list"
+	"github.com/wizdom13/SecureCloudEngine/lib/kv"
 )
 
 // Register with Fs

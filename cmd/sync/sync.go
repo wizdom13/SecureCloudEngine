@@ -5,11 +5,11 @@ import (
 	"context"
 	"strings"
 
-	"/cmd"
-	"/fs/config/flags"
-	"/fs/operations"
-	"/fs/operations/operationsflags"
-	"/fs/sync"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations/operationsflags"
+	"github.com/wizdom13/SecureCloudEngine/fs/sync"
 	"github.com/spf13/cobra"
 )
 
@@ -70,7 +70,7 @@ the backend supports it. If metadata syncing is required then use the
 |--metadata| flag.
 
 Note that the modification time and metadata for the root directory
-will **not** be synced. See <https:///issues/7652>
+will **not** be synced. See <https://github.com/wizdom13/SecureCloudEngine/issues/7652>
 for more info.
 
 **Note**: Use the |-P|/|--progress| flag to view real-time transfer statistics

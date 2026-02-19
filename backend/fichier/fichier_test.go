@@ -4,7 +4,7 @@ package fichier
 import (
 	"testing"
 
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

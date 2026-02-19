@@ -17,20 +17,20 @@ import (
 	"strconv"
 	"time"
 
-	"/lib/encoder"
+	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
 
-	"/backend/hidrive/api"
-	"/backend/hidrive/hidrivehash"
-	"/fs"
-	"/fs/config"
-	"/fs/config/configmap"
-	"/fs/config/configstruct"
-	"/fs/config/obscure"
-	"/fs/fserrors"
-	"/fs/hash"
-	"/lib/oauthutil"
-	"/lib/pacer"
-	"/lib/rest"
+	"github.com/wizdom13/SecureCloudEngine/backend/hidrive/api"
+	"github.com/wizdom13/SecureCloudEngine/backend/hidrive/hidrivehash"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/lib/oauthutil"
+	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
+	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 )
 
 const (

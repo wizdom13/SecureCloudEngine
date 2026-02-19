@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi/v5"
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 const (

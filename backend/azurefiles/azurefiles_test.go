@@ -5,7 +5,7 @@ package azurefiles
 import (
 	"testing"
 
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 func TestIntegration(t *testing.T) {

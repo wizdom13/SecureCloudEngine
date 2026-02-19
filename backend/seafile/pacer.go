@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"/fs"
-	"/lib/pacer"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
 )
 
 const (

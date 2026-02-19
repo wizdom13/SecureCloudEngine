@@ -7,9 +7,9 @@ package cache_test
 import (
 	"testing"
 
-	"/backend/cache"
-	_ "/backend/local"
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/backend/cache"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

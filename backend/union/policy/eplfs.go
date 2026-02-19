@@ -5,8 +5,8 @@ import (
 	"errors"
 	"math"
 
-	"/backend/union/upstream"
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/backend/union/upstream"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 func init() {

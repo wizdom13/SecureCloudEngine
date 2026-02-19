@@ -15,12 +15,12 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"/fs"
-	"/fs/accounting"
-	"/fs/config/configfile"
-	"/fs/log"
-	"/fs/rc"
-	"/fs/rc/jobs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configfile"
+	"github.com/wizdom13/SecureCloudEngine/fs/log"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc/jobs"
 )
 
 // Initialize initializes rclone as a library

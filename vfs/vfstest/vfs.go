@@ -4,7 +4,7 @@ package vfstest
 import (
 	"os"
 
-	"/vfs"
+	"github.com/wizdom13/SecureCloudEngine/vfs"
 )
 
 // vfsOs is an implementation of Oser backed by the "vfs" package

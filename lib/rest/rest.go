@@ -19,8 +19,8 @@ import (
 	"strings"
 	"sync"
 
-	"/fs"
-	"/lib/readers"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/lib/readers"
 )
 
 // Client contains the info to sustain the API

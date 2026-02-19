@@ -7,8 +7,8 @@ package log
 import (
 	"os"
 
-	"/fs"
-	"/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
 	"golang.org/x/sys/unix"
 )
 

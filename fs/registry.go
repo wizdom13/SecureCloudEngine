@@ -13,9 +13,9 @@ import (
 	"strings"
 	"sync"
 
-	"/fs/config/configmap"
-	"/fs/config/configstruct"
-	"/lib/errcount"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/lib/errcount"
 )
 
 // Registry of filesystems

@@ -14,8 +14,8 @@ import (
 	"sort"
 	"sync"
 
-	"/fs"
-	"/lib/atexit"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
 	qs "github.com/yunify/qingstor-sdk-go/v3/service"
 )
 

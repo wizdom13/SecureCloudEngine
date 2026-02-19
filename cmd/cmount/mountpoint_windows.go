@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"regexp"
 
-	"/cmd/mountlib"
-	"/fs"
-	"/lib/file"
+	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/lib/file"
 )
 
 var isDriveRegex = regexp.MustCompile(`^[a-zA-Z]\:$`)

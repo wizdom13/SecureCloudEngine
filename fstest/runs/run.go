@@ -19,8 +19,8 @@ import (
 	"sync"
 	"time"
 
-	"/fs"
-	"/fstest/testserver"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fstest/testserver"
 )
 
 // Control concurrency per backend if required

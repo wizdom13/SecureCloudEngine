@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	libhttp "/lib/http"
+	libhttp "github.com/wizdom13/SecureCloudEngine/lib/http"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

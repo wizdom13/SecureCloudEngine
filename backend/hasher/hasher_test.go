@@ -5,12 +5,12 @@ import (
 	"path/filepath"
 	"testing"
 
-	"/backend/hasher"
-	"/fstest"
-	"/fstest/fstests"
-	"/lib/kv"
+	"github.com/wizdom13/SecureCloudEngine/backend/hasher"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/lib/kv"
 
-	_ "/backend/all" // for integration tests
+	_ "github.com/wizdom13/SecureCloudEngine/backend/all" // for integration tests
 )
 
 // TestIntegration runs integration tests against the remote

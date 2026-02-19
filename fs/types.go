@@ -10,7 +10,7 @@ import (
 	"math"
 	"time"
 
-	"/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 )
 
 // Fs is the interface a cloud storage system must provide

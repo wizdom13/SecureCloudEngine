@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // UploadMemoryManager dynamically calculates every chunk size for the transfer and increases or decreases it

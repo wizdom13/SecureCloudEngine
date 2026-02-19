@@ -9,7 +9,7 @@ import (
 	"io"
 	"text/template"
 
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // GetTemplate returns the rootDesc XML template

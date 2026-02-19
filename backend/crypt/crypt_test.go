@@ -7,13 +7,13 @@ import (
 	"runtime"
 	"testing"
 
-	"/backend/crypt"
-	_ "/backend/drive" // for integration tests
-	_ "/backend/local"
-	_ "/backend/swift" // for integration tests
-	"/fs/config/obscure"
-	"/fstest"
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/backend/crypt"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/drive" // for integration tests
+	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/swift" // for integration tests
+	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

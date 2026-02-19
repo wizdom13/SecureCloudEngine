@@ -5,8 +5,8 @@ package mount
 import (
 	"testing"
 
-	"/vfs/vfscommon"
-	"/vfs/vfstest"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfstest"
 )
 
 func TestMount(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // Renew allows tokens to be renewed on expiry if uploads are in progress.

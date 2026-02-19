@@ -14,10 +14,10 @@ import (
 
 	"slices"
 
-	"/fs"
-	"/fs/log"
-	"/fs/operations"
-	"/vfs/vfscommon"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/log"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 )
 
 // The File object is tightly coupled to the Dir object. Since they

@@ -8,11 +8,11 @@ import (
 	"os"
 	"strings"
 
-	"/cmd"
-	"/fs"
-	"/fs/config/flags"
-	"/fs/hash"
-	"/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 )

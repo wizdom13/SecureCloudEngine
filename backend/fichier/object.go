@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"time"
 
-	"/fs"
-	"/fs/hash"
-	"/lib/rest"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 )
 
 // Object is a filesystem like object provided by an Fs

@@ -8,9 +8,9 @@ import (
 	"strings"
 	"sync"
 
-	"/fs"
-	"/lib/encoder"
-	"/lib/terminal"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
+	"github.com/wizdom13/SecureCloudEngine/lib/terminal"
 )
 
 func (b *bisyncRun) indentf(tag, file, format string, args ...any) {

@@ -4,9 +4,9 @@ package authorize
 import (
 	"context"
 
-	"/cmd"
-	"/fs/config"
-	"/fs/config/flags"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
 	"github.com/spf13/cobra"
 )
 

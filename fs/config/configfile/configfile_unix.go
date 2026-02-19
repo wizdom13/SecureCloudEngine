@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"syscall"
 
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // attemptCopyGroup tries to keep the group the same. User will be the one

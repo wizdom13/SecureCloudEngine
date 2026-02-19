@@ -9,11 +9,11 @@ import (
 	"os"
 	"strings"
 
-	"/cmd"
-	"/fs"
-	"/fs/config/flags"
-	"/fs/operations"
-	"/lib/errcount"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/lib/errcount"
 	"github.com/spf13/cobra"
 	"golang.org/x/sync/errgroup"
 )

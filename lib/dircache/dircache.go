@@ -13,7 +13,7 @@ import (
 	"strings"
 	"sync"
 
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // DirCache caches paths to directory IDs and vice versa

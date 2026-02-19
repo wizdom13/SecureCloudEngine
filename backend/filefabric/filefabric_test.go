@@ -4,8 +4,8 @@ package filefabric_test
 import (
 	"testing"
 
-	"/backend/filefabric"
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/backend/filefabric"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

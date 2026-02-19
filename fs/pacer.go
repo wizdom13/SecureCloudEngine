@@ -6,8 +6,8 @@ import (
 	"context"
 	"time"
 
-	"/fs/fserrors"
-	"/lib/pacer"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
 )
 
 // Pacer is a simple wrapper around a pacer.Pacer with logging.

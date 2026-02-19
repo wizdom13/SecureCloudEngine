@@ -12,11 +12,11 @@ import (
 	"strings"
 	"testing"
 
-	"/fs"
-	"/fs/accounting"
-	"/fs/operations"
-	"/fs/sync"
-	"/fstest"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/fs/sync"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

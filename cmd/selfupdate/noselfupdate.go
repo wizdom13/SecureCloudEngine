@@ -3,7 +3,7 @@
 package selfupdate
 
 import (
-	"/lib/buildinfo"
+	"github.com/wizdom13/SecureCloudEngine/lib/buildinfo"
 )
 
 func init() {

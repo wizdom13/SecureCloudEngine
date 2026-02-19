@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	"github.com/a8m/tree"
-	_ "/backend/local"
-	"/fs"
-	"/fstest"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -19,11 +19,11 @@ import (
 	"sync"
 	"time"
 
-	"/backend/pikpak/api"
-	"/fs"
-	"/fs/config/configmap"
-	"/fs/fserrors"
-	"/lib/rest"
+	"github.com/wizdom13/SecureCloudEngine/backend/pikpak/api"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 )
 
 // Globals

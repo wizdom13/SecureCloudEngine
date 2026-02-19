@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"/fstest"
-	"/lib/version"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/lib/version"
 	"github.com/stretchr/testify/assert"
 )
 

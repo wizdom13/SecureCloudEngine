@@ -13,16 +13,16 @@ import (
 	"sync/atomic"
 	"time"
 
-	"/fs"
-	"/fs/config"
-	"/fs/config/configmap"
-	"/fs/config/configstruct"
-	"/fs/hash"
-	"/lib/bucket"
-	"/lib/encoder"
-	"/lib/env"
-	"/lib/pacer"
-	"/lib/readers"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/lib/bucket"
+	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
+	"github.com/wizdom13/SecureCloudEngine/lib/env"
+	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
+	"github.com/wizdom13/SecureCloudEngine/lib/readers"
 )
 
 const (

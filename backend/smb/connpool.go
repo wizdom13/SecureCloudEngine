@@ -9,10 +9,10 @@ import (
 	"time"
 
 	smb2 "github.com/cloudsoda/go-smb2"
-	"/fs"
-	"/fs/accounting"
-	"/fs/config/obscure"
-	"/fs/fshttp"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
+	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
 	"golang.org/x/sync/errgroup"
 )
 

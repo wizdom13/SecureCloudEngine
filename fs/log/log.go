@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 	"gopkg.in/natefinch/lumberjack.v2"
 )
 

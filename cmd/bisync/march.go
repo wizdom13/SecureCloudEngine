@@ -5,11 +5,11 @@ import (
 	"sync"
 	"time"
 
-	"/fs"
-	"/fs/accounting"
-	"/fs/filter"
-	"/fs/hash"
-	"/fs/march"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"github.com/wizdom13/SecureCloudEngine/fs/filter"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/march"
 )
 
 type bisyncMarch struct {

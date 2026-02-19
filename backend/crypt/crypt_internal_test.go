@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
-	"/fs"
-	"/fs/hash"
-	"/fs/object"
-	"/lib/random"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/object"
+	"github.com/wizdom13/SecureCloudEngine/lib/random"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	liberrors "/lib/errors"
+	liberrors "github.com/wizdom13/SecureCloudEngine/lib/errors"
 )
 
 // Must be satisfied for errors.Is/errors.As/Errors.Unwrap

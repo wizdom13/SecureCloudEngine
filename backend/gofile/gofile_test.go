@@ -4,8 +4,8 @@ package gofile_test
 import (
 	"testing"
 
-	"/backend/gofile"
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/backend/gofile"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

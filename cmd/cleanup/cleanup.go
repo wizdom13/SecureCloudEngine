@@ -4,8 +4,8 @@ package cleanup
 import (
 	"context"
 
-	"/cmd"
-	"/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/cmd"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
 	"github.com/spf13/cobra"
 )
 

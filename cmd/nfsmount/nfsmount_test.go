@@ -10,11 +10,11 @@ import (
 	"runtime"
 	"testing"
 
-	"/cmd/serve/nfs"
-	"/fs/object"
-	"/vfs"
-	"/vfs/vfscommon"
-	"/vfs/vfstest"
+	"github.com/wizdom13/SecureCloudEngine/cmd/serve/nfs"
+	"github.com/wizdom13/SecureCloudEngine/fs/object"
+	"github.com/wizdom13/SecureCloudEngine/vfs"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfstest"
 	"github.com/stretchr/testify/require"
 )
 

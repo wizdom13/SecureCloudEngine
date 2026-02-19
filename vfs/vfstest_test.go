@@ -5,12 +5,12 @@ package vfs_test
 import (
 	"testing"
 
-	_ "/backend/all" // import all the backends
-	"/cmd/mountlib"
-	"/fstest"
-	"/vfs"
-	"/vfs/vfscommon"
-	"/vfs/vfstest"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/all" // import all the backends
+	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/vfs"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfstest"
 )
 
 // TestFunctional runs more functional tests all the tests against all the

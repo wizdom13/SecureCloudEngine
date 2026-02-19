@@ -4,8 +4,8 @@ package sharefile
 import (
 	"testing"
 
-	"/fs"
-	"/fstest/fstests"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

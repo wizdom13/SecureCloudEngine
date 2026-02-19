@@ -8,8 +8,8 @@ import (
 	"io"
 	mutex "sync"
 
-	"/fs"
-	"/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 	"github.com/spf13/pflag"
 )
 

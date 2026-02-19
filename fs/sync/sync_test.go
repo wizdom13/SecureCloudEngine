@@ -18,16 +18,16 @@ import (
 
 	mutex "sync" // renamed as "sync" already in use
 
-	_ "/backend/all" // import all backends
-	"/cmd/bisync/bilib"
-	"/fs"
-	"/fs/accounting"
-	"/fs/filter"
-	"/fs/fserrors"
-	"/fs/hash"
-	"/fs/operations"
-	"/fstest"
-	"/lib/transform"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/all" // import all backends
+	"github.com/wizdom13/SecureCloudEngine/cmd/bisync/bilib"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
+	"github.com/wizdom13/SecureCloudEngine/fs/filter"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/lib/transform"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/text/unicode/norm"

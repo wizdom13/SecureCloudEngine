@@ -5,8 +5,8 @@ import (
 	"io"
 	"time"
 
-	"/fs"
-	"/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 )
 
 // Object describes a seafile object (also commonly called a file)

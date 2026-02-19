@@ -5,8 +5,8 @@ package config_test
 import (
 	"testing"
 
-	"/fs/config"
-	"/fs/config/configfile"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configfile"
 	"github.com/stretchr/testify/assert"
 )
 

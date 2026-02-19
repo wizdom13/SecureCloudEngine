@@ -5,7 +5,7 @@ package atexit
 import (
 	"os"
 
-	"/lib/exitcode"
+	"github.com/wizdom13/SecureCloudEngine/lib/exitcode"
 )
 
 var exitSignals = []os.Signal{os.Interrupt}

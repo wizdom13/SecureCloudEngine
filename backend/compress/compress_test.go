@@ -6,12 +6,12 @@ import (
 	"path/filepath"
 	"testing"
 
-	_ "/backend/drive"
-	_ "/backend/local"
-	_ "/backend/s3"
-	_ "/backend/swift"
-	"/fstest"
-	"/fstest/fstests"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/drive"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/s3"
+	_ "github.com/wizdom13/SecureCloudEngine/backend/swift"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 var defaultOpt = fstests.Opt{

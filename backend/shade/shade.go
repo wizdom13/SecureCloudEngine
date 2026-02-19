@@ -17,17 +17,17 @@ import (
 	"sync"
 	"time"
 
-	"/backend/shade/api"
-	"/fs"
-	"/fs/config"
-	"/fs/config/configmap"
-	"/fs/config/configstruct"
-	"/fs/fshttp"
-	"/fs/hash"
-	"/fs/object"
-	"/lib/encoder"
-	"/lib/pacer"
-	"/lib/rest"
+	"github.com/wizdom13/SecureCloudEngine/backend/shade/api"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/object"
+	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
+	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
+	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 )
 
 const (

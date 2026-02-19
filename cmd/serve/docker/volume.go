@@ -10,11 +10,11 @@ import (
 	"sort"
 	"time"
 
-	"/cmd/mountlib"
-	"/fs"
-	"/fs/config"
-	"/fs/rc"
-	"/lib/file"
+	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
+	"github.com/wizdom13/SecureCloudEngine/lib/file"
 )
 
 // Errors

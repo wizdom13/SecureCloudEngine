@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // FsOptions returns the batch mode fs.Options

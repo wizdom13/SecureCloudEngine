@@ -20,27 +20,27 @@ import (
 	"sync"
 	"time"
 
-	"/backend/onedrive/api"
-	"/backend/onedrive/quickxorhash"
-	"/fs"
-	"/fs/config"
-	"/fs/config/configmap"
-	"/fs/config/configstruct"
-	"/fs/config/obscure"
-	"/fs/fserrors"
-	"/fs/fshttp"
-	"/fs/hash"
-	"/fs/list"
-	"/fs/log"
-	"/fs/operations"
-	"/fs/walk"
-	"/lib/atexit"
-	"/lib/dircache"
-	"/lib/encoder"
-	"/lib/oauthutil"
-	"/lib/pacer"
-	"/lib/readers"
-	"/lib/rest"
+	"github.com/wizdom13/SecureCloudEngine/backend/onedrive/api"
+	"github.com/wizdom13/SecureCloudEngine/backend/onedrive/quickxorhash"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/fs/config"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
+	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
+	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
+	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
+	"github.com/wizdom13/SecureCloudEngine/fs/list"
+	"github.com/wizdom13/SecureCloudEngine/fs/log"
+	"github.com/wizdom13/SecureCloudEngine/fs/operations"
+	"github.com/wizdom13/SecureCloudEngine/fs/walk"
+	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
+	"github.com/wizdom13/SecureCloudEngine/lib/dircache"
+	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
+	"github.com/wizdom13/SecureCloudEngine/lib/oauthutil"
+	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
+	"github.com/wizdom13/SecureCloudEngine/lib/readers"
+	"github.com/wizdom13/SecureCloudEngine/lib/rest"
 )
 
 const (
@@ -150,7 +150,7 @@ causes rclone to use twice the storage on Onedrive business as when
 rclone sets the modification time after the upload Onedrive creates a
 new version.
 
-See: https:///issues/1716
+See: https://github.com/wizdom13/SecureCloudEngine/issues/1716
 `,
 			Default:  fs.SizeSuffix(-1),
 			Advanced: true,
@@ -1122,7 +1122,7 @@ func NewFs(ctx context.Context, name, root string, m configmap.Mapper) (fs.Fs, e
 	}
 
 	// Disable change polling in China region
-	// See: https:///issues/6444
+	// See: https://github.com/wizdom13/SecureCloudEngine/issues/6444
 	if f.opt.Region == regionCN {
 		f.features.ChangeNotify = nil
 	}
@@ -1177,7 +1177,7 @@ func NewFs(ctx context.Context, name, root string, m configmap.Mapper) (fs.Fs, e
 		}
 		// XXX: update the old f here instead of returning tempF, since
 		// `features` were already filled with functions having *f as a receiver.
-		// See https:///issues/2182
+		// See https://github.com/wizdom13/SecureCloudEngine/issues/2182
 		f.dirCache = tempF.dirCache
 		f.root = tempF.root
 		// return an error with an fs which points to the parent

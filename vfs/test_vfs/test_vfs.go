@@ -15,9 +15,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"/fs"
-	"/lib/file"
-	"/lib/random"
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/lib/file"
+	"github.com/wizdom13/SecureCloudEngine/lib/random"
 )
 
 var (

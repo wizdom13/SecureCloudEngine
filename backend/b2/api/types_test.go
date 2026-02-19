@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"/backend/b2/api"
-	"/fstest"
+	"github.com/wizdom13/SecureCloudEngine/backend/b2/api"
+	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
