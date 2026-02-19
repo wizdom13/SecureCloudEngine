@@ -6,8 +6,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/logger"
 	"github.com/rogpeppe/go-internal/testscript"
+
+	"github.com/wizdom13/SecureCloudEngine/fs/logger"
 )
 
 // TestMain drives the tests

@@ -4,10 +4,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/rc"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/time/rate"
+
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
 )
 
 func TestRcBwLimit(t *testing.T) {

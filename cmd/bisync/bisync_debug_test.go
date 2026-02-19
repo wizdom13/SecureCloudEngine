@@ -6,10 +6,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd/bisync/bilib"
-	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v3"
+
+	"github.com/wizdom13/SecureCloudEngine/cmd/bisync/bilib"
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 const configFile = "../../fstest/test_all/config.yaml"

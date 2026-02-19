@@ -13,10 +13,11 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 	internxtauth "github.com/internxt/rclone-adapter/auth"
 	internxtconfig "github.com/internxt/rclone-adapter/config"
+	"golang.org/x/oauth2"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
 	"github.com/wizdom13/SecureCloudEngine/lib/oauthutil"
-	"golang.org/x/oauth2"
 )
 
 type userInfo struct {

@@ -10,13 +10,14 @@ import (
 	"strings"
 	"sync"
 
+	"golang.org/x/text/unicode/norm"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/dirtree"
 	"github.com/wizdom13/SecureCloudEngine/fs/filter"
 	"github.com/wizdom13/SecureCloudEngine/fs/list"
 	"github.com/wizdom13/SecureCloudEngine/fs/walk"
 	"github.com/wizdom13/SecureCloudEngine/lib/transform"
-	"golang.org/x/text/unicode/norm"
 )
 
 // matchTransformFn converts a name into a form which is used for

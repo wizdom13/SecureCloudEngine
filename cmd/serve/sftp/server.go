@@ -22,6 +22,8 @@ import (
 	"path/filepath"
 	"strings"
 
+	"golang.org/x/crypto/ssh"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd/serve/proxy"
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
@@ -30,7 +32,6 @@ import (
 	sdActivation "github.com/wizdom13/SecureCloudEngine/lib/sdactivation"
 	"github.com/wizdom13/SecureCloudEngine/vfs"
 	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
-	"golang.org/x/crypto/ssh"
 )
 
 // server contains everything to run the server

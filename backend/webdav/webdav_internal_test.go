@@ -8,12 +8,13 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
 	"github.com/wizdom13/SecureCloudEngine/backend/webdav"
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configfile"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 var (

@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/rc"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
 )
 
 func TestArgsToMap(t *testing.T) {

@@ -12,13 +12,14 @@ import (
 	"testing"
 	"time"
 
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/wizdom13/SecureCloudEngine/lib/random"
 	"github.com/wizdom13/SecureCloudEngine/lib/readers"
 	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 var zeroes = string(make([]byte, 100))

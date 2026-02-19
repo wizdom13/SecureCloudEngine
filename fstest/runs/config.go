@@ -9,8 +9,9 @@ import (
 	"path"
 	"slices"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
 	yaml "gopkg.in/yaml.v3"
+
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // Test describes an integration test to run with `go test`

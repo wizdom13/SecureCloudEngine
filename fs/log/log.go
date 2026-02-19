@@ -11,8 +11,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
 	"gopkg.in/natefinch/lumberjack.v2"
+
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // OptionsInfo descripts the Options in use

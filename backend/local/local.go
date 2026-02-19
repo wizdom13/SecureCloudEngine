@@ -18,6 +18,8 @@ import (
 	"time"
 	"unicode/utf8"
 
+	"golang.org/x/text/unicode/norm"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
@@ -29,7 +31,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
 	"github.com/wizdom13/SecureCloudEngine/lib/file"
 	"github.com/wizdom13/SecureCloudEngine/lib/readers"
-	"golang.org/x/text/unicode/norm"
 )
 
 // Constants

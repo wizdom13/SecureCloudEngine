@@ -20,6 +20,9 @@ import (
 	"sync"
 	"time"
 
+	"golang.org/x/sync/errgroup"
+	"golang.org/x/sync/semaphore"
+
 	"github.com/wizdom13/SecureCloudEngine/backend/hidrive/api"
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
@@ -27,8 +30,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/ranges"
 	"github.com/wizdom13/SecureCloudEngine/lib/readers"
 	"github.com/wizdom13/SecureCloudEngine/lib/rest"
-	"golang.org/x/sync/errgroup"
-	"golang.org/x/sync/semaphore"
 )
 
 const (

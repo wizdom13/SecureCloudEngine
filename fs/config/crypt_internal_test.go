@@ -6,9 +6,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 func hashedKeyCompare(t *testing.T, a, b string, shouldMatch bool) {

@@ -20,6 +20,8 @@ import (
 	"github.com/cloudinary/cloudinary-go/v2/api/admin"
 	"github.com/cloudinary/cloudinary-go/v2/api/admin/search"
 	"github.com/cloudinary/cloudinary-go/v2/api/uploader"
+	"github.com/zeebo/blake3"
+
 	"github.com/wizdom13/SecureCloudEngine/backend/cloudinary/api"
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
@@ -31,7 +33,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
 	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
 	"github.com/wizdom13/SecureCloudEngine/lib/rest"
-	"github.com/zeebo/blake3"
 )
 
 // Cloudinary shouldn't have a trailing dot if there is no path

@@ -13,6 +13,9 @@ import (
 	"testing"
 
 	"github.com/pkg/sftp"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
 	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
 	"github.com/wizdom13/SecureCloudEngine/cmd/serve/proxy"
 	"github.com/wizdom13/SecureCloudEngine/cmd/serve/servetest"
@@ -21,8 +24,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
 	"github.com/wizdom13/SecureCloudEngine/fs/rc"
 	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 const (

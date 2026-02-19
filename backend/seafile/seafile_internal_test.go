@@ -5,11 +5,12 @@ import (
 	"path"
 	"testing"
 
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/obscure"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 type pathData struct {

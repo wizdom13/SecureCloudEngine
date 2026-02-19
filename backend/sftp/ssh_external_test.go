@@ -6,8 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // TestSSHExternalWaitMultipleCalls verifies that calling Wait() multiple times

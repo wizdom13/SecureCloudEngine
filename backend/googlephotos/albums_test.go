@@ -3,8 +3,9 @@ package googlephotos
 import (
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/googlephotos/api"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/wizdom13/SecureCloudEngine/backend/googlephotos/api"
 )
 
 func TestNewAlbums(t *testing.T) {

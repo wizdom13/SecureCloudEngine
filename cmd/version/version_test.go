@@ -5,9 +5,10 @@ import (
 	"runtime"
 	"testing"
 
+	"github.com/stretchr/testify/assert"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
-	"github.com/stretchr/testify/assert"
 )
 
 func TestVersionWorksWithoutAccessibleConfigFile(t *testing.T) {

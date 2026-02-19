@@ -5,8 +5,9 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/lib/exitcode"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/wizdom13/SecureCloudEngine/lib/exitcode"
 )
 
 type fakeSignal struct{}

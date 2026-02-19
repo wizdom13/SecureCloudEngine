@@ -8,10 +8,11 @@ import (
 	"fmt"
 	"log/slog"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
-	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
 	"golang.org/x/sys/windows"
 	"golang.org/x/sys/windows/svc/eventlog"
+
+	"github.com/wizdom13/SecureCloudEngine/fs"
+	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
 )
 
 const (

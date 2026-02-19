@@ -16,6 +16,9 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/s3"
 	"github.com/aws/aws-sdk-go-v2/service/s3/types"
 	"github.com/aws/smithy-go"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/cache"
 	"github.com/wizdom13/SecureCloudEngine/fs/hash"
@@ -24,8 +27,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/bucket"
 	"github.com/wizdom13/SecureCloudEngine/lib/random"
 	"github.com/wizdom13/SecureCloudEngine/lib/version"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 func gz(t *testing.T, s string) string {

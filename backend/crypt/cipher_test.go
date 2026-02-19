@@ -12,10 +12,11 @@ import (
 	"testing"
 
 	"github.com/Max-Sum/base32768"
-	"github.com/wizdom13/SecureCloudEngine/backend/crypt/pkcs7"
-	"github.com/wizdom13/SecureCloudEngine/lib/readers"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/wizdom13/SecureCloudEngine/backend/crypt/pkcs7"
+	"github.com/wizdom13/SecureCloudEngine/lib/readers"
 )
 
 func TestNewNameEncryptionMode(t *testing.T) {

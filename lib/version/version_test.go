@@ -4,9 +4,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/stretchr/testify/assert"
+
 	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/wizdom13/SecureCloudEngine/lib/version"
-	"github.com/stretchr/testify/assert"
 )
 
 var (

@@ -9,6 +9,9 @@ import (
 	"sync"
 	"testing"
 
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	_ "github.com/wizdom13/SecureCloudEngine/fs/accounting"
 	"github.com/wizdom13/SecureCloudEngine/fs/filter"
@@ -16,8 +19,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fstest/mockdir"
 	"github.com/wizdom13/SecureCloudEngine/fstest/mockfs"
 	"github.com/wizdom13/SecureCloudEngine/fstest/mockobject"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 var errDirNotFound, errorBoom error

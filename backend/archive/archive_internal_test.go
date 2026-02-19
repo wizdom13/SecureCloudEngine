@@ -14,6 +14,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
 	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/cache"
@@ -21,8 +24,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/operations"
 	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 // FIXME need to test Open with seek

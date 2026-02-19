@@ -7,8 +7,9 @@ import (
 	"fmt"
 	"unsafe"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
 	"golang.org/x/sys/windows"
+
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 var getFreeDiskSpace = windows.NewLazySystemDLL("kernel32.dll").NewProc("GetDiskFreeSpaceExW")

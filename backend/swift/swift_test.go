@@ -9,6 +9,9 @@ import (
 	"testing"
 
 	"github.com/ncw/swift/v2"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 	"github.com/wizdom13/SecureCloudEngine/fs/object"
@@ -16,8 +19,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 	"github.com/wizdom13/SecureCloudEngine/lib/random"
 	"github.com/wizdom13/SecureCloudEngine/lib/readers"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 // TestIntegration runs integration tests against the remote

@@ -5,11 +5,12 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/stretchr/testify/require"
+
 	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
 	"github.com/wizdom13/SecureCloudEngine/fs/operations"
 	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
-	"github.com/stretchr/testify/require"
 )
 
 var t1 = fstest.Time("2001-02-03T04:05:06.499999999Z")

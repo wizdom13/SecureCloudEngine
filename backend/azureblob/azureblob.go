@@ -31,6 +31,8 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob/container"
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob/sas"
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob/service"
+	"golang.org/x/sync/errgroup"
+
 	"github.com/wizdom13/SecureCloudEngine/backend/azureblob/auth"
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/chunksize"
@@ -46,7 +48,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/multipart"
 	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
 	"github.com/wizdom13/SecureCloudEngine/lib/pool"
-	"golang.org/x/sync/errgroup"
 )
 
 const (

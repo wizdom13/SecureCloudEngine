@@ -6,9 +6,10 @@ import (
 	"io"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/lib/random"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/wizdom13/SecureCloudEngine/lib/random"
 )
 
 type checkClose struct {

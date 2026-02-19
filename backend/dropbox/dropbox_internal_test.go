@@ -8,9 +8,10 @@ import (
 
 	"github.com/dropbox/dropbox-sdk-go-unofficial/v6/dropbox"
 	"github.com/dropbox/dropbox-sdk-go-unofficial/v6/dropbox/files"
-	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 )
 
 func TestInternalCheckPathLength(t *testing.T) {

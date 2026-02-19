@@ -8,9 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/rc"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
 )
 
 // GetEphemeralPort opens a listening port on localhost:0, closes it,

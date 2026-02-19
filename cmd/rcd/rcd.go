@@ -5,6 +5,8 @@ import (
 	"context"
 	"strings"
 
+	"github.com/spf13/cobra"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd"
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/rc"
@@ -12,7 +14,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/rc/rcserver"
 	libhttp "github.com/wizdom13/SecureCloudEngine/lib/http"
 	"github.com/wizdom13/SecureCloudEngine/lib/systemd"
-	"github.com/spf13/cobra"
 )
 
 func init() {

@@ -11,6 +11,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+	"golang.org/x/text/unicode/norm"
+
 	_ "github.com/wizdom13/SecureCloudEngine/backend/all"
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
@@ -19,9 +23,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/walk"
 	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/wizdom13/SecureCloudEngine/lib/transform"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
-	"golang.org/x/text/unicode/norm"
 )
 
 var debug = ``

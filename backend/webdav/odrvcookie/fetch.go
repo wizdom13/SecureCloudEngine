@@ -13,9 +13,10 @@ import (
 	"strings"
 	"time"
 
+	"golang.org/x/net/publicsuffix"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
-	"golang.org/x/net/publicsuffix"
 )
 
 // CookieAuth hold the authentication information

@@ -12,6 +12,8 @@ import (
 	"strings"
 	"time"
 
+	"golang.org/x/text/unicode/norm"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
@@ -19,7 +21,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
 	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 	"github.com/wizdom13/SecureCloudEngine/lib/bucket"
-	"golang.org/x/text/unicode/norm"
 
 	"storj.io/uplink"
 	"storj.io/uplink/edge"

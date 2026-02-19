@@ -15,6 +15,8 @@ import (
 	"time"
 
 	"github.com/mholt/archives"
+	"github.com/spf13/cobra"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd"
 	"github.com/wizdom13/SecureCloudEngine/cmd/archive"
 	"github.com/wizdom13/SecureCloudEngine/cmd/archive/files"
@@ -23,7 +25,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/filter"
 	"github.com/wizdom13/SecureCloudEngine/fs/operations"
 	"github.com/wizdom13/SecureCloudEngine/fs/walk"
-	"github.com/spf13/cobra"
 )
 
 var (

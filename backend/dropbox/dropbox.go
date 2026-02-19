@@ -39,6 +39,8 @@ import (
 	"github.com/dropbox/dropbox-sdk-go-unofficial/v6/dropbox/sharing"
 	"github.com/dropbox/dropbox-sdk-go-unofficial/v6/dropbox/team"
 	"github.com/dropbox/dropbox-sdk-go-unofficial/v6/dropbox/users"
+	"golang.org/x/oauth2"
+
 	"github.com/wizdom13/SecureCloudEngine/backend/dropbox/dbhash"
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
@@ -54,7 +56,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/oauthutil"
 	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
 	"github.com/wizdom13/SecureCloudEngine/lib/readers"
-	"golang.org/x/oauth2"
 )
 
 // Constants

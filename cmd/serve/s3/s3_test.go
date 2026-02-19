@@ -17,6 +17,9 @@ import (
 
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
 	_ "github.com/wizdom13/SecureCloudEngine/backend/local"
 	"github.com/wizdom13/SecureCloudEngine/cmd/serve/proxy"
 	"github.com/wizdom13/SecureCloudEngine/cmd/serve/servetest"
@@ -28,8 +31,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/wizdom13/SecureCloudEngine/lib/random"
 	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 const (

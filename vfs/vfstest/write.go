@@ -5,10 +5,11 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/vfs"
-	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/wizdom13/SecureCloudEngine/vfs"
+	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 )
 
 // TestWriteFileNoWrite tests writing a file with no write()'s to it

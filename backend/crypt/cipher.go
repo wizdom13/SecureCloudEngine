@@ -20,15 +20,16 @@ import (
 	"unicode/utf8"
 
 	"github.com/Max-Sum/base32768"
+	"github.com/rfjakob/eme"
+	"golang.org/x/crypto/chacha20poly1305"
+	"golang.org/x/crypto/nacl/secretbox"
+	"golang.org/x/crypto/scrypt"
+
 	"github.com/wizdom13/SecureCloudEngine/backend/crypt/pkcs7"
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
 	"github.com/wizdom13/SecureCloudEngine/lib/readers"
 	"github.com/wizdom13/SecureCloudEngine/lib/version"
-	"github.com/rfjakob/eme"
-	"golang.org/x/crypto/chacha20poly1305"
-	"golang.org/x/crypto/nacl/secretbox"
-	"golang.org/x/crypto/scrypt"
 )
 
 // Constants

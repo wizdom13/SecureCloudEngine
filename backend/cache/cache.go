@@ -20,6 +20,8 @@ import (
 	"syscall"
 	"time"
 
+	"golang.org/x/time/rate"
+
 	"github.com/wizdom13/SecureCloudEngine/backend/crypt"
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/cache"
@@ -33,7 +35,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/rc"
 	"github.com/wizdom13/SecureCloudEngine/fs/walk"
 	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
-	"golang.org/x/time/rate"
 )
 
 const (

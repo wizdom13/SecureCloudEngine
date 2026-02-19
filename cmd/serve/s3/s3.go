@@ -5,6 +5,8 @@ import (
 	_ "embed"
 	"strings"
 
+	"github.com/spf13/cobra"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd"
 	"github.com/wizdom13/SecureCloudEngine/cmd/serve"
 	"github.com/wizdom13/SecureCloudEngine/cmd/serve/proxy"
@@ -17,7 +19,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/vfs"
 	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
 	"github.com/wizdom13/SecureCloudEngine/vfs/vfsflags"
-	"github.com/spf13/cobra"
 )
 
 // OptionsInfo describes the Options in use

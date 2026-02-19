@@ -23,6 +23,8 @@ import (
 	"time"
 	"unicode/utf8"
 
+	"golang.org/x/text/unicode/norm"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd/bisync"
 	"github.com/wizdom13/SecureCloudEngine/cmd/bisync/bilib"
 	"github.com/wizdom13/SecureCloudEngine/fs"
@@ -40,7 +42,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
 	"github.com/wizdom13/SecureCloudEngine/lib/random"
 	"github.com/wizdom13/SecureCloudEngine/lib/terminal"
-	"golang.org/x/text/unicode/norm"
 
 	"github.com/pmezard/go-difflib/difflib"
 	"github.com/stretchr/testify/assert"

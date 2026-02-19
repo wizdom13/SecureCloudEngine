@@ -9,6 +9,8 @@ import (
 	"path"
 	"time"
 
+	"github.com/spf13/cobra"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd"
 	"github.com/wizdom13/SecureCloudEngine/cmd/test"
 	"github.com/wizdom13/SecureCloudEngine/fs"
@@ -18,7 +20,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/sync"
 	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
 	"github.com/wizdom13/SecureCloudEngine/lib/random"
-	"github.com/spf13/cobra"
 )
 
 var (

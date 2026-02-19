@@ -6,10 +6,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
 	"github.com/spf13/pflag"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
 )
 
 // Check it satisfies the interface

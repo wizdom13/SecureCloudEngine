@@ -4,11 +4,12 @@ package moveto
 import (
 	"context"
 
+	"github.com/spf13/cobra"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd"
 	"github.com/wizdom13/SecureCloudEngine/fs/operations"
 	"github.com/wizdom13/SecureCloudEngine/fs/operations/operationsflags"
 	"github.com/wizdom13/SecureCloudEngine/fs/sync"
-	"github.com/spf13/cobra"
 )
 
 var (

@@ -5,8 +5,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/mailru/mrhash"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/wizdom13/SecureCloudEngine/backend/mailru/mrhash"
 )
 
 func testChunk(t *testing.T, chunk int) {

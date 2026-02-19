@@ -12,6 +12,8 @@ import (
 	"sync/atomic"
 	"time"
 
+	"golang.org/x/text/unicode/norm"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/dirtree"
 	"github.com/wizdom13/SecureCloudEngine/fs/list"
@@ -20,7 +22,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/operations"
 	"github.com/wizdom13/SecureCloudEngine/fs/walk"
 	"github.com/wizdom13/SecureCloudEngine/vfs/vfscommon"
-	"golang.org/x/text/unicode/norm"
 )
 
 // Dir represents a directory entry

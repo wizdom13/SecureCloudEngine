@@ -12,12 +12,13 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/winfsp/cgofuse/fuse"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd/mountlib"
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/fserrors"
 	"github.com/wizdom13/SecureCloudEngine/fs/log"
 	"github.com/wizdom13/SecureCloudEngine/vfs"
-	"github.com/winfsp/cgofuse/fuse"
 )
 
 const fhUnset = ^uint64(0)

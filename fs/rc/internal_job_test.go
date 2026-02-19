@@ -6,10 +6,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/rc"
-	"github.com/wizdom13/SecureCloudEngine/fs/rc/jobs"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/wizdom13/SecureCloudEngine/fs/rc"
+	"github.com/wizdom13/SecureCloudEngine/fs/rc/jobs"
 )
 
 func TestInternalPanic(t *testing.T) {

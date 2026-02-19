@@ -21,6 +21,10 @@ import (
 	"time"
 
 	"github.com/pkg/sftp"
+	sshagent "github.com/xanzy/ssh-agent"
+	"golang.org/x/crypto/ssh"
+	"golang.org/x/crypto/ssh/knownhosts"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
@@ -31,9 +35,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/env"
 	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
 	"github.com/wizdom13/SecureCloudEngine/lib/readers"
-	sshagent "github.com/xanzy/ssh-agent"
-	"golang.org/x/crypto/ssh"
-	"golang.org/x/crypto/ssh/knownhosts"
 )
 
 const (

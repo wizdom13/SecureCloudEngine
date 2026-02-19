@@ -5,8 +5,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/backend/dropbox/dbhash"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/wizdom13/SecureCloudEngine/backend/dropbox/dbhash"
 )
 
 func testChunk(t *testing.T, chunk int) {

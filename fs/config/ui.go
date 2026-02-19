@@ -17,6 +17,8 @@ import (
 	"unicode/utf8"
 
 	"github.com/peterh/liner"
+	"golang.org/x/text/unicode/norm"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configstruct"
@@ -24,7 +26,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/driveletter"
 	"github.com/wizdom13/SecureCloudEngine/fs/fspath"
 	"github.com/wizdom13/SecureCloudEngine/lib/terminal"
-	"golang.org/x/text/unicode/norm"
 )
 
 var (

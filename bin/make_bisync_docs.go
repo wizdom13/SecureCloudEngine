@@ -14,10 +14,11 @@ import (
 	"slices"
 	"strings"
 
+	"github.com/stretchr/testify/assert/yaml"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/operations"
 	"github.com/wizdom13/SecureCloudEngine/fstest/runs"
-	"github.com/stretchr/testify/assert/yaml"
 )
 
 var path = flag.String("path", "./docs/content/", "root path")

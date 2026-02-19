@@ -22,6 +22,8 @@ import (
 	"runtime"
 	"strings"
 
+	"github.com/spf13/cobra"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd"
 	"github.com/wizdom13/SecureCloudEngine/cmd/cmount"
 	"github.com/wizdom13/SecureCloudEngine/fs"
@@ -29,7 +31,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/fshttp"
 	"github.com/wizdom13/SecureCloudEngine/lib/buildinfo"
 	"github.com/wizdom13/SecureCloudEngine/lib/random"
-	"github.com/spf13/cobra"
 
 	versionCmd "github.com/wizdom13/SecureCloudEngine/cmd/version"
 )

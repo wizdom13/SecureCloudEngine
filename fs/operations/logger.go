@@ -8,9 +8,10 @@ import (
 	"io"
 	mutex "sync"
 
+	"github.com/spf13/pflag"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/hash"
-	"github.com/spf13/pflag"
 )
 
 // Sigil represents the rune (-+=*!?) used by Logger to categorize files by their match/differ/missing status.

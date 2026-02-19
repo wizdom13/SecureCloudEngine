@@ -7,9 +7,10 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/wizdom13/SecureCloudEngine/fs"
 	orderedmap "github.com/wk8/go-ordered-map/v2"
 	"gopkg.in/yaml.v3"
+
+	"github.com/wizdom13/SecureCloudEngine/fs"
 )
 
 // YamlMap is converted to YAML in the correct order

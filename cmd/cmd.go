@@ -20,6 +20,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/spf13/cobra"
+	"github.com/spf13/pflag"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
 	"github.com/wizdom13/SecureCloudEngine/fs/cache"
@@ -37,8 +40,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/buildinfo"
 	"github.com/wizdom13/SecureCloudEngine/lib/exitcode"
 	"github.com/wizdom13/SecureCloudEngine/lib/terminal"
-	"github.com/spf13/cobra"
-	"github.com/spf13/pflag"
 )
 
 // Globals

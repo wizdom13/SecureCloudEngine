@@ -6,13 +6,14 @@ import (
 	"io"
 	"testing"
 
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 	"github.com/wizdom13/SecureCloudEngine/fstest/mockobject"
 	"github.com/wizdom13/SecureCloudEngine/lib/pool"
 	"github.com/wizdom13/SecureCloudEngine/lib/readers"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 // check interfaces

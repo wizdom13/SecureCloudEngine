@@ -27,6 +27,8 @@ import (
 	"sync"
 	"time"
 
+	mega "github.com/t3rm1n4l/go-mega"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
@@ -38,7 +40,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
 	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
 	"github.com/wizdom13/SecureCloudEngine/lib/readers"
-	mega "github.com/t3rm1n4l/go-mega"
 )
 
 const (

@@ -8,8 +8,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/cmd"
 	"github.com/stretchr/testify/require"
+
+	"github.com/wizdom13/SecureCloudEngine/cmd"
 )
 
 // newAuthenticatedRequest returns a new HTTP request with the given params.

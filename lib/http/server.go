@@ -18,11 +18,12 @@ import (
 	"time"
 
 	"github.com/go-chi/chi/v5"
+	"github.com/spf13/pflag"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/flags"
 	"github.com/wizdom13/SecureCloudEngine/lib/atexit"
 	sdActivation "github.com/wizdom13/SecureCloudEngine/lib/sdactivation"
-	"github.com/spf13/pflag"
 )
 
 // Help returns text describing the http server to add to the command

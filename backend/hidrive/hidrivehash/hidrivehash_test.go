@@ -8,9 +8,10 @@ import (
 	"io"
 	"testing"
 
+	"github.com/stretchr/testify/assert"
+
 	"github.com/wizdom13/SecureCloudEngine/backend/hidrive/hidrivehash"
 	"github.com/wizdom13/SecureCloudEngine/backend/hidrive/hidrivehash/internal"
-	"github.com/stretchr/testify/assert"
 )
 
 // helper functions to set up test-tables

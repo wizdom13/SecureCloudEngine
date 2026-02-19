@@ -16,6 +16,8 @@ import (
 	"github.com/FilenCloudDienste/filen-sdk-go/filen/types"
 
 	"github.com/google/uuid"
+	"golang.org/x/sync/errgroup"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
@@ -24,7 +26,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 	"github.com/wizdom13/SecureCloudEngine/fs/list"
 	"github.com/wizdom13/SecureCloudEngine/lib/encoder"
-	"golang.org/x/sync/errgroup"
 )
 
 func init() {

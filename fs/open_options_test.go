@@ -5,9 +5,10 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/wizdom13/SecureCloudEngine/fs/hash"
 )
 
 func TestParseRangeOption(t *testing.T) {

@@ -33,6 +33,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
+
 	_ "github.com/wizdom13/SecureCloudEngine/backend/all" // import all backends
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
@@ -43,10 +48,6 @@ import (
 	"github.com/wizdom13/SecureCloudEngine/fstest"
 	"github.com/wizdom13/SecureCloudEngine/fstest/fstests"
 	"github.com/wizdom13/SecureCloudEngine/lib/pacer"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
-	"golang.org/x/text/cases"
-	"golang.org/x/text/language"
 )
 
 // Some times used in the tests

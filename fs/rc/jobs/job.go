@@ -16,12 +16,13 @@ import (
 	"time"
 
 	"github.com/google/uuid"
+	"golang.org/x/sync/errgroup"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/accounting"
 	"github.com/wizdom13/SecureCloudEngine/fs/cache"
 	"github.com/wizdom13/SecureCloudEngine/fs/filter"
 	"github.com/wizdom13/SecureCloudEngine/fs/rc"
-	"golang.org/x/sync/errgroup"
 )
 
 // Fill in these to avoid circular dependencies

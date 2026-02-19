@@ -9,10 +9,11 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/unknwon/goconfig" //nolint:misspell // Don't include misspell when running golangci-lint
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config"
 	"github.com/wizdom13/SecureCloudEngine/lib/file"
-	"github.com/unknwon/goconfig" //nolint:misspell // Don't include misspell when running golangci-lint
 )
 
 // Install installs the config file handler

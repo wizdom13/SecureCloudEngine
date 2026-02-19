@@ -7,9 +7,10 @@ import (
 	"sync"
 	"time"
 
+	"golang.org/x/time/rate"
+
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/rc"
-	"golang.org/x/time/rate"
 )
 
 // TokenBucket holds the global token bucket limiter

@@ -13,12 +13,13 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+
 	"github.com/wizdom13/SecureCloudEngine/cmd/serve/proxy"
 	"github.com/wizdom13/SecureCloudEngine/fs"
 	"github.com/wizdom13/SecureCloudEngine/fs/config/configmap"
 	"github.com/wizdom13/SecureCloudEngine/fstest"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 var subRun = flag.String("sub-run", "", "pass this to the -run command of the backend tests")
