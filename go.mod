@@ -287,4 +287,4 @@ require (
 	golang.org/x/term v0.39.0
 )
 
-replace github.com/rclone/rclone => github.com/wizdom13/SecureCloudEngine v1.74.0
+replace github.com/rclone/rclone => ./
