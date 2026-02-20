@@ -1,4 +1,4 @@
-module github.com/wizdom13/SecureCloudEngine
+module github.com/rclone/rclone
 
 go 1.24.4
 
@@ -286,5 +286,3 @@ require (
 	golang.org/x/mobile v0.0.0-20260112195712-5b9ecdfb8721
 	golang.org/x/term v0.39.0
 )
-
-replace github.com/rclone/rclone => ./
